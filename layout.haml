@@ -8,9 +8,8 @@
     = haml 'views/alerts/_ie'.to_sym
     = haml 'views/alerts/_no-js'.to_sym
     = haml 'views/layouts/_header'.to_sym
-    
+
     %main#main.main{role: "main"}
-      .p-t_6.p-b_6
-        = yield
+      = yield
 
     = haml 'views/layouts/_footer'.to_sym

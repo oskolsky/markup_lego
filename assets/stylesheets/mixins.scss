@@ -14,8 +14,6 @@
 
 }
 
-
-
 @mixin prefixes($property, $value) {
   -webkit-#{$property}: $value;
      -moz-#{$property}: $value;
@@ -23,8 +21,6 @@
        -o-#{$property}: $value;
           #{$property}: $value;
 }
-
-
 
 @mixin linear-gradient($direction, $start, $end) {
   background: $start;
@@ -36,4 +32,9 @@
     background: -webkit-linear-gradient(top, $start 0%, $end 100%);
     background:         linear-gradient(to bottom, $start 0%, $end 100%);
   }
+}
+
+@mixin size($w, $h) {
+  width:  #{$w};
+  height: #{$h};
 }

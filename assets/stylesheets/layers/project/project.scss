@@ -5,7 +5,175 @@
 //****************************************************************************************************
 .header {
   // .. &.__sticky / null / null
+  &.__yellow {
+    background-color: #fbbc04;
+    padding: 30px 0 40px;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(/assets/images/header-yellow.png);
+      background-position: left bottom;
+      background-repeat: repeat-x;
+      height: 8px;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+    }
+  }
 }
+
+//
+// .. Logo
+//
+.logo {
+  vertical-align: top;
+}
+
+//
+// .. Brand
+//
+.brand {
+  color: #fff;
+  font-family: $h-font-family;
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+//
+// .. Shops
+//
+.shops {
+  padding-left: 40px;
+}
+.shops_count {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #141f4e;
+  display: inline-block;
+  font-family: $h-font-family;
+  font-size: 28px;
+  line-height: 45px;
+  margin-right: 8px;
+  text-align: center;
+  vertical-align: middle;
+  @include size(45px, 45px);
+}
+.shops_label {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+//
+// .. Location
+//
+.location {
+  color: #fff;
+  font-size: 14px;
+  padding-left: 40px;
+  a {
+    color: inherit;
+    span {border-color: #fff !important;}
+  }
+}
+
+//
+// .. Basket
+//
+.basket {
+  background: url(/assets/images/basket.png) center no-repeat;
+  color: #fff;
+  display: inline-block;
+  font-family: $h-font-family;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  @include size(170px, 60px);
+  @include prefixes(box-sizing, border-box);
+  a {color: inherit;}
+}
+
+//
+// .. Pages
+//
+.pages {
+  margin-bottom: 5px;
+  &.__left  {
+    .pages_i {margin-right: 20px;}
+  }
+  &.__right {
+    .pages_i {margin-left: 20px;}
+  }
+}
+.pages_i {
+  display: inline-block;
+
+}
+.pages_i_a {
+  color: #fff;
+  font-size: 14px;
+  &:hover {color: #fff;}
+}
+
+//
+// .. Navigation
+//
+.nav {
+
+}
+.nav_i {
+  display: inline-block;
+  margin-right: 5px;
+}
+.nav_i_a {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #1e275b;
+  display: inline-block;
+  font-family: $h-font-family;
+  font-size: 16px;
+  line-height: 38px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  &:hover {color: #1e275b;}
+}
+
+//
+// .. Search form
+//
+.search-form {
+  position: relative;
+}
+.search-form_input {
+  background-color: #fff;
+  border-radius: 20px;
+  display: block;
+  font-size: 14px;
+  padding: 11px 40px 11px 15px;
+  width: 100%;
+}
+.search-form_submit {
+  background: url(/assets/images/ico-22.png) center no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  @include size(22px, 22px);
+  @include prefixes(transform, translate(0, -50%));
+}
+
+
+
+//****************************************************************************************************
+//
+// .. ELEMENTS
+//
+//****************************************************************************************************
 
 
 

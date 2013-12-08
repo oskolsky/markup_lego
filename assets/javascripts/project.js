@@ -1,7 +1,5 @@
-
 $(function() {
   
-  $.stickyHeader();
   $.stickyFooter();
 
 
@@ -151,7 +149,6 @@ $(function() {
   //****************************************************************************************************
   $(window).smartresize(function() {
 
-    $.stickyHeader();
     $.stickyFooter();
 
   });
