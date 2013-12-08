@@ -1,0 +1,230 @@
+//****************************************************************************************************
+//
+// .. INLINE
+//
+//****************************************************************************************************
+//
+// .. Links
+//
+@if $content-link == true {
+  .cnt a        {color: $content-link-color;}
+  .cnt a:hover  {color: $content-link-color-hover;}
+  .cnt a:active {color: $content-link-color-active;}
+}
+
+//
+// .. Abbr, dfn
+//
+.ctn abbr[title],
+.ctn dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+//
+// .. Del, ins
+//
+.ctn del {text-decoration: line-through;}
+.ctn ins {
+  padding: 0 .3em;
+  background: #ff9;
+  text-decoration: none;
+}
+
+//
+// .. Mark
+//
+.ctn mark {
+  padding: 0 .3em;
+  background: #ff9;
+  font-style: italic;
+  font-weight: 700;
+}
+
+//
+// .. Quotes
+//
+.cnt q {
+  font-style: italic;
+  quotes: "\00ab" "\00bb";
+}
+.cnt q::before {content: open-quote;}
+.cnt q::after  {content: close-quote;}
+
+//
+// .. Small
+//
+.cnt small {
+  font-size: 90%;
+  font-weight: 700;
+}
+
+//
+// .. Sub, sup
+//
+.cnt sub,
+.cnt sup {
+  font-size: 70%;
+  line-height: 1;
+}
+.cnt sub {vertical-align: text-bottom;}
+.cnt sup {vertical-align: text-top;}
+
+
+
+//****************************************************************************************************
+//
+// .. BLOCK
+//
+//****************************************************************************************************
+.cnt blockquote:not(:last-child),
+.cnt h1:not(:last-child),
+.cnt h2:not(:last-child),
+.cnt h3:not(:last-child),
+.cnt h4:not(:last-child),
+.cnt h5:not(:last-child),
+.cnt h6:not(:last-child),
+.cnt dl:not(:last-child),
+.cnt ol:not(:last-child),
+.cnt ul:not(:last-child),
+.cnt figure:not(:last-child),
+.cnt img:not(:last-child),
+.cnt p:not(:last-child),
+.cnt pre:not(:last-child),
+.cnt table:not(:last-child) {margin-bottom: #{$content-factor}rem;}
+
+//
+// .. Blockquote
+//
+.cnt blockquote {
+  padding: #{$content-factor - .1}rem #{$content-factor}rem;
+  border: 1px solid #eee;
+  font-style: italic;
+  font-size: 130%;
+}
+
+//
+// .. Lists
+//
+.cnt dl dl {margin-top: #{$content-factor / 2}rem;}
+.cnt dt {
+  margin-bottom: #{$content-factor / 2}rem;
+  font-weight: 700;
+}
+.cnt dd {
+  margin-left: #{$content-factor * 2}rem;
+  &:not(:last-child) {margin-bottom: #{$content-factor / 2}rem;}
+  @extend %lists-nesting;
+}
+
+.cnt ol {
+  list-style-type: decimal;
+  ol {
+    list-style-type: lower-alpha;
+    ol {list-style-type: lower-roman;}
+  }
+}
+
+.cnt ul {
+  list-style-type: disc;
+  ul {
+    list-style-type: circle;
+    ul {list-style-type: square;}
+  }
+}
+
+.cnt ol li,
+.cnt ul li {margin: 0 0 #{$content-factor / 2}rem #{$content-factor * 2}rem;}
+
+.cnt li {
+  @extend %lists-nesting;
+}
+
+%lists-nesting {
+  ol,
+  ul,
+  p {margin-top: #{$content-factor / 2}rem;}
+  p {margin-bottom: #{$content-factor / 2}rem !important;}
+}
+
+//
+// .. Headings
+//
+.cnt h1:not(:first-child),
+.cnt h2:not(:first-child),
+.cnt h3:not(:first-child),
+.cnt h4:not(:first-child),
+.cnt h5:not(:first-child),
+.cnt h6:not(:first-child) {margin-top: #{$content-factor * 2}rem;}
+
+//
+// .. Figure
+//
+.cnt figure {
+  > img {margin-bottom: 0 !important;}
+  > figcaption {
+    color: #999;
+    font-style: italic;
+  }
+} 
+
+//
+// .. Images
+//
+.cnt img {display: block;}
+
+//
+// .. Paragraphs
+//
+.cnt p {
+  @extend .cf;
+  > img {
+    float: left;
+    margin-right: #{$content-factor}rem;
+    @include media-query(phone) {
+      float: none;
+      margin-right: 0;
+      margin-bottom: #{$content-factor / 2}rem;
+    }
+  }
+}
+
+//
+// .. Pre > code
+//
+.cnt pre {
+  padding: #{$content-factor - .1}rem #{$content-factor}rem;
+  background: #eee;
+  border: 1px dotted #ccc;
+  white-space: normal;
+  > code {
+    display: block;
+    padding: 0;
+    font-size: 100%;
+    white-space: pre-wrap;
+  }
+}
+
+//
+// .. Table
+//
+.cnt table {
+  width: 100%;
+  caption,
+  th,
+  td {padding: #{$content-factor / 2}rem #{$content-factor}rem;}
+  caption {
+    font-style: italic;
+    text-align: right;
+  }
+  th {
+    background: #ddd;
+    text-align: left;
+  }
+  th,
+  tbody td {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: #{($content-factor / 2) - .1}rem;
+  }
+  tfoot td {background: #eee;}
+}

@@ -1,0 +1,145 @@
+//****************************************************************************************************
+//
+// .. FONTS
+//
+//****************************************************************************************************
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic);
+
+
+
+//****************************************************************************************************
+//
+// .. LAYOUT
+//
+//****************************************************************************************************
+//
+// .. Layout type
+//
+$layout: responsive; // .. fixed / fluid / responsive
+$responsive: auto; // .. auto / manual
+$responsive-column-qty: 12; // .. 8 / 12
+
+//
+// .. Fixed layout variables
+//
+$column-qty:    12;
+$column-width:  60;
+$column-gutter: 20;
+
+//
+// .. Fluid & responsive layouts variables
+//
+  $phone-font-size: 62.5%;
+ $tablet-font-size: 62.5%;
+$desktop-font-size: 62.5%;
+
+  $phone-ctn-width: 80%;
+ $tablet-ctn-width: 80%;
+$desktop-ctn-width: 80%;
+
+$desktop-min-width: 940px;
+$desktop-max-width: 1180px;
+  
+//
+// .. Responsive layout variables
+//
+ $phone-min-width: 300px;
+ $phone-max-width: 460px;
+
+$tablet-min-width: 460px;
+$tablet-max-width: 940px;
+
+
+
+//****************************************************************************************************
+//
+// .. STYLES
+//
+//****************************************************************************************************
+//
+// .. Body
+//
+$base-bg: #fff;
+$base-color: #333;
+$base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
+$base-font-size-list: (1.5rem, 1.5rem, 1.5rem);
+$base-font-weight: 400;
+$base-line-height-list: (1.5, 1.5, 1.5);
+
+//
+// .. Headings
+//
+$h-font-family: "PT Serif", Times, "Times New Roman", serif;
+
+$h1-font-size-list: (4rem, 4rem, 4rem);
+$h2-font-size-list: (3rem, 3rem, 3rem);
+$h3-font-size-list: (2.5rem, 2.5rem, 2.5rem);
+$h4-font-size-list: (2rem, 2rem, 2rem);
+$h5-font-size-list: (inherit, inherit, inherit);
+$h6-font-size-list: (inherit, inherit, inherit);
+
+$h1-font-weight-list: (700, 700, 700);
+$h2-font-weight-list: (700, 700, 700);
+$h3-font-weight-list: (700, 700, 700);
+$h4-font-weight-list: (700, 700, 700);
+$h5-font-weight-list: (700, 700, 700);
+$h6-font-weight-list: (inherit, inherit, inherit);
+
+$h1-line-height-list: (1, 1, 1);
+$h2-line-height-list: (1.125, 1.125, 1.125);
+$h3-line-height-list: (1.25, 1.25, 1.25);
+$h4-line-height-list: (1.375, 1.375, 1.375);
+$h5-line-height-list: (inherit, inherit, inherit);
+$h6-line-height-list: (inherit, inherit, inherit);
+
+//
+// .. Colors
+//
+$brand-color: #123456;
+$extra-color: #654321;
+
+//
+// .. Links
+//
+$link-color: #2980b9;
+$link-color-hover: #ccc;
+$link-color-active: darken($link-color-hover, 10%);
+$link-style: un;        // .. nn / uu / un / nu
+$link-style-pseudo: uu; // .. nn / uu / un
+
+//
+// .. Forms
+//
+$form-el-bg: #fff;
+$form-el-border-color: #ccc;
+$form-el-border: 1px solid $form-el-border-color;
+$form-el-border-radius: .3em;
+$form-el-color: #000;
+$form-el-color-required: #f90;
+$form-el-color-valid-true: #008000;
+$form-el-color-valid-false: #f00;
+$form-el-font-size: inherit;
+$form-el-line-height: inherit;
+$form-el-padding: .3rem .6rem;
+$form-btn-padding: .3rem 1.2rem;
+
+//
+// .. Content styles
+//
+$content-factor: 2;
+$content-link: false; // .. true / false
+$content-link-color: #0000cd;
+$content-link-color-hover: #ccc;
+$content-link-color-active: darken($content-link-color-hover, 10%);
+
+//
+// .. Text sizes
+//
+$tx-xxs-font-size: 70%;
+$tx-xs-font-size:  80%;
+$tx-s-font-size:   90%;
+$tx-m-font-size:   100%;
+$tx-l-font-size:   110%;
+$tx-xl-font-size:  120%;
+$tx-xxl-font-size: 130%;
