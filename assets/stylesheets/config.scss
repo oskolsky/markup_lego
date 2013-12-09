@@ -93,7 +93,7 @@ $base-line-height-list: (25px, 25px, 25px);
 $h-font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 $h1-font-size-list: (40px, 40px, 40px);
-$h2-font-size-list: (3rem, 3rem, 3rem);
+$h2-font-size-list: (24px, 24px, 24px);
 $h3-font-size-list: (2.5rem, 2.5rem, 2.5rem);
 $h4-font-size-list: (2rem, 2rem, 2rem);
 $h5-font-size-list: (inherit, inherit, inherit);
@@ -122,10 +122,10 @@ $extra-color: #654321;
 //
 // .. Links
 //
-$link-color: #2980b9;
+$link-color: #0068a5;
 $link-color-hover: $link-color;
 $link-color-active: $link-color;
-$link-style: nn;        // .. nn / uu / un / nu
+$link-style: un;        // .. nn / uu / un / nu
 $link-style-pseudo: uu; // .. nn / uu / un
 
 //

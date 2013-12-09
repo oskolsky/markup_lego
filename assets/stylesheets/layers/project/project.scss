@@ -96,7 +96,10 @@
   text-transform: uppercase;
   @include size(170px, 60px);
   @include prefixes(box-sizing, border-box);
-  a {color: inherit;}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 //
@@ -113,11 +116,11 @@
 }
 .pages_i {
   display: inline-block;
-
 }
 .pages_i_a {
   color: #fff;
   font-size: 14px;
+  text-decoration: none;
   &:hover {color: #fff;}
 }
 
@@ -140,6 +143,7 @@
   font-size: 16px;
   line-height: 38px;
   padding: 0 15px;
+  text-decoration: none;
   text-transform: uppercase;
   &:hover {color: #1e275b;}
 }
@@ -171,9 +175,142 @@
 
 //****************************************************************************************************
 //
+// .. SECTION
+//
+//****************************************************************************************************
+.section {
+
+}
+.section_header {
+
+}
+.section_main {
+
+}
+.section_footer {
+
+}
+
+
+
+//****************************************************************************************************
+//
+// .. ARTICLES
+//
+//****************************************************************************************************
+.articles {
+
+}
+.articles_i {
+  border: 15px solid #52b200;
+  box-shadow: -8px 8px 0 8px #d9d9d9;
+  margin-bottom: 25px;
+  padding: 35px;
+  position: relative;
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    @include size(0, 0);
+  }
+  &::before {
+    border-top: 16px solid $base-bg;
+    border-right: 16px solid transparent;
+    top: -15px;
+    left: -31px;
+  }
+  &::after {
+    border-bottom: 16px solid $base-bg;
+    border-left: 16px solid transparent;
+    right: -15px;
+    bottom: -31px;
+  }
+}
+.articles_i_photo {
+  border: 1px solid #e5e5e5;
+  border-radius: 1px;
+  display: inline-block;
+  padding: 10px;
+  img {vertical-align: top;}
+}
+.articles_i_caption {
+  margin-left: -75px;
+}
+.articles_i_caption_t {
+  text-transform: uppercase;
+  a {color: $base-color;}
+}
+.articles_i_caption_more {
+  color: $base-color;
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  &:hover {color: inherit;}
+  &::before {
+    content: '\f078';
+    background-color: #52b200;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    line-height: 38px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    @include size(35px, 35px);
+  }
+}
+
+
+
+//****************************************************************************************************
+//
 // .. ELEMENTS
 //
 //****************************************************************************************************
+//
+// .. Breadcrumbs
+//
+.breadcrumbs {
+  font-size: 14px;
+  .fa {
+    color: $link-color;
+    font-size: 10px;
+    margin: 0 10px;
+  }
+}
+.breadcrumbs_i {
+
+}
+
+//
+// .. Pagination
+//
+//.pagination {
+//
+//}
+//.pagination_i {
+//  display: inline-block;
+//}
+//.pagination_a {
+//  display: inline-block;
+//  border-radius: 50%;
+//  font-family: $h-font-family;
+//  font-size: 24px;
+//  line-height: 38px;
+//  margin: 0 13px;
+//  text-align: center;
+//  text-decoration: none;
+//  &:hover,
+//  &.__current {
+//    background-color: #db0104;
+//    color: #fff;
+//    margin: 0 0px;
+//    @include size(38px, 38px);
+//  }
+//  &.__spacer {
+//
+//  }
+//}
 
 
 

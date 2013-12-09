@@ -1,0 +1,41 @@
+%section.section.p-t_6{role: "region", "aria-label" => "Bonuses"}
+  .ctn
+    %header.section_header.m-b_1
+      %h1.tx.__upper Бонусная программа
+      %nav.breadcrumbs
+        %a{href: "/", class: "breadcrumbs_i"} Главная
+        %i.fa.fa-chevron-right
+        %span.breadcrumbs_i Бонусная программа
+    %section.section_main
+      .articles
+        - 1.upto(6) do
+          %figure.articles_i
+            .grid
+              .grid-i.__grid-3
+                .articles_i_photo
+                  %a{href: "#"}
+                    %img{src: "/assets/images/blank.gif", width: "170", height: "130", class: "c-bg __gray"}
+              .grid-i.__grid-9
+                %figcaption.articles_i_caption
+                  %h2.articles_i_caption_t
+                    %a{href: "#"} Срочное сообщение!
+                  %p В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.
+                  %p
+                    %a{href: "#", class: "articles_i_caption_more"} далее
+    %footer.section_footer
+      -#%nav
+        %ul.pagination
+          %li.pagination_i
+            %span.pagination_a.__current 1
+          %li.pagination_i
+            %a.pagination_a{href: "#"} 2
+          %li.pagination_i
+            %a.pagination_a{href: "#"} 3
+          %li.pagination_i
+            %a.pagination_a{href: "#"} 4
+          %li.pagination_i
+            %a.pagination_a{href: "#"} 5
+          %li.pagination_i
+            %span.pagination_a.__spacer ...
+          %li.pagination_i
+            %a.pagination_a{href: "#"} 99
