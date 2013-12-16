@@ -131,11 +131,10 @@ h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .epsilon, .zeta {font-fam
     &.__col-3,
     &.__col-4 { @include prefixes(column-count, 1); }
   }
-  
-  &.__black  {color: black;}
-  &.__gray   {color: gray;}
-  &.__silver {color: silver;}
-  &.__white  {color: white;}
+
+  &.__default {color: $base-color;}
+  &.__brand   {color: $brand-color;}
+  &.__white   {color: #fff;}
 
   &.__xxs {font-size: $tx-xxs-font-size;}
   &.__xs  {font-size: $tx-xs-font-size;}

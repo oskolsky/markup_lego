@@ -33,7 +33,6 @@
 // .. Brand
 //
 .brand {
-  color: #fff;
   font-family: $h-font-family;
   font-size: 28px;
   letter-spacing: 1px;
@@ -204,9 +203,9 @@
 .articles_i {
   border: 15px solid #52b200;
   box-shadow: -8px 8px 0 8px #d9d9d9;
-  margin-bottom: 25px;
   padding: 35px;
   position: relative;
+  &:not(:last-child) {margin-bottom: 25px;}
   &::before, &::after {
     content: '';
     position: absolute;
@@ -285,32 +284,28 @@
 //
 // .. Pagination
 //
-//.pagination {
-//
-//}
-//.pagination_i {
-//  display: inline-block;
-//}
-//.pagination_a {
-//  display: inline-block;
-//  border-radius: 50%;
-//  font-family: $h-font-family;
-//  font-size: 24px;
-//  line-height: 38px;
-//  margin: 0 13px;
-//  text-align: center;
-//  text-decoration: none;
-//  &:hover,
-//  &.__current {
-//    background-color: #db0104;
-//    color: #fff;
-//    margin: 0 0px;
-//    @include size(38px, 38px);
-//  }
-//  &.__spacer {
-//
-//  }
-//}
+.pagination {
+  padding: 5px 0;
+  text-align: right;
+}
+.pagination_i {
+  display: inline-block;
+}
+.pagination_a {
+  display: inline-block;
+  border-radius: 50%;
+  font-family: $h-font-family;
+  font-size: 24px;
+  line-height: 38px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  @include size(38px, 38px);
+  &.__current {
+    background-color: #db0104;
+    color: #fff;
+  }
+}
 
 
 
@@ -320,5 +315,7 @@
 //
 //****************************************************************************************************
 .footer {
-
+  font-size: 13px;
+  line-height: 18px;
+  padding: 60px 0;
 }
