@@ -1,0 +1,30 @@
+%header#header.header.__yellow{role: "banner"}
+  .ctn
+    = haml 'views/layouts/_header'.to_sym
+
+%main#main.main{role: "main"}
+
+  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .ctn.m-b_8
+      %header.section_header.m-b_2
+        %h1.tx.__upper.__minor Вопрос-ответ
+        %nav.breadcrumbs
+          %a{href: "/", class: "breadcrumbs_i"} Главная
+          %i.fa.fa-chevron-right
+          %span.breadcrumbs_i Вопрос-ответ
+      %section.section_main
+        .faq
+          - 1.upto(8) do
+            .faq_i.brick
+              %h2.faq_i_open.tx.__upper.m-b_1
+                %a{href: "#"} ГДЕ МОЖНО НАЙТИ ИНСТРУКЦИИ ПО СБОРКЕ КОНСТРУКТОРА ЛЕГО?
+              %p Владислав
+              %article.faq_i_answer
+                %a{href: "#", class: "faq_i_answer_close"}
+                  %i.fa.fa-times
+                %p Мы&nbsp;&mdash; сеть розничных магазинов ЛЕГО. Мы&nbsp;не&nbsp;являемся представительством компании ЛЕГО в&nbsp;России и&nbsp;не&nbsp;обладаем полномочиями по&nbsp;продаже франшизы магазинов ЛЕГО, консультациям по&nbsp;открытию магазинов и&nbsp;организации продаж продукции ЛЕГО на&nbsp;территории России.
+
+    .m-b_6
+      = haml 'views/layouts/_slider'.to_sym
+    .ctn
+      = haml 'views/layouts/_summary'.to_sym
