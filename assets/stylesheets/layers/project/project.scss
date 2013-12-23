@@ -596,21 +596,22 @@
 
 //****************************************************************************************************
 //
-// .. COOPERATION
+// .. INFO BLOCK
 //
 //****************************************************************************************************
-.cooperation {
-  border: 15px solid #fcc802;
+.info-block {
+  border: 15px solid $yellow-color;
   padding: 40px 50px;
 }
-  .cooperation_header {
+  .info-block_header {
     color: $major-color;
     font-family: $h-font-family;
     font-size: 30px;
     line-height: 32px;
     text-transform: uppercase;
   }
-  .cooperation_body {
+  .info-block_body {
+
     ol {
       li {
         padding-left: 80px;
@@ -634,7 +635,69 @@
         a {color: #ef0205;}
       }
     }
+
+    table {
+      width: 100%;
+      thead {
+        text-align: left;
+        th {
+          font-weight: 400;
+        }
+      }
+      tbody {
+        td {
+          font-family: $h-font-family;
+          font-size: 30px;
+          line-height: 45px;
+        }
+      }
+    }
+
   }
+
+
+
+//****************************************************************************************************
+//
+// .. JOBS
+//
+//****************************************************************************************************
+.jobs {
+  ol {
+    li {
+      padding-left: 80px;
+      position: relative;
+      span {
+        font-family: $h-font-family;
+        font-size: 30px;
+        line-height: 58px;
+        vertical-align: middle;
+      }
+      &:not(:last-child) {margin-bottom: 10px;}
+      &::before {
+        background-color: #ea030a;
+        border-radius: 50%;
+        content: attr(data-count);
+        color: #fff;
+        font-family: $h-font-family;
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 58px;
+        height: 58px;
+        text-align: center;
+        line-height: 58px;
+      }
+      a {color: #ef0205;}
+    }
+  }
+}
+
+.jobs-item {
+  background-color: #fff;
+  padding: 30px;
+}
 
 
 
