@@ -1,0 +1,17 @@
+%figure.catalog_i
+  %a{href: "#"}
+    %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg", class: "catalog_i_img", alt: "Скоростной низколетящий десантный корабль и транспортный шагоход", width: 200, height: 150}
+  %figcaption
+    .catalog_i_number Звездные войны <span>23523</span>
+    .catalog_i_name
+      %a{href: "#"} Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход
+    .catalog_i_price.__old 25400 руб.
+    .catalog_i_price.__current
+      %span 20200
+      &nbsp;
+      %span.catalog_i_price_currency руб.
+    .catalog_i_action.cf
+      .f-l
+        %a{href: "#", class: "form_button __s __red"} В корзину
+      .f-r
+        %a{href: "#", class: "form_button __s __orange"} Проверить<br>наличие

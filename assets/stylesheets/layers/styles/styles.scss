@@ -133,11 +133,18 @@ h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .epsilon, .zeta {font-fam
   }
 
   &.__default {color: $base-color;}
-  &.__brand   {color: $brand-color;}
-  &.__white   {color: #fff;}
+  &.__major   {color: $major-color;}
+  &.__minor   {color: $minor-color;}
+
+  &.__white  {color: #fff;}
+  &.__green  {color: #52b200;}
+  &.__red    {color: #ea030a;}
+  &.__lime   {color: #80ca00;}
+  &.__orange {color: #f48f01;}
+  &.__yellow {color: #fcc802;}
 
   &.__xxs {font-size: $tx-xxs-font-size;}
-  &.__xs  {font-size: $tx-xs-font-size;}
+  &.__xs  {font-size: $tx-xs-font-size; line-height: 20px;}
   &.__s   {font-size: $tx-s-font-size;}
   &.__m   {font-size: $tx-m-font-size;}
   &.__l   {font-size: $tx-l-font-size;}

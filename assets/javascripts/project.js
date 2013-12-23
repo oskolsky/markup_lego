@@ -1,7 +1,11 @@
-
 $(function() {
-  
-  $.stickyFooter();
+
+  //****************************************************************************************************
+  //
+  // .. JQUERY UI TABS
+  //
+  //****************************************************************************************************
+  $('.tabs').tabs();
 
 
 
@@ -43,12 +47,18 @@ $(function() {
   // .. SLIDERS
   //
   //****************************************************************************************************
-  $('#cycle-2-slider').cycle({
-    centerHorz: true,
-    centerVert: true,
-    speed: 1000,
+  $('.slider').find('.slides').cycle({
+    speed: 500,
     swipe: true,
-    timeout: 3000
+    timeout: 0,
+    slides: '.slide',
+//    pager: $(this).find('.slider_pager')
+    prev:  $(this).find('.slider_nav.__prev'),
+    next:  $(this).find('.slider_nav.__next')
+  });
+
+  $('.slider.__promo').on('cycle-after', function(event, opts) {
+    $('.header').css({backgroundImage: 'url(/assets/images/promo/bg_0' + opts.slideNum + '.png)'});
   });
 
 
@@ -149,8 +159,6 @@ $(function() {
   //
   //****************************************************************************************************
   $(window).smartresize(function() {
-
-    $.stickyFooter();
 
   });
   

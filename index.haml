@@ -1,2 +1,88 @@
-%section{role: "region", "aria-label" => ""}
+%header#header.header.__promo{role: "banner"}
   .ctn
+    = haml 'views/layouts/_header'.to_sym
+    %section.promo.p-t_5.p-b_3
+      .slider.__promo
+        .slides
+          .slide
+            .brick
+              %a{href: "#"}
+                %img{src: "/assets/images/promo/slide_01.png", width: 1220, alt: ""}
+          -#.slide.brick
+            %a{href: "#"}
+              %img{src: "/assets/images/promo/slide_02.png", width: 1220, alt: ""}
+        .slider_pager
+
+%section.news-slider.__index
+  .m-b_1
+    = haml 'views/layouts/_slider'.to_sym
+  .tx.__center
+    %a{href: "#", class: "share-link"}
+      Поделиться с друзьями
+      %img{src: "/assets/images/heart.png", alt: ""}
+
+%main#main.main{role: "main"}
+  %section.p-t_5.p-b_4{role: "region", "aria-label" => "Catalog"}
+    .tabs
+      .ctn
+        %ul.tabs_list
+          %li.tabs_i.grid-i.__grid-3
+            %a{href: "#tabs-1", class: "tabs_i_a __white"}
+              %i.ico.__35.__new
+              Наши новинки
+          %li.tabs_i.grid-i.__grid-3
+            %a{href: "#tabs-2", class: "tabs_i_a __red"}
+              %i.ico.__35.__percent
+              Распродажа
+          %li.tabs_i.grid-i.__grid-3
+            %a{href: "#tabs-3", class: "tabs_i_a __green"}
+              %i.ico.__35.__star
+              Эксклюзивы
+          %li.tabs_i.grid-i.__grid-3
+            %a{href: "#tabs-4", class: "tabs_i_a __orange"}
+              %i.ico.__35.__hellip
+              Все серии
+        #tabs-1
+          .catalog
+            .m-b_4
+              - 1.upto(12) do
+                .grid-i.__grid-3
+                  = haml 'views/catalog/_item'.to_sym
+            .catalog_all.beta
+              %a{href: "#", class: "tx __minor"}
+                Показать все новинки
+                %i.fa.fa-chevron-right
+        #tabs-2
+          .catalog
+            .m-b_4
+              - 1.upto(12) do
+                .grid-i.__grid-3
+                  = haml 'views/catalog/_item'.to_sym
+            .catalog_all.beta
+              %a{href: "#", class: "tx __minor"}
+                Показать все новинки
+                %i.fa.fa-chevron-right
+        #tabs-3
+          .catalog
+            .m-b_4
+              - 1.upto(12) do
+                .grid-i.__grid-3
+                  = haml 'views/catalog/_item'.to_sym
+            .catalog_all.beta
+              %a{href: "#", class: "tx __minor"}
+                Показать все новинки
+                %i.fa.fa-chevron-right
+        #tabs-4
+          .catalog
+            .m-b_4
+              - 1.upto(12) do
+                .grid-i.__grid-3
+                  = haml 'views/catalog/_item'.to_sym
+            .catalog_all.beta
+              %a{href: "#", class: "tx __minor"}
+                Показать все новинки
+                %i.fa.fa-chevron-right
+
+  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .ctn
+      = haml 'views/layouts/_summary'.to_sym

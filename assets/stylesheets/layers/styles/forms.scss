@@ -21,25 +21,51 @@ input::-ms-clear {display: none;}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
 
+.form_row {
+  &:not(:last-child) {margin-bottom: 15px;}
+}
+
 //
 // .. Button, reset, submit
 //
 .form_button {
-  padding: $form-btn-padding;
-  border: $form-el-border;
-  border-radius: $form-el-border-radius;
-  color: $form-el-color;
+  border: none;
+  color: #fff;
   cursor: pointer;
-  font-size: $form-el-font-size;
-  line-height: $form-el-line-height;
+  display: table-cell;
+  font-family: $h-font-family;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
   @include prefixes(box-sizing, border-box);
-  @include linear-gradient(vertical, #eee, #ddd);
-  &:not([disabled]):hover {box-shadow: inset 0 0 .3em rgba(0, 0, 0, .1);}
-  &:not([disabled]):active { @include linear-gradient(vertical, #ddd, #eee); }
+
+  &.__s {
+    border-radius: 3px;
+    font-size: 13px;
+    height: 40px;
+    padding: 0 15px;
+  }
+
+  &.__l {
+    border-radius: 3px;
+    font-size: 21px;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 15px;
+  }
+
+  &.__red    {background-color: $red-color;}
+  &.__orange {background-color: $orange-color;}
+
 }
 a.form_button {
   text-decoration: none;
   @include prefixes(transition, none);
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 //
@@ -160,23 +186,14 @@ a.form_button {
   vertical-align: top;
   @include prefixes(box-sizing, border-box);
   &::after {
-    right: .4rem;
-    width: 2rem;
-    height: 2rem;
-    line-height: 1.8;
-    content: "\f078";
-    border: $form-el-border;
-    border-radius: $form-el-border-radius;
-    color: #aaa;
+    right: 20px;
+    content: "\f0d7";
+    color: #f7a300;
     font-family: FontAwesome;
-    font-size: 1rem;
-    text-align: center;
-    text-indent: -.1rem;
-    @include prefixes(box-sizing, border-box);
+    font-size: 12px;
     @include prefixes(transform, translate(0, -50%));
   }
   &[disabled]::after {opacity: .5;}
-  &:not([disabled]):hover::after {border: .1em solid #aaa;}
   > p {margin-right: 2.4rem;}
 }
   
@@ -195,9 +212,9 @@ a.form_button {
 // .. Label
 //
 .form_label {
-  color: $form-el-color;
-  font-size: $form-el-font-size;
-  line-height: $form-el-line-height;
+  color: #1f2650;
+  font-size: 18px;
+  line-height: 45px;
   .form_checkbox,
   .form_radio {
     &.__fake {

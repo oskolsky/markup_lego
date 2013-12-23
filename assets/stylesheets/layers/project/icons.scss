@@ -7,16 +7,12 @@
   display: inline-block;
   background-color: transparent;
   background-repeat: no-repeat;
-  // &.__16 {
-  //   @include size(16, 16);
-  //   background-image: url(/assets/images/icons/ico-16.png);
-  //   &.__cat {background-position: 0 0;}
-  //   &.__dog {background-position: -16px 0;}
-  // }
-  // &.__32 {
-  //   @include size(32, 32);
-  //   background-image: url(/assets/images/icons/ico-32.png);
-  //   &.__eagle {background-position: 0 0;}
-  //   &.__stork {background-position: -32px 0;}
-  // }
+  &.__35 {
+     @include size(35px, 35px);
+     background-image: url(/assets/images/icons/ico-35.png);
+     &.__new     {background-position: 0 0;}
+     &.__percent {background-position: -35px 0;}
+     &.__star    {background-position: -70px 0;}
+     &.__hellip  {background-position: -105px 0;}
+  }
 }

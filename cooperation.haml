@@ -1,0 +1,61 @@
+%header#header.header.__yellow{role: "banner"}
+  .ctn
+    = haml 'views/layouts/_header'.to_sym
+
+%main#main.main{role: "main"}
+
+  %section.section.p-t_6.p-b_5{role: "region", "aria-label" => "Catalog"}
+    .ctn
+      %header.section_header.m-b_2
+        %h1.tx.__upper.__minor Сотрудничество
+        %nav.breadcrumbs
+          %a{href: "/", class: "breadcrumbs_i"} Главная
+          %i.fa.fa-chevron-right
+          %span.breadcrumbs_i Сотрудничество
+      %section.section_main
+        %article.cnt.m-b_3
+          %p Сеть монобрендовых магазинов LEGO представлена на&nbsp;российском рынке с&nbsp;2009&nbsp;года, является независимой коммерческой структурой и&nbsp;входит в&nbsp;группу компаний Inventive Retail Group.
+          %p Розничные магазины сети LEGO открыты в&nbsp;более чем 20&nbsp;городах России. Сеть продолжает активно развиваться, предлагая своим покупателям самый широкий ассортимент оригинальной продукции LEGO, высокое качество обслуживания, бонусные программы, акции и&nbsp;скидки.
+          %p Сеть магазинов LEGO работает напрямую с&nbsp;представительством LEGO Group в&nbsp;России и&nbsp;предоставляет гарантию на&nbsp;все товары. Так как сеть не&nbsp;является официальным представителем LEGO в&nbsp;России, мы&nbsp;не&nbsp;обладаем полномочиями по&nbsp;продаже франшизы магазинов LEGO, консультациям по&nbsp;открытию магазинов и&nbsp;организации продаж продукции LEGO на&nbsp;территории России. Также мы&nbsp;не&nbsp;продаем продукцию оптом для реализации другими магазинами.
+        %article.cooperation
+          %header.cooperation_header.m-b_3
+            %p Сеть магазинов LEGO открыта для сотрудничества по&nbsp;следующим&nbsp;направлениям:
+          .cooperation_body
+            %ol
+              %li{data: {count: 1}}
+                %b Аренда торговых площадей в&nbsp;торгово-развлекательных центрах.
+                %p Рассмотрим предложения по&nbsp;аренде торговых площадей в&nbsp;торговых центрах с&nbsp;высоким потребительским трафиком на&nbsp;территории России. Ваши предложения направляйте по&nbsp;адресу: <a href="mailto: stenko@inventive.ru">stenko@inventive.ru</a>
+              %li{data: {count: 2}}
+                %b Корпоративные продажи и&nbsp;закупки небольших партий товаров.
+                %p По&nbsp;вопросам корпоративных продаж и&nbsp;закупок небольших партий товаров без цели последующей перепродажи, а&nbsp;также аналогичным предложениям обращайтесь в&nbsp;отдел корпоративных продаж по&nbsp;телефону: +7 (495) 651-62-87 или электронному адресу: <a href="mailto: b2b@mir-kubikov.ru">b2b@mir-kubikov.ru</a>
+
+  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .m-b_5
+      %section
+        .ctn
+          .feedback.brick
+            %header.feedback_header
+              %h2 Задать свой вопрос
+            .feedback_body
+              %form.form
+                .form_row
+                  %label.form_label Имя
+                  %input{type: "text", class: "form_text grid-i __grid-3"}
+                .form_row
+                  %label.form_label E-mail
+                  %input{type: "text", class: "form_text grid-i __grid-3"}
+                .form_row
+                  %label.form_label Сообщение
+                  %textarea{class: "form_textarea grid-i __grid-7", rows: 4}
+                .form_row.m-b_3
+                  %label.form_label Код с картинки
+                  %input{type: "text", class: "form_text grid-i __grid-1"}
+                  %img{src: "/assets/images/fake/captcha.png", class: "feedback_captcha", alt: ""}
+                  %a{href: "#", class: "a __pseudo"} показать другую картинку
+                .form_row
+                  %input{type: "submit", class: "form_button __red __l grid-i __grid-3", value: "Отправить"}
+
+    .m-b_6
+      = haml 'views/layouts/_slider'.to_sym
+    .ctn
+      = haml 'views/layouts/_summary'.to_sym

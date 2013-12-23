@@ -36,7 +36,7 @@
 //
 // .. Layout type
 //
-$layout: fluid; // .. fixed / fluid / responsive
+$layout: fixed; // .. fixed / fluid / responsive
 $responsive: auto; // .. auto / manual
 $responsive-column-qty: 12; // .. 8 / 12
 
@@ -44,7 +44,7 @@ $responsive-column-qty: 12; // .. 8 / 12
 // .. Fixed layout variables
 //
 $column-qty:    12;
-$column-width:  60;
+$column-width:  83;
 $column-gutter: 20;
 
 //
@@ -93,8 +93,8 @@ $base-line-height-list: (25px, 25px, 25px);
 $h-font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 $h1-font-size-list: (40px, 40px, 40px);
-$h2-font-size-list: (24px, 24px, 24px);
-$h3-font-size-list: (2.5rem, 2.5rem, 2.5rem);
+$h2-font-size-list: (28px, 28px, 28px);
+$h3-font-size-list: (24px, 24px, 24px);
 $h4-font-size-list: (2rem, 2rem, 2rem);
 $h5-font-size-list: (inherit, inherit, inherit);
 $h6-font-size-list: (inherit, inherit, inherit);
@@ -116,13 +116,20 @@ $h6-line-height-list: (inherit, inherit, inherit);
 //
 // .. Colors
 //
-$brand-color: #e30613;
-$extra-color: #654321;
+$major-color: #e30613;
+$minor-color: #141f4e;
+
+
+$green-color:  #52b200;
+$red-color:    #ea030a;
+$lime-color:   #80ca00;
+$orange-color: #f48f01;
+$yellow-color: #fcc802;
 
 //
 // .. Links
 //
-$link-color: #0068a5;
+$link-color: #15295d;
 $link-color-hover: $link-color;
 $link-color-active: $link-color;
 $link-style: un;        // .. nn / uu / un / nu
@@ -132,22 +139,22 @@ $link-style-pseudo: uu; // .. nn / uu / un
 // .. Forms
 //
 $form-el-bg: #fff;
-$form-el-border-color: #ccc;
+$form-el-border-color: #cdcdcd;
 $form-el-border: 1px solid $form-el-border-color;
 $form-el-border-radius: .3em;
-$form-el-color: #000;
+$form-el-color: #141f4e;
 $form-el-color-required: #f90;
 $form-el-color-valid-true: #008000;
 $form-el-color-valid-false: #f00;
-$form-el-font-size: inherit;
-$form-el-line-height: inherit;
-$form-el-padding: .3rem .6rem;
+$form-el-font-size: 14px;
+$form-el-line-height: 20px;
+$form-el-padding: 10px 16px;
 $form-btn-padding: .3rem 1.2rem;
 
 //
 // .. Content styles
 //
-$content-factor: 2;
+$content-factor: 2.5;
 $content-link: false; // .. true / false
 $content-link-color: #0000cd;
 $content-link-color-hover: #ccc;
