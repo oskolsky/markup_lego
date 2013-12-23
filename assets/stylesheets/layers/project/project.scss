@@ -443,7 +443,21 @@
 .slider {
   position: relative;
   &.__text {
-
+    .slider_pager {
+      text-align: center;
+      padding: 10px 0;
+      span {
+        background-color: #d0cccc;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        margin-right: 20px;
+        &.cycle-pager-active {background-color: #eb1c24;}
+      }
+    }
   }
   &.__promo {
 

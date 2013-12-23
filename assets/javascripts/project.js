@@ -52,7 +52,6 @@ $(function() {
     swipe: true,
     timeout: 0,
     slides: '.slide',
-//    pager: $(this).find('.slider_pager')
     prev:  $(this).find('.slider_nav.__prev'),
     next:  $(this).find('.slider_nav.__next')
   });
