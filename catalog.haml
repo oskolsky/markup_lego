@@ -47,19 +47,18 @@
               - 1.upto(12) do
                 .grid-i.__grid-3
                   = haml 'views/catalog/_item'.to_sym
-            .tx.__center
-              %nav
-                %ul.pagination
-                  %li.pagination_i
-                    %a{href: "#", class: "pagination_i_a __current"} 1
-                  %li.pagination_i
-                    %a{href: "#", class: "pagination_i_a"} 2
-                  %li.pagination_i
-                    %a{href: "#", class: "pagination_i_a"} 3
-                  %li.pagination_i
-                    %a{href: "#", class: "pagination_i_a"} 4
-                  %li.pagination_i
-                    %a{href: "#", class: "pagination_i_a"} 5
+            %nav.tx.__center
+              %ul.pagination.__catalog
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a __current"} 1
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 2
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 3
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 4
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 5
 
   %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
     .m-b_6

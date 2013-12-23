@@ -380,11 +380,26 @@
   border: 15px solid transparent;
   padding: 35px;
   &:not(:last-child) {margin-bottom: 25px;}
-  &.__green  {border-color: $green-color;}
-  &.__red    {border-color: $red-color;}
-  &.__lime   {border-color: $lime-color;}
-  &.__orange {border-color: $orange-color;}
-  &.__yellow {border-color: $yellow-color;}
+  &.__green  {
+    border-color: $green-color;
+    .articles_i_caption_more::before {background-color: $green-color;}
+  }
+  &.__red    {
+    border-color: $red-color;
+    .articles_i_caption_more::before {background-color: $red-color;}
+  }
+  &.__lime   {
+    border-color: $lime-color;
+    .articles_i_caption_more::before {background-color: $lime-color;}
+  }
+  &.__orange {
+    border-color: $orange-color;
+    .articles_i_caption_more::before {background-color: $orange-color;}
+  }
+  &.__yellow {
+    border-color: $yellow-color;
+    .articles_i_caption_more::before {background-color: $yellow-color;}
+  }
   &.brick {
     &::before {
       top: -15px;
@@ -404,7 +419,7 @@
   img {vertical-align: top;}
 }
 .articles_i_caption {
-  margin-left: -75px;
+  margin-left: -95px;
 }
 .articles_i_caption_t {
   text-transform: uppercase;
@@ -418,7 +433,6 @@
   &:hover {color: inherit;}
   &::before {
     content: '\f078';
-    background-color: $green-color;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -759,16 +773,20 @@
 // .. Pagination
 //
 .pagination {
-
-}
-  .pagination_i {
-    display: inline-block;
-    margin: 0 5px;
+  &.__page {
+    .pagination_i_a {color: #0b113c;}
   }
+  &.__catalog {
+    .pagination_i {margin: 0 5px;}
     .pagination_i_a {
       border: 1px solid #ccc;
-      border-radius: 50%;
       color: #eb1c24;
+    }
+  }
+}
+  .pagination_i {display: inline-block;}
+    .pagination_i_a {
+      border-radius: 50%;
       display: block;
       font-family: $h-font-family;
       line-height: 38px;
@@ -779,8 +797,8 @@
       &.__current,
       &:hover {
         background-color: #eb1c24;
-        border-color: transparent;
-        color: #fff;
+        border-color: transparent !important;
+        color: #fff !important;
       }
     }
 
