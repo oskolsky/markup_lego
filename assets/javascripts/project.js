@@ -51,9 +51,7 @@ $(function() {
     speed: 500,
     swipe: true,
     timeout: 0,
-    slides: '.slide',
-    prev:  $(this).find('.slider_nav.__prev'),
-    next:  $(this).find('.slider_nav.__next')
+    slides: '.slide'
   });
 
   $('.slider.__promo').on('cycle-after', function(event, opts) {

@@ -198,8 +198,6 @@
 .news-slider {
   margin: 0 auto;
   width: 1252px;
-  height: 227px;
-  overflow: hidden;
   &.__index {
     position: relative;
     top: -40px;
@@ -465,6 +463,7 @@
   &.__news {
     .slides {
       height: 227px;
+      overflow: hidden;
     }
       .slide {
         margin-right: 19px;

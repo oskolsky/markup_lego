@@ -1,7 +1,7 @@
 .news-slider
   .slider.__news
-    .slides{data: {cycle_fx: "carousel"}}
-      - 1.upto(2) do
+    .slides{data: {cycle_fx: "carousel", cycle_prev: ".slider_nav.__prev.__news", cycle_next: ".slider_nav.__next.__news"}}
+      - 1.upto(3) do
         .slide.brick
           %a{href: "#"}
             %img{src: "/assets/images/fake/img_390_215_01.png", class: "va-t", width: "100%", alt: ""}
@@ -11,7 +11,7 @@
         .slide.brick
           %a{href: "#"}
             %img{src: "/assets/images/fake/img_390_215_03.png", class: "va-t", width: "100%", alt: ""}
-    %a{href: "#", class: "slider_nav __prev"}
+    %a{href: "#", class: "slider_nav __prev __news"}
       %i.fa.fa-chevron-left
-    %a{href: "#", class: "slider_nav __next"}
+    %a{href: "#", class: "slider_nav __next __news"}
       %i.fa.fa-chevron-right
