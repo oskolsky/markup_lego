@@ -1,0 +1,124 @@
+%header#header.header.__yellow{role: "banner"}
+  .ctn
+    = haml 'views/layouts/_header'.to_sym
+
+%main#main.main{role: "main"}
+
+  %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Bonuses"}
+    .ctn
+      %header.section_header.m-b_1
+        %h1.tx.__upper.__minor Новости
+        %nav.breadcrumbs
+          %a{href: "/", class: "breadcrumbs_i"} Главная
+          %i.fa.fa-chevron-right
+          %span.breadcrumbs_i Новости
+      %section.section_main.m-b_3
+
+        .articles.__news
+          %figure.articles_i.__green.brick
+            .grid
+              .grid-i.__grid-2
+                .articles_i_date
+                  %p.gamma 7 НОЯБРЯ
+                  %p.gamma 2013
+              .grid-i.__grid-2
+                .articles_i_photo
+                  %a{href: "#"}
+                    %img{src: "/assets/images/blank.gif", width: "166", height: "130", class: "c-bg __gray"}
+              .grid-i.__grid-7
+                %figcaption.articles_i_caption
+                  %h2.articles_i_caption_t Новый магазин LEGO в Санкт-Петербурге
+                  %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
+                  %p
+                    %a{href: "#", class: "articles_i_caption_more"} далее
+          %figure.articles_i.__red.brick
+            .grid
+              .grid-i.__grid-2
+                .articles_i_date
+                  %p.gamma 7 НОЯБРЯ
+                  %p.gamma 2013
+              .grid-i.__grid-2
+                .articles_i_photo.c-bg.__red
+                  %a{href: "#"}
+                    %img{src: "/assets/images/blank.gif", width: "166", height: "130", class: "c-bg __gray"}
+              .grid-i.__grid-7
+                %figcaption.articles_i_caption
+                  %h2.articles_i_caption_t Новый магазин LEGO в Санкт-Петербурге
+                  %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
+                  %p
+                    %a{href: "#", class: "articles_i_caption_more"} далее
+          %figure.articles_i.__lime.brick
+            .grid
+              .grid-i.__grid-2
+                .articles_i_date
+                  %p.gamma 7 НОЯБРЯ
+                  %p.gamma 2013
+              .grid-i.__grid-2
+                .articles_i_photo.c-bg.__red
+                  %a{href: "#"}
+                    %img{src: "/assets/images/blank.gif", width: "166", height: "130", class: "c-bg __gray"}
+              .grid-i.__grid-7
+                %figcaption.articles_i_caption
+                  %h2.articles_i_caption_t Новый магазин LEGO в Санкт-Петербурге
+                  %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
+                  %p
+                    %a{href: "#", class: "articles_i_caption_more"} далее
+          %figure.articles_i.__orange.brick
+            .grid
+              .grid-i.__grid-2
+                .articles_i_date
+                  %p.gamma 7 НОЯБРЯ
+                  %p.gamma 2013
+              .grid-i.__grid-2
+                .articles_i_photo.c-bg.__red
+                  %a{href: "#"}
+                    %img{src: "/assets/images/blank.gif", width: "166", height: "130", class: "c-bg __gray"}
+              .grid-i.__grid-7
+                %figcaption.articles_i_caption
+                  %h2.articles_i_caption_t Новый магазин LEGO в Санкт-Петербурге
+                  %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
+                  %p
+                    %a{href: "#", class: "articles_i_caption_more"} далее
+          %figure.articles_i.__yellow.brick
+            .grid
+              .grid-i.__grid-2
+                .articles_i_date
+                  %p.gamma 7 НОЯБРЯ
+                  %p.gamma 2013
+              .grid-i.__grid-2
+                .articles_i_photo.c-bg.__red
+                  %a{href: "#"}
+                    %img{src: "/assets/images/blank.gif", width: "166", height: "130", class: "c-bg __gray"}
+              .grid-i.__grid-7
+                %figcaption.articles_i_caption
+                  %h2.articles_i_caption_t Новый магазин LEGO в Санкт-Петербурге
+                  %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
+                  %p
+                    %a{href: "#", class: "articles_i_caption_more"} далее
+      %footer.section_footer
+        %nav.tx.__right
+          %ul.pagination.__page
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a __current"} 1
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 2
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 3
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 4
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 5
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 6
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 7
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 8
+            %li.pagination_i
+              %a{href: "#", class: "pagination_i_a"} 9
+
+  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .m-b_6
+      = haml 'views/layouts/_slider'.to_sym
+    .ctn
+      = haml 'views/layouts/_summary'.to_sym
