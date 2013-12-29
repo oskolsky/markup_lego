@@ -14,6 +14,42 @@
           %span.breadcrumbs_i Новости
       %section.section_main.m-b_3
 
+        %nav.p-t_3.p-b_2.cf
+          %ul.articles-filter.f-l
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __l"} 2010
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __l"} 2011
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __l"} 2012
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __l __current"} 2013
+          %ul.articles-filter.f-r
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} ЯНВ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} ФЕВ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} МАРТ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} АПР
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} МАЙ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} ИЮНЬ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} ИЮЛЬ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} АВГ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} СЕН
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} ОКТ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s"} НОЯ
+            %li.articles-filter_i
+              %a{href: "#", class: "articles-filter_i_a __s __current"} ВСЕ
+
         .articles.__news
           %figure.articles_i.__green.brick
             .grid
@@ -31,22 +67,30 @@
                   %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
                   %p
                     %a{href: "#", class: "articles_i_caption_more"} далее
-          %figure.articles_i.__red.brick
+
+          %figure.articles_i.__red.__open.brick
             .grid
               .grid-i.__grid-2
                 .articles_i_date
                   %p.gamma 7 НОЯБРЯ
                   %p.gamma 2013
-              .grid-i.__grid-2
-                .articles_i_photo.c-bg.__red
-                  %a{href: "#"}
-                    %img{src: "/assets/images/blank.gif", width: "166", height: "130", class: "c-bg __gray"}
-              .grid-i.__grid-7
-                %figcaption.articles_i_caption
-                  %h2.articles_i_caption_t Новый магазин LEGO в Санкт-Петербурге
-                  %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
-                  %p
-                    %a{href: "#", class: "articles_i_caption_more"} далее
+              .grid-i.__grid-9
+
+              -#.grid-i.__grid-2
+              -#  .articles_i_date
+              -#    %p.gamma 7 НОЯБРЯ
+              -#    %p.gamma 2013
+              -#.grid-i.__grid-2
+              -#  .articles_i_photo.c-bg.__red
+              -#    %a{href: "#"}
+              -#      %img{src: "/assets/images/blank.gif", width: "166", height: "130", class: "c-bg __gray"}
+              -#.grid-i.__grid-7
+              -#  %figcaption.articles_i_caption
+              -#    %h2.articles_i_caption_t Новый магазин LEGO в Санкт-Петербурге
+              -#    %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
+              -#    %p
+              -#      %a{href: "#", class: "articles_i_caption_more"} далее
+
           %figure.articles_i.__lime.brick
             .grid
               .grid-i.__grid-2
@@ -95,6 +139,7 @@
                   %p В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.
                   %p
                     %a{href: "#", class: "articles_i_caption_more"} далее
+
       %footer.section_footer
         %nav.tx.__right
           %ul.pagination.__page

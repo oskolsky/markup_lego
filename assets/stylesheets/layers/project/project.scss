@@ -164,8 +164,10 @@
   padding: 0 15px;
   text-decoration: none;
   text-transform: uppercase;
+  @include prefixes(transition, all .33s ease);
   &:hover {
-    color: #1e275b;
+    background-color: $major-color;
+    color: #fff;
   }
 }
 
@@ -548,6 +550,10 @@
           color: $yellow-color;
         }
       }
+
+      &.__open {
+        background-color: $base-bg;
+      }
     }
 
     .articles_i_date {
@@ -594,6 +600,38 @@
   }
 
 }
+
+
+
+//****************************************************************************************************
+//
+// .. ARTICLES FILTER
+//
+//****************************************************************************************************
+.articles-filter {
+  display: inline-block;
+}
+  .articles-filter_i {
+    display: inline-block;
+  }
+    .articles-filter_i_a {
+      border-radius: 20px;
+      font-family: $h-font-family;
+      text-decoration: none;
+      @include prefixes(transition, all .33s ease);
+      &.__s {
+        font-size: 25px;
+        padding: 6px 8px 4px;
+      }
+      &.__l {
+        font-size: 40px;
+        padding: 0 12px;
+      }
+      &.__current, &:hover {
+        background-color: $major-color;
+        color: #fff;
+      }
+    }
 
 
 
@@ -1086,6 +1124,7 @@ a.breadcrumbs_i {
   height: 38px;
   text-align: center;
   text-decoration: none;
+  @include prefixes(transition, all .33s ease);
   &.__current,
   &:hover {
     background-color: #eb1c24;
