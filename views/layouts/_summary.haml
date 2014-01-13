@@ -1,13 +1,11 @@
 .grid
-  .grid-i.__grid-6
+  .grid-i.__grid-6>
     .slider.__text.m-b_2
       .slides{data: {cycle_pager: "#slider-pager-text-1"}}
-        - 1.upto(3) do |i|
+        - 1.upto(3) do
           .slide
             %article
-              %h2.m-b_2
-                = i
-                &nbsp;. Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей
+              %h2.m-b_2 Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей
               %p.tx.__l.m-b_2
                 %b Конструкторы LEGO&nbsp;&mdash;&nbsp;
                 это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
@@ -15,17 +13,14 @@
       #slider-pager-text-1.slider_pager
     .slider.__text
       .slides{data: {cycle_pager: "#slider-pager-text-2"}}
-        - 1.upto(3) do |i|
+        - 1.upto(3) do
           .slide
             %article
-              %h2.m-b_1
-                = i
-                &nbsp;.
-                Почему стоит воспользоваться нашими&nbsp;услугами?
+              %h2.m-b_1 Почему стоит воспользоваться нашими&nbsp;услугами?
               %p.tx.__xs.m-b_2 Во-первых, на&nbsp;нашем сайте представлены лучшие товары LEGO, которые можно купить по&nbsp;рекомендованной производителем цене в&nbsp;магазинах своего города.
               %p.tx.__xs Во-вторых, периодически у&nbsp;нас проходят сезонные супер-акции, в&nbsp;которых можно участвовать и&nbsp;получать за&nbsp;это приятные сюрпризы и&nbsp;скидки до&nbsp;50%.
       #slider-pager-text-2.slider_pager
-  .grid-i.__grid-6
+  .grid-i.__grid-6>
     %section.subscription
       .subscription_form
         %p.beta.tx.__white.m-b_2 Подпишись и узнай первым!

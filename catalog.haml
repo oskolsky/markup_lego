@@ -14,7 +14,7 @@
           %span.breadcrumbs_i Каталог
       %section.section_main
         .grid
-          .grid-i.__grid-3
+          .grid-i.__grid-3>
             .catalog-filter.__vert
               %form.form
                 .m-b_4
@@ -42,10 +42,10 @@
                       %option Тема два
                       %option Тема три
 
-          .grid-i.__grid-9
+          .grid-i.__grid-9>
             .catalog.m-b_3
               - 1.upto(12) do
-                .grid-i.__grid-3
+                .grid-i.__grid-3>
                   = haml 'views/catalog/_item'.to_sym
             %nav.tx.__center
               %ul.pagination.__catalog

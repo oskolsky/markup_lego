@@ -896,6 +896,14 @@
   background-color: #fff;
   padding: 30px;
 }
+  .jobs-item_header {
+
+  }
+  .jobs-item_body {
+    display: none;
+  }
+
+
 
 //****************************************************************************************************
 //
@@ -1187,4 +1195,6 @@ a.breadcrumbs_i {
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
+  @include prefixes(transition, all .33s ease);
+  &:hover {color: $major-color;}
 }
