@@ -1,0 +1,72 @@
+%header#header.header.__yellow{role: "banner"}
+  .ctn
+    = haml 'views/layouts/_header'.to_sym
+
+%main#main.main{role: "main"}
+
+  %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Bonuses"}
+    .ctn
+      %header.section_header.m-b_1
+        %h1.tx.__upper.__minor Спасибо за Ваш заказ
+      %section.section_main.m-b_3
+        .gratitude
+          .grid.m-b_1
+            .grid-i.__grid-8>
+              %table.table.m-b_3
+                %thead
+                  %tr
+                    %th Наименование
+                    %th Количество
+                    %th Итоговая стоимость
+                %tbody
+                  - 1.upto(3) do
+                    %tr
+                      %td
+                        %p.table_number
+                          Звездные войны
+                          %span 23523
+                        %p.table_name
+                          %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
+                      %td 1
+                      %td
+                        .price.__rub.__m.format-money
+                          = rand(500..10000)
+              .gratitude_summary
+                %dl.grid
+                  %dt.grid-i.__grid-2
+                    Стоимость доставки:
+                  %dd.grid-i.__grid-2
+                    .price.__rub.__s.format-money
+                      = rand(10..1000)
+                %dl.grid
+                  %dt.grid-i.__grid-2
+                    Бонусы начисленные:
+                  %dd.grid-i.__grid-2
+                    = rand(10..99)
+                %dl.grid.m-b_1
+                  %dt.grid-i.__grid-2
+                    Бонусы списанные:
+                  %dd.grid-i.__grid-2
+                    0
+                %dl.grid
+                  %dt.grid-i.__grid-1.va-bl
+                    Итого:
+                  %dd.grid-i.__grid-3.va-bl
+                    .price.__rub.__l.format-money
+                      = rand(500..10000)
+            .grid-i.__grid-4>
+              .gratitude_total
+                .gratitude_total_inner
+                  %p Итого:
+                  .price.__rub.__l.format-money
+                    = rand(500..10000)
+          %article.gratitude_info
+            %p Мы обработаем ваш заказ и успеем доставить его <b>завтра, 21.09.2013</b>. Уточнить условия доставки Вы сможете <a href="#">здесь</a>.
+            %p Заказ вы можете оплатить при получении <b>наличными</b> или <b>банковской картой</b> курьеру
+            %p Детали заказа будут отправлены на <a href="#">ionova@ruformat.ru</a>
+
+  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .ctn
+      .m-b_5
+        = haml 'views/common/_catalog'.to_sym
+      = haml 'views/common/_share'.to_sym

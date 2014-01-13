@@ -196,6 +196,8 @@
   @include prefixes(transform, translate(0, -50%));
 }
 
+
+
 //****************************************************************************************************
 //
 // .. PROMO
@@ -208,6 +210,8 @@
 .promo_slider {
 
 }
+
+
 
 //****************************************************************************************************
 //
@@ -222,6 +226,8 @@
     top: -40px;
   }
 }
+
+
 
 //****************************************************************************************************
 //
@@ -243,6 +249,8 @@
 .section_footer {
 
 }
+
+
 
 //****************************************************************************************************
 //
@@ -316,6 +324,8 @@
     color: #fff;
   }
 }
+
+
 
 //****************************************************************************************************
 //
@@ -412,6 +422,8 @@
     vertical-align: middle;
   }
 }
+
+
 
 //****************************************************************************************************
 //
@@ -784,6 +796,9 @@
 //    }
 //  }
 
+
+
+
 //****************************************************************************************************
 //
 // .. INFO BLOCK
@@ -850,6 +865,8 @@
   }
 
 }
+
+
 
 //****************************************************************************************************
 //
@@ -957,6 +974,66 @@
   }
 }
 
+
+
+//****************************************************************************************************
+//
+// .. GRATITUDE
+//
+//****************************************************************************************************
+.gratitude {
+
+}
+  .gratitude_summary {
+    text-align: right;
+    dl {
+      dt {
+        font-size: 15px;
+        line-height: 30px;
+        height: 30px;
+        text-align: left;
+      }
+      dd {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        height: 30px;
+        text-align: left;
+      }
+    }
+  }
+  .gratitude_total {
+    background-color: #fbbc04;
+    border-radius: 50%;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+    width: 340px;
+  }
+    .gratitude_total_inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include prefixes(transform, translate(-50%, -50%));
+      p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 40px;
+      }
+      .price {
+        color: #fff !important;
+        white-space: nowrap;
+      }
+    }
+  .gratitude_info {
+    color: #464646;
+    font-size: 17px;
+    line-height: 23px;
+    a {color: #f7a300;}
+  }
+
+
+
 //****************************************************************************************************
 //
 // .. FEEDBACK
@@ -991,6 +1068,8 @@
   margin: 0 10px;
   vertical-align: middle;
 }
+
+
 
 //****************************************************************************************************
 //
@@ -1053,11 +1132,37 @@
   border-radius: 6px;
 }
 
+
+
 //****************************************************************************************************
 //
 // .. ELEMENTS
 //
 //****************************************************************************************************
+//
+// .. Price
+//
+.price {
+  display: inline-block;
+  &.__rub {
+    color: $minor-color;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &.__s {
+    font-size: 24px;
+    span {font-size: 18px;}
+  }
+  &.__m {
+    font-size: 28px;
+    span {font-size: 18px;}
+  }
+  &.__l {
+    font-size: 50px;
+    span {font-size: 28px;}
+  }
+}
+
 //
 // .. Brick
 //
@@ -1155,6 +1260,84 @@ a.breadcrumbs_i {
   }
 }
 
+//
+// .. Share block
+//
+.share {
+  text-align: center;
+}
+  .share_t {
+    color: #212121;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+  }
+  .share_nav {
+
+  }
+    .share_nav_i {
+      display: inline-block;
+      margin: 0 5px;
+      .ico {vertical-align: top;}
+    }
+
+//
+// .. Table
+//
+.table {
+  thead {
+    th {
+      border-bottom: 1px solid #ccc;
+      color: #999;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      padding-top:    10px;
+      padding-bottom: 10px;
+      text-align: left;
+      white-space: nowrap;
+      &:not(:last-child) {padding-right: 80px;}
+    }
+  }
+  tbody {
+    td {
+      border-bottom: 1px solid #ccc;
+      padding-top:    20px;
+      padding-bottom: 20px;
+      vertical-align: middle;
+      &:not(:last-child) {padding-right: 80px;}
+    }
+  }
+}
+  //
+  // .. Table lements
+  //
+  .table_number {
+    color: #727272;
+    font-size: 11px;
+    line-height: 20px;
+    span {color: #292929;}
+  }
+  .table_name {
+    font-size: 15px;
+    line-height: 20px;
+    a {
+      text-decoration: none;
+      &:hover {color: $major-color;}
+    }
+  }
+
+//
+// .. Catalog block
+//
+.catalog-block {
+  background-color: #fff;
+  padding: 50px 30px;
+}
+
+
+
 //****************************************************************************************************
 //
 // .. SUMMARY INFO
@@ -1164,6 +1347,8 @@ a.breadcrumbs_i {
   color: $minor-color;
   background: #f5f5f5 url(/assets/images/pattern.png) center repeat;
 }
+
+
 
 //****************************************************************************************************
 //
@@ -1195,6 +1380,5 @@ a.breadcrumbs_i {
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  @include prefixes(transition, all .33s ease);
   &:hover {color: $major-color;}
 }

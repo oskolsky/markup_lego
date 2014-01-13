@@ -15,4 +15,11 @@
      &.__star    {background-position: -70px 0;}
      &.__hellip  {background-position: -105px 0;}
   }
+  &.__58 {
+    @include size(58px, 58px);
+    background-image: url(/assets/images/icons/ico-58.png);
+    &.__vk {background-position: 0 0;}
+    &.__fb {background-position: -58px 0;}
+    &.__ok {background-position: -116px 0;}
+  }
 }

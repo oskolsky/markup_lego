@@ -27,11 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 // .. LINKS
 //
 //****************************************************************************************************
-@if $link-style == nn or $link-style == uu { 
-  
-  a { @include prefixes(transition, color .33s); } 
-
-}
+a { @include prefixes(transition, color .33s); }
 
 @if $link-style == nn {
   
