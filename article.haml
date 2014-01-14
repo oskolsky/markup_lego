@@ -13,43 +13,8 @@
           %i.fa.fa-chevron-right
           %span.breadcrumbs_i Новости
       %section.section_main.m-b_3
-
         %nav.p-t_3.p-b_2.cf
-          %ul.articles-filter.f-l>
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __l"} 2010
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __l"} 2011
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __l"} 2012
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __l __current"} 2013
-          %ul.articles-filter.f-r>
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} ЯНВ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} ФЕВ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} МАРТ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} АПР
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} МАЙ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} ИЮНЬ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} ИЮЛЬ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} АВГ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} СЕН
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} ОКТ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s"} НОЯ
-            %li.articles-filter_i>
-              %a{href: "#", class: "articles-filter_i_a __s __current"} ВСЕ
-
+          = haml 'views/common/_article_filter'.to_sym
         .articles.__news
           %article.articles_i.__green.brick
             .articles_i_announcement
@@ -134,25 +99,8 @@
 
       %footer.section_footer
         %nav.tx.__right
-          %ul.pagination.__page
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a __current"} 1
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 2
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 3
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 4
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 5
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 6
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 7
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 8
-            %li.pagination_i
-              %a{href: "#", class: "pagination_i_a"} 9
+          = haml 'views/common/_article_pagination'.to_sym
+
 
   %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
     .m-b_6

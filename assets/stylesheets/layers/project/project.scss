@@ -358,6 +358,14 @@
 
   &.__horz {
 
+    text-align: right;
+
+    .catalog-filter_i {
+      display: inline-block;
+      vertical-align: top;
+      &:not(:first-child) {margin-left: 20px;}
+    }
+
     .form_checkbox {margin-top: 6px;}
 
   }

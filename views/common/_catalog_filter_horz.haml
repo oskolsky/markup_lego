@@ -1,0 +1,30 @@
+.catalog-filter.__horz
+  %form.form
+    .catalog-filter_i
+      %label.form_label.__m
+        %span.form_checkbox.form_el.__fake
+          %input.form_checkbox.form_el.__real{type: "checkbox"}
+        новинки
+    .catalog-filter_i
+      %label.form_label.__m
+        %span.form_checkbox.form_el.__fake
+          %input.form_checkbox.form_el.__real{type: "checkbox"}
+        акция
+    .catalog-filter_i
+      %label.form_label.__m.va-m Сортировать по
+      &nbsp;
+      .form_select.form_el.__fake.va-m
+        %p &nbsp;
+        %select.form_select.form_el.__real
+          %option{selected: "selected"} дате (сначала новые)
+          %option дате (сначала старые)
+          %option цене
+          %option названию
+    .catalog-filter_i
+      %label.form_label.__m.va-m Отображать по
+      &nbsp;
+      .form_select.form_el.__fake.va-m
+        %p &nbsp;
+        %select.form_select.form_el.__real
+          %option{selected: "selected"} 12
+          %option 50
