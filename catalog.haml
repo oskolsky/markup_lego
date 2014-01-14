@@ -7,17 +7,51 @@
   %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Catalog"}
     .ctn
       %header.section_header.m-b_2
-        %h1.tx.__upper.__minor Каталог LEGO
-        %nav.breadcrumbs
-          %a{href: "/", class: "breadcrumbs_i"} Главная
-          %i.fa.fa-chevron-right
-          %span.breadcrumbs_i Каталог
+        .grid
+          .grid-i.__grid-4>
+            %h1.tx.__upper.__minor Каталог LEGO
+            %nav.breadcrumbs
+              %a{href: "/", class: "breadcrumbs_i"} Главная
+              %i.fa.fa-chevron-right
+              %span.breadcrumbs_i Каталог
+          .grid-i.__grid-8>
+            .catalog-filter.__horz
+              %form.form
+                .grid.__no-gutter
+                  .grid-i.__grid-1>
+                    %label.form_label.__m
+                      %span.form_checkbox.form_el.__fake
+                        %input.form_checkbox.form_el.__real{type: "checkbox"}
+                      новинки
+                  .grid-i.__grid-1>
+                    %label.form_label.__m
+                      %span.form_checkbox.form_el.__fake
+                        %input.form_checkbox.form_el.__real{type: "checkbox"}
+                      акция
+                  .grid-i.__grid-4>
+                    %label.form_label.__m.va-m Сортировать по
+                    &nbsp;
+                    .form_select.form_el.__fake.va-m
+                      %p &nbsp;
+                      %select.form_select.form_el.__real
+                        %option{selected: "selected"} дате (сначала новые)
+                        %option дате (сначала старые)
+                        %option цене
+                        %option названию
+                  .grid-i.__grid-2>
+                    %label.form_label.__m.va-m Отображать по
+                    &nbsp;
+                    .form_select.form_el.__fake.va-m
+                      %p &nbsp;
+                      %select.form_select.form_el.__real
+                        %option{selected: "selected"} 12
+                        %option 50
       %section.section_main
         .grid
           .grid-i.__grid-3>
             .catalog-filter.__vert
               %form.form
-                .m-b_4
+                .m-b_2
                   .form_select.form_el.__fake
                     %p &nbsp;
                     %select.form_select.form_el.__real
@@ -25,6 +59,12 @@
                       %option Серия один
                       %option Серия два
                       %option Серия три
+                .m-b_4
+                  %label.form_label.__m цена
+                  .price-slider
+                    .price-slider_value.__min 0
+                    .price-slider_value.__max 22000
+                    .price-slider_range
                 .m-b_4
                   .form_select.form_el.__fake
                     %p &nbsp;
@@ -37,11 +77,17 @@
                   .form_select.form_el.__fake
                     %p &nbsp;
                     %select.form_select.form_el.__real
+                      %option{selected: "selected"} пол
+                      %option мальчик
+                      %option девочка
+                .m-b_4
+                  .form_select.form_el.__fake
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
                       %option{selected: "selected"} тема
                       %option Тема один
                       %option Тема два
                       %option Тема три
-
           .grid-i.__grid-9>
             .catalog.m-b_3
               - 1.upto(12) do

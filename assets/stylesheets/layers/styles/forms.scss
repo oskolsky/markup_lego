@@ -105,9 +105,11 @@ a.form_button {
   border-radius: $form-el-border-radius;
   @include prefixes(box-sizing, border-box);
   &[data-checked="true"]::after {
+    background-color: #f7a300;
+    border-radius: $form-el-border-radius;
     content:"\f00c";
-    margin: -1px 0 0 -1px;
-    color: fade-out($form-el-color, .3);
+    margin: -1px;
+    color: #fff;
     font-family: FontAwesome;
     font-size: 1.2rem;
     text-align: center;
@@ -213,12 +215,18 @@ a.form_button {
 //
 .form_label {
   color: #1f2650;
-  font-size: 18px;
-  line-height: 45px;
+  &.__m {
+    font-size: $form-el-font-size;
+    line-height:  $form-el-line-height;
+  }
+  &.__l {
+    font-size: 18px;
+    line-height: 45px;
+  }
   .form_checkbox,
   .form_radio {
     &.__fake {
-      top: 3px;
+      top: 6px;
       vertical-align: baseline;
     }
   }

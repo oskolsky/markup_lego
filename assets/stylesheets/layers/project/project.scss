@@ -342,7 +342,9 @@
     }
   }
   &.__horz {
-
+    .form_checkbox {
+      margin-top: 6px;
+    }
   }
 }
 
@@ -1309,6 +1311,51 @@
     span {font-size: 28px;}
   }
 }
+
+//
+// Price slider
+//
+.price-slider {
+  padding-top: 30px;
+  position: relative;
+  width: 240px;
+}
+  .price-slider_range {
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    height: 12px;
+    position: relative;
+    .ui-slider-range {
+      background-color: #f7a300;
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+    }
+    .ui-slider-handle {
+      background-color: #fbbc04;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+  }
+  .price-slider_value {
+    color: #141f4e;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    &.__min {
+      left: 0;
+    }
+    &.__max {
+      right: 0;
+    }
+  }
 
 //
 // .. Brick

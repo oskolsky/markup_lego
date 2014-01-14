@@ -1180,9 +1180,11 @@ a.form_button {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
   .form_checkbox.__fake[data-checked="true"]::after {
+    background-color: #f7a300;
+    border-radius: 0.3em;
     content: "\f00c";
-    margin: -1px 0 0 -1px;
-    color: rgba(20, 31, 78, 0.7);
+    margin: -1px;
+    color: #fff;
     font-family: FontAwesome;
     font-size: 1.2rem;
     text-align: center; }
@@ -1292,12 +1294,16 @@ a.form_button {
   font-size: 14px; }
 
 .form_label {
-  color: #1f2650;
-  font-size: 18px;
-  line-height: 45px; }
+  color: #1f2650; }
+  .form_label.__m {
+    font-size: 14px;
+    line-height: 20px; }
+  .form_label.__l {
+    font-size: 18px;
+    line-height: 45px; }
   .form_label .form_checkbox.__fake,
   .form_label .form_radio.__fake {
-    top: 3px;
+    top: 6px;
     vertical-align: baseline; }
 
 .form_legend {
@@ -2030,6 +2036,8 @@ a.form_button {
 
 .catalog-filter.__vert .form_select {
   width: 240px; }
+.catalog-filter.__horz .form_checkbox {
+  margin-top: 6px; }
 
 .catalog_i {
   padding: 25px 35px 35px; }
@@ -2643,6 +2651,43 @@ a.form_button {
     font-size: 50px; }
     .price.__l span {
       font-size: 28px; }
+
+.price-slider {
+  padding-top: 30px;
+  position: relative;
+  width: 240px; }
+
+.price-slider_range {
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  height: 12px;
+  position: relative; }
+  .price-slider_range .ui-slider-range {
+    background-color: #f7a300;
+    position: absolute;
+    top: -1px;
+    bottom: -1px; }
+  .price-slider_range .ui-slider-handle {
+    background-color: #fbbc04;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px; }
+
+.price-slider_value {
+  color: #141f4e;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  top: 0; }
+  .price-slider_value.__min {
+    left: 0; }
+  .price-slider_value.__max {
+    right: 0; }
 
 .brick {
   box-shadow: -15px 15px 0 1px rgba(0, 0, 0, 0.15);

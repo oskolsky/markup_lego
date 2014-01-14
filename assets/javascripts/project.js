@@ -98,6 +98,28 @@ $(function() {
 
   //****************************************************************************************************
   //
+  // .. JQUERY UI SLIDER RANGE
+  //
+  //****************************************************************************************************
+  $('.price-slider').each(function() {
+    var _this = this;
+    $(_this).find('.price-slider_range').slider({
+      range: true,
+      min: 0,
+      max: 22000,
+      step: 100,
+      values: [0, 22000],
+      slide: function(event, ui) {
+        $(_this).find('.price-slider_value.__min').text(ui.values[0]);
+        $(_this).find('.price-slider_value.__max').text(ui.values[1]);
+      }
+    });
+  });
+
+
+
+  //****************************************************************************************************
+  //
   // .. DOUBLE HOVER
   //
   //****************************************************************************************************
@@ -199,37 +221,8 @@ $(function() {
   // .. Money
   //
   $('.format-money').each(function() {
-    var c = accounting.settings.currency;
-
-    if ($(this).hasClass('__rub')) {
-      c.format = '%v';
-    } else if ($(this).hasClass('__usd')) {
-      c.symbol = '$';
-      c.format = '%s%v';
-    } else if ($(this).hasClass('__eur')) {
-      c.symbol = '€';
-      c.format = '%s%v';
-    }
-
-    var
-      number = parseFloat($(this).text()),
-      formatMoney = accounting.formatMoney(number);
-    
-    if ($(this).hasClass('__rub')) {
-      $(this).text(formatMoney).append('&nbsp;<span>руб.</span>');
-    } else {
-      $(this).text(formatMoney);
-    }
+    bindAccounting($(this));
   });
-
-
-
-  //****************************************************************************************************
-  //
-  // .. LOAD
-  //
-  //****************************************************************************************************
-  $(window).load(function() {});
 
 
 
@@ -252,3 +245,43 @@ $(function() {
   });
   
 });
+
+
+
+//****************************************************************************************************
+//
+// .. LOAD
+//
+//****************************************************************************************************
+$(window).load(function() {});
+
+
+
+//****************************************************************************************************
+//
+// .. FUNCTION
+//
+//****************************************************************************************************
+function bindAccounting($el) {
+  var c = accounting.settings.currency;
+
+  if ($(this).hasClass('__rub')) {
+    c.format = '%v';
+  } else if ($(this).hasClass('__usd')) {
+    c.symbol = '$';
+    c.format = '%s%v';
+  } else if ($(this).hasClass('__eur')) {
+    c.symbol = '€';
+    c.format = '%s%v';
+  }
+
+  var
+    number = parseFloat($(this).text()),
+    formatMoney = accounting.formatMoney(number);
+
+  if ($(this).hasClass('__rub')) {
+    $(this).text(formatMoney).append('&nbsp;<span>руб.</span>');
+  } else {
+    $(this).text(formatMoney);
+  }
+}

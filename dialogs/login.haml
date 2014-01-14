@@ -4,24 +4,24 @@
     %h2.tx.__upper.m-b_2 Вход
     %form.form
       .m-b_2
-        %label Имя
+        %label.form_label.__m Имя
         %input{type: "text", class: "form_text form_el __block"}
       .m-b_1
-        %label Пароль
+        %label.form_label.__m Пароль
         %input{type: "password", class: "form_text form_el __block"}
-      .m-b_3
+      .m-b_2
         .grid
           .grid-i.__grid-2.va-m>
             %label.form_label
               %span.form_checkbox.form_el.__fake
                 %input.form_checkbox.form_el.__real{type: "checkbox"}
-              Запомнить меня
+              %span.tx.__xs Запомнить меня
           .grid-i.__grid-2.va-m>
             .tx.__right
-              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/forgot"}} Забыли пароль?
+              %a{href: "#", class: "a __pseudo tx __xs", data: {dialog: "true", url: "/dialogs/forgot"}} Забыли пароль?
       .grid
         .grid-i.__grid-2.va-m>
-          %input{type: "submit", class: "form_button __l __red", value: "Войти"}
+          %input{type: "submit", class: "form_button __s __red grid-i __grid-2", value: "Войти"}
         .grid-i.__grid-2.va-m>
           .tx.__right
-            %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/register"}} Зарегистрироваться
+            %a{href: "#", class: "a __pseudo tx __xs", data: {dialog: "true", url: "/dialogs/register"}} Зарегистрироваться
