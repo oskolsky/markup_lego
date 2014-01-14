@@ -83,7 +83,8 @@ yepnope([
       accounting.settings = {
         currency: {
           decimal: '.',
-          thousand: ' '
+          thousand: ' ',
+          precision: 0
         },
         number: {
           decimal : '.',
