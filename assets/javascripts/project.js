@@ -42,8 +42,9 @@ $(function() {
   //****************************************************************************************************
   $('.articles_i_caption_more').click(function() {
     var _this = this;
+    var url = $(this).data('url');
     $.ajax({
-      url: '/data/show_article',
+      url: url,
       success: function(response) {
         $(_this).closest('.articles_i_announcement').hide();
         $(_this).closest('.articles_i_announcement').after(response);
