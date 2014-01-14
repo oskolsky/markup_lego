@@ -1055,6 +1055,62 @@
       }
 
 
+
+//****************************************************************************************************
+//
+// .. CONTACTS
+//
+//****************************************************************************************************
+.contacts {
+  border: 15px solid $yellow-color;
+  padding: 0 140px;
+  table {
+    tbody {
+      tr {
+        &:not(:last-child) {border-bottom: 1px solid #d3d3d3;}
+        td {
+          padding: 50px 0;
+          vertical-align: middle;
+          &.contacts_table_name {
+            color: #e30613;
+            font-family: $h-font-family;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 21px;
+            padding-right: 100px;
+            text-transform: uppercase;
+          }
+          &.contacts_table_details {
+            white-space: nowrap;
+            label {
+              color: #4c4c4c;
+              font-size: 14px;
+              line-height: 18px;
+            }
+            a, span {
+              color: #1e275b;
+              font-family: $h-font-family;
+              font-size: 17px;
+              font-weight: 700;
+              line-height: 29px;
+              padding-right: 50px;
+              text-transform: uppercase;
+            }
+          }
+          &.contacts_table_info {
+            color: #4c4c4c;
+            font-size: 14px;
+            line-height: 18px;
+            padding-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 //****************************************************************************************************
 //
 // .. FEEDBACK

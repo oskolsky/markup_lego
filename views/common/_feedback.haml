@@ -1,0 +1,21 @@
+.feedback.brick
+  %header.feedback_header
+    %h2 Задать свой вопрос
+  .feedback_body
+    %form.form
+      .form_row
+        %label.form_label Имя
+        %input{type: "text", class: "form_text grid-i __grid-3"}
+      .form_row
+        %label.form_label E-mail
+        %input{type: "text", class: "form_text grid-i __grid-3"}
+      .form_row
+        %label.form_label Сообщение
+        %textarea{class: "form_textarea grid-i __grid-7", rows: 4}
+      .form_row.m-b_3
+        %label.form_label Код с картинки
+        %input{type: "text", class: "form_text grid-i __grid-1"}
+        %img{src: "/assets/images/fake/captcha.png", class: "feedback_captcha", alt: ""}
+        %a{href: "#", class: "a __pseudo"} показать другую картинку
+      .form_row
+        %input{type: "submit", class: "form_button __red __l grid-i __grid-3", value: "Отправить"}

@@ -7,6 +7,11 @@
   display: inline-block;
   background-color: transparent;
   background-repeat: no-repeat;
+  &.__29 {
+    @include size(29px, 29px);
+    background-image: url(/assets/images/icons/ico-29.png);
+    &.__clock {background-position: 0 0;}
+  }
   &.__35 {
      @include size(35px, 35px);
      background-image: url(/assets/images/icons/ico-35.png);

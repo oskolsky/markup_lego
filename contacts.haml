@@ -1,0 +1,73 @@
+%header#header.header.__yellow{role: "banner"}
+  .ctn
+    = haml 'views/layouts/_header'.to_sym
+
+%main#main.main{role: "main"}
+
+  %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Bonuses"}
+    .ctn
+      %header.section_header.m-b_4
+        %h1.tx.__upper.__minor Контакты
+        %nav.breadcrumbs
+          %a{href: "/", class: "breadcrumbs_i"} Главная
+          %i.fa.fa-chevron-right
+          %span.breadcrumbs_i Контакты
+      %section.section_main.m-b_3
+        .contacts
+          %table.contacts_table
+            %tbody
+              %tr
+                %td.contacts_table_name Отдел Развития и&nbsp;аренды
+                %td.contacts_table_details
+                  %p
+                    %label E-mail:
+                    %a{href: "mailto: stenko@inventive.ru"} stenko@inventive.ru 
+                %td.contacts_table_info Предложения по&nbsp;развитию сети, открытию новых магазинов и&nbsp;аренде торговых площадей
+              %tr
+                %td.contacts_table_name Отдел кадров
+                %td.contacts_table_details
+                  %p
+                    %label Тел:
+                    %span (968) 6800255
+                  %p.m-b_1
+                    %label E-mail:
+                    %a{href: "mailto: hr@mir-kubikov.ru"} hr@mir-kubikov.ru
+                  %p
+                    %label
+                      %i.ico.__29.__clock.va-m
+                      &nbsp;
+                      в будни: с 10.00 до 19.00
+                %td.contacts_table_info Соискателям на&nbsp;вакансии директор магазина или продавец-консультант
+              %tr
+                %td.contacts_table_name Отдел корпоративных продаж
+                %td.contacts_table_details
+                  %p
+                    %label Тел:
+                    %span (495) 6516287
+                  %p
+                    %label E-mail:
+                    %a{href: "mailto: b2b@mir-kubikov.ru"} b2b@mir-kubikov.ru
+                %td.contacts_table_info Корпоративные продажи и&nbsp;закупки небольших партий товаров без цели последующей перепродажи
+              %tr
+                %td.contacts_table_name Администрация
+                %td.contacts_table_details
+                  %p
+                    %label E-mail:
+                    %a{href: "mailto: lego@mir-kubikov.ru"} lego@mir-kubikov.ru
+                %td.contacts_table_info Отзывы о&nbsp;работе магазинов сети LEGO и&nbsp;качестве обслуживания, вопросы о&nbsp;бонусной программе сети магазинов LEGO
+              %tr
+                %td.contacts_table_name Группа «ВКонтакте»
+                %td.contacts_table_details
+                  %p
+                    %label Url:
+                    %a{href: "//vk.com/legostores"} vk.com/legostores
+                %td.contacts_table_info Сеть магазинов LEGO в социальных сетях
+
+  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .m-b_5
+      .ctn
+        = haml 'views/common/_feedback'.to_sym
+    .m-b_6
+      = haml 'views/common/_slider'.to_sym
+    .ctn
+      = haml 'views/common/_summary'.to_sym
