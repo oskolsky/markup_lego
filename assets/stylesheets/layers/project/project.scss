@@ -392,12 +392,7 @@
     text-decoration: line-through;
   }
   &.__current {
-    color: $minor-color;
-    font-size: 28px;
-    margin-bottom: 5px;
-    .catalog_i_price_currency {
-      font-size: 17px;
-    }
+
   }
 }
 
@@ -1036,6 +1031,32 @@
 
 //****************************************************************************************************
 //
+// .. ABOUT
+//
+//****************************************************************************************************
+.about {
+
+}
+  .about_digits {
+
+  }
+    .about_digits_i {
+      font-family: $h-font-family;
+      font-weight: 700;
+      &:not(:last-child) {margin-bottom: 40px;}
+    }
+      .about_digits_i_t {
+        font-size: 100px;
+        line-height: 86px;
+        margin-bottom: 10px;
+      }
+      .about_digits_i_caption {
+        font-size: 25px;
+      }
+
+
+//****************************************************************************************************
+//
 // .. FEEDBACK
 //
 //****************************************************************************************************
@@ -1144,6 +1165,7 @@
 //
 .price {
   display: inline-block;
+  font-family: $h-font-family;
   &.__rub {
     color: $minor-color;
     font-weight: 700;
