@@ -1,0 +1,20 @@
+.dialog
+  .grid-i.__grid-4
+    %i.dialog_close.js-dialog_close.fa.fa-times-circle
+    %h2.tx.__upper.m-b_2 Регистраиця
+    %form.form
+      .m-b_2
+        %label Имя
+        %input{type: "text", class: "form_text form_el __block"}
+      .m-b_2
+        %label Email
+        %input{type: "text", class: "form_text form_el __block"}
+      .m-b_3
+        %label Пароль
+        %input{type: "password", class: "form_text form_el __block"}
+      .grid
+        .grid-i.__grid-2.va-m>
+          %input{type: "submit", class: "form_button __l __red", value: "Зарегистрироваться"}
+        .grid-i.__grid-2.va-m>
+          .tx.__right
+            %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/login"}} Войти

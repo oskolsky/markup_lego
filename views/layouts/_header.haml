@@ -24,7 +24,7 @@
       .shops_label фирменных<br>магазина в России
     .location
       Ваш регион&nbsp;
-      %a{href: "#", class: "a __pseudo __inner", data: {dialog: "location"}}
+      %a{href: "#", class: "a __pseudo __inner", data: {dialog: "true", url: "/dialogs/location"}}
         %span
           Санкт-Петербург
   .grid-i.__grid-3.va-b.tx.__right>
@@ -33,7 +33,7 @@
         %li.header_pages_i
           %a{href: "/profile", class: "header_pages_i_a"} Личный кабинет
         %li.header_pages_i
-          %a{href: "/login", class: "header_pages_i_a"} Вход
+          %a{href: "/login", class: "header_pages_i_a", data: {dialog: "true", url: "/dialogs/login"}} Вход
     .basket
       %p
         %a{href: "/basket"}

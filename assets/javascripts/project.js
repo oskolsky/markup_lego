@@ -155,13 +155,18 @@ $(function() {
   //
   // .. Open dialog
   //
-  $('[data-dialog]').on('click touchend', function() {
-    var $this = $(this),
-           id = $this.data('dialog');
+  $(document).on('click touchstart', '[data-dialog="true"]', function() {
+    var url = $(this).data('url');
+    $.arcticmodal('close');
+
     $.arcticmodal({
       type: 'ajax',
-      url: '/views/dialogs/_' + id + '.html'
+      url: url,
+      afterOpen: function() {
+        $('.form').customForm();
+      }
     });
+
     return false;
   });
 

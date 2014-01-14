@@ -3,30 +3,40 @@
     %header.m-b_4
       %a{href: "/"}
         %img{src: "/assets/images/logo.png", alt: "Lego", class: "logo"}
-    
-    %link{rel: "stylesheet", href: "/demo/demo.css"}
 
-    %nav.demo
-      %ol
-        %li 
-          %a{href: "/"} Главная
-        %li
-          %a{href: "/catalog"} Каталог
-        %li
-          %a{href: "/gratitude"} Спасибо за заказ
-        %li
-          %a{href: "#", data: {dialog: "location"}} Диалог выбора города
-        %li
-          %a{href: "/about"} О нас
-        %li
-          %a{href: "/contacts"} Контакты
-        %li
-          %a{href: "/bonuses"} Бонусная программа
-        %li
-          %a{href: "/cooperation"} Сотрудничество
-        %li
-          %a{href: "/jobs"} Вакансии
-        %li
-          %a{href: "/faq"} Вопрос-ответ
-        %li
-          %a{href: "/article"} Новости / Статьи / Мероприяти
+    .grid
+      .grid-i.__grid-4
+        %nav.demo
+          %ol
+            %li
+              %a{href: "/"} Главная
+            %li
+              %a{href: "/catalog"} Каталог
+            %li
+              %a{href: "/gratitude"} Спасибо за заказ
+            %li
+              %a{href: "/about"} О нас
+            %li
+              %a{href: "/contacts"} Контакты
+            %li
+              %a{href: "/bonuses"} Бонусная программа
+            %li
+              %a{href: "/cooperation"} Сотрудничество
+            %li
+              %a{href: "/jobs"} Вакансии
+            %li
+              %a{href: "/faq"} Вопрос-ответ
+            %li
+              %a{href: "/article"} Новости / Статьи / Мероприяти
+
+      .grid-i.__grid-4
+        %nav.demo
+          %ol
+            %li
+              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/location"}} Выбор города
+            %li
+              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/register"}} Регистрация
+            %li
+              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/login"}} Авторизация
+            %li
+              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/forgot"}} Восстановление пароля

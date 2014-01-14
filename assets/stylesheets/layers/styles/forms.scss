@@ -97,9 +97,9 @@ a.form_button {
 // .. Checkbox
 //
 .form_checkbox.__fake {
-  width: 1.6rem;
-  height: 1.6rem;
-  line-height: 1.6rem;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   background: $form-el-bg;
   border: $form-el-border;
   border-radius: $form-el-border-radius;
@@ -218,7 +218,7 @@ a.form_button {
   .form_checkbox,
   .form_radio {
     &.__fake {
-      top: .1em;
+      top: 3px;
       vertical-align: baseline;
     }
   }
