@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class='no-js' lang='ru-RU'>
+  <head>
+    <title>Сеть магазинов Lego</title>
+    <meta charset='utf-8'>
+    <meta content='width=device-width' name='viewport'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='' name='description'>
+    <meta content='' name='keywords'>
+    <link href='humans.txt' rel='author'>
+    <link href='/assets/images/favicon.png' rel='icon'>
+    <link href='apple-touch-icon-precomposed.png' rel='apple-touch-icon'>
+    <link href='apple-touch-icon-57x57-precomposed.png' rel='apple-touch-icon' sizes='57x57'>
+    <link href='apple-touch-icon-72x72-precomposed.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='apple-touch-icon-114x114-precomposed.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='apple-touch-icon-144x144-precomposed.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='/assets/stylesheets/application.css' rel='stylesheet'>
+    <script src='/assets/javascripts/vendor/yepnope.1.5.4-min.js'>// .. 1.5.4</script>
+    <script src='/assets/javascripts/vendor/modernizr-latest.js'>// .. 2.7.0</script>
+    <script src='/assets/javascripts/application.js'></script>
+    <script src='//vk.com/js/api/openapi.js?105'></script>
+  </head>
+  <body class='page' id='page'>
+    <!--[if lt IE 9]>
+      <div class='tx __center' role='alert' style='padding: 30px; background-color: #2980b9;'>
+        <h1 style='color: #fff; font-size: 40px; line-height: 1.5;'>
+          Использование устаревшего браузера
+          <br>
+          повышает риск взлома вашего компьютера.
+          <br>
+          <a href='http://browsehappy.com/' style='color: #fff; text-decoration: underline;' target='_blank'>Обновите свой браузер!</a>
+        </h1>
+      </div>
+    <![endif]-->
+    <div class='alert __wide __no-js c-bg __red' role='alert'>
+      <h1>У вас отключен JavaScript.</h1>
+    </div>
+    <header class='header __yellow' id='header' role='banner'>
+      <div class='ctn'>
+        <div class='grid'><div class='grid-i __grid-1 va-b'>
+            <a href='/'>
+              <img alt='Lego' class='logo' src='/assets/images/logo.png' width='100%'>
+            </a>
+          </div><div class='grid-i __grid-5 va-b'>
+            <nav>
+              <ul class='header_pages __left'><li class='header_pages_i'>
+                  <a class='header_pages_i_a' href='/about'>О нас</a>
+                </li><li class='header_pages_i'>
+                  <a class='header_pages_i_a' href='/article'>Новости</a>
+                </li><li class='header_pages_i'>
+                  <a class='header_pages_i_a' href='/bonuses'>Бонусная программа</a>
+                </li><li class='header_pages_i'>
+                  <a class='header_pages_i_a' href='/article'>Мероприятия</a>
+                </li><li class='header_pages_i'>
+                  <a class='header_pages_i_a' href='/contacts'>Контакты</a>
+                </li></ul>
+            </nav>
+            <article class='brand tx __white'>
+              <p>Сеть магазинов Lego</p>
+              <p>8 800 222-55-22</p>
+            </article>
+          </div><div class='grid-i __grid-3 va-b'>
+            <div class='shops'>
+              <div class='shops_count'>65</div>
+              <div class='shops_label'>фирменных<br>магазина в России</div>
+            </div>
+            <div class='location'>
+              Ваш регион&nbsp;
+              <a class='a __pseudo __inner' data-dialog='true' data-url='/dialogs/location' href='#'>
+                <span>
+                  Санкт-Петербург
+                </span>
+              </a>
+            </div>
+          </div><div class='grid-i __grid-3 va-b tx __right'>
+            <nav>
+              <ul class='header_pages __right'>
+                <li class='header_pages_i'>
+                  <a class='header_pages_i_a' href='/profile'>Личный кабинет</a>
+                </li>
+                <li class='header_pages_i'>
+                  <a class='header_pages_i_a' data-dialog='true' data-url='/dialogs/login' href='/login'>Вход</a>
+                </li>
+              </ul>
+            </nav>
+            <div class='basket'>
+              <p>
+                <a href='/basket'>
+                  Корзина (2)
+                  <br>
+                  <a href='/basket'>1250 руб</a>
+                </a>
+              </p>
+            </div>
+          </div><div class='grid-i __grid-9'>
+            <nav role='navigation'>
+              <ul class='nav'>
+                <li class='nav_i'>
+                  <a class='nav_i_a' href='/catalog'>Конструкторы</a>
+                </li>
+                <li class='nav_i'>
+                  <a class='nav_i_a' href='/catalog'>Для школы</a>
+                </li>
+                <li class='nav_i'>
+                  <a class='nav_i_a' href='/catalog'>Для дома</a>
+                </li>
+                <li class='nav_i'>
+                  <a class='nav_i_a' href='/catalog'>Одежда</a>
+                </li>
+                <li class='nav_i'>
+                  <a class='nav_i_a' href='/catalog'>Эксклюзивы</a>
+                </li>
+                <li class='nav_i'>
+                  <a class='nav_i_a' href='/catalog'>Акции</a>
+                </li>
+              </ul>
+            </nav>
+          </div><div class='grid-i __grid-3'>
+            <form action='/search' class='search-form'>
+              <input class='search-form_input' placeholder='Поиск' type='text'>
+              <input class='search-form_submit' type='submit' value=''>
+            </form>
+          </div></div>
+      </div>
+    </header>
+    <main class='main' id='main' role='main'>
+      <section aria-label='Bonuses' class='section p-t_6 p-b_4' role='region'>
+        <div class='ctn'>
+          <header class='section_header m-b_1'>
+            <h1 class='tx __upper __minor'>Спасибо за Ваш заказ</h1>
+          </header>
+          <section class='section_main m-b_3'>
+            <div class='gratitude'>
+              <div class='grid m-b_1'><div class='grid-i __grid-8'>
+                  <table class='table m-b_3'>
+                    <thead>
+                      <tr>
+                        <th>Наименование</th>
+                        <th>Количество</th>
+                        <th>Итоговая стоимость</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class='table_number'>
+                            Звездные войны
+                            <span>23523</span>
+                          </p>
+                          <p class='table_name'>
+                            <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                          </p>
+                        </td>
+                        <td>1</td>
+                        <td>
+                          <div class='price __rub __m format-money'>
+                            6797
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class='table_number'>
+                            Звездные войны
+                            <span>23523</span>
+                          </p>
+                          <p class='table_name'>
+                            <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                          </p>
+                        </td>
+                        <td>1</td>
+                        <td>
+                          <div class='price __rub __m format-money'>
+                            1095
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class='table_number'>
+                            Звездные войны
+                            <span>23523</span>
+                          </p>
+                          <p class='table_name'>
+                            <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                          </p>
+                        </td>
+                        <td>1</td>
+                        <td>
+                          <div class='price __rub __m format-money'>
+                            7718
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class='gratitude_summary'>
+                    <dl class='grid'>
+                      <dt class='grid-i __grid-2'>
+                        Стоимость доставки:
+                      </dt>
+                      <dd class='grid-i __grid-2'>
+                        <div class='price __rub __s format-money'>
+                          478
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl class='grid'>
+                      <dt class='grid-i __grid-2'>
+                        Бонусы начисленные:
+                      </dt>
+                      <dd class='grid-i __grid-2'>
+                        26
+                      </dd>
+                    </dl>
+                    <dl class='grid m-b_1'>
+                      <dt class='grid-i __grid-2'>
+                        Бонусы списанные:
+                      </dt>
+                      <dd class='grid-i __grid-2'>
+                        0
+                      </dd>
+                    </dl>
+                    <dl class='grid'>
+                      <dt class='grid-i __grid-1 va-bl'>
+                        Итого:
+                      </dt>
+                      <dd class='grid-i __grid-3 va-bl'>
+                        <div class='price __rub __l format-money'>
+                          2961
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                </div><div class='grid-i __grid-4'>
+                  <div class='gratitude_total'>
+                    <div class='gratitude_total_inner'>
+                      <p>Итого:</p>
+                      <div class='price __rub __l format-money'>
+                        9068
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+              <article class='gratitude_info'>
+                <p>Мы обработаем ваш заказ и успеем доставить его <b>завтра, 21.09.2013</b>. Уточнить условия доставки Вы сможете <a href="#">здесь</a>.</p>
+                <p>Заказ вы можете оплатить при получении <b>наличными</b> или <b>банковской картой</b> курьеру</p>
+                <p>Детали заказа будут отправлены на <a href="#">ionova@ruformat.ru</a></p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section aria-label='Summary info' class='summary p-t_5 p-b_6' role='region'>
+        <div class='ctn'>
+          <div class='m-b_5'>
+            <div class='catalog-block brick'>
+              <h2 class='tx __upper m-b_3'>
+                можете продолжить выбирать товары
+                <br>
+                (мы успеем доБАВить их в заказ)
+              </h2><div class='grid-i __grid-3'>
+                <figure class='catalog_i'>
+                  <a href='#'>
+                    <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
+                  </a>
+                  <figcaption>
+                    <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                    <div class='catalog_i_name'>
+                      <a href='#'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                    </div>
+                    <div class='catalog_i_price __old'>
+                      <span class='format-money'>25400</span>
+                      руб.
+                    </div>
+                    <div class='catalog_i_price __current'>
+                      <div class='price __rub __m format-money'>
+                        984
+                      </div>
+                    </div>
+                    <div class='catalog_i_action cf'>
+                      <div class='f-l'>
+                        <a class='form_button __s __red' href='#'>В корзину</a>
+                      </div>
+                      <div class='f-r'>
+                        <a class='form_button __s __orange' href='#'>Проверить<br>наличие</a>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div><div class='grid-i __grid-3'>
+                <figure class='catalog_i'>
+                  <a href='#'>
+                    <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
+                  </a>
+                  <figcaption>
+                    <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                    <div class='catalog_i_name'>
+                      <a href='#'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                    </div>
+                    <div class='catalog_i_price __old'>
+                      <span class='format-money'>25400</span>
+                      руб.
+                    </div>
+                    <div class='catalog_i_price __current'>
+                      <div class='price __rub __m format-money'>
+                        3331
+                      </div>
+                    </div>
+                    <div class='catalog_i_action cf'>
+                      <div class='f-l'>
+                        <a class='form_button __s __red' href='#'>В корзину</a>
+                      </div>
+                      <div class='f-r'>
+                        <a class='form_button __s __orange' href='#'>Проверить<br>наличие</a>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div><div class='grid-i __grid-3'>
+                <figure class='catalog_i'>
+                  <a href='#'>
+                    <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
+                  </a>
+                  <figcaption>
+                    <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                    <div class='catalog_i_name'>
+                      <a href='#'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                    </div>
+                    <div class='catalog_i_price __old'>
+                      <span class='format-money'>25400</span>
+                      руб.
+                    </div>
+                    <div class='catalog_i_price __current'>
+                      <div class='price __rub __m format-money'>
+                        2047
+                      </div>
+                    </div>
+                    <div class='catalog_i_action cf'>
+                      <div class='f-l'>
+                        <a class='form_button __s __red' href='#'>В корзину</a>
+                      </div>
+                      <div class='f-r'>
+                        <a class='form_button __s __orange' href='#'>Проверить<br>наличие</a>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div><div class='grid-i __grid-3'>
+                <figure class='catalog_i'>
+                  <a href='#'>
+                    <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
+                  </a>
+                  <figcaption>
+                    <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                    <div class='catalog_i_name'>
+                      <a href='#'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                    </div>
+                    <div class='catalog_i_price __old'>
+                      <span class='format-money'>25400</span>
+                      руб.
+                    </div>
+                    <div class='catalog_i_price __current'>
+                      <div class='price __rub __m format-money'>
+                        3276
+                      </div>
+                    </div>
+                    <div class='catalog_i_action cf'>
+                      <div class='f-l'>
+                        <a class='form_button __s __red' href='#'>В корзину</a>
+                      </div>
+                      <div class='f-r'>
+                        <a class='form_button __s __orange' href='#'>Проверить<br>наличие</a>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div></div>
+          </div>
+          <div class='share'>
+            <div class='share_t'>Посоветовать другу</div>
+            <nav class='share_nav'>
+              <a class='share_nav_i' href='#'>
+                <i class='ico __58 __vk'></i>
+              </a>
+              <a class='share_nav_i' href='#'>
+                <i class='ico __58 __fb'></i>
+              </a>
+              <a class='share_nav_i' href='#'>
+                <i class='ico __58 __ok'></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class='footer' id='footer' role='contentinfo'>
+      <div class='ctn'><div class='grid-i __grid-9'>
+          <article class='brand'>
+            <p>
+              Сеть магазинов&nbsp;
+              <span class='tx __major'>Lego</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span class='tx __major'>8 800 222-55-22</span>
+            </p>
+          </article>
+          <nav>
+            <ul class='footer_pages'>
+              <li class='footer_pages_i'>
+                <a class='footer_pages_i_a' href='/catalog'>Каталог</a>
+              </li>
+              <li class='footer_pages_i'>
+                <a class='footer_pages_i_a' href='#'>Акции</a>
+              </li>
+              <li class='footer_pages_i'>
+                <a class='footer_pages_i_a' href='/bonuses'>Бонусы</a>
+              </li>
+              <li class='footer_pages_i'>
+                <a class='footer_pages_i_a' href='#'>Фестивали</a>
+              </li>
+              <li class='footer_pages_i'>
+                <a class='footer_pages_i_a' href='/article'>Новости</a>
+              </li>
+              <li class='footer_pages_i'>
+                <a class='footer_pages_i_a' href='#'>Где купить</a>
+              </li>
+            </ul>
+          </nav>
+        </div><div class='grid-i __grid-3'>
+          <p>Справочная — <a href="mailto: spravka@lego.ru">spravka@lego.ru</a></p>
+          <p>Интернет-магазин — <a href="mailto: spravka@lego.ru">supportclient@lego.ru</a></p>
+        </div><div class='grid-i __grid-9'>
+          <p>&copy;&nbsp;2013&nbsp;LEGO, логотип LEGO, DUPLO, BIONICLE, MINDSTORMS, KNIGHTS KINGDOM и&nbsp;EXO-FORCE логотипы, а&nbsp;также кубик<br>LEGO и&nbsp;минифигурки LEGO являются торговой маркой компании LEGO Group.</p>
+        </div><div class='grid-i __grid-3'>
+          <p>Разработка сайта — <a href="http://ruformat.ru" rel="nofollow">ruformat.ru</a></p>
+        </div></div>
+    </footer>
+  </body>
+</html>
