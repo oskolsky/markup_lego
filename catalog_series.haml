@@ -1,0 +1,113 @@
+%header#header.header.__yellow{role: "banner"}
+  .ctn
+    = haml 'views/layouts/_header'.to_sym
+
+%main#main.main{role: "main"}
+
+  %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Catalog"}
+    .ctn
+      %header.section_header.m-b_2
+        .grid
+          .grid-i.__grid-4>
+            %h1.tx.__upper.__minor Каталог LEGO
+            %nav.breadcrumbs
+              %a{href: "/", class: "breadcrumbs_i"} Главная
+              %i.fa.fa-chevron-right
+              %span.breadcrumbs_i Каталог
+          .grid-i.__grid-8>
+            .catalog-filter.__horz
+              %form.form
+                .grid.__no-gutter
+                  .grid-i.__grid-1>
+                    %label.form_label.__m
+                      %span.form_checkbox.form_el.__fake
+                        %input.form_checkbox.form_el.__real{type: "checkbox"}
+                      новинки
+                  .grid-i.__grid-1>
+                    %label.form_label.__m
+                      %span.form_checkbox.form_el.__fake
+                        %input.form_checkbox.form_el.__real{type: "checkbox"}
+                      акция
+                  .grid-i.__grid-4>
+                    %label.form_label.__m.va-m Сортировать по
+                    &nbsp;
+                    .form_select.form_el.__fake.va-m
+                      %p &nbsp;
+                      %select.form_select.form_el.__real
+                        %option{selected: "selected"} дате (сначала новые)
+                        %option дате (сначала старые)
+                        %option цене
+                        %option названию
+                  .grid-i.__grid-2>
+                    %label.form_label.__m.va-m Отображать по
+                    &nbsp;
+                    .form_select.form_el.__fake.va-m
+                      %p &nbsp;
+                      %select.form_select.form_el.__real
+                        %option{selected: "selected"} 12
+                        %option 50
+      %section.section_main
+        .grid
+          .grid-i.__grid-3>
+            .catalog-filter.__vert
+              %form.form
+                .m-b_2
+                  .form_select.form_el.__fake
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: "selected"} серии
+                      %option Серия один
+                      %option Серия два
+                      %option Серия три
+                .m-b_4
+                  %label.form_label.__m цена
+                  .price-slider
+                    .price-slider_value.__min 0
+                    .price-slider_value.__max 22000
+                    .price-slider_range
+                .m-b_4
+                  .form_select.form_el.__fake
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: "selected"} возраст
+                      %option 13
+                      %option 14
+                      %option 15
+                .m-b_4
+                  .form_select.form_el.__fake
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: "selected"} пол
+                      %option мальчик
+                      %option девочка
+                .m-b_4
+                  .form_select.form_el.__fake
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: "selected"} тема
+                      %option Тема один
+                      %option Тема два
+                      %option Тема три
+          .grid-i.__grid-9>
+            .catalog.m-b_3
+              - 1.upto(12) do
+                .grid-i.__grid-3>
+                  = haml 'views/catalog/_item_series'.to_sym
+            %nav.tx.__center
+              %ul.pagination.__catalog
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a __current"} 1
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 2
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 3
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 4
+                %li.pagination_i
+                  %a{href: "#", class: "pagination_i_a"} 5
+
+  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .m-b_6
+      = haml 'views/common/_slider'.to_sym
+    .ctn
+      = haml 'views/common/_summary'.to_sym
