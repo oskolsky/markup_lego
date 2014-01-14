@@ -37,6 +37,58 @@ $(function() {
 
   //****************************************************************************************************
   //
+  // .. ARTICLE SHOW & CLOSE
+  //
+  //****************************************************************************************************
+  $('.articles_i_caption_more').click(function() {
+    var _this = this;
+    $.ajax({
+      url: '/data/show_article',
+      success: function(response) {
+        $(_this).closest('.articles_i_announcement').hide();
+        $(_this).closest('.articles_i_announcement').after(response);
+        $(_this).closest('.articles_i').find('.articles_i_show').fadeIn();
+      },
+      error: function() {
+        alert('Error load resources');
+      }
+    });
+    return false;
+  });
+
+  $(document).on('click', '.articles_i_show_close', function() {
+    var $el = $(this).closest('.articles_i');
+    $el.find('.articles_i_show').remove();
+    $el.find('.articles_i_announcement').show();
+    var destination = $el.offset().top;
+    $('html, body').animate({scrollTop: destination}, 500);
+    return false;
+  });
+
+
+  //****************************************************************************************************
+  //
+  // .. PHOTO GALLERY LOAD NEW PHOTO
+  //
+  //****************************************************************************************************
+  $(document).on('click', '.articles_i_show_gallery_add', function() {
+    var _this = this;
+    $.ajax({
+      url: '/data/photo_gallery',
+      success: function(response) {
+        $(_this).before(response);
+      },
+      error: function() {
+        alert('Error load resources');
+      }
+    });
+    return false;
+  });
+
+
+
+  //****************************************************************************************************
+  //
   // .. JQUERY UI TABS
   //
   //****************************************************************************************************
