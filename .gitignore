@@ -21,3 +21,7 @@ Thumbs.db
 
 #Sass
 .sass-cache
+*.sass
+
+#Haml
+*.haml
