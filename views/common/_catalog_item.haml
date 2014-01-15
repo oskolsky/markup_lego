@@ -1,16 +1,17 @@
-%figure.catalog_i.__product
-  %a{href: "#"}
-    %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg", class: "catalog_i_img", alt: "Скоростной низколетящий десантный корабль и транспортный шагоход", width: 200, height: 150}
-  %figcaption
-    .catalog_i_number Звездные войны <span>23523</span>
-    .catalog_i_name
-      %a{href: "#"} Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход
-    .catalog_i_price.__old
-      %span.format-number 25400
-      руб.
-    .catalog_i_price.__current
-      .price.__rub.__m.format-money
-        = rand(500..10000)
+%article.catalog_i
+  %header
+    %a{href: "#"}
+      %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg", class: "catalog_i_img", alt: "Скоростной низколетящий десантный корабль и транспортный шагоход", width: 200, height: 150}
+  .catalog_i_number Звездные войны <span>23523</span>
+  .catalog_i_name
+    %a{href: "#"} Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход
+  .catalog_i_price.__old
+    %span.format-number 25400
+    руб.
+  .catalog_i_price.__current
+    .price.__rub.__m.format-money
+      = rand(500..10000)
+  %footer
     .catalog_i_action.cf
       .f-l
         %a{href: "#", class: "form_button __s __red"} В корзину

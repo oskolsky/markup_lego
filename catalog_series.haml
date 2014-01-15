@@ -21,12 +21,166 @@
           .grid-i.__grid-3>
             = haml 'views/common/_catalog_filter_vert'.to_sym
           .grid-i.__grid-9>
-            .catalog.m-b_3
-              - 1.upto(12) do
-                .grid-i.__grid-3>
-                  = haml 'views/common/_catalog_item_series'.to_sym
-            %nav.tx.__center
-              = haml 'views/common/_catalog_pagination'.to_sym
+            .catalog.__series
+
+              .catalog_row
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_superheroes.png", class: "va-m", alt: "Lego Super Heroes"}
+                  .m-b_1
+                    %img{src: "/assets/images/series/superheroes.png", class: "va-t", width: 184, height: 134, alt: "Lego Super Heroes"}
+                  .m-b_3
+                    %p.tx.__upper Lego Super Heroes
+                  %footer
+                    %p 6-14 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_galaxy.png", class: "va-m", alt: "Lego Galaxy Squad"}
+                  .m-b_1
+                    %img{src: "/assets/images/series/galaxy.png", class: "va-t", width: 184, height: 134, alt: "Lego Galaxy Squad"}
+                  .m-b_3
+                    %p.tx.__upper Lego Galaxy Squad
+                  %footer
+                    %p 7-14 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_chima.png", class: "va-m", alt: "Lego Legends Of Chima"}
+                  .m-b_1
+                    %img{src: "/assets/images/series/chima.png", class: "va-t", width: 184, height: 134, alt: "Lego Legends Of Chima"}
+                  .m-b_3
+                    %p.tx.__upper Lego Legends Of Chima
+                  %footer
+                    %p 6-14 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_lotr.png", class: "va-m", alt: "The Hobbit & The Lord Of The Rings"}
+                  %img{src: "/assets/images/series/lotr.png", class: "va-t m-b_1", width: 184, height: 134, alt: "The Hobbit & The Lord Of The Rings"}
+                  %p.tx.__upper The Hobbit &&nbsp;The Lord Of&nbsp;The Rings
+                  %footer
+                    %p 8-14 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_friends.png", class: "va-m", alt: "Lego Friends"}
+                  %img{src: "/assets/images/series/friends.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Friends"}
+                  %p.tx.__upper Lego Friends
+                  %footer
+                    %p 5-12 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_city.png", class: "va-m", alt: "Lego City"}
+                  %img{src: "/assets/images/series/city.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego City"}
+                  %p.tx.__upper Lego City
+                  %footer
+                    %p 5-12 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_duplo.png", class: "va-m", alt: "Lego Duplo"}
+                  %img{src: "/assets/images/series/duplo.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Duplo"}
+                  %p.tx.__upper Lego Duplo
+                  %footer
+                    %p 2-6 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_ninjago.png", class: "va-m", alt: "Lego Ninjago"}
+                  %img{src: "/assets/images/series/ninjago.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Ninjago"}
+                  %p.tx.__upper Lego Ninjago
+                  %footer
+                    %p 6-14 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_technic.png", class: "va-m", alt: "Lego Technic"}
+                  %img{src: "/assets/images/series/technic.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Technic"}
+                  %p.tx.__upper Lego Technic
+                  %footer
+                    %p 7-16 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_hero.png", class: "va-m", alt: "Lego Hero Factory"}
+                  %img{src: "/assets/images/series/hero.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Hero Factory"}
+                  %p.tx.__upper Lego Hero Factory
+                  %footer
+                    %p 6+ лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_starwars.png", class: "va-m", alt: "Lego Star Wars"}
+                  %img{src: "/assets/images/series/starwars.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Star Wars"}
+                  %p.tx.__upper Lego Star Wars
+                  %footer
+                    %p 6-14 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_racers.png", class: "va-m", alt: "Lego Racers"}
+                  %img{src: "/assets/images/series/racers.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Racers"}
+                  %p.tx.__upper Lego Racers
+                  %footer
+                    %p 6-14 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                  %img{src: "/assets/images/series/exclusive.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Эксклюзивные наборы Lego"}
+                  %p.tx.__upper Эксклюзивные наборы Lego
+                  %footer
+                    %p 12+ лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_creator.png", class: "va-m", alt: "Lego Creator"}
+                  %img{src: "/assets/images/series/creator.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Creator"}
+                  %p.tx.__upper Lego Creator
+                  %footer
+                    %p 6-12 лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_games.png", class: "va-m", alt: "Lego Games"}
+                  %img{src: "/assets/images/series/games.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Games"}
+                  %p.tx.__upper Lego Games
+                  %footer
+                    %p 5+ лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_wear.png", class: "va-m", alt: "Одежда Lego Wear"}
+                  %img{src: "/assets/images/series/wear.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Одежда Lego Wear"}
+                  %p.tx.__upper Одежда Lego Wear
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Товары для школы и дома", width: 45, height: 45}>
+                  %img{src: "/assets/images/series/goods.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Товары для школы и дома"}
+                  %p.tx.__upper Товары для&nbsp;школы и&nbsp;дома
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_minifigures.png", class: "va-m", alt: "Lego Games"}
+                  %img{src: "/assets/images/series/minifigures.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Minifigures"}
+                  %p.tx.__upper Lego Minifigures
+                  %footer
+                    %p 5+ лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                    %img{src: "/assets/images/series/logo_mindstorms.png", class: "va-m", alt: "Lego Mindstorms"}
+                  %img{src: "/assets/images/series/mindstorms.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Lego Mindstorms"}
+                  %p.tx.__upper Lego Mindstorms
+                  %footer
+                    %p 10+ лет
+                %article.catalog_i{onclick: "location.href='/catalog'"}>
+                  %header
+                    %img{src: "/assets/images/logo_s.png", class: "va-m", alt: "Lego", width: 45, height: 45}>
+                  %img{src: "/assets/images/series/services.png", class: "va-t m-b_1", width: 184, height: 134, alt: "Услуги"}
+                  %p.tx.__upper Услуги
 
   %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
     .m-b_6
