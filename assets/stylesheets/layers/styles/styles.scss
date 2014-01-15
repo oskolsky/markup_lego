@@ -136,6 +136,8 @@ h1, h2, h3, h4, h5, h6, .alpha, .beta, .gamma, .delta, .epsilon, .zeta {font-fam
   &.__major   {color: $major-color;}
   &.__minor   {color: $minor-color;}
 
+  &.__muted   {color: #bfbfbf;}
+
   &.__white  {color: #fff;}
   &.__green  {color: #52b200;}
   &.__red    {color: #ea030a;}

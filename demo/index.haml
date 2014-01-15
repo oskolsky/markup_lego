@@ -1,12 +1,27 @@
 %section{role: "region", "aria-label" => "Demo"}
   %article
     %header.m-b_4
-      %a{href: "/"}
-        %img{src: "/assets/images/logo.png", alt: "Lego", class: "logo"}
+      .grid
+        .grid-i.__grid-1.va-m>
+          %a{href: "/"}
+            %img{src: "/assets/images/logo.png", alt: "Lego", class: "logo"}
+        .grid-i.__grid-11.va-m>
+          %h1.tx.__upper
+            %a{href: "/"}
+              %span.tx.__minor Сеть магазинов
+              %span.tx.__major Lego
+
+    .grid.m-b_4
+      .grid-i.__grid-3>
+        %p.tx.__xs
+          %a{href: "https://github.com/oskolsky/markup_lego"} View Source on GitHub
+      .grid-i.__grid-3>
+        %p.tx.__xs
+          %a{href: "//oskolsky.com"} Created by Maxim Oskols'ky
 
     .grid
-      .grid-i.__grid-4
-        %nav.demo
+      .grid-i.__grid-3
+        %nav.demo.tx.__xs
           %ol
             %li
               %a{href: "/"} Главная
@@ -15,13 +30,21 @@
             %li
               %a{href: "/catalog_series"} Каталог серии
             %li
+              %a{href: "/catalog_show", class: "tx __muted"} Карточка товара
+            %li
+              %a{href: "/basket", class: "tx __muted"} Корзина
+            %li
               %a{href: "/gratitude"} Спасибо за заказ
+            %li
+              %a{href: "/profile", class: "tx __muted"} Личный кабинет
             %li
               %a{href: "/search"} Поиск
             %li
               %a{href: "/about"} О нас
             %li
               %a{href: "/contacts"} Контакты
+            %li
+              %a{href: "/where_buy", class: "tx __muted"} Где купить
             %li
               %a{href: "/bonuses"} Бонусная программа
             %li
@@ -33,11 +56,13 @@
             %li
               %a{href: "/article"} Новости / Статьи / Мероприяти
 
-      .grid-i.__grid-4
-        %nav.demo
+      .grid-i.__grid-3
+        %nav.demo.tx.__xs
           %ol
             %li
               %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/location"}} Выбор города
+            %li
+              %a{href: "#", class: "a __pseudo tx __muted", data: {dialog: "true", url: "/dialogs/item_show"}} Предварительный просмотр товара
             %li
               %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/register"}} Регистрация
             %li

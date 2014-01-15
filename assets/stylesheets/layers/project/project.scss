@@ -968,7 +968,7 @@
   position: absolute;
   text-align: center;
   top: 50%;
-  z-index: 9999;
+  z-index: 999;
   @include size(50px, 50px);
 
   &:hover {color: #fff;}

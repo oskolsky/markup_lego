@@ -1,9 +1,6 @@
 .demo {
-
   margin-left: 1.5rem;
-
   li:not(:last-child) {margin-bottom: 1rem;}
-
   ol {
     counter-reset: list;
     > li {
@@ -13,9 +10,9 @@
         content: counter(list) ".";
         position: absolute;
         right: 100%;
-        margin: .3rem .5rem 0 0;
-        color: #ccc;
-        font-size: 1.2rem;
+        margin: 0 .5rem 0 0;
+        color: #bfbfbf;
+        font-size: inherit;
       }
     }
   }
