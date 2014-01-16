@@ -1,6 +1,27 @@
 $(function() {
 
 
+
+  //****************************************************************************************************
+  //
+  // .. PROMO BLOCK ON HOME PAGE
+  //
+  //****************************************************************************************************
+  $(document).on('click', '.promo-slider.__home .slide a', function() {
+    var rel = $(this).data('rel');
+    var bg  = $(this).data('bg');
+
+    $('.header_bg').find('.header_bg_i').hide();
+    $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn();
+
+    $('.promo').find('.promo_i').hide();
+    $('.promo').find('.promo_i[data-rel="' + rel + '"]').fadeIn();
+
+    return false;
+  });
+
+
+
   //****************************************************************************************************
   //
   // .. CATALOG
@@ -245,15 +266,14 @@ $(function() {
   // .. SLIDERS
   //
   //****************************************************************************************************
-  $('.slider').find('.slides').cycle({
-    speed: 500,
-    swipe: true,
-    timeout: 0,
-    slides: '.slide'
-  });
-
-  $('.slider.__promo').on('cycle-after', function(event, opts) {
-    $('.header').css({backgroundImage: 'url(/assets/images/promo/bg_0' + opts.slideNum + '.png)'});
+  $('.slider').each(function() {
+    var _this = this;
+    $(this).find('.slides').cycle({
+      speed: 500,
+      swipe: true,
+      timeout: 0,
+      slides: '.slide'
+    });
   });
 
 

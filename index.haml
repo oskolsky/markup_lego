@@ -1,21 +1,22 @@
 %header#header.header.__promo{role: "banner"}
+
+  .header_bg
+    .header_bg_i{data: {rel: "marvel"}, style: "background-image: url(/assets/images/promo/bg-marvel.png); display: block;"}
+    .header_bg_i{data: {rel: "chima"}, style: "background-image: url(/assets/images/promo/bg-chima.png)"}
+
   .ctn
     = haml 'views/layouts/_header'.to_sym
-    %section.promo.p-t_5.p-b_3
-      .slider.__promo
-        .slides
-          .slide
-            .brick
-              %a{href: "#"}
-                %img{src: "/assets/images/promo/slide_01.png", width: 1220, alt: ""}
-          -#.slide.brick
-            %a{href: "#"}
-              %img{src: "/assets/images/promo/slide_02.png", width: 1220, alt: ""}
-        .slider_pager
+    .promo.brick
+      .promo_i{data: {rel: "marvel"}, style: "display: block;"}
+        %a{href: "#"}
+          %img{src: "/assets/images/promo/marvel.png", class: "promo_i_img", width: "100%", alt: "Супергерои Lego"}
+      .promo_i{data: {rel: "chima"}}
+        %a{href: "#"}
+          %img{src: "/assets/images/promo/chima.png", class: "promo_i_img", width: "100%", alt: "Подарок королевства Чима"}
 
-%section.news-slider.__index
+%section.promo-slider.__index
   .m-b_1
-    = haml 'views/common/_slider'.to_sym
+    = haml 'views/common/_slider_promo'.to_sym
   .tx.__center
     %a{href: "#", class: "share-link"}
       Поделиться с друзьями
@@ -25,7 +26,7 @@
   %section.p-t_5.p-b_4{role: "region", "aria-label" => "Catalog"}
     .tabs
       .ctn
-        %ul.tabs_list
+        %ul.tabs_list.grid.__no-gutter
           %li.tabs_i.grid-i.__grid-3>
             %a{href: "#tabs-1", class: "tabs_i_a __white"}
               %i.ico.__35.__new

@@ -9,8 +9,10 @@
 
   &::after {
     content: "";
-    background-position: left bottom;
-    background-repeat: repeat-x;
+    background: {
+      position: left bottom;
+      repeat: repeat-x;
+    }
     height: 8px;
     position: absolute;
     top: 100%;
@@ -18,10 +20,6 @@
   }
 
   &.__promo {
-    background: #0068a5 url(/assets/images/promo/bg_01.png) center bottom no-repeat;
-    background-size: cover;
-
-    //&::after {background-image: url(/assets/images/header-blue.png);}
 
   }
 
@@ -32,6 +30,23 @@
 
   }
 
+}
+.header_bg {
+
+}
+.header_bg_i {
+  background: {
+    position: center bottom;
+    repeat: no-repeat;
+    size: cover;
+  }
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 //
@@ -209,21 +224,26 @@
 //
 //****************************************************************************************************
 .promo {
+  margin: 50px 0;
+}
+.promo_i {
+  display: none;
+
+  &.__current {display: block;}
 
 }
-
-.promo_slider {
-
+.promo_i_img {
+  vertical-align: top;
 }
 
 
 
 //****************************************************************************************************
 //
-// .. News slider on first page
+// .. Promo slider on first page
 //
 //****************************************************************************************************
-.news-slider {
+.promo-slider {
   margin: 0 auto;
   width: 1252px;
 
@@ -1098,10 +1118,6 @@
   }
 
   &.__promo {
-
-  }
-
-  &.__news {
 
     .slides {
       height: 227px;
