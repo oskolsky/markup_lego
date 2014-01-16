@@ -94,3 +94,14 @@
   %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
     .ctn
       = haml 'views/common/_summary'.to_sym
+
+:javascript
+  yepnope({
+    load: ['timeout=1000!//code.jquery.com/jquery-2.0.3.min.js'],
+    complete: function (url, res, key) {
+      // Для теста
+      $(function() {
+        alert('Test');
+      });
+    }
+  });
