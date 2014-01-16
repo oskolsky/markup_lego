@@ -19,6 +19,8 @@
      &.__percent {background-position: -35px 0;}
      &.__star    {background-position: -70px 0;}
      &.__hellip  {background-position: -105px 0;}
+     &.__list    {background-position: -140px 0;}
+     &.__comment {background-position: -175px 0;}
   }
   &.__58 {
     @include size(58px, 58px);

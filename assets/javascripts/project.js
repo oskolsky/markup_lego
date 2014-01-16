@@ -103,6 +103,81 @@ $(function() {
 
   //****************************************************************************************************
   //
+  // .. PHOTO & VIDEO GALLERY
+  //
+  //****************************************************************************************************
+  $('.gallery').each(function() {
+    var _this = this;
+    $(_this).find('.gallery_preview').find('.gallery_preview_i').click(function() {
+      var rel = $(this).data('rel');
+      $(_this).find('.gallery_preview_i.__current').removeClass('__current');
+      $(this).addClass('__current');
+      $(_this).find('.gallery_view').find('.gallery_view_i.__current').removeClass('__current');
+      $(_this).find('.gallery_view').find('.gallery_view_i[data-rel="' + rel + '"]').addClass('__current');
+      return false;
+    });
+  });
+
+
+
+  //****************************************************************************************************
+  //
+  // .. AVAILABILITY
+  //
+  //****************************************************************************************************
+  $('.availability_more').click(function() {
+    var $el = $(this).closest('.availability').find('.availability_section_more');
+    if ($el.is(':hidden')) {
+      $(this).text('Скрыть');
+      $el.slideDown();
+    } else {
+      $(this).text('Показать');
+      $el.slideUp();
+    }
+    return false;
+  });
+
+
+
+  //****************************************************************************************************
+  //
+  // .. REVIEWS ADD
+  //
+  //****************************************************************************************************
+  $('.js-reviews-toggle').click(function() {
+    var $el_list = $('.reviews_list');
+    var $el_form = $('.reviews_add');
+    if ($el_form.is(':hidden')) {
+      $el_list.hide();
+      $el_form.fadeIn();
+    } else {
+      $el_list.fadeIn();
+      $el_form.hide();
+    }
+    return false;
+  });
+
+
+  //****************************************************************************************************
+  //
+  // .. FORM NUMBER
+  //
+  //****************************************************************************************************
+  $('.form_number').each(function() {
+    var _this = this;
+    $(this).find('.form_number_controls_i').click(function() {
+      var $el = $(_this).find('input');
+      var value = $el.val();
+      $(this).hasClass('__up') ? value++ : value--;
+      if (value > 0) $el.val(value);
+      return false;
+    });
+  });
+
+
+
+  //****************************************************************************************************
+  //
   // .. JQUERY UI TABS
   //
   //****************************************************************************************************

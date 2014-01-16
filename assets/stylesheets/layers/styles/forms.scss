@@ -30,21 +30,27 @@ input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
 //
 .form_button {
   border: none;
+  border-radius: 3px;
   color: #fff;
   cursor: pointer;
   display: table-cell;
   font-family: $h-font-family;
   line-height: 1;
+  padding: 0 15px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
   @include prefixes(box-sizing, border-box);
 
   &.__s {
-    border-radius: 3px;
     font-size: 13px;
     height: 40px;
-    padding: 0 15px;
+  }
+
+  &.__m {
+    font-size: 21px;
+    height: 45px;
+    line-height: 45px;
   }
 
   &.__l {

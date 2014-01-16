@@ -4,19 +4,318 @@
 
 %main#main.main{role: "main"}
 
-  %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Catalog"}
+  %section.section.p-t_6.p-b_12{role: "region", "aria-label" => "Item show"}
     .ctn
       %header.section_header.m-b_2
-        %h1.tx.__upper.__minor Пожарная машина  арт. #60002
         %nav.breadcrumbs
           %a{href: "/", class: "breadcrumbs_i"} Главная
           %i.fa.fa-chevron-right
           %a{href: "/catalog", class: "breadcrumbs_i"} Каталог
           %i.fa.fa-chevron-right
           %span.breadcrumbs_i Lego city
+        %h1.tx.__upper.__minor Пожарная машина  арт. #60002
+
       %section.section_main
+        .catalog-show
+          .grid
+            .grid-i.__grid-6>
+              .gallery
+                .gallery_view
+                  .gallery_view_i.__new.__current{data: {rel: "1"}}
+                    %img{src: "/assets/images/fake/img_540_470_01.png", width: 538, height: 470, alt: "Пожарная машина  арт. #60002"}
+                  .gallery_view_i{data: {rel: "2"}}
+                    %img{src: "/assets/images/blank.gif", class: "c-bg __gray", width: 538, height: 470, alt: "Пожарная машина  арт. #60002"}
+                  .gallery_view_i{data: {rel: "3"}}
+                    %img{src: "/assets/images/blank.gif", class: "c-bg __green", width: 538, height: 470, alt: "Пожарная машина  арт. #60002"}
+                  .gallery_view_i{data: {rel: "4"}}
+                    %img{src: "/assets/images/blank.gif", class: "c-bg __blue", width: 538, height: 470, alt: "Пожарная машина  арт. #60002"}
+                  .gallery_view_i.__new{data: {rel: "5"}}
+                    %img{src: "/assets/images/blank.gif", class: "c-bg __orange", width: 538, height: 470, alt: "Пожарная машина  арт. #60002"}
+                  .gallery_view_i{data: {rel: "6"}}
+                    %iframe{width: "420", height: "315", src: "//www.youtube.com/embed/8FAt7ze-QLQ", frameborder: "0", allowfullscreen: "allowfullscreen"}
+                %ul.gallery_preview
+                  %li.gallery_preview_i.__current{data: {rel: "1"}}>
+                    %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 112, width: 112, alt: "Пожарная машина  арт. #60002"}
+                  %li.gallery_preview_i{data: {rel: "2"}}>
+                    %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 112, width: 112, alt: "Пожарная машина  арт. #60002"}
+                  %li.gallery_preview_i{data: {rel: "3"}}>
+                    %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 112, width: 112, alt: "Пожарная машина  арт. #60002"}
+                  %li.gallery_preview_i{data: {rel: "4"}}>
+                    %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 112, width: 112, alt: "Пожарная машина  арт. #60002"}
+                  %li.gallery_preview_i{data: {rel: "5"}}>
+                    %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 112, width: 112, alt: "Пожарная машина  арт. #60002"}
+                  %li.gallery_preview_i.__video{data: {rel: "6"}}>
+                    %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 112, width: 112, alt: "Пожарная машина  арт. #60002"}
+            .grid-i.__grid-6>
+              %h4.tx.__upper.m-b_1 Описание
+              %article.tx.__xs.m-b_4
+                %p Занять свои места! В&nbsp;городе LEGO<sup class="reg">&reg;</sup> City пожар, и&nbsp;пожарным надо быстро прибыть на&nbsp;место в&nbsp;своей замечательной пожарной машине! Подсоедини шланг, выдвини лестницу и&nbsp;подготовь противопожарное снаряжение. Хватай топор, вскарабкайся по&nbsp;лестнице и&nbsp;потуши этот пожар! В&nbsp;набор входят 2&nbsp;минифигурки пожарных с&nbsp;различными аксессуарами. Занять свои места!
+                %p В&nbsp;городе LEGO<sup class="reg">&reg;</sup> City пожар, и&nbsp;пожарным надо быстро прибыть на&nbsp;место в&nbsp;своей замечательной пожарной машине! Подсоедини шланг, выдвини лестницу и&nbsp;подготовь противопожарное снаряжение. Хватай топор, вскарабкайся по&nbsp;лестнице и&nbsp;потуши этот пожар! В&nbsp;набор входят 2&nbsp;минифигурки пожарных с&nbsp;различными аксессуарами.
+                %p Подсоедини шланг, выдвини лестницу и&nbsp;подготовь противопожарное снаряжение. Хватай топор, вскарабкайся по&nbsp;лестнице и&nbsp;потуши этот пожар!
+              .catalog-show_action.m-b_5
+                .catalog-show_action_i.d-ib.va-b
+                  .catalog-show_oldprice
+                    %span.format-number
+                      = rand(5000..10000)
+                    руб.
+                  .price.__rub.__l.format-money
+                    = rand(500..5000)
+                .catalog-show_action_i.d-ib.va-b
+                  .catalog-show_quantity
+                    %label.form_label.form_el.__block.tx.__xs Количество
+                    .form_number
+                      %input{type: "text", class: "form_text form_el __block", value: "1"}
+                      .form_number_controls
+                        %a{href: "#", class: "form_number_controls_i __up"} +
+                        %a{href: "#", class: "form_number_controls_i __down"} -
+                .catalog-show_action_i.d-ib.va-b
+                  .catalog-show_action_i.d-ib.va-m
+                    %a{href: "#", class: "form_button __m __red"} В корзину
+                  .catalog-show_action_i.d-ib.va-m
+                    %a{href: "#", class: "tx __xs"} Заказ в 1 клик
+              .availability
+                %header.availability_header.m-b_2
+                  %form.form
+                    %label.form_label.va-m.tx.__xs Товар есть в магазинах:
+                    .form_select.form_el.__fake.va-m
+                      %p &nbsp;
+                      %select.form_select.form_el.__real
+                        %option{selected: "selected"} Москва
+                        %option Смоленск
+                        %option Магадан
+                %section.availability_section.m-b_2
+                  %dl
+                    %dt.availability_section_name.__green>
+                      %p.tx.__s ТРЦ «ЕвроПарк»
+                    %dd.availability_section_contacts>
+                      %p
+                        %span.tx.__xs телефон:
+                        +7 (903) 543-66-04
+                      %p.tx.__xs г. Москва, Рублёвское шоссе, 62, 2&nbsp;этаж
+                    %dd.availability_section_action>
+                      %a{href: "#", class: "form_button __s __orange"} Отложить
+                  %dl
+                    %dt.availability_section_name.__blue>
+                      %p.tx.__s Кутузовский проспект, 26
+                    %dd.availability_section_contacts>
+                      %p
+                        %span.tx.__xs телефон:
+                        +7 (495) 660-78-67
+                      %p.tx.__xs Кутузовский проспект, 26
+                    %dd.availability_section_action>
+                      %a{href: "#", class: "form_button __s __orange"} Отложить
+                  %dl
+                    %dt.availability_section_name.__brown>
+                      %p.tx.__s Ленинский проспект, д. 4а
+                    %dd.availability_section_contacts>
+                      %p
+                        %span.tx.__xs телефон:
+                        +7 (903) 543-66-04
+                      %p.tx.__xs Ленинский проспект, д. 4а
+                    %dd.availability_section_action>
+                      %a{href: "#", class: "form_button __s __orange"} Отложить
+                  %dl
+                    %dt.availability_section_name.__green>
+                      %p.tx.__s Пречистенка
+                    %dd.availability_section_contacts>
+                      %p
+                        %span.tx.__xs телефон:
+                        +7 (495) 644-24-41
+                      %p.tx.__xs ул. Пречистенка, д. 40/2
+                    %dd.availability_section_action>
+                      %a{href: "#", class: "form_button __s __orange"} Отложить
+                  %dl
+                    %dt.availability_section_name.__blue>
+                      %p.tx.__s Садовая-Спасская
+                    %dd.availability_section_contacts>
+                      %p
+                        %span.tx.__xs телефон:
+                        +7 (495) 665-09-60
+                      %p.tx.__xs ул. Садовая-Спасская, д. 3
+                    %dd.availability_section_action>
+                      %a{href: "#", class: "form_button __s __orange"} Отложить
+
+                  .availability_section_more
+                    %dl
+                      %dt.availability_section_name.__green>
+                        %p.tx.__s ТРЦ «ЕвроПарк»
+                      %dd.availability_section_contacts>
+                        %p
+                          %span.tx.__xs телефон:
+                          +7 (903) 543-66-04
+                        %p.tx.__xs г. Москва, Рублёвское шоссе, 62, 2&nbsp;этаж
+                      %dd.availability_section_action>
+                        %a{href: "#", class: "form_button __s __orange"} Отложить
+                    %dl
+                      %dt.availability_section_name.__blue>
+                        %p.tx.__s Кутузовский проспект, 26
+                      %dd.availability_section_contacts>
+                        %p
+                          %span.tx.__xs телефон:
+                          +7 (495) 660-78-67
+                        %p.tx.__xs Кутузовский проспект, 26
+                      %dd.availability_section_action>
+                        %a{href: "#", class: "form_button __s __orange"} Отложить
+                    %dl
+                      %dt.availability_section_name.__brown>
+                        %p.tx.__s Ленинский проспект, д. 4а
+                      %dd.availability_section_contacts>
+                        %p
+                          %span.tx.__xs телефон:
+                          +7 (903) 543-66-04
+                        %p.tx.__xs Ленинский проспект, д. 4а
+                      %dd.availability_section_action>
+                        %a{href: "#", class: "form_button __s __orange"} Отложить
+                    %dl
+                      %dt.availability_section_name.__green>
+                        %p.tx.__s Пречистенка
+                      %dd.availability_section_contacts>
+                        %p
+                          %span.tx.__xs телефон:
+                          +7 (495) 644-24-41
+                        %p.tx.__xs ул. Пречистенка, д. 40/2
+                      %dd.availability_section_action>
+                        %a{href: "#", class: "form_button __s __orange"} Отложить
+                    %dl
+                      %dt.availability_section_name.__blue>
+                        %p.tx.__s Садовая-Спасская
+                      %dd.availability_section_contacts>
+                        %p
+                          %span.tx.__xs телефон:
+                          +7 (495) 665-09-60
+                        %p.tx.__xs ул. Садовая-Спасская, д. 3
+                      %dd.availability_section_action>
+                        %a{href: "#", class: "form_button __s __orange"} Отложить
+
+                %footer.availability_footer
+                  .tx.__center
+                    %a{href: "#", class: "a __pseudo tx __xs availability_more"} Показать
+
+  %section.m-b_5
+    .tabs
+      .ctn
+        %ul.tabs_list
+          %li.tabs_i.grid-i.__grid-6>
+            %a{href: "#tabs-1", class: "tabs_i_a __white"}
+              %i.ico.__35.__list
+              Характеристики
+          %li.tabs_i.grid-i.__grid-6>
+            %a{href: "#tabs-2", class: "tabs_i_a __blue"}
+              %i.ico.__35.__comment
+              Отзывы
+              %sub 3
+        #tabs-1
+          .p-t_5.p-b_5
+            %h2.tx.__upper.m-b_2 LEGO City Fire 60002: Пожарная машина
+            .grid
+              .grid-i.__grid-6>
+                %article.tx.__xs.m-b_3
+                  %p Пожарная машина (LEGO-Nr.: 60002) спешит на&nbsp;место вызова.
+                  %p Быстрее, надо подключить шланг, выдвинуть лестницу и&nbsp;с&nbsp;помощью специальной экипировки погасить пожар в&nbsp;доме. После вызова лестница опять складывается в&nbsp;машину, чтобы её&nbsp;всегда можно было легко вытащить.
+                %article.tx.__xs.m-b_3
+                  %p
+                    %b Особенности:
+                  %ul
+                    %li 2 мини-фигурки пожарников
+                    %li складывающаяся лестница, складной шланг с элементом воды, люк и место  для хранения вещей
+                    %li гидрант, экипировка пожарников, топор, огнетушитель и пила
+                    %li размер машины: 8х16х5 см.
+                %article.tx.__xs
+                  %p
+                    %b Детали:
+                  %p Количество деталей: 208
+              .grid-i.__grid-6>
+                %article.tx.__xs.m-b_3
+                  %p
+                    %b Подробнее:
+                  %p Для детей в возрасте: от 5 до 12 лет
+                  %p Номер товара: 2540612
+                %article.tx.__xs.m-b_3
+                  %p
+                    %b Размер упаковки:
+                  %p Ширина — 25 см
+                  %p Длина — 45 см
+                  %p Глубина — 6 см
+                  %p Вес — 850 г
+                %article.tx.__xs.m-b_3
+                  %p
+                    %b Страна производитель:
+                  %p Дания
+                %article.tx.__xs.m-b_3
+                  %p
+                    %b Доступен на складе:
+                  %p Да
+        #tabs-2
+          .p-t_5.p-b_5
+            .reviews
+
+              .reviews_add{style: "display: none;"}
+                .grid-i.__grid-5.b-center
+                  %article.tx.__center.m-b_3
+                    %p
+                      %b Ваш отзыв станет первым
+                      %br
+                      для товара LEGO City Fire 60002: Пожарная машина
+                .grid-i.__grid-4.b-center
+                  %form.__form
+                    .m-b_2
+                      %input{type: "text", class: "form_text grid-i __grid-4", placeholder: "Ваше имя"}
+                    .m-b_2
+                      %textarea{rows: 8, class: "form_textarea grid-i __grid-4", placeholder: "Ваш отзыв"}
+                    .m-b_2
+                      %input{type: "submit", class: "form_button __red __m grid-i __grid-4", value: "Добавить отзыв"}
+                    %a{href: "#", class: "form_button __orange __m grid-i __grid-4 js-reviews-toggle"} Вернуться к отзывам
+
+              .reviews_list
+                .reviews_i
+                  .grid
+                    .grid-i.__grid-3>
+                      .reviews_i_name Алексей Демин
+                      .reviews_i_date 22 января, 2013
+                    .grid-i.__grid-9>
+                      .reviews_i_tx
+                        %p Купил пожарную машину и доволен как слон. Именно так должен выглядеть и главное работать настоящий пожарный отряд.
+                        %p Все четко! Спасибо LEGO!
+                .reviews_i
+                  .grid
+                    .grid-i.__grid-3>
+                      .reviews_i_name Толик ККК
+                      .reviews_i_date 20 января, 2013
+                    .grid-i.__grid-9>
+                      .reviews_i_tx
+                        %p Классный конструктор
+                .reviews_i
+                  .grid
+                    .grid-i.__grid-3>
+                      .reviews_i_name Алиса
+                      .reviews_i_date 5 января, 2013
+                    .grid-i.__grid-9>
+                      .reviews_i_tx
+                        %p Заказали сыну(ему 3.5&nbsp;года) пожарный грузовик&nbsp;&mdash; это одна из&nbsp;наших последних покупок. Как и&nbsp;все игрушки Лего он&nbsp;крепкий&nbsp;&mdash; с&nbsp;ним ничего не&nbsp;случается при падении. Сирена с&nbsp;негромким звуком, что мне нравится и&nbsp;мигает, как настоящая. Ещё там два пожарных шланга, один в&nbsp;другой вставляется, как продолжение и&nbsp;имитация ручки, которую может держать пожарник. Сын везде с&nbsp;собой носит эту пожарную машинку, особенно часто она у&nbsp;нас на&nbsp;обеденном столе появляется.
+                .grid
+                  .grid-i.__grid-9.__prefix-3
+                    %a{href: "#", class: "form_button __red __m grid-i __grid-3 js-reviews-toggle"} Добавить отзыв
 
   %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .ctn.m-b_6
+      .catalog-block.brick.m-b_4
+        .tx.__center
+          %h2.tx.__upper.m-b_3 Похожие товары
+          .catalog.__product
+            .grid.catalog_row
+              - 1.upto(3) do
+                .grid-i.__grid-3>
+                  .tx.__left
+                    = haml 'views/common/_catalog_item'.to_sym
+      .catalog-block.brick
+        .tx.__center
+          %h2.tx.__upper.m-b_3 Вы недавно смотрели
+          .catalog.__product
+            .grid.catalog_row
+              - 1.upto(3) do
+                .grid-i.__grid-3>
+                  .tx.__left
+                    = haml 'views/common/_catalog_item'.to_sym
     .m-b_6
       = haml 'views/common/_slider'.to_sym
     .ctn
