@@ -29,4 +29,14 @@
     &.__fb {background-position: -58px 0;}
     &.__ok {background-position: -116px 0;}
   }
+  &.__about {
+    @include size(215px, 140px);
+    background-image: url(/assets/images/icons/ico-about.png);
+    &.__1 {background-position: 0 0;}
+    &.__2 {background-position: -215px 0;}
+    &.__3 {background-position: -430px 0;}
+    &.__4 {background-position: -645px 0;}
+    &.__5 {background-position: -860px 0;}
+    &.__6 {background-position: -1075px 0;}
+  }
 }

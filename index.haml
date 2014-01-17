@@ -1,18 +1,18 @@
 %header#header.header.__promo{role: "banner"}
 
   .header_bg
-    .header_bg_i{data: {rel: "marvel"}, style: "background-image: url(/assets/images/promo/bg-marvel.png); display: block;"}
-    .header_bg_i{data: {rel: "chima"}, style: "background-image: url(/assets/images/promo/bg-chima.png)"}
+    .header_bg_i{data: {rel: "chima"}, style: "background-image: url(/assets/images/promo/bg-chima.png); display: block;"}
+    .header_bg_i{data: {rel: "marvel"}, style: "background-image: url(/assets/images/promo/bg-marvel.png);"}
 
   .ctn
     = haml 'views/layouts/_header'.to_sym
     .promo.brick
-      .promo_i{data: {rel: "marvel"}, style: "display: block;"}
-        %a{href: "#"}
-          %img{src: "/assets/images/promo/marvel.png", class: "promo_i_img", width: "100%", alt: "Супергерои Lego"}
-      .promo_i{data: {rel: "chima"}}
+      .promo_i{data: {rel: "chima"}, style: "display: block;"}
         %a{href: "#"}
           %img{src: "/assets/images/promo/chima.png", class: "promo_i_img", width: "100%", alt: "Подарок королевства Чима"}
+      .promo_i{data: {rel: "marvel"}}
+        %a{href: "#"}
+          %img{src: "/assets/images/promo/marvel.png", class: "promo_i_img", width: "100%", alt: "Супергерои Lego"}
 
 %section.promo-slider.__index
   .m-b_1
