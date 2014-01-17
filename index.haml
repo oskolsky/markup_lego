@@ -92,7 +92,8 @@
                 Показать все новинки
                 %i.fa.fa-chevron-right
 
-  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+  %section.blocks.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
     .ctn
-      = haml 'views/common/_footer_features'.to_sym
-      = haml 'views/common/_footer_summary'.to_sym
+      .m-b_4
+        = haml 'views/common/_block_about'.to_sym
+      = haml 'views/common/_block_summary'.to_sym

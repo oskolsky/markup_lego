@@ -296,7 +296,7 @@
                   .grid-i.__grid-9.__prefix-3
                     %a{href: "#", class: "form_button __red __m grid-i __grid-3 js-reviews-toggle"} Добавить отзыв
 
-  %section.summary.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+  %section.blocks.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
     .ctn.m-b_6
       .catalog-block.brick.m-b_4
         .tx.__center
@@ -316,7 +316,4 @@
                 .grid-i.__grid-3>
                   .tx.__left
                     = haml 'views/common/_catalog_item'.to_sym
-    .m-b_6
-      = haml 'views/common/_footer_slider'.to_sym
-    .ctn
-      = haml 'views/common/_footer_summary'.to_sym
+    = haml 'views/common/_block_common'.to_sym
