@@ -48,9 +48,11 @@
             .m-b_4
               - 1.upto(4) do
                 .grid.catalog_row
-                  - 1.upto(4) do
+                  - 1.upto(2) do
                     .grid-i.__grid-3>
                       = haml 'views/common/_catalog_item'.to_sym
+                    .grid-i.__grid-3>
+                      = haml 'views/common/_catalog_item_half'.to_sym
             .catalog_all.beta
               %a{href: "#", class: "tx __minor"}
                 Показать все новинки
@@ -60,7 +62,9 @@
             .m-b_4
               - 1.upto(4) do
                 .grid.catalog_row
-                  - 1.upto(4) do
+                  - 1.upto(2) do
+                    .grid-i.__grid-3>
+                      = haml 'views/common/_catalog_item_half'.to_sym
                     .grid-i.__grid-3>
                       = haml 'views/common/_catalog_item'.to_sym
             .catalog_all.beta
@@ -72,9 +76,11 @@
             .m-b_4
               - 1.upto(4) do
                 .grid.catalog_row
-                  - 1.upto(4) do
+                  - 1.upto(2) do
                     .grid-i.__grid-3>
                       = haml 'views/common/_catalog_item'.to_sym
+                    .grid-i.__grid-3>
+                      = haml 'views/common/_catalog_item_half'.to_sym
             .catalog_all.beta
               %a{href: "#", class: "tx __minor"}
                 Показать все новинки
