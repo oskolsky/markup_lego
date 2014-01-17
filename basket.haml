@@ -4,7 +4,7 @@
 
 %main#main.main{role: "main"}
 
-  %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Basket"}
+  %section.section.p-t_6{role: "region", "aria-label" => "Basket"}
     .ctn
       %header.section_header.m-b_2
         %h1.tx.__upper.__minor.tx.__center Ваш заказ
@@ -110,3 +110,121 @@
                   %td
                     .basket_action
                       %a{href: "#", class: "form_button __red __xs basket_action_i"} Добавить
+
+          .grid.m-b_6
+            .grid-i.__grid-5>
+              %article
+                %p Нужна помощь в оформлении заказа?
+                %p Перезвоните нам 8 (495) 651-62-85
+            .grid-i.__grid-5
+              .tx.__right
+                .basket_promo.m-b_3
+                  %form.form
+                    .basket_promo_i>
+                      %span.tx.__xs.d-ib.va-m Введите код купона:
+                    .basket_promo_i>
+                      %input{type: "text", class: "form_text", placeholder: "00000000"}
+                    .basket_promo_i>
+                      %a{href: "#", class: "form_button __red __xm"} Применить код
+                .basket_total
+                  %span.basket_total_t Стоимость со скидкой
+                  .price.__rub.__l.format-money
+                    = rand(500..2000)
+                %p.tx.__xs.__center Без учета доставки
+
+          .m-b_4
+            %a{href: "#"}
+              %img{src: "/assets/images/blank.gif", class: "va-t c-bg __gray", width: "100%", height: 150, alt: ""}
+
+          .basket_steps
+
+            .basket_steps_i.__open
+              .basket_steps_i_t{data: {number: 1}} Кому доставить
+              .basket_steps_i_body
+                %p.m-b_1 Мы гарантируем кофиденциальность ваших персональных данных. Все поля обязательны для заполнения.
+                %form.form
+                  .m-b_1
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Имя
+                      %input{type: "text", class: "form_text form_el __block"}
+                      %p.tx.__xs как к вам обращаться?
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b E-mail
+                      %input{type: "text", class: "form_text form_el __block"}
+                      %p.tx.__xs сюда мы отправим детали заказа
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Телефон
+                      %input{type: "text", class: "form_text __phone form_el __block"}
+                      %p.tx.__xs по нему вам позвонит курьер
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Удобное время для звонка
+                      %input{type: "text", class: "form_text form_el __block"}
+                      %p.tx.__xs здесь вы&nbsp;можете указать предпочтительное время для связи с&nbsp;вами
+                  %a{href: "#", class: "form_button __red __l"} Заказать и уточнить детали
+
+            .basket_steps_i.__open
+              .basket_steps_i_t{data: {number: 2}} Мои привилегии
+              .basket_steps_i_body
+                %p.m-b_1 Мы гарантируем кофиденциальность ваших персональных данных. Все поля обязательны для заполнения.
+                %form.form
+                  .m-b_1
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Тип карты
+                      .form_select.form_el.__fake.__block
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} карта почётного клиента
+                          %option карта почётного клиента
+                          %option карта почётного клиента
+                          %option карта почётного клиента
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Карта почётного клиента
+                      %input{type: "text", class: "form_text __card form_el __block"}
+                      %p.tx.__xs Номер указан под штрих-кодом
+                      %p.tx.__xs
+                        %a{href: "#"} Получить карту почётного клиента
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Бонусный код
+                      %input{type: "text", class: "form_text form_el __block"}
+                      %p.tx.__xs Есть бонус-код? Введите его сюда!
+                  %a{href: "#", class: "form_button __red __l"} Продолжить
+
+            .basket_steps_i.__open
+              .basket_steps_i_t{data: {number: 3}} Куда доставить
+              .basket_steps_i_body
+                %form.form
+                  .m-b_1
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Город
+                      .form_select.form_el.__fake.__block
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} Смоленск
+                          %option Москва
+                          %option Магадан
+                    .form_row>
+                      %label.form_label.form_el.__block.tx.__xs
+                        %b Способ доставки
+                      .form_select.form_el.__fake.__block
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} Курьером, 4% от суммы
+                          %option Почтой, 2% от сыммы
+                          %option Никак сам приеду, бесплатно
+                  %a{href: "#", class: "form_button __red __l"} Продолжить
+
+            .basket_steps_i.__open
+              .basket_steps_i_t{data: {number: 4}} Как оплатить
+              .basket_steps_i_body
+
+            .basket_steps_i.__open
+              .basket_steps_i_t{data: {number: 5}} Подтверждение
+              .basket_steps_i_body

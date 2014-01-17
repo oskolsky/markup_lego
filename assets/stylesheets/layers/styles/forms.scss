@@ -53,6 +53,12 @@ input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
     height: 40px;
   }
 
+  &.__xm {
+    font-size: 13px;
+    height: 42px;
+    line-height: 42px;
+  }
+
   &.__m {
     font-size: 21px;
     height: 45px;

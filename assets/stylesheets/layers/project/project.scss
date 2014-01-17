@@ -720,11 +720,12 @@
 //
 //****************************************************************************************************
 .basket {
-
   table {width: 100%;}
-
 }
 
+//
+// .. Old price
+//
 .basket_oldprice {
   color: #949494;
   font:{
@@ -735,6 +736,9 @@
   text-decoration: line-through;
 }
 
+//
+// .. Action
+//
 .basket_action {
 
 }
@@ -746,6 +750,100 @@
   .fa {
     font-size: 110%;
     margin-right: 3px;
+  }
+}
+
+//
+// .. Promo code
+//
+.basket_promo {
+  .form_text {width: 100px;}
+}
+
+.basket_promo_i {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+//
+// .. Total
+//
+.basket_total {
+
+}
+
+.basket_total_t {
+  display: inline-block;
+  font: {
+    family: $h-font-family;
+    size: 28px;
+    weight: 700;
+  }
+  line-height: 1;
+  margin-right: 10px;
+}
+
+//
+// .. Steps
+//
+.basket_steps {
+
+}
+
+.basket_steps_i {
+  border: 10px solid #fbbc00;
+  padding: 40px 40px 40px 100px;
+
+  &:not(:last-child) {margin-bottom: 10px;}
+
+  &.__close {
+    .basket_steps_i_body {display: none;}
+  }
+  &.__open {
+    .basket_steps_i_body {display: block;}
+  }
+
+}
+
+.basket_steps_i_t {
+  font: {
+    family: $h-font-family;
+    size: 30px;
+    weight: 700;
+  }
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 52px;
+
+  &::before {
+    border-radius: 50%;
+    content: attr(data-number);
+    color: #fff;
+    background-color: #fbbc00;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+}
+
+.basket_steps_i_body {
+  .form_row {
+    display: inline-block;
+    vertical-align: top;
+    width: 252px;
+    &:not(:last-child) {margin-right: 15px;}
+
+
+    .form_text, .form_select {
+      margin: 5px 0;
+    }
   }
 }
 
