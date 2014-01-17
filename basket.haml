@@ -7,12 +7,106 @@
   %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Basket"}
     .ctn
       %header.section_header.m-b_2
-        %h1.tx.__upper.__minor Корзина
-        %nav.breadcrumbs
-          %a{href: "/", class: "breadcrumbs_i"} Главная
-          %i.fa.fa-chevron-right
-          %span.breadcrumbs_i Корзина
+        %h1.tx.__upper.__minor.tx.__center Ваш заказ
       %section.section_main
+        .basket
 
-  %section.blocks.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
-    = haml 'views/common/_block_common'.to_sym
+          %table.table.m-b_3
+            %thead
+              %tr
+                %th Фото
+                %th Наименование
+                %th Количество
+                %th Скидка
+                %th Итоговая стоимость
+                %th &nbsp;
+            %tbody
+              - 1.upto(2) do
+                %tr
+                  %td
+                    %a{href: "/catalog_show"}
+                      %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg"}
+                  %td
+                    %p.table_number Звездные войны 23523
+                    %p.table_name
+                      %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
+                  %td
+                    .form_number
+                      %input{type: "text", class: "form_text form_el __block", value: "1"}
+                      .form_number_controls
+                        %a{href: "#", class: "form_number_controls_i __up"} +
+                        %a{href: "#", class: "form_number_controls_i __down"} -
+                  %td
+                    %p -5%
+                  %td
+                    .basket_oldprice
+                      %span.format-number
+                        = rand(5000..10000)
+                      руб.
+                    .price.__rub.__m.format-money
+                      = rand(500..2000)
+                  %td
+                    .basket_action
+                      %a{href: "#", class: "form_button __gray __xs basket_action_i"}
+                        %i.fa.fa-times
+                        Удалить
+                      %a{href: "#", class: "form_button __orange __xs basket_action_i"} Отложить
+              %tr
+                %td.table_t{colspan: "6"}
+                  %h2 Отложенные ранее
+              %tr
+                %td
+                  %a{href: "/catalog_show"}
+                    %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg"}
+                %td
+                  %p.table_number Звездные войны 23523
+                  %p.table_name
+                    %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
+                %td
+                  .form_number
+                    %input{type: "text", class: "form_text form_el __block", value: "1"}
+                    .form_number_controls
+                      %a{href: "#", class: "form_number_controls_i __up"} +
+                      %a{href: "#", class: "form_number_controls_i __down"} -
+                %td
+                  %p -5%
+                %td
+                  .basket_oldprice
+                    %span.format-number
+                      = rand(5000..10000)
+                    руб.
+                  .price.__rub.__m.format-money
+                    = rand(500..2000)
+                %td
+                  .basket_action
+                    %a{href: "#", class: "form_button __red __xs basket_action_i"} Добавить
+              %tr
+                %td.table_t{colspan: "6"}
+                  %h2 Купить со скидкой
+              - 1.upto(2) do
+                %tr
+                  %td
+                    %a{href: "/catalog_show"}
+                      %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg"}
+                  %td
+                    %p.table_number Звездные войны 23523
+                    %p.table_name
+                      %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
+                  %td
+                    .form_number
+                      %input{type: "text", class: "form_text form_el __block", value: "1"}
+                      .form_number_controls
+                        %a{href: "#", class: "form_number_controls_i __up"} +
+                        %a{href: "#", class: "form_number_controls_i __down"} -
+                  %td
+                    %p -5%
+                  %td
+                    .basket_oldprice
+                      %span.format-number
+                        = rand(5000..10000)
+                      руб.
+                    .price.__rub.__m.format-money
+                      = rand(500..2000)
+                  %td
+                    .basket_action
+                      %a{href: "#", class: "form_button __red __xs basket_action_i"} Добавить

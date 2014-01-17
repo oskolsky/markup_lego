@@ -42,6 +42,12 @@ input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
   vertical-align: middle;
   @include prefixes(box-sizing, border-box);
 
+  &.__xs {
+    font-size: 13px;
+    height: 28px;
+    line-height: 28px;
+  }
+
   &.__s {
     font-size: 13px;
     height: 40px;
@@ -63,6 +69,7 @@ input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
 
   &.__red    {background-color: $red-color;}
   &.__orange {background-color: $orange-color;}
+  &.__gray   {background-color: #d4d4d4;}
 
 }
 a.form_button {

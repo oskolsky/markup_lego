@@ -143,7 +143,7 @@
 //
 // .. Basket
 //
-.basket {
+.header_basket {
   background: url(/assets/images/basket.png) center no-repeat;
   color: #fff;
   display: inline-block;
@@ -710,6 +710,43 @@
 
   }
 
+}
+
+
+
+//****************************************************************************************************
+//
+// .. BASKET
+//
+//****************************************************************************************************
+.basket {
+
+  table {width: 100%;}
+
+}
+
+.basket_oldprice {
+  color: #949494;
+  font:{
+    family: $h-font-family;
+    size: 14px;
+    weight: 700;
+  }
+  text-decoration: line-through;
+}
+
+.basket_action {
+
+}
+
+.basket_action_i {
+  display: block;
+  white-space: nowrap;
+  &:not(:last-child) {margin-bottom: 15px;}
+  .fa {
+    font-size: 110%;
+    margin-right: 3px;
+  }
 }
 
 
@@ -1583,6 +1620,7 @@
 .price {
   display: inline-block;
   font-family: $h-font-family;
+  white-space: nowrap;
 
   &.__rub {
     color: $minor-color;
@@ -1802,10 +1840,7 @@ a.breadcrumbs_i {color: #0068a5;}
 
     td {
       border-bottom: 1px solid #ccc;
-      padding: {
-        top:    20px;
-        bottom: 20px;
-      }
+      padding: 20px 0;
       vertical-align: middle;
       &:not(:last-child) {padding-right: 80px;}
 
@@ -1836,6 +1871,11 @@ a.breadcrumbs_i {color: #0068a5;}
 
   }
 
+}
+
+.table_t {
+  border-color: transparent !important;
+  padding: 30px 0 !important;
 }
 
 //
