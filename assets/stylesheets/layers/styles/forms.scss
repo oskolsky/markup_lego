@@ -140,21 +140,23 @@ a.form_button {
 // .. Radio
 //
 .form_radio.__fake {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 22px;
+  height: 22px;
   line-height: 1.6rem;
   background: $form-el-bg;
   border: $form-el-border;
-  border-radius: .8rem;
+  border-radius: 50%;
   @include prefixes(box-sizing, border-box);
   &[data-checked="true"] {
     &::after {
-      content: "\f111";
-      margin: -1px 0 0 -1px;
-      color: fade-out($form-el-color, .3);
-      font-family: FontAwesome;
-      font-size: .8rem;
-      text-align: center;
+      background-color: #eb1c24;
+      border-radius: 50%;
+      content: "";
+      width: 12px;
+      height: 12px;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -6px;
     }
     &[disabled]::after {opacity: .33;}
   }

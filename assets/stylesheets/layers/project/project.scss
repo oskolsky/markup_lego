@@ -840,10 +840,33 @@
     width: 252px;
     &:not(:last-child) {margin-right: 15px;}
 
+    &.__l {
+      width: 710px;
+    }
+
 
     .form_text, .form_select {
       margin: 5px 0;
     }
+  }
+}
+
+//
+// .. Credit
+//
+.basket_credit {
+  position: absolute;
+  top: 85px;
+  left: 430px;
+  width: 530px;
+  &::before {
+    background-color: #0d0d0d;
+    content: '';
+    height: 1px;
+    width: 45px;
+    position: absolute;
+    top: 10px;
+    left: -55px;
   }
 }
 

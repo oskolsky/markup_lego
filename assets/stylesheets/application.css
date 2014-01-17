@@ -1208,24 +1208,26 @@ a.form_button {
     opacity: .33; }
 
 .form_radio.__fake {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 22px;
+  height: 22px;
   line-height: 1.6rem;
   background: white;
   border: 1px solid #cdcdcd;
-  border-radius: .8rem;
+  border-radius: 50%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
   .form_radio.__fake[data-checked="true"]::after {
-    content: "\f111";
-    margin: -1px 0 0 -1px;
-    color: rgba(20, 31, 78, 0.7);
-    font-family: FontAwesome;
-    font-size: .8rem;
-    text-align: center; }
+    background-color: #eb1c24;
+    border-radius: 50%;
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px; }
   .form_radio.__fake[data-checked="true"][disabled]::after {
     opacity: .33; }
 
@@ -2364,8 +2366,24 @@ a.form_button {
   width: 252px; }
   .basket_steps_i_body .form_row:not(:last-child) {
     margin-right: 15px; }
+  .basket_steps_i_body .form_row.__l {
+    width: 710px; }
   .basket_steps_i_body .form_row .form_text, .basket_steps_i_body .form_row .form_select {
     margin: 5px 0; }
+
+.basket_credit {
+  position: absolute;
+  top: 85px;
+  left: 430px;
+  width: 530px; }
+  .basket_credit::before {
+    background-color: #0d0d0d;
+    content: '';
+    height: 1px;
+    width: 45px;
+    position: absolute;
+    top: 10px;
+    left: -55px; }
 
 .gratitude_summary {
   text-align: right; }
