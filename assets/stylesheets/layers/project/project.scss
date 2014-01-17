@@ -1122,9 +1122,11 @@
     .slides {
       height: 227px;
       overflow: hidden;
+      white-space: nowrap;
     }
 
     .slide {
+      display: inline-block;
       margin-right: 19px;
       margin-left: 16px;
       width: 383px;
