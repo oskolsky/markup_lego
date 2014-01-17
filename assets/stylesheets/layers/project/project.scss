@@ -1535,106 +1535,6 @@
 
 //****************************************************************************************************
 //
-// .. FEEDBACK
-//
-//****************************************************************************************************
-.feedback {
-
-  .form_label {
-    display: inline-block;
-    text-align: right;
-    margin-right: 10px;
-    width: 200px;
-  }
-
-  .form_button {margin-left: 210px;}
-
-}
-
-.feedback_header {
-  background-color: #eb2224;
-  color: #fff;
-  padding: 50px 70px;
-  text-transform: uppercase;
-}
-
-.feedback_body {
-  background-color: #fff;
-  padding: 30px 0 55px;
-}
-
-.feedback_captcha {
-  display: inline-block;
-  margin: 0 10px;
-  vertical-align: middle;
-}
-
-
-
-//****************************************************************************************************
-//
-// .. SUBSCRIPTION
-//
-//****************************************************************************************************
-.subscription {
-
-  input::-webkit-input-placeholder {color: #fff;}
-
-  input:-moz-placeholder {color: #fff;}
-
-}
-
-.subscription_form {
-  background-color: #fbbc00;
-  border-radius: 15px 15px 0 0;
-  padding: 60px 60px 35px;
-  position: relative;
-}
-
-.subscription_form_input {
-  border: 1px solid #fcd257;
-  border-radius: 15px;
-  color: #fff;
-  display: block;
-  font-size: 16px;
-  padding: 20px;
-  width: 220px;
-}
-
-.subscription_form_submit {
-  background-color: #eb1c24;
-  border-radius: 15px;
-  color: #fff;
-  display: block;
-  font-family: $h-font-family;
-  font-size: 18px;
-  padding: 25px 20px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 220px;
-}
-
-.subscription_form_img {
-  position: absolute;
-  top: 110px;
-  right: 25px;
-}
-
-.subscription_vk {
-  background-color: #f7a300;
-  border-radius: 0 0 15px 15px;
-  padding: 35px 80px 60px 105px;
-}
-
-.subscription_vk_widget {
-  border: 10px solid #fff;
-  border-radius: 6px;
-}
-
-
-
-//****************************************************************************************************
-//
 // .. ELEMENTS
 //
 //****************************************************************************************************
@@ -1825,29 +1725,6 @@ a.breadcrumbs_i {color: #0068a5;}
 }
 
 //
-// .. Share block
-//
-.share {text-align: center;}
-
-.share_t {
-  color: #212121;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 35px;
-  text-transform: uppercase;
-}
-
-.share_nav {
-
-}
-
-.share_nav_i {
-  display: inline-block;
-  margin: 0 5px;
-  .ico {vertical-align: top;}
-}
-
-//
 // .. Table
 //
 .table {
@@ -1906,14 +1783,6 @@ a.breadcrumbs_i {color: #0068a5;}
 
   }
 
-}
-
-//
-// .. Catalog block
-//
-.catalog-block {
-  background-color: #fff;
-  padding: 50px 30px;
 }
 
 //
@@ -2020,6 +1889,136 @@ a.breadcrumbs_i {color: #0068a5;}
 .summary {
   color: $minor-color;
   background: #f5f5f5 url(/assets/images/pattern.png) center repeat;
+}
+
+//
+// .. FEEDBACK
+//
+.feedback {
+
+  .form_label {
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  .form_button {margin-left: 210px;}
+
+}
+
+.feedback_header {
+  background-color: #eb2224;
+  color: #fff;
+  padding: 50px 70px;
+  text-transform: uppercase;
+}
+
+.feedback_body {
+  background-color: #fff;
+  padding: 30px 0 55px;
+}
+
+.feedback_captcha {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+//
+// .. SHARE
+//
+.share {text-align: center;}
+
+.share_t {
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.share_nav {
+
+}
+
+.share_nav_i {
+  display: inline-block;
+  margin: 0 5px;
+  .ico {vertical-align: top;}
+}
+
+//
+// .. SUBSCRIPTION
+//
+.subscription {
+
+  input::-webkit-input-placeholder {color: #fff;}
+
+  input:-moz-placeholder {color: #fff;}
+
+}
+
+.subscription_form {
+  background-color: #fbbc00;
+  border-radius: 15px 15px 0 0;
+  padding: 60px 60px 35px;
+  position: relative;
+}
+
+.subscription_form_input {
+  border: 1px solid #fcd257;
+  border-radius: 15px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 20px;
+  width: 220px;
+}
+
+.subscription_form_submit {
+  background-color: #eb1c24;
+  border-radius: 15px;
+  color: #fff;
+  display: block;
+  font-family: $h-font-family;
+  font-size: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 220px;
+}
+
+.subscription_form_img {
+  position: absolute;
+  top: 110px;
+  right: 25px;
+}
+
+.subscription_vk {
+  background-color: #f7a300;
+  border-radius: 0 0 15px 15px;
+  padding: 35px 80px 60px 105px;
+}
+
+.subscription_vk_widget {
+  border: 10px solid #fff;
+  border-radius: 6px;
+}
+
+//
+// .. CATALOG
+//
+.catalog-block {
+  background-color: #fff;
+  padding: 50px 30px;
+}
+
+//
+// .. FEATURES
+//
+.features {
+
 }
 
 
