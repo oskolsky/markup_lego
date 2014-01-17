@@ -30,8 +30,8 @@ $(function() {
   // .. CATALOG
   //
   //****************************************************************************************************
-  $('.catalog').find('.catalog_row').each(function() {
-//    $(this).find('.catalog_i').resizeToMaxHeight();
+  $('.catalog.__series').find('.catalog_row').each(function() {
+    $(this).find('.catalog_i').resizeToMaxHeight();
   });
 
 
