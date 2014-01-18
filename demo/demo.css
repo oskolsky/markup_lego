@@ -1,0 +1,16 @@
+.demo {
+  margin-left: 1.5rem; }
+  .demo li:not(:last-child) {
+    margin-bottom: 1rem; }
+  .demo ol {
+    counter-reset: list; }
+    .demo ol > li {
+      position: relative; }
+      .demo ol > li::before {
+        counter-increment: list;
+        content: counter(list) ".";
+        position: absolute;
+        right: 100%;
+        margin: 0 .5rem 0 0;
+        color: #bfbfbf;
+        font-size: inherit; }
