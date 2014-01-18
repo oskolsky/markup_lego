@@ -214,17 +214,28 @@ $(function() {
   // .. JQUERY UI SLIDER RANGE
   //
   //****************************************************************************************************
-  $('.price-slider').each(function() {
+  $('.range-slider').each(function() {
     var _this = this;
-    $(_this).find('.price-slider_range').slider({
+    $(_this).find('.range-slider_init.__price').slider({
       range: true,
       min: 0,
       max: 22000,
       step: 100,
       values: [0, 22000],
       slide: function(event, ui) {
-        $(_this).find('.price-slider_value.__min').text(ui.values[0]);
-        $(_this).find('.price-slider_value.__max').text(ui.values[1]);
+        $(_this).find('.range-slider_value.__min').text(ui.values[0]);
+        $(_this).find('.range-slider_value.__max').text(ui.values[1]);
+      }
+    });
+    $(_this).find('.range-slider_init.__age').slider({
+      range: true,
+      min: 0,
+      max: 16,
+      step: 1,
+      values: [0, 16],
+      slide: function(event, ui) {
+        $(_this).find('.range-slider_value.__min').text(ui.values[0]);
+        $(_this).find('.range-slider_value.__max').text(ui.values[1]);
       }
     });
   });

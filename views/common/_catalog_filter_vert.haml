@@ -27,18 +27,17 @@
           %option Услуги
     .m-b_4
       %label.form_label.__m цена
-      .price-slider
-        .price-slider_value.__min 0
-        .price-slider_value.__max 22000
-        .price-slider_range
+      .range-slider
+        .range-slider_value.__min 0
+        .range-slider_value.__max 22000
+        .range-slider_init.__price
     .m-b_4
-      .form_select.form_el.__fake
-        %p &nbsp;
-        %select.form_select.form_el.__real
-          %option{selected: "selected"} возраст
-          %option 13
-          %option 14
-          %option 15
+      %label.form_label.__m возраст
+      .range-slider
+        .range-slider_value.__min 0
+        .range-slider_value.__max 16
+        .range-slider_init.__age
+
     .m-b_4
       .form_select.form_el.__fake
         %p &nbsp;

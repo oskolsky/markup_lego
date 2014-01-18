@@ -499,12 +499,12 @@
   // .. Series
   //
   &.__series {
-    border-right: 1px solid #cdcdcd;
+    border-top:  1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
 
     .catalog_i {
       border: {
-        top:    1px solid #cdcdcd;
-        left:   1px solid #cdcdcd;
+        right:  1px solid #cdcdcd;
         bottom: 1px solid #cdcdcd;
       }
       cursor: pointer;
@@ -514,7 +514,8 @@
         size: 23px;
         weight: bold;
       }
-      margin-top: -1px;
+      //margin-top: -1px;
+      //margin-right: -1px;
       padding: 0 20px 50px;
       position: relative;
       text-align: center;
@@ -1783,15 +1784,15 @@
 }
 
 //
-// Price slider
+// Range slider
 //
-.price-slider {
+.range-slider {
   padding-top: 30px;
   position: relative;
   width: 240px;
 }
 
-.price-slider_range {
+.range-slider_init {
   border: 1px solid #c9c9c9;
   border-radius: 3px;
   height: 12px;
@@ -1820,7 +1821,7 @@
 
 }
 
-.price-slider_value {
+.range-slider_value {
   color: #141f4e;
   font-size: 14px;
   line-height: 20px;
