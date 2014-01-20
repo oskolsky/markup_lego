@@ -300,6 +300,7 @@
 
 .tabs_i {
   display: inline-block;
+  vertical-align: top;
 
   &.ui-tabs-active {
 
@@ -383,6 +384,28 @@
     color: #fff;
   }
 
+}
+
+//
+// .. Profile tabs
+//
+.tabs_list {
+  &.__profile {
+    .tabs_i {
+      width: 20%;
+      &.ui-tabs-active {
+        .tabs_i_a {
+          background-color: #fff;
+          color: $major-color;
+        }
+      }
+    }
+    .tabs_i_a {
+      background-color: #fbbc04;
+      color: #fff;
+      font-size: 18px;
+    }
+  }
 }
 
 
