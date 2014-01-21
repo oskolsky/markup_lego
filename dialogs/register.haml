@@ -5,16 +5,16 @@
     %form.form
       .m-b_2
         %label.form_label.__m Имя
-        %input{type: "text", class: "form_text form_el __block"}
+        %input.form_text.form_el.__block{type: "text"}
       .m-b_2
         %label.form_label.__m Email
-        %input{type: "text", class: "form_text form_el __block"}
+        %input.form_text.form_el.__block{type: "text"}
       .m-b_3
         %label.form_label.__m Пароль
-        %input{type: "password", class: "form_text form_el __block"}
+        %input.form_text.form_el.__block{type: "password"}
       .grid
         .grid-i.__grid-2.va-m>
-          %input{type: "submit", class: "form_button __s __red", value: "Зарегистрироваться"}
+          %input.form_button.__s.__red{type: "submit", value: "Зарегистрироваться"}
         .grid-i.__grid-2.va-m>
           .tx.__right
-            %a{href: "#", class: "a __pseudo tx __xs", data: {dialog: "true", url: "/dialogs/login"}} Войти
+            %a.a.__pseudo.tx.__xs{href: "#", data: {dialog: "true", url: "/dialogs/login"}} Войти

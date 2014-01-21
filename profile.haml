@@ -9,7 +9,7 @@
       %header.section_header
         %h1.tx.__upper.__minor Здравствуйте, Анна
         %nav.breadcrumbs
-          %a{href: "/", class: "breadcrumbs_i"} Главная
+          %a.breadcrumbs_i{href: "/"} Главная
           %i.fa.fa-chevron-right
           %span.breadcrumbs_i Личный кабинет
       %section.section_main
@@ -19,15 +19,15 @@
       .ctn
         %ul.tabs_list.__profile
           %li.tabs_i>
-            %a{href: "#tabs-1", class: "tabs_i_a"} Главная
+            %a.tabs_i_a{href: "#tabs-1"} Главная
           %li.tabs_i>
-            %a{href: "#tabs-2", class: "tabs_i_a"} Бонусная программа
+            %a.tabs_i_a{href: "#tabs-2"} Бонусная программа
           %li.tabs_i>
-            %a{href: "#tabs-3", class: "tabs_i_a"} Персональные данные
+            %a.tabs_i_a{href: "#tabs-3"} Персональные данные
           %li.tabs_i>
-            %a{href: "#tabs-4", class: "tabs_i_a"} История заказов
+            %a.tabs_i_a{href: "#tabs-4"} История заказов
           %li.tabs_i>
-            %a{href: "#tabs-5", class: "tabs_i_a"} Избранное
+            %a.tabs_i_a{href: "#tabs-5"} Избранное
 
         #tabs-1
           .p-t_5.p-b_5
@@ -43,7 +43,7 @@
                   %h2 У Вас 266 бонусов
               .grid-i.__grid-2.va-m>
                 .tx.__right
-                  %a{href: "#", class: "form_button __red __xm form_el __block"} использовать
+                  %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
 
             = haml 'views/common/_block_summary'.to_sym
 

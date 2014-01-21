@@ -39,12 +39,26 @@
         .range-slider_init.__age
 
     .m-b_4
-      .form_select.form_el.__fake
-        %p &nbsp;
-        %select.form_select.form_el.__real
-          %option{selected: "selected"} пол
-          %option мальчик
-          %option девочка
+      .m-b_1
+        %label.form_label.__m
+          %span.form_checkbox.form_el.__fake
+            %input.form_checkbox.form_el.__real{type: "checkbox"}
+          мальчик
+      .m-b_1
+        %label.form_label.__m
+          %span.form_checkbox.form_el.__fake
+            %input.form_checkbox.form_el.__real{type: "checkbox"}
+          девочка
+      .m-b_1
+        %label.form_label.__m
+          %span.form_checkbox.form_el.__fake
+            %input.form_checkbox.form_el.__real{type: "checkbox"}
+          эксклюзив
+      .m-b_1
+        %label.form_label.__m
+          %span.form_checkbox.form_el.__fake
+            %input.form_checkbox.form_el.__real{type: "checkbox"}
+          распродажа
     .m-b_4
       .form_select.form_el.__fake
         %p &nbsp;

@@ -4,7 +4,7 @@
       .grid
         .grid-i.__grid-1.va-m>
           %a{href: "/"}
-            %img{src: "/assets/images/logo.png", alt: "Lego", class: "logo"}
+            %img.logo{src: "/assets/images/logo.png", alt: "Lego"}
         .grid-i.__grid-11.va-m>
           %h1.tx.__upper
             %a{href: "/"}
@@ -29,6 +29,8 @@
               %a{href: "/catalog"} Каталог
             %li
               %a{href: "/catalog_series"} Каталог серии
+            %li
+              %a{href: "/catalog_empty"} Каталог пустой
             %li
               %a{href: "/catalog_show"} Карточка товара
             %li
@@ -62,10 +64,18 @@
         %nav.demo.tx.__xs
           %ol
             %li
-              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/location"}} Выбор города
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/location"}} Выбор города
             %li
-              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/register"}} Регистрация
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/availability"}} Проверить наличие
             %li
-              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/login"}} Авторизация
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/register"}} Регистрация
             %li
-              %a{href: "#", class: "a __pseudo", data: {dialog: "true", url: "/dialogs/forgot"}} Восстановление пароля
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/login"}} Авторизация
+            %li
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/forgot"}} Восстановление пароля
+            %li
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/oneclick"}} Купить в 1 клик
+            %li
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/message"}} Сообщение              
+            %li
+              %a.a.__pseudo{href: "#", data: {dialog: "true", url: "/dialogs/then"}} Отложить

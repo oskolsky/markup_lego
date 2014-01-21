@@ -25,10 +25,10 @@
       .subscription-block_form
         %p.beta.tx.__white.m-b_2 Подпишись и узнай первым!
         %form
-          %input{type: "text", class: "subscription-block_form_input m-b_1", placeholder: "Имя"}
-          %input{type: "text", class: "subscription-block_form_input m-b_1", placeholder: "E-mail"}
-          %input{type: "submit", class: "subscription-block_form_submit", placeholder: "Подписаться"}
-        %img{src: "/assets/images/subscription.png", class: "subscription-block_form_img", alt: "", width: 275, height: 176}
+          %input.subscription-block_form_input.m-b_1{type: "text", placeholder: "Имя"}
+          %input.subscription-block_form_input.m-b_1{type: "text", placeholder: "E-mail"}
+          %input.subscription-block_form_submit{type: "submit", placeholder: "Подписаться"}
+        %img.subscription-block_form_img{src: "/assets/images/subscription.png", alt: "", width: 275, height: 176}
       .subscription-block_vk
         %p.beta.tx.__white.m-b_2 Мы Вконтакте
         .subscription-block_vk_widget
