@@ -9,16 +9,16 @@
     .promo.brick
       .promo_i{data: {rel: "chima"}, style: "display: block;"}
         %a{href: "#"}
-          %img{src: "/assets/images/promo/chima.png", class: "promo_i_img", width: "100%", alt: "Подарок королевства Чима"}
+          %img.promo_i_img{src: "/assets/images/promo/chima.png", width: "100%", alt: "Подарок королевства Чима"}
       .promo_i{data: {rel: "marvel"}}
         %a{href: "#"}
-          %img{src: "/assets/images/promo/marvel.png", class: "promo_i_img", width: "100%", alt: "Супергерои Lego"}
+          %img.promo_i_img{src: "/assets/images/promo/marvel.png", width: "100%", alt: "Супергерои Lego"}
 
 %section.promo-slider.__index
   .m-b_1
     = haml 'views/common/_slider_promo'.to_sym
   .tx.__center
-    %a{href: "#", class: "share-link"}
+    %a.share-link{href: "#"}
       Поделиться с друзьями
       %img{src: "/assets/images/heart.png", alt: ""}
 
@@ -28,19 +28,19 @@
       .ctn
         %ul.tabs_list.grid.__no-gutter
           %li.tabs_i.grid-i.__grid-3>
-            %a{href: "#tabs-1", class: "tabs_i_a __white"}
+            %a.tabs_i_a.__white{href: "#tabs-1"}
               %i.ico.__35.__new
               Наши новинки
           %li.tabs_i.grid-i.__grid-3>
-            %a{href: "#tabs-2", class: "tabs_i_a __red"}
+            %a.tabs_i_a.__red{href: "#tabs-2"}
               %i.ico.__35.__percent
               Распродажа
           %li.tabs_i.grid-i.__grid-3>
-            %a{href: "#tabs-3", class: "tabs_i_a __green"}
+            %a.tabs_i_a.__green{href: "#tabs-3"}
               %i.ico.__35.__star
               Эксклюзивы
           %li.tabs_i.grid-i.__grid-3>
-            %a{href: "#tabs-4", class: "tabs_i_a __orange"}
+            %a.tabs_i_a.__orange{href: "#tabs-4"}
               %i.ico.__35.__hellip
               Все серии
         #tabs-1
@@ -54,7 +54,7 @@
                     .grid-i.__grid-3>
                       = haml 'views/common/_catalog_item_half'.to_sym
             .catalog_all.beta
-              %a{href: "#", class: "tx __minor"}
+              %a.tx.__minor{href: "#"}
                 Показать все новинки
                 %i.fa.fa-chevron-right
         #tabs-2
@@ -68,7 +68,7 @@
                     .grid-i.__grid-3>
                       = haml 'views/common/_catalog_item'.to_sym
             .catalog_all.beta
-              %a{href: "#", class: "tx __minor"}
+              %a.tx.__minor{href: "#"}
                 Показать все новинки
                 %i.fa.fa-chevron-right
         #tabs-3
@@ -82,7 +82,7 @@
                     .grid-i.__grid-3>
                       = haml 'views/common/_catalog_item_half'.to_sym
             .catalog_all.beta
-              %a{href: "#", class: "tx __minor"}
+              %a.tx.__minor{href: "#"}
                 Показать все новинки
                 %i.fa.fa-chevron-right
         #tabs-4
@@ -94,7 +94,7 @@
                     .grid-i.__grid-3>
                       = haml 'views/common/_catalog_item'.to_sym
             .catalog_all.beta
-              %a{href: "#", class: "tx __minor"}
+              %a.tx.__minor{href: "#"}
                 Показать все новинки
                 %i.fa.fa-chevron-right
 

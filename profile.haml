@@ -4,15 +4,61 @@
 
 %main#main.main{role: "main"}
 
-  %section.section.p-t_6.p-b_4{role: "region", "aria-label" => "Profile"}
+  %section.section.p-t_6.p-b_4.m-b_4{role: "region", "aria-label" => "Profile"}
     .ctn
-      %header.section_header.m-b_2
-        %h1.tx.__upper.__minor Личный кабинет
+      %header.section_header
+        %h1.tx.__upper.__minor Здравствуйте, Анна
         %nav.breadcrumbs
-          %a{href: "/", class: "breadcrumbs_i"} Главная
+          %a.breadcrumbs_i{href: "/"} Главная
           %i.fa.fa-chevron-right
           %span.breadcrumbs_i Личный кабинет
       %section.section_main
 
-  %section.blocks.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
-    = haml 'views/common/_block_common'.to_sym
+  %section.m-b_5
+    .tabs
+      .ctn
+        %ul.tabs_list.__profile
+          %li.tabs_i>
+            %a.tabs_i_a{href: "#tabs-1"} Главная
+          %li.tabs_i>
+            %a.tabs_i_a{href: "#tabs-2"} Бонусная программа
+          %li.tabs_i>
+            %a.tabs_i_a{href: "#tabs-3"} Персональные данные
+          %li.tabs_i>
+            %a.tabs_i_a{href: "#tabs-4"} История заказов
+          %li.tabs_i>
+            %a.tabs_i_a{href: "#tabs-5"} Избранное
+
+        #tabs-1
+          .p-t_5.p-b_5
+            .grid.m-b_5
+              .grid-i.__grid-6.va-m>
+                .tx.__left
+                  %h2
+                    Мы приготовили для Вас
+                    %br
+                    необычные акции и подарки
+              .grid-i.__grid-4.va-m>
+                .tx.__right
+                  %h2 У Вас 266 бонусов
+              .grid-i.__grid-2.va-m>
+                .tx.__right
+                  %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
+
+            = haml 'views/common/_block_summary'.to_sym
+
+        #tabs-2
+          .p-t_5.p-b_5
+            %p Бонусная программа
+
+        #tabs-3
+          .p-t_5.p-b_5
+            %p Персональные данные
+
+        #tabs-4
+          .p-t_5.p-b_5
+            %p История заказов
+
+        #tabs-5
+          .p-t_5.p-b_5
+            %p Избранное

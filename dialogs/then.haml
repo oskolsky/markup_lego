@@ -1,0 +1,27 @@
+.dialog
+  .grid-i.__grid-4
+    %i.dialog_close.js-dialog_close.fa.fa-times-circle
+    %h2.tx.__upper.m-b_2 Отложить
+    %form.form
+      .m-b_2
+        %label.form_label.__m Имя
+        %input.form_text.form_el.__block{type: "text"}
+      .m-b_2
+        %label.form_label.__m Email
+        %input.form_text.form_el.__block{type: "text"}
+      .m-b_2
+        %label.form_label.__m Телефон
+        %input.form_text.__phone.form_el.__block{type: "text"}
+      .m-b_2
+        %label.form_label.__m Удобное время для звонка
+        %input.form_text.form_el.__block{type: "text"}
+      .m-b_3
+        %label.form_label.__m Магазина
+        .form_select.form_el.__fake.__block
+          %p &nbsp;
+          %select.form_select.form_el.__real
+            %option{selected: "selected"} Магазин 1
+            %option Магазин 2
+            %option Магазин 3
+            %option Магазин 4                              
+      %input.form_button.__s.__red.grid-i.__grid-2{type: "submit", value: "отложить", data: {dialog: "true", url: "/dialogs/message"}}

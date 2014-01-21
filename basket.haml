@@ -32,7 +32,7 @@
                       %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
                   %td
                     .form_number
-                      %input{type: "text", class: "form_text form_el __block", value: "1"}
+                      %input.form_text.form_el.__block{type: "text", value: "1"}
                       .form_number_controls
                         %a{href: "#", class: "form_number_controls_i __up"} +
                         %a{href: "#", class: "form_number_controls_i __down"} -
@@ -47,14 +47,14 @@
                       = rand(500..2000)
                   %td
                     .basket_action
-                      %a{href: "#", class: "form_button __gray __xs basket_action_i"}
+                      %a.form_button.__gray.__xs.basket_action_i{href: "#"}
                         %i.fa.fa-times
                         Удалить
-                      %a{href: "#", class: "form_button __orange __xs basket_action_i"} Отложить
-              %tr
+                      -# %a.form_button.__orange.__xs.basket_action_i{href: "#"} Отложить
+              -# %tr
                 %td.table_t{colspan: "6"}
                   %h2 Отложенные ранее
-              %tr
+              -# %tr
                 %td
                   %a{href: "/catalog_show"}
                     %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg"}
@@ -64,7 +64,7 @@
                     %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
                 %td
                   .form_number
-                    %input{type: "text", class: "form_text form_el __block", value: "1"}
+                    %input.form_text.form_el.__block{type: "text", value: "1"}
                     .form_number_controls
                       %a{href: "#", class: "form_number_controls_i __up"} +
                       %a{href: "#", class: "form_number_controls_i __down"} -
@@ -79,7 +79,7 @@
                     = rand(500..2000)
                 %td
                   .basket_action
-                    %a{href: "#", class: "form_button __red __xs basket_action_i"} Добавить
+                    %a.form_button.__red.__xs.basket_action_i{href: "#"} Добавить
               %tr
                 %td.table_t{colspan: "6"}
                   %h2 Купить со скидкой
@@ -94,7 +94,7 @@
                       %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
                   %td
                     .form_number
-                      %input{type: "text", class: "form_text form_el __block", value: "1"}
+                      %input.form_text.form_el.__block{type: "text", value: "1"}
                       .form_number_controls
                         %a{href: "#", class: "form_number_controls_i __up"} +
                         %a{href: "#", class: "form_number_controls_i __down"} -
@@ -109,7 +109,7 @@
                       = rand(500..2000)
                   %td
                     .basket_action
-                      %a{href: "#", class: "form_button __red __xs basket_action_i"} Добавить
+                      %a.form_button.__red.__xs.basket_action_i{href: "#"} Добавить
 
           .grid.m-b_6
             .grid-i.__grid-5>
@@ -123,9 +123,9 @@
                     .basket_promo_i>
                       %span.tx.__xs.d-ib.va-m Введите код купона:
                     .basket_promo_i>
-                      %input{type: "text", class: "form_text", placeholder: "00000000"}
+                      %input.form_text{type: "text", placeholder: "00000000"}
                     .basket_promo_i>
-                      %a{href: "#", class: "form_button __red __xm"} Применить код
+                      %a.form_button.__red.__xm{href: "#"} Применить код
                 .basket_total
                   %span.basket_total_t Стоимость со скидкой
                   .price.__rub.__l.format-money
@@ -134,7 +134,7 @@
 
           .m-b_4
             %a{href: "#"}
-              %img{src: "/assets/images/blank.gif", class: "va-t c-bg __gray", width: "100%", height: 150, alt: ""}
+              %img.va-t.c-bg.__gray{src: "/assets/images/blank.gif", width: "100%", height: 150, alt: ""}
 
           .basket_steps
 
@@ -147,24 +147,24 @@
                     .form_row>
                       %label.form_label.form_el.__block.tx.__xs
                         %b Имя
-                      %input{type: "text", class: "form_text form_el __block"}
+                      %input.form_text.form_el.__block{type: "text"}
                       %p.tx.__xs как к вам обращаться?
                     .form_row>
                       %label.form_label.form_el.__block.tx.__xs
                         %b E-mail
-                      %input{type: "text", class: "form_text form_el __block"}
+                      %input.form_text.form_el.__block{type: "text"}
                       %p.tx.__xs сюда мы отправим детали заказа
                     .form_row>
                       %label.form_label.form_el.__block.tx.__xs
                         %b Телефон
-                      %input{type: "text", class: "form_text __phone form_el __block"}
+                      %input.form_text.__phone.form_el.__block{type: "text"}
                       %p.tx.__xs по нему вам позвонит курьер
                     .form_row>
                       %label.form_label.form_el.__block.tx.__xs
                         %b Удобное время для звонка
-                      %input{type: "text", class: "form_text form_el __block"}
+                      %input.form_text.form_el.__block{type: "text"}
                       %p.tx.__xs здесь вы&nbsp;можете указать предпочтительное время для связи с&nbsp;вами
-                  %a{href: "#", class: "form_button __red __l"} Заказать и уточнить детали
+                  %a.form_button.__red.__l{href: "#"} Заказать и уточнить детали
 
             .basket_steps_i.__open
               .basket_steps_i_t{data: {number: 2}} Мои привилегии
@@ -185,23 +185,23 @@
                     .form_row>
                       %label.form_label.form_el.__block.tx.__xs
                         %b Карта почётного клиента
-                      %input{type: "text", class: "form_text __card form_el __block"}
+                      %input.form_text.__card.form_el.__block{type: "text"}
                       %p.tx.__xs Номер указан под штрих-кодом
                       %p.tx.__xs
                         %a{href: "#"} Получить карту почётного клиента
                     .form_row>
                       %label.form_label.form_el.__block.tx.__xs
                         %b Бонусный код
-                      %input{type: "text", class: "form_text form_el __block"}
+                      %input.form_text.form_el.__block{type: "text"}
                       %p.tx.__xs Есть бонус-код? Введите его сюда!
-                  %a{href: "#", class: "form_button __red __l"} Продолжить
+                  %a.form_button.__red.__l{href: "#"} Продолжить
 
             .basket_steps_i.__open
               .basket_steps_i_t{data: {number: 3}} Куда доставить
               .basket_steps_i_body
                 %form.form
                   .m-b_1
-                    .form_row{style: "margin-right: 206px;"}>
+                    .form_row>
                       %label.form_label.form_el.__block.tx.__xs
                         %b Город
                       .form_select.form_el.__fake.__block
@@ -215,15 +215,27 @@
                         %b Способ доставки
                       .form_select.form_el.__fake.__block
                         %p &nbsp;
-                        %select.form_select.form_el.__real
-                          %option{selected: "selected"} Курьером, 4% от суммы
-                          %option Почтой, 2% от сыммы
-                          %option Никак сам приеду, бесплатно
-                    .form_row.__l>
-                      %label.form_label.form_el.__block.tx.__xs
-                        %b Адрес доставки
-                      %textarea{rows: 5, class: "form_textarea form_el __block"}
-                  %a{href: "#", class: "form_button __red __l"} Продолжить
+                        %select.form_select.form_el.__real.js-basket-delivery
+                          %option{selected: "selected", value: "courier"} Курьером, бесплатно
+                          %option{value: "pickup"} Самовывоз из магазина
+                    .basket_delivery
+                      .basket_delivery_i.__courier{style: "display: block;"}
+                        .form_row.__l>
+                          %label.form_label.form_el.__block.tx.__xs
+                            %b Адрес доставки
+                          %textarea.form_textarea.form_el.__block{rows: 5}
+                      .basket_delivery_i.__pickup
+                        .form_row.__s>
+                          %label.form_label.form_el.__block.tx.__xs
+                            %b Магазин
+                          .form_select.form_el.__fake.__block
+                            %p &nbsp;
+                            %select.form_select.form_el.__real
+                              %option{selected: "selected"} Магазин 1
+                              %option Магазин 2
+                              %option Магазин 3
+                              %option Магазин 4                              
+                  %a.form_button.__red.__l{href: "#"} Продолжить
 
             .basket_steps_i.__open
               .basket_steps_i_t{data: {number: 4}} Как оплатить
@@ -259,7 +271,7 @@
                   %article.basket_credit.tx.__xs
                     %p Кредитной картой через интернет (скидка 5%!)&nbsp;&mdash; При оплате за&nbsp;заказ кредитной картой прямо сейчас вы&nbsp;получите скидку&nbsp;5% на&nbsp;весь заказ! Оплата производится через сервис ChronoPay.
 
-                  %a{href: "#", class: "form_button __red __l"} Продолжить
+                  %a.form_button.__red.__l{href: "#"} Продолжить
 
             .basket_steps_i.__open
               .basket_steps_i_t{data: {number: 5}} Подтверждение
@@ -295,7 +307,7 @@
                           .price.__rub.__m.format-money
                             = rand(500..2000)
                     .m-b_1
-                      %a{href: "#", class: "form_button __red __l grid-i __grid-2"} Оформить
+                      %a.form_button.__red.__l.grid-i.__grid-2{href: "#"} Оформить
                     .form.form
                       %label.form_label.__m
                         %span.form_checkbox.form_el.__fake
