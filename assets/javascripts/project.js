@@ -349,6 +349,9 @@ $(function() {
       type: 'ajax',
       url: url,
       afterOpen: function() {
+
+      },
+      afterLoadingOnShow: function() {
         $('.form').customForm();
         $('.form_text.__phone').mask('+7 (999) 999-99-99');
       }

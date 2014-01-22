@@ -7,32 +7,32 @@
         .form_select.form_el.__fake.grid-i.__grid-3
           %p &nbsp;
           %select.form_select.form_el.__real
-            %option{selected: "selected"} Выберите магазин
-            %option Магазин 1
-            %option Магазин 2
-            %option Магазин 3
-    .grid
-      .grid-i.__grid-3>
-        %ul
-          %li.m-b_1
-            %a.a.__pseudo.__inner{href: "#"} <span>ТРЦ «ЕвроПарк»</span> (25)
-          %li.m-b_1
-            %a.a.__pseudo.__inner{href: "#"} <span>Кутузовский проспект, 26</span> (10)
-          %li.m-b_1
-            %a.a.__pseudo.__inner{href: "#"} <span>Ленинский проспект, д. 4а</span> (15)
-          %li.m-b_1
-            %a.a.__pseudo{href: "#"} Пречистенка
-          %li.m-b_1
-            %a.a.__pseudo{href: "#"} Садовая-Спасская
-      .grid-i.__grid-3>
-        %ul
-          %li.m-b_1
-            %a.a.__pseudo.__inner{href: "#"} <span>ТРЦ «ЕвроПарк»</span> (25)
-          %li.m-b_1
-            %a.a.__pseudo.__inner{href: "#"} <span>Кутузовский проспект, 26</span> (10)
-          %li.m-b_1
-            %a.a.__pseudo.__inner{href: "#"} <span>Ленинский проспект, д. 4а</span> (15)
-          %li.m-b_1
-            %a.a.__pseudo{href: "#"} Пречистенка
-          %li.m-b_1
-            %a.a.__pseudo{href: "#"} Садовая-Спасская
+            %option{selected: "selected"} Выберите город
+            %option Москва
+            %option Смоленск
+            %option Магадан
+    - 1.upto(3) do
+      .m-b_2
+        .grid
+          .grid-i.__grid-2>
+            %p.tx.__xs СТЦ "МЕГА Химки"
+          .grid-i.__grid-3>
+            %p.tx.__xs Химки, 8 мкр., 5 км Ленинградского шоссе, пав. 5020S, 1 этаж
+          .grid-i.__grid-1>
+            .count.__l
+      .m-b_2
+        .grid
+          .grid-i.__grid-2>
+            %p.tx.__xs ТД "ГУМ"
+          .grid-i.__grid-3>
+            %p.tx.__xs Красная площадь, 3
+          .grid-i.__grid-1>
+            .count.__m
+      .m-b_2
+        .grid
+          .grid-i.__grid-2>
+            %p.tx.__xs ТРК "Атриум"
+          .grid-i.__grid-3>
+            %p.tx.__xs Земляной вал, 33 (1 этаж, №1.05)
+          .grid-i.__grid-1>
+            .count.__s

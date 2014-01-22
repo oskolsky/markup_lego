@@ -216,25 +216,61 @@
                       .form_select.form_el.__fake.__block
                         %p &nbsp;
                         %select.form_select.form_el.__real.js-basket-delivery
-                          %option{selected: "selected", value: "courier"} Курьером, бесплатно
-                          %option{value: "pickup"} Самовывоз из магазина
+                          %option{selected: "selected", value: "pickup"} Самовывоз из магазина
+                          %option{value: "courier"} Курьером, бесплатно
                     .basket_delivery
-                      .basket_delivery_i.__courier{style: "display: block;"}
+                      .basket_delivery_i.__pickup{style: "display: block;"}
+
+                        .form_row.__s>                          
+                          .basket_delivery_i_list
+                            - 1.upto(3) do
+                              .basket_delivery_i_list_i
+                                %span.form_radio.form_el.__fake
+                                  %input.form_radio.form_el.__real{type: "radio", name: "radio1"}
+                                %p.tx.__xs СТЦ "МЕГА Химки"
+                                %p.tx.__xs.__muted Химки, 8 мкр., 5 км Ленинградского шоссе, пав. 5020S, 1 этаж
+                                %div{style: "width: 50px;"}
+                                  .count.__l
+                              .basket_delivery_i_list_i
+                                %span.form_radio.form_el.__fake
+                                  %input.form_radio.form_el.__real{type: "radio", name: "radio1"}
+                                %p.tx.__xs ТД "ГУМ"
+                                %p.tx.__xs.__muted Красная площадь, 3
+                                %div{style: "width: 50px;"}
+                                  .count.__m
+                              .basket_delivery_i_list_i
+                                %span.form_radio.form_el.__fake
+                                  %input.form_radio.form_el.__real{type: "radio", name: "radio1"}
+                                %p.tx.__xs ТРК "Атриум"
+                                %p.tx.__xs.__muted Земляной вал, 33 (1 этаж, №1.05)
+                                %div{style: "width: 50px;"}
+                                  .count.__s
+                          
+                        .form_row.__l>
+                          #YMapsID{style: "width: 100%; height: 400px;"}
+                          :javascript
+                            ymaps.ready(function () { 
+                              
+                              var myMap = new ymaps.Map('YMapsID', {
+                                center: [55.8, 37.6],
+                                zoom: 16
+                              });
+                              
+                              // Создание метки 
+                              var myPlacemark = new ymaps.Placemark(
+                                [55.8, 37.6]
+                              );
+
+                              // Добавление метки на карту
+                              myMap.geoObjects.add(myPlacemark);    
+                                
+                            });
+                      
+                      .basket_delivery_i.__courier
                         .form_row.__l>
                           %label.form_label.form_el.__block.tx.__xs
                             %b Адрес доставки
                           %textarea.form_textarea.form_el.__block{rows: 5}
-                      .basket_delivery_i.__pickup
-                        .form_row.__s>
-                          %label.form_label.form_el.__block.tx.__xs
-                            %b Магазин
-                          .form_select.form_el.__fake.__block
-                            %p &nbsp;
-                            %select.form_select.form_el.__real
-                              %option{selected: "selected"} Магазин 1
-                              %option Магазин 2
-                              %option Магазин 3
-                              %option Магазин 4                              
                   %a.form_button.__red.__l{href: "#"} Продолжить
 
             .basket_steps_i.__open
