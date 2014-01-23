@@ -2,6 +2,7 @@
 @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
 @import url(vendor/jquery.arcticmodal-0.3.css);
 @import url(vendor/animate.min.css);
+@import url(vendor/lightbox.css);
 @font-face {
   font-family: 'rotondacregular';
   src: url("/assets/fonts/rotonda/rtn55c-webfont.eot");
@@ -3167,15 +3168,15 @@ a.breadcrumbs_i {
   .count.__s::before {
     width: 25%; }
   .count.__s::after {
-    content: "мало"; }
+    content: "╨╝╨░╨╗╨╛"; }
   .count.__m::before {
     width: 50%; }
   .count.__m::after {
-    content: "несколько"; }
+    content: "╨╜╨╡╤Б╨║╨╛╨╗╤М╨║╨╛"; }
   .count.__l::before {
     width: 100%; }
   .count.__l::after {
-    content: "много"; }
+    content: "╨╝╨╜╨╛╨│╨╛"; }
 
 .reviews_i {
   margin-bottom: 20px; }

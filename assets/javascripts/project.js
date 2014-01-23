@@ -120,17 +120,9 @@ $(function() {
   // .. PHOTO GALLERY LOAD NEW PHOTO
   //
   //****************************************************************************************************
-  $(document).on('click', '.articles_i_show_gallery_add', function() {
-    var _this = this;
-    $.ajax({
-      url: '/data/photo_gallery',
-      success: function(response) {
-        $(_this).before(response);
-      },
-      error: function() {
-        alert('Error load resources');
-      }
-    });
+  $(document).on('click', '.articles_i_show_gallery_add > a', function() {
+    $('.articles_i_show_gallery').find('.articles_i_show_gallery_i').fadeIn();
+    $(this).closest('.articles_i_show_gallery_add').remove();
     return false;
   });
 

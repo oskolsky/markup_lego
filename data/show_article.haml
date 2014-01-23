@@ -21,9 +21,12 @@
     .articles_i_show_gallery
       - 1.upto(4) do |i|
         .articles_i_show_gallery_i
-          %a{href: "#"}
+          %a{href: "/assets/images/fake/article_show_1.jpg", data: {lightbox: "photo"}}
+            %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 118, height: 118, alt: ""}
+      - 1.upto(10) do |i|
+        .articles_i_show_gallery_i{style: "display: none;"}
+          %a{href: "/assets/images/fake/article_show_1.jpg", data: {lightbox: "photo"}}
             %img{src: "/assets/images/fake/gallery_#{rand(1..4)}.jpg", width: 118, height: 118, alt: ""}
       .articles_i_show_gallery_add
-        %a{href: "#"} Посмотреть еще 2
-
+        %a{href: "#"} Посмотреть еще 10
     %a.articles_i_show_close{href: "#"} свернуть
