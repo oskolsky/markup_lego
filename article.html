@@ -183,7 +183,7 @@
                 </li></ul>
             </nav>
             <div class='articles __news'>
-              <article class='articles_i __green brick'>
+              <article class='articles_i __green brick' id='item1'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-2'>
                       <div class='articles_i_date'>
@@ -199,13 +199,13 @@
                         <h2 class='articles_i_caption_t'>Новый магазин LEGO в Санкт-Петербурге</h2>
                         <p>В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_article' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_article' href='#item1'>далее</a>
                         </p>
                       </div>
                     </div></div>
                 </div>
               </article>
-              <article class='articles_i __red brick'>
+              <article class='articles_i __red brick' id='item2'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-2'>
                       <div class='articles_i_date'>
@@ -221,13 +221,13 @@
                         <h2 class='articles_i_caption_t'>Новый магазин LEGO в Санкт-Петербурге</h2>
                         <p>В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_article' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_article' href='#item2'>далее</a>
                         </p>
                       </div>
                     </div></div>
                 </div>
               </article>
-              <article class='articles_i __lime brick'>
+              <article class='articles_i __lime brick' id='item3'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-2'>
                       <div class='articles_i_date'>
@@ -243,13 +243,13 @@
                         <h2 class='articles_i_caption_t'>Новый магазин LEGO в Санкт-Петербурге</h2>
                         <p>В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_article' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_article' href='#item3'>далее</a>
                         </p>
                       </div>
                     </div></div>
                 </div>
               </article>
-              <article class='articles_i __orange brick'>
+              <article class='articles_i __orange brick' id='item4'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-2'>
                       <div class='articles_i_date'>
@@ -265,13 +265,13 @@
                         <h2 class='articles_i_caption_t'>Новый магазин LEGO в Санкт-Петербурге</h2>
                         <p>В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_article' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_article' href='#item4'>далее</a>
                         </p>
                       </div>
                     </div></div>
                 </div>
               </article>
-              <article class='articles_i __yellow brick'>
+              <article class='articles_i __yellow brick' id='item5'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-2'>
                       <div class='articles_i_date'>
@@ -287,7 +287,7 @@
                         <h2 class='articles_i_caption_t'>Новый магазин LEGO в Санкт-Петербурге</h2>
                         <p>В Санкт-Петербурге в ТРК «Лондон Молл» открылся новый магазин LEGO.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_article' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_article' href='#item5'>далее</a>
                         </p>
                       </div>
                     </div></div>
@@ -443,6 +443,25 @@
             </div></div>
         </div>
       </section>
+      <script>
+        $(function() {
+          var hash = window.location.hash;
+          if(hash) {
+            var url = $(hash).find('.articles_i_caption_more').data('url');
+            $.ajax({
+              url: url,
+              success: function(response) {
+                $(hash).find('.articles_i_announcement').hide();
+                $(hash).find('.articles_i_announcement').after(response);
+                $(hash).find('.articles_i_show').show();
+              },
+              error: function() {
+                alert('Error load resources');
+              }
+            });
+          }
+        });
+      </script>
     </main>
     <footer class='footer' id='footer' role='contentinfo'>
       <div class='ctn'><div class='grid-i __grid-9'>

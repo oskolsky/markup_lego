@@ -15,7 +15,7 @@
       %section.section_main.m-b_3
         .articles.__bonuses
 
-          %figure.articles_i.__green.brick
+          %figure.articles_i.__green.brick#item1
             .articles_i_announcement
               .grid
                 .grid-i.__grid-3>
@@ -27,8 +27,8 @@
                       %a{href: "#"} Срочное сообщение!
                     %p В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.
                     %p
-                      %a.articles_i_caption_more{href: "#", data: {url: "/data/show_bonuses"}} далее
-          %figure.articles_i.__red.brick
+                      %a.articles_i_caption_more{href: "#item1", data: {url: "/data/show_bonuses", scroll: "true"}} далее
+          %figure.articles_i.__red.brick#item2
             .articles_i_announcement
               .grid
                 .grid-i.__grid-3>
@@ -40,8 +40,8 @@
                       %a{href: "#"} Срочное сообщение!
                     %p В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.
                     %p
-                      %a.articles_i_caption_more{href: "#", data: {url: "/data/show_bonuses"}} далее
-          %figure.articles_i.__lime.brick
+                      %a.articles_i_caption_more{href: "#item2", data: {url: "/data/show_bonuses", scroll: "true"}} далее
+          %figure.articles_i.__lime.brick#item3
             .articles_i_announcement
               .grid
                 .grid-i.__grid-3>
@@ -53,8 +53,8 @@
                       %a{href: "#"} Срочное сообщение!
                     %p В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.
                     %p
-                      %a.articles_i_caption_more{href: "#", data: {url: "/data/show_bonuses"}} далее
-          %figure.articles_i.__orange.brick
+                      %a.articles_i_caption_more{href: "#item3", data: {url: "/data/show_bonuses", scroll: "true"}} далее
+          %figure.articles_i.__orange.brick#item4
             .articles_i_announcement
               .grid
                 .grid-i.__grid-3>
@@ -66,8 +66,8 @@
                       %a{href: "#"} Срочное сообщение!
                     %p В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.
                     %p
-                      %a.articles_i_caption_more{href: "#", data: {url: "/data/show_bonuses"}} далее
-          %figure.articles_i.__yellow.brick
+                      %a.articles_i_caption_more{href: "#item4", data: {url: "/data/show_bonuses", scroll: "true"}} далее
+          %figure.articles_i.__yellow.brick#item5
             .articles_i_announcement
               .grid
                 .grid-i.__grid-3>
@@ -79,7 +79,7 @@
                       %a{href: "#"} Срочное сообщение!
                     %p В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.
                     %p
-                      %a.articles_i_caption_more{href: "#", data: {url: "/data/show_bonuses"}} далее
+                      %a.articles_i_caption_more{href: "#item5", data: {url: "/data/show_bonuses", scroll: "true"}} далее
       %footer.section_footer
         %nav.tx.__right
           %ul.pagination.__page
@@ -104,3 +104,22 @@
 
   %section.blocks.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
     = haml 'views/common/_block_common'.to_sym
+
+  :javascript
+    $(function() {
+      var hash = window.location.hash;
+      if(hash) {
+        var url = $(hash).find('.articles_i_caption_more').data('url');
+        $.ajax({
+          url: url,
+          success: function(response) {
+            $(hash).find('.articles_i_announcement').hide();
+            $(hash).find('.articles_i_announcement').after(response);
+            $(hash).find('.articles_i_show').show();
+          },
+          error: function() {
+            alert('Error load resources');
+          }
+        });
+      }
+    });

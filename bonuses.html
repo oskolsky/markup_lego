@@ -148,7 +148,7 @@
           </header>
           <section class='section_main m-b_3'>
             <div class='articles __bonuses'>
-              <figure class='articles_i __green brick'>
+              <figure class='articles_i __green brick' id='item1'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-3'>
                       <div class='articles_i_photo'>
@@ -161,13 +161,13 @@
                         </h2>
                         <p>В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_bonuses' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_bonuses' href='#item1'>далее</a>
                         </p>
                       </figcaption>
                     </div></div>
                 </div>
               </figure>
-              <figure class='articles_i __red brick'>
+              <figure class='articles_i __red brick' id='item2'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-3'>
                       <div class='articles_i_photo'>
@@ -180,13 +180,13 @@
                         </h2>
                         <p>В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_bonuses' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_bonuses' href='#item2'>далее</a>
                         </p>
                       </figcaption>
                     </div></div>
                 </div>
               </figure>
-              <figure class='articles_i __lime brick'>
+              <figure class='articles_i __lime brick' id='item3'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-3'>
                       <div class='articles_i_photo'>
@@ -199,13 +199,13 @@
                         </h2>
                         <p>В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_bonuses' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_bonuses' href='#item3'>далее</a>
                         </p>
                       </figcaption>
                     </div></div>
                 </div>
               </figure>
-              <figure class='articles_i __orange brick'>
+              <figure class='articles_i __orange brick' id='item4'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-3'>
                       <div class='articles_i_photo'>
@@ -218,13 +218,13 @@
                         </h2>
                         <p>В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_bonuses' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_bonuses' href='#item4'>далее</a>
                         </p>
                       </figcaption>
                     </div></div>
                 </div>
               </figure>
-              <figure class='articles_i __yellow brick'>
+              <figure class='articles_i __yellow brick' id='item5'>
                 <div class='articles_i_announcement'>
                   <div class='grid'><div class='grid-i __grid-3'>
                       <div class='articles_i_photo'>
@@ -237,7 +237,7 @@
                         </h2>
                         <p>В&nbsp;целях обновления и&nbsp;оптимизации было приостановлено действие бонусной программы сети магазинов LEGO с&nbsp;14:00 31&nbsp;октября до&nbsp;08:00 1&nbsp;ноября. В&nbsp;это время списание баллов для оплаты покупки по&nbsp;бонусной карте было недоступно. Начисление баллов за&nbsp;покупку будет произведено в&nbsp;течение 14&nbsp;дней.</p>
                         <p>
-                          <a class='articles_i_caption_more' data-url='/data/show_bonuses' href='#'>далее</a>
+                          <a class='articles_i_caption_more' data-scroll='true' data-url='/data/show_bonuses' href='#item5'>далее</a>
                         </p>
                       </figcaption>
                     </div></div>
@@ -393,6 +393,25 @@
             </div></div>
         </div>
       </section>
+      <script>
+        $(function() {
+          var hash = window.location.hash;
+          if(hash) {
+            var url = $(hash).find('.articles_i_caption_more').data('url');
+            $.ajax({
+              url: url,
+              success: function(response) {
+                $(hash).find('.articles_i_announcement').hide();
+                $(hash).find('.articles_i_announcement').after(response);
+                $(hash).find('.articles_i_show').show();
+              },
+              error: function() {
+                alert('Error load resources');
+              }
+            });
+          }
+        });
+      </script>
     </main>
     <footer class='footer' id='footer' role='contentinfo'>
       <div class='ctn'><div class='grid-i __grid-9'>
