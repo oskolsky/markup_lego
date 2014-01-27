@@ -1,0 +1,134 @@
+%section{role: "region", "aria-label" => "Demo"}
+  %article
+    %header.m-b_4
+      .grid
+        .grid-i.__grid-1.va-m>
+          %a{href: "/demo"}
+            %img.logo{src: "/assets/images/logo.png", alt: "Lego"}
+        .grid-i.__grid-11.va-m>
+          %h1.tx.__upper
+            %a{href: "/"}
+              %span.tx.__minor Сеть магазинов
+              %span.tx.__major Lego
+
+    .m-b_2
+      .grid
+        .grid-i.__grid-3>
+          %h3.m-b_2 Ветки метро
+          .m-b_2
+            .metro.__cyan
+          .m-b_2
+            .metro.__blue
+          .m-b_2
+            .metro.__purple
+          .m-b_2
+            .metro.__gray
+          .m-b_2
+            .metro.__lightgreen
+          .m-b_2
+            .metro.__orange
+          .m-b_2
+            .metro.__red
+          .m-b_2
+            .metro.__brown
+          .m-b_2
+            .metro.__yellow
+          .m-b_2
+            .metro.__grayblue      
+        .grid-i.__grid-9>
+          %h3.m-b_2 Батоны
+          .m-b_2
+            %button.form_button.__xs.__red.grid-i.__grid-1 Батон
+            %button.form_button.__xs.__green.grid-i.__grid-1 Батон
+            %button.form_button.__xs.__orange.grid-i.__grid-1 Батон
+            %button.form_button.__xs.__gray.grid-i.__grid-1 Батон
+          .m-b_2
+            %button.form_button.__s.__red.grid-i.__grid-1 Батон 2&nbsp;строки
+            %button.form_button.__s.__green.grid-i.__grid-1 Батон 2&nbsp;строки
+            %button.form_button.__s.__orange.grid-i.__grid-1 Батон 2&nbsp;строки
+            %button.form_button.__s.__gray.grid-i.__grid-1 Батон 2&nbsp;строки
+          .m-b_2
+            %button.form_button.__xm.__red.grid-i.__grid-1 Батон
+            %button.form_button.__xm.__green.grid-i.__grid-1 Батон
+            %button.form_button.__xm.__orange.grid-i.__grid-1 Батон
+            %button.form_button.__xm.__gray.grid-i.__grid-1 Батон
+          .m-b_2
+            %button.form_button.__m.__red.grid-i.__grid-2 Батон
+            %button.form_button.__m.__green.grid-i.__grid-2 Батон
+            %button.form_button.__m.__orange.grid-i.__grid-2 Батон
+            %button.form_button.__m.__gray.grid-i.__grid-2 Батон
+          .m-b_2
+            %button.form_button.__l.__red.grid-i.__grid-2 Батон
+            %button.form_button.__l.__green.grid-i.__grid-2 Батон
+            %button.form_button.__l.__orange.grid-i.__grid-2 Батон
+            %button.form_button.__l.__gray.grid-i.__grid-2 Батон
+
+    .m-b_2
+      .grid
+        .grid-i.__grid-3> 
+          %h3.m-b_2 Заголовки
+          %h1 Заголовок h1
+          %h2 Заголовок h2
+          %h3 Заголовок h3
+          %h4 Заголовок h4
+          %h5 Заголовок h5
+          %h6 Заголовок h6
+        .grid-i.__grid-3> 
+          %h3.m-b_2 Размер текста
+          %p.tx.__xxs Пример размера текста
+          %p.tx.__xs Пример размера текста
+          %p.tx.__s Пример размера текста
+          %p.tx.__m Пример размера текста
+          %p.tx.__l Пример размера текста
+          %p.tx.__xl Пример размера текста
+          %p.tx.__xxl Пример размера текста
+        .grid-i.__grid-3>
+          %h3.m-b_2 Цвет текста
+          %p.tx.__default Пример размера текста
+          %p.tx.__major Пример размера текста
+          %p.tx.__minor Пример размера текста
+          %p.tx.__muted Пример размера текста
+          %p.tx.__white.c-bg.__gray Пример размера текста
+          %p.tx.__green Пример размера текста
+          %p.tx.__red Пример размера текста
+          %p.tx.__lime Пример размера текста
+          %p.tx.__orange Пример размера текста
+          %p.tx.__yellow Пример размера текста
+
+    .m-b_4
+      %h3.m-b_2 Кубик
+      .p-t_2.p-b_2.brick.c-bg.__green
+
+    .m-b_2
+      %h3.m-b_2 Формы
+      %form.form
+        .m-b_1
+          %lable.form_label.tx.__xs Лейбл  
+        .m-b_1
+          .grid
+            .grid-i.__grid-2>
+              %input.form_text{type: "text", placeholder: "Текстовре поле"}
+            .grid-i.__grid-2>
+              %input.form_text{type: "text", placeholder: "Текстовре поле", data: {valid: "false"}}
+            .grid-i.__grid-2>
+              %input.form_text{type: "text", placeholder: "Текстовре поле", data: {valid: "false"}}
+        .m-b_1
+          .form_select.form_el.__fake.grid-i.__grid-2
+            %p &nbsp;
+            %select.form_select.form_el.__real{}
+              %option Выберите
+              %option{selected: "selected"} Первый
+              %option Второй
+              %option Третий  
+        .m-b_1
+          %textarea.form_textarea.grid-i.__grid-6{rows: "3"}
+        .m-b_1
+          %label.form_label.__m
+            %span.form_checkbox.form_el.__fake
+              %input.form_checkbox.form_el.__real{type: "checkbox"}
+            чекбокс
+        .m-b_1
+          %label.form_label.__m
+            %span.form_radio.form_el.__fake
+              %input.form_radio.form_el.__real{type: "radio", name: "radio1"}
+            радио

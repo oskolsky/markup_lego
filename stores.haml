@@ -1,0 +1,94 @@
+%header#header.header.__yellow{role: "banner"}
+  .ctn
+    = haml 'views/layouts/_header'.to_sym
+
+%main#main.main{role: "main"}
+
+  #stores-map.stores-map
+  :javascript
+    ymaps.ready(init);
+    var myMap, myPlacemark;
+    function init() {
+      myMap = new ymaps.Map ('stores-map', {
+        center: [55.76, 37.64],
+        zoom: 14
+      }); 
+      myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+        hintContent: 'ТРК «ЩУКА»',
+        balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
+                        '<article class="tx __xs">' +
+                        '<p>г. Москва, ул. Уссурийская, д.9, пом. 3058</p>' +
+                        '<p>тел.: +7 (499) 951 60 67</p>' +
+                        '<p>с 10:00 до 21:00 без выходных</a>' +
+                        '</article>'
+      });
+      myMap.geoObjects.add(myPlacemark);
+    };
+
+  %section.section.p-b_4{role: "region", "aria-label" => "Stores"}
+    .ctn
+      .stores
+        %header.section_header.stores_header
+          .stores_header_inner
+            .grid
+              .grid-i.__grid-3.__prefix-1.va-m>
+                %form.form
+                  %h3.tx.__upper.__color.__white.m-b_1 Выберите ваш город
+                  .m-b_2
+                    %label.form_label.tx.__xxs.__color.__white город
+                    .form_select.form_el.__fake.__block
+                      %p &nbsp;
+                      %select.form_select.form_el.__real
+                        %option{selected: "selected"} Москва
+                        %option Смоленск
+                        %option Магадан
+                  %label.form_label.tx.__xxs.__color.__white станция метро
+                  .form_select.form_el.__fake.__block
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: "selected"} Любая
+                      %option Калужская
+                      %option Трубная
+                      %option Белорусская
+                      %option Кутузовская
+                      %option Шоссе Энтузиастов
+                      %option Октябрьская
+                      %option Смоленская
+                      %option Трубная
+                      %option Парк культуры
+                      %option Сухаревская
+              .grid-i.__grid-3.va-m>
+                .stores_count
+                  .stores_count_number 67
+                  .stores_count_label Магазинов по&nbsp;россии
+        %section.section_main.stores_body
+          %h1.tx.__upper.__center.m-b_3 
+            %span Москва 
+            %span.tx.__color.__major 23 магазина
+          %table.table{width: "100%"}
+            %thead
+              %tr
+                %th название магазина
+                %th метро
+                %th контактные данные
+                %th e-mail
+                %th время работы
+            %tbody
+              - 1.upto(10) do
+                %tr
+                  %td.va-t{width: 300}
+                    %p.store_name.m-b_1 Магазин ЛЕГО в ТРК «VEGAS Крокус Сити» 
+                    %p 
+                      %a.store_more{href: "#"} подробнее
+                  %td.va-t
+                    %p Калужская
+                    .metro.__green
+                  %td.va-t
+                    %p 66 км МКАД, 4-248 
+                    %p Метро: Мякинино
+                    %p +7 (903) 543-66-04
+                  %td.va-t
+                    %a{href: "mailto: lego@mir-kubikov.ru"} lego@mir-kubikov.ru
+                  %td.va-t
+                    %p пн-сб 10:00 – 21:00
+                    %p вс  выходной                    
