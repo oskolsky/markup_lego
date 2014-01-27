@@ -1,58 +1,156 @@
+//****************************************************************************************************
+//
+// .. INIT
+//
+//****************************************************************************************************
+//
+// .. DIALOGS
+//
+$.arcticmodal('setDefault', {
+  overlay: {
+    css: {
+      backgroundColor: '#000',
+      opacity: .66
+    }
+  },
+  openEffect: {
+    speed: 200
+  },
+  closeEffect: {
+    speed: 200
+  }
+});
+
+//
+// .. ACCOUNTING
+//
+accounting.settings = {
+  currency: {
+    decimal: '.',
+    thousand: ' ',
+    precision: 0
+  },
+  number: {
+    decimal : '.',
+    thousand: ' ',
+    precision: 0
+  }
+}
+
+
+
+//****************************************************************************************************
+//
+// .. EVENTS
+//
+//****************************************************************************************************
+//
+// .. PROMO BLOCK ON HOME PAGE
+//
+$(document).on('click', '.promo-slider.__home .slide a', function() {
+  var rel = $(this).data('rel');
+  var bg  = $(this).data('bg');
+
+  $('.header_bg').find('.header_bg_i').hide();
+  $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn();
+
+  $('.promo').find('.promo_i').hide();
+  $('.promo').find('.promo_i[data-rel="' + rel + '"]').fadeIn();
+
+  return false;
+});
+
+//
+// .. ARTICLE CLOSE
+//
+$(document).on('click', '.articles_i_show_close', function() {
+  var $el = $(this).closest('.articles_i');
+  $el.find('.articles_i_show').fadeOut(250, function() {
+    $(this).remove();
+    $el.find('.articles_i_announcement').fadeIn(250);
+  });
+
+  var destination = $el.offset().top;
+  $('html, body').animate({scrollTop: destination}, 500);
+  return false;
+});
+
+//
+// .. PHOTO GALLERY LOAD NEW PHOTO
+//
+$(document).on('click', '.articles_i_show_gallery_add > a', function() {
+  $('.articles_i_show_gallery').find('.articles_i_show_gallery_i').fadeIn();
+  $(this).closest('.articles_i_show_gallery_add').remove();
+  return false;
+});
+
+//
+// .. Open dialog
+//
+$(document).on('click touchstart', '[data-dialog="true"]', function() {
+  var url = $(this).data('url');
+  $.arcticmodal('close');
+
+  $.arcticmodal({
+    type: 'ajax',
+    url: url,
+    afterOpen: function() {
+
+    },
+    afterLoadingOnShow: function() {
+      $('.form').customForm();
+      $('.form_text.__phone').mask('+7 (999) 999-99-99');
+    }
+  });
+
+  return false;
+});
+
+//
+// .. Close dialog
+//
+$(document).on('click touchend', '.js-dialog_close', function() {
+  $.arcticmodal('close');
+});
+
+
+
+//****************************************************************************************************
+//
+// .. READY
+//
+//****************************************************************************************************
 $(function() {
 
   $('.form_text.__phone').mask('+7 (999) 999-99-99');
   $('.form_text.__card').mask('9 999999 999999');
 
-
-
-  //****************************************************************************************************
   //
-  // .. PROMO BLOCK ON HOME PAGE
+  // .. HOME PAGE SHARE
   //
-  //****************************************************************************************************
-  $(document).on('click', '.promo-slider.__home .slide a', function() {
-    var rel = $(this).data('rel');
-    var bg  = $(this).data('bg');
-
-    $('.header_bg').find('.header_bg_i').hide();
-    $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn();
-
-    $('.promo').find('.promo_i').hide();
-    $('.promo').find('.promo_i[data-rel="' + rel + '"]').fadeIn();
-
+  $('.share-block').find('.share-block_a').click(function() {
+    $(this).fadeOut();
     return false;
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. CATALOG
   //
-  //****************************************************************************************************
   $('.catalog.__series').find('.catalog_row').each(function() {
     $(this).find('.catalog_i').resizeToMaxHeight();
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. CATALOG SHOW
   //
-  //****************************************************************************************************
   $('.js-add-basket').click(function() {
     $(this).removeClass('__red').addClass('__green').text('Оформить');
     return false;
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. JOBS
   //
-  //****************************************************************************************************
   $('.jobs-item_more').click(function() {
     var $el = $(this).closest('.jobs-item').find('.jobs-item_body');
     if ($el.is(':hidden')) {
@@ -63,13 +161,9 @@ $(function() {
     return false;
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. FAQ
   //
-  //****************************************************************************************************
   $('.faq_i').find('.faq_i_open').click(function() {
     $(this).closest('.faq_i').addClass('__current');
     $(this).closest('.faq_i').find('.faq_i_answer').show();
@@ -81,13 +175,9 @@ $(function() {
     return false;
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. ARTICLE SHOW & CLOSE
   //
-  //****************************************************************************************************
   $('.articles_i_caption_more').click(function() {
     var _this = this;
     var
@@ -108,37 +198,10 @@ $(function() {
     return false;
   });
 
-  $(document).on('click', '.articles_i_show_close', function() {
-    var $el = $(this).closest('.articles_i');
-    $el.find('.articles_i_show').fadeOut(250, function() {
-      $(this).remove();
-      $el.find('.articles_i_announcement').fadeIn(250);
-    });
 
-    var destination = $el.offset().top;
-    $('html, body').animate({scrollTop: destination}, 500);
-    return false;
-  });
-
-
-  //****************************************************************************************************
-  //
-  // .. PHOTO GALLERY LOAD NEW PHOTO
-  //
-  //****************************************************************************************************
-  $(document).on('click', '.articles_i_show_gallery_add > a', function() {
-    $('.articles_i_show_gallery').find('.articles_i_show_gallery_i').fadeIn();
-    $(this).closest('.articles_i_show_gallery_add').remove();
-    return false;
-  });
-
-
-
-  //****************************************************************************************************
   //
   // .. PHOTO & VIDEO GALLERY
   //
-  //****************************************************************************************************
   $('.gallery').each(function() {
     var _this = this;
     $(_this).find('.gallery_preview').find('.gallery_preview_i').click(function() {
@@ -151,13 +214,9 @@ $(function() {
     });
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. AVAILABILITY
   //
-  //****************************************************************************************************
   $('.availability_more').click(function() {
     var $el = $(this).closest('.availability').find('.availability_section_more');
     if ($el.is(':hidden')) {
@@ -170,13 +229,9 @@ $(function() {
     return false;
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. REVIEWS ADD
   //
-  //****************************************************************************************************
   $('.js-reviews-toggle').click(function() {
     var $el_list = $('.reviews_list');
     var $el_form = $('.reviews_add');
@@ -190,12 +245,9 @@ $(function() {
     return false;
   });
 
-
-  //****************************************************************************************************
   //
   // .. FORM NUMBER
   //
-  //****************************************************************************************************
   $('.form_number').each(function() {
     var _this = this;
     $(this).find('.form_number_controls_i').click(function() {
@@ -207,22 +259,14 @@ $(function() {
     });
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. JQUERY UI TABS
   //
-  //****************************************************************************************************
   $('.tabs').tabs();
 
-
-
-  //****************************************************************************************************
   //
   // .. JQUERY UI SLIDER RANGE
   //
-  //****************************************************************************************************
   $('.range-slider').each(function() {
     var _this = this;
     $(_this).find('.range-slider_init.__price').slider({
@@ -249,13 +293,9 @@ $(function() {
     });
   });
 
-
-
-  //****************************************************************************************************
   //
   // .. BASKET DELIVERY
   //
-  //****************************************************************************************************
   $('.js-basket-delivery').change(function() {
     var value = $(this).val();
     $('.basket_delivery_i').hide();
@@ -263,21 +303,14 @@ $(function() {
   });
 
 
-
-  //****************************************************************************************************
   //
   // .. FORMS
   //
-  //****************************************************************************************************
   $('.form').customForm(); // $('#checkbox').customForm() to init single element; $('body').customForm() to init all elements
 
-
-
-  //****************************************************************************************************
   //
   // .. SCROLL TO
   //
-  //****************************************************************************************************
   $('a[data-scroll="true"]').on('click touchend', function() {
     var       $this = $(this),
              anchor = $this.attr('href'),
@@ -285,14 +318,10 @@ $(function() {
     $('html, body').animate({scrollTop: destination}, 500);
     return false;
   });
-  
 
-
-  //****************************************************************************************************
   //
   // .. SLIDERS
   //
-  //****************************************************************************************************
   $('.slider').each(function() {
     var _this = this;
     $(this).find('.slides').cycle({
@@ -315,77 +344,8 @@ $(function() {
 
   });
 
-
-
-  //****************************************************************************************************
   //
-  // .. DIALOGS
-  //
-  //****************************************************************************************************
-  $.arcticmodal('setDefault', {
-    overlay: {
-      css: {
-        backgroundColor: '#000',
-        opacity: .66
-      }
-    },
-    openEffect: {
-      speed: 200
-    },
-    closeEffect: {
-      speed: 200
-    }
-  });
-  //
-  // .. Open dialog
-  //
-  $(document).on('click touchstart', '[data-dialog="true"]', function() {
-    var url = $(this).data('url');
-    $.arcticmodal('close');
-
-    $.arcticmodal({
-      type: 'ajax',
-      url: url,
-      afterOpen: function() {
-
-      },
-      afterLoadingOnShow: function() {
-        $('.form').customForm();
-        $('.form_text.__phone').mask('+7 (999) 999-99-99');
-      }
-    });
-
-    return false;
-  });
-
-  //
-  // .. Close dialog
-  //
-  $(document).on('click touchend', '.js-dialog_close', function() {
-    $.arcticmodal('close');
-  });
-
-
-
-  //****************************************************************************************************
-  //
-  // .. ACCOUNTING
-  //
-  //****************************************************************************************************
-  accounting.settings = {
-    currency: {
-      decimal: '.',
-      thousand: ' ',
-      precision: 0
-    },
-    number: {
-      decimal : '.',
-      thousand: ' ',
-      precision: 0
-    }
-  }
-  //
-  // .. Number
+  // .. NUMBER
   //
   $('.format-number').each(function() {
     var
@@ -396,7 +356,7 @@ $(function() {
   });
 
   //
-  // .. Money
+  // .. MONEY
   //
   $('.format-money').each(function() {
     var c = accounting.settings.currency;

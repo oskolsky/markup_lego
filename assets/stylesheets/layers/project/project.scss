@@ -1985,23 +1985,36 @@ a.breadcrumbs_i {color: #0068a5;}
 }
 
 //
-// .. Share link
+// .. Share block
 //
-.share-link {
-  font: {
-    family: $h-font-family;
-    size: 12px;
+.share-block {
+  position: relative;
+}
+.share-block_a {
+  background-color: $base-bg;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  a {
+    font: {
+      family: $h-font-family;
+      size: 12px;
+    }
+    text: {
+      transform: uppercase;
+      decoration: none;
+    }
   }
-  text: {
-    decoration: none;
-    transform: uppercase;
-  }
-
   img {
-    vertical-align: middle;
     margin-left: 5px;
+    vertical-align: middle;
   }
-
+}
+.share-block_pluso {
+  
 }
 
 //
