@@ -1,0 +1,37 @@
+.dialog
+  .grid-i.__grid-7
+    %i.dialog_close.js-dialog_close.fa.fa-times-circle
+    .m-b_1
+      %a.a.__pseudo.tx.__xs{href: "#", data: {dialog: "true", url: "/dialogs/then"}} Назад к списку
+    %h2.tx.__upper.m-b_2 Посмотреть на карте, Москва
+    .grid
+      .grid-i.__grid-2>
+        %dl.m-b_2
+          %dt.tx.__xs.__muted Адрес:
+          %dd.tx.__xs 1-я Тверская-Ямская ул., 28
+        %dl.m-b_2
+          %dt.tx.__xs.__muted Телефон:
+          %dd.tx.__xs +7 (495) 642-07-42
+        %dl.m-b_2
+          %dt.tx.__xs.__muted Время работы:
+          %dd.tx.__xs Круглосуточно, без выходных
+      .grid-i.__grid-5
+        #YMapsID{style: "width: 100%; height: 400px;"}
+      
+:javascript
+  ymaps.ready(function () { 
+    
+    var myMap = new ymaps.Map('YMapsID', {
+      center: [55.8, 37.6],
+      zoom: 16
+    });
+    
+    // Создание метки 
+    var myPlacemark = new ymaps.Placemark(
+      [55.8, 37.6]
+    );
+
+    // Добавление метки на карту
+    myMap.geoObjects.add(myPlacemark);    
+      
+  });

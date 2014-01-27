@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
 @import url(vendor/jquery.arcticmodal-0.3.css);
 @import url(vendor/animate.min.css);
+@import url(vendor/lightbox.css);
 @font-face {
   font-family: 'rotondacregular';
   src: url("/assets/fonts/rotonda/rtn55c-webfont.eot");
@@ -2068,7 +2070,7 @@ a.form_button {
     font-size: 18px;
     position: relative;
     top: -10px;
-    vertical-align: top; }
+    vertical-align: baseline; }
   .tabs_i .ico {
     margin-right: 5px;
     position: relative;
@@ -2412,6 +2414,21 @@ a.form_button {
 
 .basket_delivery_i {
   display: none; }
+
+.basket_delivery_i_list {
+  height: 400px;
+  overflow-y: auto;
+  padding-right: 10px; }
+
+.basket_delivery_i_list_i {
+  padding: 6px 0 20px 35px;
+  position: relative; }
+  .basket_delivery_i_list_i:not(:last-child) {
+    margin-bottom: 20px; }
+  .basket_delivery_i_list_i .form_radio {
+    position: absolute;
+    top: 5px;
+    left: 5px; }
 
 .gratitude_summary {
   text-align: right; }
@@ -3109,9 +3126,8 @@ a.breadcrumbs_i {
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -5px; }
+    top: 7px;
+    left: 0; }
   .availability_section_name.__green::before {
     background-color: #00a81c; }
   .availability_section_name.__blue::before {
@@ -3127,6 +3143,40 @@ a.breadcrumbs_i {
   width: 100px; }
   .availability_section_action .form_button {
     width: 100px; }
+
+.count {
+  background-color: #eee;
+  border-radius: 3px;
+  height: 6px;
+  position: relative;
+  top: 8px;
+  width: 100%; }
+  .count::before {
+    content: '';
+    background-color: #e30613;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; }
+  .count::after {
+    color: #aaa;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .count.__s::before {
+    width: 25%; }
+  .count.__s::after {
+    content: "мало"; }
+  .count.__m::before {
+    width: 50%; }
+  .count.__m::after {
+    content: "несколько"; }
+  .count.__l::before {
+    width: 100%; }
+  .count.__l::after {
+    content: "много"; }
 
 .reviews_i {
   margin-bottom: 20px; }

@@ -90,13 +90,16 @@ $(function() {
   //****************************************************************************************************
   $('.articles_i_caption_more').click(function() {
     var _this = this;
-    var url = $(this).data('url');
+    var
+        url = $(this).data('url'),
+        itemID = $(this).attr('href');
+    window.location.hash = itemID;
     $.ajax({
       url: url,
       success: function(response) {
         $(_this).closest('.articles_i_announcement').hide();
         $(_this).closest('.articles_i_announcement').after(response);
-        $(_this).closest('.articles_i').find('.articles_i_show').fadeIn();
+        $(_this).closest('.articles_i').find('.articles_i_show').fadeIn(250);
       },
       error: function() {
         alert('Error load resources');
@@ -107,8 +110,11 @@ $(function() {
 
   $(document).on('click', '.articles_i_show_close', function() {
     var $el = $(this).closest('.articles_i');
-    $el.find('.articles_i_show').remove();
-    $el.find('.articles_i_announcement').show();
+    $el.find('.articles_i_show').fadeOut(250, function() {
+      $(this).remove();
+      $el.find('.articles_i_announcement').fadeIn(250);
+    });
+
     var destination = $el.offset().top;
     $('html, body').animate({scrollTop: destination}, 500);
     return false;
@@ -120,17 +126,9 @@ $(function() {
   // .. PHOTO GALLERY LOAD NEW PHOTO
   //
   //****************************************************************************************************
-  $(document).on('click', '.articles_i_show_gallery_add', function() {
-    var _this = this;
-    $.ajax({
-      url: '/data/photo_gallery',
-      success: function(response) {
-        $(_this).before(response);
-      },
-      error: function() {
-        alert('Error load resources');
-      }
-    });
+  $(document).on('click', '.articles_i_show_gallery_add > a', function() {
+    $('.articles_i_show_gallery').find('.articles_i_show_gallery_i').fadeIn();
+    $(this).closest('.articles_i_show_gallery_add').remove();
     return false;
   });
 
@@ -349,6 +347,9 @@ $(function() {
       type: 'ajax',
       url: url,
       afterOpen: function() {
+
+      },
+      afterLoadingOnShow: function() {
         $('.form').customForm();
         $('.form_text.__phone').mask('+7 (999) 999-99-99');
       }

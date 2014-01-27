@@ -2,26 +2,47 @@
   .grid-i.__grid-4
     %i.dialog_close.js-dialog_close.fa.fa-times-circle
     %h2.tx.__upper.m-b_2 Отложить
+    %article.tx.__xs
+      %p.m-b_2 Это товар отложат специально для вас в магазине. Вам останется только прийти, оплатить и забрать.
     %form.form
       .m-b_2
-        %label.form_label.__m Имя
-        %input.form_text.form_el.__block{type: "text"}
+        %label.form_label.__m Город
+        .form_select.form_el.__fake.form_el.__block
+          %p &nbsp;
+          %select.form_select.form_el.__real
+            %option{selected: "selected"} Москва
+            %option Смоленск
+            %option Магадан
       .m-b_2
-        %label.form_label.__m Email
+        %label.form_label.__m Магазин
+        .form_select.form_el.__fake.form_el.__block
+          %p &nbsp;
+          %select.form_select.form_el.__real
+            %option{selected: "selected"} ТРЦ «ЕвроПарк»
+            %option Кутузовский проспект, 26
+            %option Ленинский проспект, д. 4а
+            %option Пречистенка
+            %option Садовая-Спасская
+      .m-b_2
+        .m-b_1
+          %article.tx.__xs
+            %p 
+              %b Адрес: 
+              г. Москва, Рублёвское шоссе, 62, 2 этаж 
+            %p 
+              %b Время работы: 
+              с 10:00 до 22:00 без выходных 
+            %p 
+              %b Телефон: 
+              +7 (903) 543-66-04
+        %a.a.__pseudo.tx.__xs{href: "#", data: {dialog: "true", url: "/dialogs/map"}} Посмотреть на карте
+      .m-b_2
+        %label.form_label.__m ФИО
         %input.form_text.form_el.__block{type: "text"}
       .m-b_2
         %label.form_label.__m Телефон
         %input.form_text.__phone.form_el.__block{type: "text"}
       .m-b_2
-        %label.form_label.__m Удобное время для звонка
+        %label.form_label.__m Email
         %input.form_text.form_el.__block{type: "text"}
-      .m-b_3
-        %label.form_label.__m Магазина
-        .form_select.form_el.__fake.__block
-          %p &nbsp;
-          %select.form_select.form_el.__real
-            %option{selected: "selected"} Магазин 1
-            %option Магазин 2
-            %option Магазин 3
-            %option Магазин 4                              
       %input.form_button.__s.__red.grid-i.__grid-2{type: "submit", value: "отложить", data: {dialog: "true", url: "/dialogs/message"}}

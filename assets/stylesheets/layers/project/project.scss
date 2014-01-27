@@ -332,7 +332,7 @@
     font-size: 18px;
     position: relative;
     top: -10px;
-    vertical-align: top;
+    vertical-align: baseline;
   }
 
   .ico {
@@ -926,6 +926,21 @@
   }
   &.__pickup {
 
+  }
+}
+.basket_delivery_i_list {
+  height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;  
+}
+.basket_delivery_i_list_i {
+  padding: 6px 0 20px 35px;
+  position: relative;
+  &:not(:last-child) {margin-bottom: 20px;}
+  .form_radio {
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
 }
 
@@ -2091,9 +2106,8 @@ a.breadcrumbs_i {color: #0068a5;}
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 50%;
+    top: 7px;
     left: 0;
-    margin-top: -5px;
   }
   &.__green {&::before {background-color: #00a81c;}}
   &.__blue  {&::before {background-color: #09bdf3;}}
@@ -2106,6 +2120,46 @@ a.breadcrumbs_i {color: #0068a5;}
 .availability_section_action {
   width: 100px;
   .form_button {width: 100px;}
+}
+
+//
+// .. Count
+//
+.count {
+  background-color: #eee;
+  border-radius: 3px;
+  height: 6px;
+  position: relative;
+  top: 8px;
+  width: 100%;  
+  &::before {
+    content: '';
+    background-color: $major-color;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &::after {
+    color: #aaa;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &.__s {
+    &::before {width: 25%;}
+    &::after {content: "мало"}
+  }
+  &.__m {
+    &::before {width: 50%;}
+    &::after {content: "несколько"}
+  }
+  &.__l {
+    &::before {width: 100%;}
+    &::after {content: "много"}
+  }
 }
 
 
