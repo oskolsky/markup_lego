@@ -12,7 +12,6 @@
           %a.breadcrumbs_i{href: "/"} Главная
           %i.fa.fa-chevron-right
           %span.breadcrumbs_i Личный кабинет
-      %section.section_main
 
   %section.m-b_5
     .tabs
@@ -45,20 +44,284 @@
                 .tx.__right
                   %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
 
-            = haml 'views/common/_block_summary'.to_sym
-
         #tabs-2
-          .p-t_5.p-b_5
-            %p Бонусная программа
+          .p-t_3
+            .grid.m-b_3
+              .grid-i.__grid-4.__prefix-6.va-m>
+                .tx.__right
+                  %h2 У Вас 266 бонусов
+              .grid-i.__grid-2.va-m>
+                .tx.__right
+                  %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
+            .border-block.__yellow
+              %h2.tx.__upper.__center.m-b_2 Мои привилегии
+              %p.tx.__xs.__center.m-b_3 Мы гарантируем кофиденциальность ваших персональных данных. Все поля обязательны для заполнения.
+              .grid-i.__grid-5.b-center
+                %form.form
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Тип карты:
+                      .grid-i.__grid-3.va-m>
+                        .form_select.form_el.__fake.__block
+                          %p &nbsp;
+                          %select.form_select.form_el.__real
+                            %option{selected: "selected"} карта почётного клиента
+                            %option карта почётного клиента
+                            %option карта почётного клиента
+                            %option карта почётного клиента
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Карта почётного клиента:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_el.__block.form_text.__card{type: "text"}
+                  .m-b_4
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Бонусный код:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_el.__block.form_text{type: "text"}
+                  %input.form_button.__red.__l.b-center{type: "submit", value: "Сохранить"}
 
         #tabs-3
-          .p-t_5.p-b_5
-            %p Персональные данные
+          .p-t_3
+            .grid.m-b_3
+              .grid-i.__grid-4.__prefix-6.va-m>
+                .tx.__right
+                  %h2 У Вас 266 бонусов
+              .grid-i.__grid-2.va-m>
+                .tx.__right
+                  %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
+            .grid-i.__grid-5.b-center
+              %form.form.m-b_4
+                %h2.tx.__upper.__center.m-b_2 Ваши анкетные данные
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Фамилия:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "text"}
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Имя:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "text"}
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Отчество:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "text"}
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Дата рождения:
+                    .grid-i.__grid-3.va-m>
+                      .grid
+                        .grid-i.__grid-1>
+                          %input.form_el.__block.form_text{type: "text", placeholder: "День"}
+                        .grid-i.__grid-1>
+                          %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
+                        .grid-i.__grid-1>
+                          %input.form_el.__block.form_text{type: "text", placeholder: "Год"}
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs E-mail:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "text"}
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs{data: {required: "after"}} Пароль:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "password"}
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs{data: {required: "after"}} Повторить пароль:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "password"}
+                .m-b_2
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs{data: {required: "after"}} Мобильный телефон:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text.__phone{type: "text"}
+                .m-b_6
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Номер карты лояльности:
+                    .grid-i.__grid-3.va-m>
+                      %p.tx.__xs 05872654200
+                %h2.tx.__upper.__center.m-b_2 Данные вашего ребенка
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Фамилия:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "text"}
+                .m-b_1
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Имя:
+                    .grid-i.__grid-3.va-m>
+                      %input.form_el.__block.form_text{type: "text"}
+                .m-b_4
+                  .grid
+                    .grid-i.__grid-2.va-m> 
+                      %label.form_label.tx.__xs Дата рождения:
+                    .grid-i.__grid-3.va-m>
+                      .grid
+                        .grid-i.__grid-1>
+                          %input.form_el.__block.form_text{type: "text", placeholder: "День"}
+                        .grid-i.__grid-1>
+                          %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
+                        .grid-i.__grid-1>
+                          %input.form_el.__block.form_text{type: "text", placeholder: "Год"}   
+                .m-b_4
+                  %a.a.__pseudo.__inner{href: "#"} 
+                    %i.fa.fa-plus-circle.tx.__xxl.__major
+                    Добавить ещё ребенка
+                %input.form_button.__red.__l.b-center{type: "submit", value: "Сохранить"}
+
+            .border-block.__yellow
+              %h2.tx.__upper.__center.m-b_2 По какому адресу вам доставить заказ?
+              .grid-i.__grid-5.b-center
+                %form.form
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Город:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_el.__block.form_text{type: "text"}
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Ближайшая станция метро:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_el.__block.form_text{type: "text"}
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Улица:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_el.__block.form_text{type: "text"}
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Дом:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_text{type: "text", style: "width: 50px;"}
+                        %span.tx.__xs Корпус:
+                        %input.form_text{type: "text", style: "width: 50px;"}
+                        %span.tx.__xs Квартира:
+                        %input.form_text{type: "text", style: "width: 50px;"}
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Индекс:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_el.__block.form_text{type: "text"}
+                  .m-b_1
+                    .grid
+                      .grid-i.__grid-2.va-m> 
+                        %label.form_label.tx.__xs Удобное время доставки с:
+                      .grid-i.__grid-3.va-m>
+                        %input.form_text{type: "text", style: "width: 50px;"}
+                        %span.tx.__xs до
+                        %input.form_text{type: "text", style: "width: 50px;"}
+                  .m-b_2
+                    .grid
+                      .grid-i.__grid-2> 
+                        %label.form_label.tx.__xs Дополнительная информация:
+                      .grid-i.__grid-3>
+                        %textarea.form_el.__block.form_textarea{rows: 5}
+                  .m-b_4
+                    .grid
+                      .grid-i.__grid-2> 
+                        %label.form_label.tx.__xs Подписатся на новости (акции, новинки...)
+                      .grid-i.__grid-3>
+                        .grid
+                          .grid-i.__grid-1>
+                            %label.form_label.__m
+                              %span.form_checkbox.form_el.__fake
+                                %input.form_checkbox.form_el.__real{type: "checkbox", checked: "checked"}
+                              E-mail
+                          .grid-i.__grid-1>
+                            %label.form_label.__m
+                              %span.form_checkbox.form_el.__fake
+                                %input.form_checkbox.form_el.__real{type: "checkbox"}
+                              Sms
+                          .grid-i.__grid-1>
+                            %label.form_label.__m
+                              %span.form_checkbox.form_el.__fake
+                                %input.form_checkbox.form_el.__real{type: "checkbox"}
+                              Нет
+                  %input.form_button.__red.__l.b-center{type: "submit", value: "Сохранить"}
 
         #tabs-4
-          .p-t_5.p-b_5
-            %p История заказов
+          .p-t_3
+            .grid.m-b_3
+              .grid-i.__grid-4.__prefix-6.va-m>
+                .tx.__right
+                  %h2 У Вас 266 бонусов
+              .grid-i.__grid-2.va-m>
+                .tx.__right
+                  %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
+            %h2.tx.__upper.__center.m-b_2 История заказов
 
         #tabs-5
-          .p-t_5.p-b_5
-            %p Избранное
+          .p-t_3
+            .grid.m-b_3
+              .grid-i.__grid-4.__prefix-6.va-m>
+                .tx.__right
+                  %h2 У Вас 266 бонусов
+              .grid-i.__grid-2.va-m>
+                .tx.__right
+                  %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
+            %h2.tx.__upper.__center.m-b_2 Избранное
+            %table.table
+              %thead
+                %tr
+                  %th Фото
+                  %th Наименование
+                  %th Количество
+                  %th Скидка
+                  %th Итоговая стоимость
+                  %th &nbsp;
+              %tbody
+                - 1.upto(2) do
+                  %tr
+                    %td
+                      %a{href: "/catalog_show"}
+                        %img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg"}
+                    %td
+                      %p.table_number Звездные войны 23523
+                      %p.table_name
+                        %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
+                    %td
+                      .form_number
+                        %input.form_text.form_el.__block{type: "text", value: "1"}
+                        .form_number_controls
+                          %a{href: "#", class: "form_number_controls_i __up"} +
+                          %a{href: "#", class: "form_number_controls_i __down"} -
+                    %td
+                      %p -5%
+                    %td
+                      .basket_oldprice
+                        %span.format-number
+                          = rand(5000..10000)
+                        руб.
+                      .price.__rub.__m.format-money
+                        = rand(500..2000)
+                    %td
+                      .basket_action
+                        %a.form_button.__orange.__xs.basket_action_i{href: "#"}
+                          Купить сейчас                  
+
+  %section.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
+    .ctn
+      = haml 'views/common/_block_summary'.to_sym
