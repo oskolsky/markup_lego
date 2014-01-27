@@ -198,6 +198,19 @@ $(function() {
     return false;
   });
 
+  //
+  // .. PHOTO GALLERY ON STORES PAGE
+  //
+  $('.stores_photos').each(function() {
+    var _this = this;
+    $(this).find('.stores_photos_thumb_i').click(function() {
+      var src = $(this).attr('href');
+      $(_this).find('.stores_photos_thumb_i.__current').removeClass('__current');
+      $(this).addClass('__current');
+      $(_this).find('.stores_photos_preview').attr({src: src})
+      return false;
+    });
+  });
 
   //
   // .. PHOTO & VIDEO GALLERY
@@ -226,6 +239,22 @@ $(function() {
       $(this).text('Показать');
       $el.slideUp();
     }
+    return false;
+  });
+
+  //
+  // .. STORES
+  //
+  $('.store_more.__open').click(function() {
+    var $el = $(this).siblings('.store_details');
+    $(this).hide();
+    $el.slideDown();
+    return false;
+  });
+  $('.store_more.__close').click(function() {
+    var $el = $(this).closest('.store_details');
+    $('.store_more.__open').show();
+    $el.slideUp();
     return false;
   });
 

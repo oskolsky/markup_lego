@@ -2566,8 +2566,7 @@ a.form_button {
 
 .store_name {
   text-transform: uppercase;
-  font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 700; }
+  font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .store_more {
   text-decoration: none;
@@ -2581,11 +2580,36 @@ a.form_button {
     border-radius: 50%;
     background-color: #e30613;
     color: #fff;
-    content: '\f078';
     text-align: center;
     line-height: 20px;
     font-family: FontAwesome;
     font-size: 12px; }
+  .store_more.__open::after {
+    content: '\f078'; }
+  .store_more.__close::after {
+    content: '\f077'; }
+
+.store_item.__open td {
+  border-bottom: none; }
+
+.store_details {
+  display: none;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px; }
+
+.stores_photos_thumb_i {
+  display: inline-block;
+  border: 7px solid transparent;
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+  -ms-transition: all 0.33s ease;
+  -o-transition: all 0.33s ease;
+  transition: all 0.33s ease; }
+  .stores_photos_thumb_i:not(:last-child) {
+    margin-right: 20px; }
+  .stores_photos_thumb_i.__current {
+    border-color: #e30613; }
 
 .articles .articles_i_show_gallery_i {
   display: inline-block;

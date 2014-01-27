@@ -74,12 +74,10 @@
                 %th e-mail
                 %th время работы
             %tbody
-              - 1.upto(10) do
-                %tr
+              - 1.upto(23) do |i|
+                %tr.store_item.__open
                   %td.va-t{width: 300}
                     %p.store_name.m-b_1 Магазин ЛЕГО в ТРК «VEGAS Крокус Сити» 
-                    %p 
-                      %a.store_more{href: "#"} подробнее
                   %td.va-t
                     %p Калужская
                     .metro.__green
@@ -91,4 +89,48 @@
                     %a{href: "mailto: lego@mir-kubikov.ru"} lego@mir-kubikov.ru
                   %td.va-t
                     %p пн-сб 10:00 – 21:00
-                    %p вс  выходной                    
+                    %p вс  выходной  
+                %tr
+                  %td{colspan: 5}
+                    %a.store_more.__open{href: "#"} подробнее
+                    .store_details
+                      .grid
+                        .grid-i.__grid-5>
+                          %div{id: "store_map_#{i}", style: "height: 360px;"}
+                          :javascript
+                            ymaps.ready(init);
+                            var myMap, myPlacemark;
+                            function init() {
+                              myMap = new ymaps.Map ('store_map_#{i}', {
+                                center: [55.76, 37.64],
+                                zoom: 14
+                              }); 
+                              myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                                hintContent: 'ТРК «ЩУКА»',
+                                balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
+                                                '<article class="tx __xs">' +
+                                                '<p>г. Москва, ул. Уссурийская, д.9, пом. 3058</p>' +
+                                                '<p>тел.: +7 (499) 951 60 67</p>' +
+                                                '<p>с 10:00 до 21:00 без выходных</a>' +
+                                                '</article>'
+                              });
+                              myMap.geoObjects.add(myPlacemark);
+                            };
+                        .grid-i.__grid-5>
+                          .stores_photos
+                            %img.stores_photos_preview.va-t.m-b_1{src: "/assets/images/fake/photo_495_260_1.png", width: 495, height: 260, alt: ""}
+                            .stores_photos_thumb
+                              %a.stores_photos_thumb_i.__current{href: "/assets/images/fake/photo_495_260_1.png"}
+                                %img.va-t.c-bg.__green{src: "/assets/images/blank.gif", width: 80, height: 80, alt: ""}>
+                              %a.stores_photos_thumb_i{href: "/assets/images/fake/photo_495_260_2.png"}
+                                %img.va-t.c-bg.__orange{src: "/assets/images/blank.gif", width: 80, height: 80, alt: ""}>
+                              %a.stores_photos_thumb_i{href: "/assets/images/fake/photo_495_260_3.png"}
+                                %img.va-t.c-bg.__blue{src: "/assets/images/blank.gif", width: 80, height: 80, alt: ""}>
+                        .grid-i.__grid-10>
+                          %p.tx.__xs
+                            %b Как нас найти
+                          %article.cnt.tx.__xs.m-b_3
+                            %p Наш павильон расположен в&nbsp;Парке Горького на&nbsp;Пионерском пруду в&nbsp;непосредственной близости от&nbsp;главного входа. Чтобы найти его, поверните сразу после центрального входа налево. Образовательный центр &laquo;Гараж&raquo; расположен на&nbsp;территории павильона в&nbsp;Парке Горького. Мы&nbsp;находимся справа от&nbsp;пересечения центрального коридора и&nbsp;коридора от&nbsp;выхода с&nbsp;парковки.
+                            %img{src: "/assets/images/fake/plan.png", class: "va-t", alt: ""}
+                            %p Мы находимся на 3 этаже, в галерее налево от эскалатора.  
+                          %a.store_more.__close{href: "#"} закрыть

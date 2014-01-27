@@ -1174,10 +1174,7 @@
   }
   .store_name {
     text-transform: uppercase;
-    font: {
-      family: $h-font-family;
-      weight: 700;
-    }
+    font-family: $h-font-family;
   }
   .store_more {
     text-decoration: none;
@@ -1191,7 +1188,6 @@
       border-radius: 50%;
       background-color: $major-color;
       color: #fff;
-      content: '\f078';
       text-align: center;
       line-height: 20px;
       font: {
@@ -1199,8 +1195,51 @@
         size: 12px;
       }
     }
+    &.__open {
+      &::after {
+        content: '\f078';
+      }
+    }
+    &.__close {
+      &::after {
+        content: '\f077';
+      }
+    }
   }
+  .store_item.__open {
+    td {
+      border-bottom: none;
+    }
+  }
+  .store_details {
+    display: none;
+    padding: {
+      right: 50px;
+      bottom: 20px;
+      left: 50px;
+    }
+  }
+    // .. Photo gallery
+    .stores_photos {
 
+    }
+    .stores_photos_preview {
+
+    }
+    .stores_photos_thumb {
+
+    }
+    .stores_photos_thumb_i {
+      display: inline-block;
+      border: 7px solid transparent;
+      @include prefixes(transition, all .33s ease);
+      &:not(:last-child) {
+        margin-right: 20px;
+      }   
+      &.__current {
+        border-color: $major-color;
+      }
+    }
 
 
 //****************************************************************************************************
