@@ -7,14 +7,28 @@
   %section.section.p-t_6.p-b_12{role: "region", "aria-label" => "Item show"}
     .ctn
       %header.section_header.m-b_2
-        %nav.breadcrumbs
-          %a.breadcrumbs_i{href: "/"} Главная
-          %i.fa.fa-chevron-right
-          %a.breadcrumbs_i{href: "/catalog"} Каталог
-          %i.fa.fa-chevron-right
-          %span.breadcrumbs_i Lego city
-        %h1.tx.__upper.__minor Пожарная машина  арт. #60002
-
+        .grid
+          .grid-i.__grid-9.va-b>
+            %nav.breadcrumbs
+              %a.breadcrumbs_i{href: "/"} Главная
+              %i.fa.fa-chevron-right
+              %a.breadcrumbs_i{href: "/catalog"} Каталог
+              %i.fa.fa-chevron-right
+              %span.breadcrumbs_i Lego city
+            %h1.tx.__upper.__minor Пожарная машина  арт. #60002
+          .grid-i.__grid-3.va-b>
+            .tx.__right
+              .pluso{data: {background: "transparent", options: "medium,round,line,horizontal,nocounter,theme=04", services: "vkontakte,facebook,twitter,odnoklassniki,moimir,google", user: "1938787731"}}
+              :javascript
+                (function() {
+                if (window.pluso)if (typeof window.pluso.start == "function") return;
+                if (window.ifpluso==undefined) { window.ifpluso = 1;
+                  var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                  s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                  s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                  var h=d[g]('body')[0];
+                  h.appendChild(s);
+                }})();
       %section.section_main
         .catalog-show
           .grid
