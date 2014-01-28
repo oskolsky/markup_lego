@@ -157,32 +157,38 @@
                     .grid-i.__grid-3.va-m>
                       %p.tx.__xs 05872654200
                 %h2.tx.__upper.__center.m-b_2 Данные вашего ребенка
-                .m-b_1
-                  .grid
-                    .grid-i.__grid-2.va-m> 
-                      %label.form_label.tx.__xs Фамилия:
-                    .grid-i.__grid-3.va-m>
-                      %input.form_el.__block.form_text{type: "text"}
-                .m-b_1
-                  .grid
-                    .grid-i.__grid-2.va-m> 
-                      %label.form_label.tx.__xs Имя:
-                    .grid-i.__grid-3.va-m>
-                      %input.form_el.__block.form_text{type: "text"}
-                .m-b_4
-                  .grid
-                    .grid-i.__grid-2.va-m> 
-                      %label.form_label.tx.__xs Дата рождения:
-                    .grid-i.__grid-3.va-m>
+                
+                .children
+                  .children_i
+                    .m-b_1
                       .grid
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "День"}
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "Год"}   
+                        .grid-i.__grid-2.va-m> 
+                          %label.form_label.tx.__xs Фамилия:
+                        .grid-i.__grid-3.va-m>
+                          %input.form_el.__block.form_text{type: "text"}
+                    .m-b_1
+                      .grid
+                        .grid-i.__grid-2.va-m> 
+                          %label.form_label.tx.__xs Имя:
+                        .grid-i.__grid-3.va-m>
+                          %input.form_el.__block.form_text{type: "text"}
+                    .m-b_4
+                      .grid
+                        .grid-i.__grid-2.va-m> 
+                          %label.form_label.tx.__xs Дата рождения:
+                        .grid-i.__grid-3.va-m>
+                          .grid
+                            .grid-i.__grid-1>
+                              %input.form_el.__block.form_text{type: "text", placeholder: "День"}
+                            .grid-i.__grid-1>
+                              %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
+                            .grid-i.__grid-1>
+                              %input.form_el.__block.form_text{type: "text", placeholder: "Год"}   
+                
+                = haml 'views/common/jst'.to_sym
+
                 .m-b_4
-                  %a.a.__pseudo.__inner{href: "#"} 
+                  %a.a.__pseudo.__inner.js-add-children{href: "#"} 
                     %i.fa.fa-plus-circle.tx.__xxl.__major
                     Добавить ещё ребенка
                 %input.form_button.__red.__l.b-center{type: "submit", value: "Сохранить"}
