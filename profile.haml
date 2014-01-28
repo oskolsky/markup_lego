@@ -28,9 +28,10 @@
           %li.tabs_i>
             %a.tabs_i_a{href: "#tabs-5"} Избранное
 
-        #tabs-1
-          .p-t_5.p-b_5
-            .grid.m-b_5
+      #tabs-1
+        .p-t_3
+          .ctn
+            .grid
               .grid-i.__grid-6.va-m>
                 .tx.__left
                   %h2
@@ -43,9 +44,19 @@
               .grid-i.__grid-2.va-m>
                 .tx.__right
                   %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
+          .ctn
+            .promo.brick
+              .promo_i{data: {rel: "chima"}, style: "display: block;"}
+                %a{href: "#"}
+                  %img.promo_i_img{src: "/assets/images/promo/chima.png", width: "100%", alt: "Подарок королевства Чима"}
+              .promo_i{data: {rel: "marvel"}}
+                %a{href: "#"}
+                  %img.promo_i_img{src: "/assets/images/promo/marvel.png", width: "100%", alt: "Супергерои Lego"}
+          = haml 'views/common/_slider_promo'.to_sym
 
-        #tabs-2
-          .p-t_3
+      #tabs-2
+        .p-t_3
+          .ctn
             .grid.m-b_3
               .grid-i.__grid-4.__prefix-6.va-m>
                 .tx.__right
@@ -84,8 +95,9 @@
                         %input.form_el.__block.form_text{type: "text"}
                   %input.form_button.__red.__l.b-center{type: "submit", value: "Сохранить"}
 
-        #tabs-3
-          .p-t_3
+      #tabs-3
+        .p-t_3
+          .ctn
             .grid.m-b_3
               .grid-i.__grid-4.__prefix-6.va-m>
                 .tx.__right
@@ -268,8 +280,9 @@
                               Нет
                   %input.form_button.__red.__l.b-center{type: "submit", value: "Сохранить"}
 
-        #tabs-4
-          .p-t_3
+      #tabs-4
+        .p-t_3
+          .ctn
             .grid.m-b_3
               .grid-i.__grid-4.__prefix-6.va-m>
                 .tx.__right
@@ -322,8 +335,9 @@
                                 %td
                                   .price.__rub.__m.format-money
                                     = rand(500..2000)
-        #tabs-5
-          .p-t_3
+      #tabs-5
+        .p-t_3
+          .ctn
             .grid.m-b_3
               .grid-i.__grid-4.__prefix-6.va-m>
                 .tx.__right
