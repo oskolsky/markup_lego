@@ -275,6 +275,23 @@ $(function() {
   });
 
   //
+  // .. HISTORY
+  //
+  $('.history_head').click(function() {
+    var $el = $(this).next('.history_body');
+    if ( $el.is(':hidden') ) {
+      $(this).addClass('__open');
+      $(this).find('.fa').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+      $el.show();
+    } else {
+      $(this).removeClass('__open');
+      $(this).find('.fa').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+      $el.hide();
+    }
+    return false;
+  });
+
+  //
   // .. FORM NUMBER
   //
   $('.form_number').each(function() {

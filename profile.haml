@@ -272,7 +272,50 @@
                 .tx.__right
                   %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
             %h2.tx.__upper.__center.m-b_2 История заказов
-
+            .history
+              
+              %table.table{width: "100%"}
+                %thead
+                  %tr
+                    %th Дата
+                    %th Номер заказа
+                    %th Состояние
+                    %th Итоговая стоимость
+                    %th &nbsp;
+                %tbody
+                  %tr.history_devider
+                    %td{colspan: 5} &nbsp;
+                  - 1.upto(10) do
+                    %tr.history_head
+                      %td.tx.__xs 15.03.12
+                      %td.tx.__xs 237148
+                      %td.tx.__xs доставлен
+                      %td.tx.__xs 4768 руб.
+                      %td.tx.__right
+                        %i.fa.fa-chevron-down
+                    %tr.history_body
+                      %td{colspan: 5}
+                        %table.table{width: "100%"}
+                          %thead
+                            %tr
+                              %th Фото
+                              %th Наименование
+                              %th Количество
+                              %th Итоговая стоимость
+                          %tbody
+                            - 1.upto(2) do
+                              %tr
+                                %td
+                                  %a{href: "/catalog_show"}
+                                    %img.va-m{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg"}
+                                %td
+                                  %p.table_number Звездные войны 23523
+                                  %p.table_name
+                                    %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и транспортный шагоход
+                                %td 1
+                                %td
+                                  .price.__rub.__m.format-money
+                                    = rand(500..2000)
         #tabs-5
           .p-t_3
             .grid.m-b_3
@@ -283,7 +326,7 @@
                 .tx.__right
                   %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
             %h2.tx.__upper.__center.m-b_2 Избранное
-            %table.table
+            %table.table{width: "100%"}
               %thead
                 %tr
                   %th Фото

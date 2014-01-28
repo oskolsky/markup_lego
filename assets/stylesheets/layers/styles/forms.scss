@@ -29,48 +29,48 @@ input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
 // .. Button, reset, submit
 //
 .form_button {
+  @include prefixes(box-sizing, border-box);
+  display: table-cell;
+  padding: 0 15px;
   border: none;
   border-radius: 3px;
   color: #fff;
-  cursor: pointer;
-  display: table-cell;
-  font-family: $h-font-family;
-  line-height: 1;
-  padding: 0 15px;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
-  vertical-align: middle;
-  @include prefixes(box-sizing, border-box);
+  font-family: $h-font-family;
+  line-height: 1;
+  cursor: pointer;
 
   &.__xs {
-    font-size: 13px;
     height: 28px;
+    font-size: 13px;
     line-height: 28px;
   }
 
   &.__s {
-    font-size: 13px;
     height: 40px;
+    font-size: 13px;
   }
 
   &.__xm {
-    font-size: 13px;
     height: 42px;
+    font-size: 13px;
     line-height: 42px;
   }
 
   &.__m {
-    font-size: 21px;
     height: 45px;
+    font-size: 21px;
     line-height: 45px;
   }
 
   &.__l {
+    padding: 0 15px;
+    height: 58px;
     border-radius: 3px;
     font-size: 21px;
-    height: 58px;
     line-height: 58px;
-    padding: 0 15px;
   }
 
   &.__red    {background-color: $red-color;}
@@ -80,8 +80,8 @@ input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
 
 }
 a.form_button {
-  text-decoration: none;
   @include prefixes(transition, none);
+  text-decoration: none;
   &:hover {
     color: #fff;
     text-decoration: none;
@@ -92,14 +92,15 @@ a.form_button {
 // .. Text, password
 //
 .form_text {
-  padding: $form-el-padding;
-  background: $form-el-bg;
+  @include prefixes(box-sizing, border-box);
+  padding: 0 16px;
+  height: 40px;
   border: $form-el-border;
-  border-radius: $form-el-border-radius;
+  border-radius: $form-el-border-radius; 
+  background: $form-el-bg;
   color: $form-el-color;
   font-size: $form-el-font-size;
   line-height: $form-el-line-height;
-  @include prefixes(box-sizing, border-box);
 }
 
 //
@@ -117,22 +118,22 @@ a.form_button {
 // .. Checkbox
 //
 .form_checkbox.__fake {
+  @include prefixes(box-sizing, border-box);
   width: 20px;
   height: 20px;
-  line-height: 20px;
-  background: $form-el-bg;
   border: $form-el-border;
   border-radius: $form-el-border-radius;
-  @include prefixes(box-sizing, border-box);
+  background: $form-el-bg;
+  line-height: 20px;
   &[data-checked="true"]::after {
-    background-color: #f7a300;
-    border-radius: $form-el-border-radius;
-    content:"\f00c";
     margin: -1px;
+    border-radius: $form-el-border-radius;
+    background-color: #f7a300;
     color: #fff;
-    font-family: FontAwesome;
-    font-size: 1.2rem;
+    content:"\f00c";
     text-align: center;
+    font-size: 1.2rem;
+    font-family: FontAwesome;
   }
   &[data-checked="true"][disabled]::after {opacity: .33;}
 }
@@ -141,23 +142,23 @@ a.form_button {
 // .. Radio
 //
 .form_radio.__fake {
+  @include prefixes(box-sizing, border-box);
   width: 22px;
   height: 22px;
-  line-height: 1.6rem;
-  background: $form-el-bg;
   border: $form-el-border;
   border-radius: 50%;
-  @include prefixes(box-sizing, border-box);
+  background: $form-el-bg;
+  line-height: 1.6rem;
   &[data-checked="true"] {
     &::after {
-      background-color: #eb1c24;
-      border-radius: 50%;
-      content: "";
-      width: 12px;
-      height: 12px;
       top: 50%;
       left: 50%;
       margin: -6px 0 0 -6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #eb1c24;
+      content: "";
     }
     &[disabled]::after {opacity: .33;}
   }
@@ -167,29 +168,29 @@ a.form_button {
 // .. File
 //
 .form_file.__fake {
+  @include prefixes(box-sizing, border-box);
   padding: $form-el-padding;
-  background: $form-el-bg;
   border: $form-el-border;
   border-radius: $form-el-border-radius;
+  background: $form-el-bg;
   color: $form-el-color;
-  cursor: pointer;
   font-size: $form-el-font-size;
   line-height: $form-el-line-height;
-  @include prefixes(box-sizing, border-box);
+  cursor: pointer;
   &::after {
+    @include prefixes(box-sizing, border-box);
+    @include prefixes(transform, translate(0, -50%));
     right: .4rem;
-    content: "\f07c";
     width: 2.4rem;
     height: 2rem;
-    line-height: 1.3;
     border: $form-el-border;
     border-radius: $form-el-border-radius;
     color: #aaa;
-    font-family: FontAwesome;
-    font-size: $form-el-font-size;
+    content: "\f07c";
     text-align: center;
-    @include prefixes(box-sizing, border-box);
-    @include prefixes(transform, translate(0, -50%));
+    font-size: $form-el-font-size;
+    font-family: FontAwesome;
+    line-height: 1.3;
   }
   &[disabled]::after {opacity: .5;}
   &:not([disabled]):hover::after {border: .1em solid #aaa;}
@@ -200,22 +201,22 @@ a.form_button {
 // .. Select
 //
 .form_select.__fake {
+  @include prefixes(box-sizing, border-box);
   padding: $form-el-padding;
-  background: $form-el-bg;
   border: $form-el-border;
   border-radius: $form-el-border-radius;
+  background: $form-el-bg;
   color: $form-el-color;
+  vertical-align: top;
   font-size: $form-el-font-size;
   line-height: $form-el-line-height;
-  vertical-align: top;
-  @include prefixes(box-sizing, border-box);
   &::after {
-    right: 20px;
-    content: "\f0d7";
-    color: #f7a300;
-    font-family: FontAwesome;
-    font-size: 12px;
     @include prefixes(transform, translate(0, -50%));
+    right: 20px;
+    color: #f7a300;
+    content: "\f0d7";
+    font-size: 12px;
+    font-family: FontAwesome;
   }
   &[disabled]::after {opacity: .5;}
   > p {margin-right: 2.4rem;}
@@ -258,8 +259,8 @@ a.form_button {
 // .. Legend
 //
 .form_legend {
-  color: $form-el-color;
   @extend .delta;
+  color: $form-el-color;
 }
   
 .form {
@@ -267,8 +268,8 @@ a.form_button {
   // .. Disabled
   //
   [disabled] {
-    background: darken($form-el-bg, 5%) !important;
     border-color: fade-out($form-el-border-color, .5) !important;
+    background: darken($form-el-bg, 5%) !important;
     color: fade-out($form-el-color, .75) !important;
     cursor: no-drop !important;
   }
@@ -276,13 +277,14 @@ a.form_button {
   //
   // .. Reqiured
   //
+  [data-required="before"], [data-required="after"] {display: inline-block;}
   [data-required="before"]::before,
   [data-required="after"]::after {
     top: -.33rem;
-    content: "\f069";
     color: fade-out($form-el-color-required, .3);
-    font-family: FontAwesome;
+    content: "\f069";
     font-size: 70%;
+    font-family: FontAwesome;
     line-height: 1;
   }
   [data-required="before"]::before {margin-left: -1.5rem;}
@@ -292,8 +294,8 @@ a.form_button {
   // .. Validation
   //
   [data-valid="true"] {
-    background: fade-out($form-el-color-valid-true, .9) !important;
     border-color: fade-out($form-el-color-valid-true, .3) !important;
+    background: fade-out($form-el-color-valid-true, .9) !important;
     color: $form-el-color-valid-true !important;
     &::after {
       border-color: fade-out($form-el-color-valid-true, .6) !important;
@@ -303,12 +305,12 @@ a.form_button {
   }
 
   [data-valid="false"] {
-    background: fade-out($form-el-color-valid-false, .9) !important;
     border-color: fade-out($form-el-color-valid-false, .3) !important;
+    background: fade-out($form-el-color-valid-false, .9) !important;
     color: $form-el-color-valid-false !important;
     &::after {
-      color: fade-out($form-el-color-valid-false, .3) !important;
       border-color: fade-out($form-el-color-valid-false, .6) !important;
+      color: fade-out($form-el-color-valid-false, .3) !important;
     }
     &:hover::after {border-color: fade-out($form-el-color-valid-false, .3) !important;}
   }
