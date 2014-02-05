@@ -126,6 +126,28 @@ $(function() {
   $('.form_text.__card').mask('9 999999 999999');
 
   //
+  // .. SUBSCRIPTION ACTION
+  //
+  $('.subscription-block_form_submit').on('click', function() {
+    $.ajax({
+      url: '#',
+      data: {},
+      success: function(response) {
+        alert('AJAX submit form success!');
+        $('.subscription-block_form').find('form').fadeOut(250, function() {
+          $('.subscription-block_form').find('p').text('Спасибо, вы подписаны, или какой-нибудь другой текст!');
+        });
+      },
+      error: function() {
+        alert('Error send form');
+      }
+    });
+    return false;
+  });
+
+
+
+  //
   // .. HOME PAGE SHARE
   //
   $('.share-block').find('.share-block_a').click(function() {

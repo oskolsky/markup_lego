@@ -2587,6 +2587,7 @@ a.breadcrumbs_i {color: #0068a5;}
   border-radius: 15px;
   background-color: #eb1c24;
   color: #fff;
+  text-decoration: none;
   font: {
     family: $h-font-family;
     size: 18px;
@@ -2595,6 +2596,8 @@ a.breadcrumbs_i {color: #0068a5;}
     transform: uppercase;
     align: center;
   }
+  @include prefixes(box-sizing, border-box);
+  &:hover {color: #fff;}
 }
 
 .subscription-block_form_img {

@@ -3277,15 +3277,15 @@ a.breadcrumbs_i {
   .count.__s::before {
     width: 25%; }
   .count.__s::after {
-    content: "мало"; }
+    content: "╨╝╨░╨╗╨╛"; }
   .count.__m::before {
     width: 50%; }
   .count.__m::after {
-    content: "несколько"; }
+    content: "╨╜╨╡╤Б╨║╨╛╨╗╤М╨║╨╛"; }
   .count.__l::before {
     width: 100%; }
   .count.__l::after {
-    content: "много"; }
+    content: "╨╝╨╜╨╛╨│╨╛"; }
 
 .metro {
   position: relative;
@@ -3494,10 +3494,18 @@ a.breadcrumbs_i {
   border-radius: 15px;
   background-color: #eb1c24;
   color: #fff;
+  text-decoration: none;
   font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  .subscription-block_form_submit:hover {
+    color: #fff; }
 
 .subscription-block_form_img {
   position: absolute;
