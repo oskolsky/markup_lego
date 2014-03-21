@@ -3277,15 +3277,15 @@ a.breadcrumbs_i {
   .count.__s::before {
     width: 25%; }
   .count.__s::after {
-    content: "╨╝╨░╨╗╨╛"; }
+    content: "мало"; }
   .count.__m::before {
     width: 50%; }
   .count.__m::after {
-    content: "╨╜╨╡╤Б╨║╨╛╨╗╤М╨║╨╛"; }
+    content: "несколько"; }
   .count.__l::before {
     width: 100%; }
   .count.__l::after {
-    content: "╨╝╨╜╨╛╨│╨╛"; }
+    content: "много"; }
 
 .metro {
   position: relative;
