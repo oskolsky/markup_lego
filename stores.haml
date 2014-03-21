@@ -71,7 +71,6 @@
                 %th название магазина
                 %th метро
                 %th контактные данные
-                %th e-mail
                 %th время работы
             %tbody
               - 1.upto(23) do |i|
@@ -86,12 +85,10 @@
                     %p Метро: Мякинино
                     %p +7 (903) 543-66-04
                   %td.va-t.nowrap
-                    %a{href: "mailto: lego@mir-kubikov.ru"} lego@mir-kubikov.ru
-                  %td.va-t.nowrap
                     %p пн-сб 10:00 – 21:00
                     %p вс  выходной  
                 %tr
-                  %td{colspan: 5}
+                  %td{colspan: 4}
                     %a.store_more.__open{href: "#"} подробнее
                     .store_details
                       .grid
