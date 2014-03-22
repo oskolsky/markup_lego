@@ -31,7 +31,7 @@
     <script src='/assets/javascripts/application.js'></script>
     <script src='/assets/javascripts/project.js'></script>
     <script src='//vk.com/js/api/openapi.js?105'></script>
-    <script src='//api-maps.yandex.ru/2.0/?load=package.standard&amp;mode=debug&amp;lang=ru-RU'></script>
+    <script src='//api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU'></script>
   </head>
   <body class='page' id='page'>
     <!--[if lt IE 9]>
@@ -140,13 +140,16 @@
       <div class='stores-map' id='stores-map'></div>
       <script>
         ymaps.ready(init);
+        
         var myMap, myPlacemark;
-        function init() {
+        
+        function init() { 
           myMap = new ymaps.Map ('stores-map', {
             center: [55.76, 37.64],
             zoom: 14
           }); 
-          myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+        
+          myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
             hintContent: 'ТРК «ЩУКА»',
             balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                             '<article class="tx __xs">' +
@@ -154,9 +157,13 @@
                             '<p>тел.: +7 (499) 951 60 67</p>' +
                             '<p>с 10:00 до 21:00 без выходных</a>' +
                             '</article>'
+          }, {
+            iconImageHref: '/assets/images/pin.png',
+            iconImageSize: [25, 34],
           });
+        
           myMap.geoObjects.add(myPlacemark);
-        };
+        }
       </script>
       <section aria-label='Stores' class='section p-b_4' role='region'>
         <div class='ctn'>
@@ -244,13 +251,16 @@
                             <div id='store_map_1' style='height: 360px;'></div>
                             <script>
                               ymaps.ready(init);
+                              
                               var myMap, myPlacemark;
-                              function init() {
+                              
+                              function init() { 
                                 myMap = new ymaps.Map ('store_map_1', {
                                   center: [55.76, 37.64],
                                   zoom: 14
                                 }); 
-                                myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                              
+                                myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
                                   hintContent: 'ТРК «ЩУКА»',
                                   balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                                                   '<article class="tx __xs">' +
@@ -258,9 +268,13 @@
                                                   '<p>тел.: +7 (499) 951 60 67</p>' +
                                                   '<p>с 10:00 до 21:00 без выходных</a>' +
                                                   '</article>'
+                                }, {
+                                  iconImageHref: '/assets/images/pin.png',
+                                  iconImageSize: [25, 34],
                                 });
+                              
                                 myMap.geoObjects.add(myPlacemark);
-                              };
+                              }
                             </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -311,13 +325,16 @@
                             <div id='store_map_2' style='height: 360px;'></div>
                             <script>
                         ymaps.ready(init);
+                        
                         var myMap, myPlacemark;
-                        function init() {
+                        
+                        function init() { 
                           myMap = new ymaps.Map ('store_map_2', {
                             center: [55.76, 37.64],
                             zoom: 14
                           }); 
-                          myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                        
+                          myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
                             hintContent: 'ТРК «ЩУКА»',
                             balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                                             '<article class="tx __xs">' +
@@ -325,9 +342,13 @@
                                             '<p>тел.: +7 (499) 951 60 67</p>' +
                                             '<p>с 10:00 до 21:00 без выходных</a>' +
                                             '</article>'
+                          }, {
+                            iconImageHref: '/assets/images/pin.png',
+                            iconImageSize: [25, 34],
                           });
+                        
                           myMap.geoObjects.add(myPlacemark);
-                        };
+                        }
                       </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -378,13 +399,16 @@
                             <div id='store_map_3' style='height: 360px;'></div>
                             <script>
                   ymaps.ready(init);
+                  
                   var myMap, myPlacemark;
-                  function init() {
+                  
+                  function init() { 
                     myMap = new ymaps.Map ('store_map_3', {
                       center: [55.76, 37.64],
                       zoom: 14
                     }); 
-                    myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                  
+                    myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
                       hintContent: 'ТРК «ЩУКА»',
                       balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                                       '<article class="tx __xs">' +
@@ -392,9 +416,13 @@
                                       '<p>тел.: +7 (499) 951 60 67</p>' +
                                       '<p>с 10:00 до 21:00 без выходных</a>' +
                                       '</article>'
+                    }, {
+                      iconImageHref: '/assets/images/pin.png',
+                      iconImageSize: [25, 34],
                     });
+                  
                     myMap.geoObjects.add(myPlacemark);
-                  };
+                  }
                 </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -445,13 +473,16 @@
                             <div id='store_map_4' style='height: 360px;'></div>
                             <script>
             ymaps.ready(init);
+            
             var myMap, myPlacemark;
-            function init() {
+            
+            function init() { 
               myMap = new ymaps.Map ('store_map_4', {
                 center: [55.76, 37.64],
                 zoom: 14
               }); 
-              myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+            
+              myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
                 hintContent: 'ТРК «ЩУКА»',
                 balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                                 '<article class="tx __xs">' +
@@ -459,9 +490,13 @@
                                 '<p>тел.: +7 (499) 951 60 67</p>' +
                                 '<p>с 10:00 до 21:00 без выходных</a>' +
                                 '</article>'
+              }, {
+                iconImageHref: '/assets/images/pin.png',
+                iconImageSize: [25, 34],
               });
+            
               myMap.geoObjects.add(myPlacemark);
-            };
+            }
           </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -512,13 +547,16 @@
                             <div id='store_map_5' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_5', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -526,9 +564,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -579,13 +621,16 @@
                             <div id='store_map_6' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_6', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -593,9 +638,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -646,13 +695,16 @@
                             <div id='store_map_7' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_7', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -660,9 +712,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -713,13 +769,16 @@
                             <div id='store_map_8' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_8', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -727,9 +786,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -780,13 +843,16 @@
                             <div id='store_map_9' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_9', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -794,9 +860,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -847,13 +917,16 @@
                             <div id='store_map_10' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_10', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -861,9 +934,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -914,13 +991,16 @@
                             <div id='store_map_11' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_11', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -928,9 +1008,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -981,13 +1065,16 @@
                             <div id='store_map_12' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_12', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -995,9 +1082,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1048,13 +1139,16 @@
                             <div id='store_map_13' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_13', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1062,9 +1156,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1115,13 +1213,16 @@
                             <div id='store_map_14' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_14', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1129,9 +1230,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1182,13 +1287,16 @@
                             <div id='store_map_15' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_15', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1196,9 +1304,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1249,13 +1361,16 @@
                             <div id='store_map_16' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_16', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1263,9 +1378,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1316,13 +1435,16 @@
                             <div id='store_map_17' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_17', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1330,9 +1452,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1383,13 +1509,16 @@
                             <div id='store_map_18' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_18', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1397,9 +1526,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1450,13 +1583,16 @@
                             <div id='store_map_19' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_19', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1464,9 +1600,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1517,13 +1657,16 @@
                             <div id='store_map_20' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_20', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1531,9 +1674,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1584,13 +1731,16 @@
                             <div id='store_map_21' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_21', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1598,9 +1748,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1651,13 +1805,16 @@
                             <div id='store_map_22' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_22', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1665,9 +1822,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>
@@ -1718,13 +1879,16 @@
                             <div id='store_map_23' style='height: 360px;'></div>
                             <script>
       ymaps.ready(init);
+      
       var myMap, myPlacemark;
-      function init() {
+      
+      function init() { 
         myMap = new ymaps.Map ('store_map_23', {
           center: [55.76, 37.64],
           zoom: 14
         }); 
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
           hintContent: 'ТРК «ЩУКА»',
           balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                           '<article class="tx __xs">' +
@@ -1732,9 +1896,13 @@
                           '<p>тел.: +7 (499) 951 60 67</p>' +
                           '<p>с 10:00 до 21:00 без выходных</a>' +
                           '</article>'
+        }, {
+          iconImageHref: '/assets/images/pin.png',
+          iconImageSize: [25, 34],
         });
+      
         myMap.geoObjects.add(myPlacemark);
-      };
+      }
     </script>
                           </div><div class='grid-i __grid-5'>
                             <div class='stores_photos'>

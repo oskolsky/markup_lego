@@ -7,13 +7,16 @@
   #stores-map.stores-map
   :javascript
     ymaps.ready(init);
+
     var myMap, myPlacemark;
-    function init() {
+
+    function init() { 
       myMap = new ymaps.Map ('stores-map', {
         center: [55.76, 37.64],
         zoom: 14
       }); 
-      myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+
+      myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
         hintContent: 'ТРК «ЩУКА»',
         balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                         '<article class="tx __xs">' +
@@ -21,9 +24,13 @@
                         '<p>тел.: +7 (499) 951 60 67</p>' +
                         '<p>с 10:00 до 21:00 без выходных</a>' +
                         '</article>'
+      }, {
+        iconImageHref: '/assets/images/pin.png',
+        iconImageSize: [25, 34],
       });
+
       myMap.geoObjects.add(myPlacemark);
-    };
+    }
 
   %section.section.p-b_4{role: "region", "aria-label" => "Stores"}
     .ctn
@@ -94,15 +101,18 @@
                       .grid
                         .grid-i.__grid-5>
                           %div{id: "store_map_#{i}", style: "height: 360px;"}
-                          :javascript
+                          :javascript                            
                             ymaps.ready(init);
+
                             var myMap, myPlacemark;
-                            function init() {
+
+                            function init() { 
                               myMap = new ymaps.Map ('store_map_#{i}', {
                                 center: [55.76, 37.64],
                                 zoom: 14
                               }); 
-                              myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+
+                              myPlacemark = new ymaps.Placemark([55.76, 37.64], {      
                                 hintContent: 'ТРК «ЩУКА»',
                                 balloonContent: '<h4>ТРК «ЩУКА»</h4>' +
                                                 '<article class="tx __xs">' +
@@ -110,9 +120,14 @@
                                                 '<p>тел.: +7 (499) 951 60 67</p>' +
                                                 '<p>с 10:00 до 21:00 без выходных</a>' +
                                                 '</article>'
+                              }, {
+                                iconImageHref: '/assets/images/pin.png',
+                                iconImageSize: [25, 34],
                               });
+
                               myMap.geoObjects.add(myPlacemark);
-                            };
+                            }
+
                         .grid-i.__grid-5>
                           .stores_photos
                             %img.stores_photos_preview.va-t.m-b_1{src: "/assets/images/fake/photo_495_260_1.png", width: 495, height: 260, alt: ""}
