@@ -150,13 +150,35 @@
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs Дата рождения:
                     .grid-i.__grid-3.va-m>
-                      .grid
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "День"}
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "Год"}
+                      .form_select.form_el.__fake
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} 1
+                          - 2.upto(31) do |i|
+                            %option= i
+                      .form_select.form_el.__fake
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} Январь
+                          %option Февраль
+                          %option Март
+                          %option Апрель
+                          %option Май
+                          %option Июнь
+                          %option Июль
+                          %option Август
+                          %option Сентябрь
+                          %option Октябрь
+                          %option Ноябрь
+                          %option Февраль
+                      .form_select.form_el.__fake
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} 2000
+                          %option 2001
+                          %option 2002
+                          %option 2003
+                          %option 2004
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
@@ -208,14 +230,35 @@
                         .grid-i.__grid-2.va-m> 
                           %label.form_label.tx.__xs Дата рождения:
                         .grid-i.__grid-3.va-m>
-                          .grid
-                            .grid-i.__grid-1>
-                              %input.form_el.__block.form_text{type: "text", placeholder: "День"}
-                            .grid-i.__grid-1>
-                              %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
-                            .grid-i.__grid-1>
-                              %input.form_el.__block.form_text{type: "text", placeholder: "Год"}   
-                
+                          .form_select.form_el.__fake
+                            %p &nbsp;
+                            %select.form_select.form_el.__real
+                              %option{selected: "selected"} 1
+                              - 2.upto(31) do |i|
+                                %option= i
+                          .form_select.form_el.__fake
+                            %p &nbsp;
+                            %select.form_select.form_el.__real
+                              %option{selected: "selected"} Январь
+                              %option Февраль
+                              %option Март
+                              %option Апрель
+                              %option Май
+                              %option Июнь
+                              %option Июль
+                              %option Август
+                              %option Сентябрь
+                              %option Октябрь
+                              %option Ноябрь
+                              %option Февраль
+                          .form_select.form_el.__fake
+                            %p &nbsp;
+                            %select.form_select.form_el.__real
+                              %option{selected: "selected"} 2000
+                              %option 2001
+                              %option 2002
+                              %option 2003
+                              %option 2004                
                 = haml 'views/common/jst'.to_sym
 
                 .m-b_4
