@@ -1827,6 +1827,8 @@ a.form_button {
     background-image: url(/assets/images/icons/ico-29.png); }
     .ico.__29.__clock {
       background-position: 0 0; }
+    .ico.__29.__print {
+      background-position: -29px 0; }
   .ico.__35 {
     width: 35px;
     height: 35px;
@@ -3376,6 +3378,10 @@ a.breadcrumbs_i {
 .history_body > td > table > tbody > tr:last-child > td {
   border: none !important; }
 
+.print {
+  vertical-align: middle;
+  margin-right: 20px; }
+
 .reviews_i {
   margin-bottom: 20px; }
 
@@ -3545,6 +3551,10 @@ a.breadcrumbs_i {
   text-decoration: none; }
   .footer_pages_i_a:hover {
     color: #e30613; }
+
+.pluso {
+  display: inline-block;
+  vertical-align: middle; }
 
 .pluso-more {
   display: none !important; }
