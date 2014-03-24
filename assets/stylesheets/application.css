@@ -2986,6 +2986,41 @@ a.form_button {
   .slider_nav.__next {
     right: -70px; }
 
+@media all and (max-width: 480px) {
+  .slider_nav {
+    display: none; } }
+@media all and (min-width: 481px) and (max-width: 960px) {
+  .slider_nav {
+    display: none; } }
+.owl-prev, .owl-next {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 40px; }
+  .owl-prev::after, .owl-next::after {
+    font-family: FontAwesome; }
+
+.owl-prev {
+  left: -50px; }
+  .owl-prev::after {
+    content: "\f053"; }
+
+.owl-next {
+  right: -50px; }
+  .owl-next::after {
+    content: "\f054"; }
+
+@media all and (max-width: 480px) {
+  .owl-controls {
+    display: none !important; } }
+@media all and (min-width: 481px) and (max-width: 960px) {
+  .owl-controls {
+    display: none !important; } }
 .border-block {
   padding: 50px; }
   .border-block.__yellow {

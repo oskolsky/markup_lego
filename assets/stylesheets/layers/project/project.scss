@@ -1832,11 +1832,66 @@
   &.__next {right: -70px;}
 
 }
+@include media-query(phone) {
+  .slider_nav {
+    display: none;
+  }
+}
+@include media-query(tablet) {
+  .slider_nav {
+    display: none;
+  }
+}
 
 .slider_pager {
 
 }
 
+//
+// .. OWL
+//
+.owl-carousel {
+
+}
+.owl-controls {
+
+}
+.owl-buttons {
+
+}
+.owl-prev, .owl-next {
+  @include prefixes(transform, translateY(-50%));
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 40px;
+  &::after {
+    font-family: FontAwesome;
+  }  
+}
+
+.owl-prev {
+  left: -50px;
+  &::after {
+    content: "\f053";
+  }  
+}
+.owl-next {
+  right: -50px;
+  &::after {
+    content: "\f054";
+  }  
+}
+@include media-query(phone) {
+  .owl-controls {
+    display: none !important;
+  }
+}
+@include media-query(tablet) {
+  .owl-controls {
+    display: none !important;
+  }
+}
 
 
 //****************************************************************************************************
