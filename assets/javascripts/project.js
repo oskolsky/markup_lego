@@ -47,18 +47,6 @@ accounting.settings = {
 //
 // .. PROMO BLOCK ON HOME PAGE
 //
-$(document).on('click', '.promo-slider.__home .slide a', function() {
-  var rel = $(this).data('rel');
-  var bg  = $(this).data('bg');
-
-  $('.header_bg').find('.header_bg_i').hide();
-  $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn();
-
-  $('.promo').find('.promo_i').hide();
-  $('.promo').find('.promo_i[data-rel="' + rel + '"]').fadeIn();
-
-  return false;
-});
 
 //
 // .. ARTICLE CLOSE
@@ -405,19 +393,6 @@ $(function() {
       swipe: true,
       slides: '.slide'
     });
-  });
-
-  $('.slider.__promo').on('cycle-after', function(event, opts) {
-
-    var rel = $(opts.slides[opts.currSlide]).find('a').data('rel');
-    var bg  = $(opts.slides[opts.currSlide]).find('a').data('bg');
-
-    $('.header_bg').find('.header_bg_i').hide();
-    $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn();
-
-    $('.promo').find('.promo_i').hide();
-    $('.promo').find('.promo_i[data-rel="' + rel + '"]').fadeIn();
-
   });
 
   //
