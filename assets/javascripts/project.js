@@ -394,6 +394,20 @@ $(function() {
     });
   });
 
+  $('.owl-carousel').owlCarousel({
+    navigation: true,
+    slideSpeed: 300,
+    paginationSpeed : 400,
+    singleItem: true,
+    transitionStyle: 'fadeUp',
+    afterAction: function(elem) {
+      var rel = $(this.owl.userItems[this.owl.currentItem]).data('rel');
+      $('.header_bg').find('.header_bg_i').fadeOut(400, function() {
+        $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn(400)
+      })
+    }
+  });
+
   //
   // .. NUMBER
   //

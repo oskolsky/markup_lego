@@ -3,6 +3,8 @@
 @import url(vendor/jquery.arcticmodal-0.3.css);
 @import url(vendor/animate.min.css);
 @import url(vendor/lightbox.css);
+@import url(vendor/owl/owl.carousel.css);
+@import url(vendor/owl/owl.transitions.css);
 @font-face {
   font-family: 'rotondacregular';
   src: url("/assets/fonts/rotonda/rtn55c-webfont.eot");
@@ -2032,11 +2034,6 @@ a.form_button {
 
 .promo {
   margin: 50px 0; }
-
-.promo_i {
-  display: none; }
-  .promo_i.__current {
-    display: block; }
 
 .promo_i_img {
   vertical-align: top; }
