@@ -389,7 +389,6 @@ $(function() {
   $('.slider').each(function() {
     var _this = this;
     $(this).find('.slides').cycle({
-      speed: 500,
       swipe: true,
       slides: '.slide'
     });
