@@ -1903,8 +1903,10 @@ a.form_button {
   margin-bottom: 5px; }
   .header_pages.__left .header_pages_i {
     margin-right: 20px; }
-  .header_pages.__right .header_pages_i {
-    margin-left: 20px; }
+  .header_pages.__right {
+    text-align: right; }
+    .header_pages.__right .header_pages_i {
+      margin-left: 20px; }
 
 .header_pages_i {
   display: inline-block; }
@@ -3532,7 +3534,7 @@ a.breadcrumbs_i {
 
 .footer_pages_i {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 10px;
   padding: 30px 0; }
 
 .footer_pages_i_a {
