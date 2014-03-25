@@ -58,13 +58,14 @@
 
   &.__left {
 
-    .header_pages_i {margin-right: 20px;}
+    .header_pages_i {margin-right: 10px;}
 
   }
 
   &.__right {
 
-    .header_pages_i {margin-left: 20px;}
+    text-align: right;
+    .header_pages_i {margin-left: 10px;}
 
   }
 
@@ -2705,7 +2706,7 @@ a.breadcrumbs_i {color: #0068a5;}
 
 .footer_pages_i {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 20px;
   padding: 30px 0;
 }
 
