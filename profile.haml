@@ -46,12 +46,13 @@
                   %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
           .ctn
             .promo.brick
-              .promo_i{data: {rel: "chima"}, style: "display: block;"}
-                %a{href: "#"}
-                  %img.promo_i_img{src: "/assets/images/promo/chima.png", width: "100%", alt: "Подарок королевства Чима"}
-              .promo_i{data: {rel: "marvel"}}
-                %a{href: "#"}
-                  %img.promo_i_img{src: "/assets/images/promo/marvel.png", width: "100%", alt: "Супергерои Lego"}
+              .owl-carousel
+                .promo_i{data: {rel: "chima"}, style: "display: block;"}
+                  %a{href: "#"}
+                    %img.promo_i_img{src: "/assets/images/promo/chima.png", width: "100%", alt: "Подарок королевства Чима"}
+                .promo_i{data: {rel: "marvel"}}
+                  %a{href: "#"}
+                    %img.promo_i_img{src: "/assets/images/promo/marvel.png", width: "100%", alt: "Супергерои Lego"}
           .m-b_1
             = haml 'views/common/_slider_promo'.to_sym
           .tx.__center
@@ -124,68 +125,90 @@
               .grid-i.__grid-2.va-m>
                 .tx.__right
                   %a.form_button.__red.__xm.form_el.__block{href: "#"} использовать
-            .grid-i.__grid-5.b-center
+            .grid-i.__grid-6.b-center
               %form.form.m-b_4
                 %h2.tx.__upper.__center.m-b_2 Ваши анкетные данные
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs Фамилия:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %input.form_el.__block.form_text{type: "text"}
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs Имя:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %input.form_el.__block.form_text{type: "text"}
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs Отчество:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %input.form_el.__block.form_text{type: "text"}
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs Дата рождения:
-                    .grid-i.__grid-3.va-m>
-                      .grid
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "День"}
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
-                        .grid-i.__grid-1>
-                          %input.form_el.__block.form_text{type: "text", placeholder: "Год"}
+                    .grid-i.__grid-4.va-m>
+                      .form_select.form_el.__fake
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} 1
+                          - 2.upto(31) do |i|
+                            %option= i
+                      .form_select.form_el.__fake
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} Январь
+                          %option Февраль
+                          %option Март
+                          %option Апрель
+                          %option Май
+                          %option Июнь
+                          %option Июль
+                          %option Август
+                          %option Сентябрь
+                          %option Октябрь
+                          %option Ноябрь
+                          %option Февраль
+                      .form_select.form_el.__fake
+                        %p &nbsp;
+                        %select.form_select.form_el.__real
+                          %option{selected: "selected"} 2000
+                          %option 2001
+                          %option 2002
+                          %option 2003
+                          %option 2004
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs E-mail:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %input.form_el.__block.form_text{type: "text"}
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs{data: {required: "after"}} Пароль:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %input.form_el.__block.form_text{type: "password"}
                 .m-b_1
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs{data: {required: "after"}} Повторить пароль:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %input.form_el.__block.form_text{type: "password"}
                 .m-b_2
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs{data: {required: "after"}} Мобильный телефон:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %input.form_el.__block.form_text.__phone{type: "text"}
                 .m-b_6
                   .grid
                     .grid-i.__grid-2.va-m> 
                       %label.form_label.tx.__xs Номер карты лояльности:
-                    .grid-i.__grid-3.va-m>
+                    .grid-i.__grid-4.va-m>
                       %p.tx.__xs 05872654200
                 %h2.tx.__upper.__center.m-b_2 Данные вашего ребенка
                 
@@ -195,27 +218,48 @@
                       .grid
                         .grid-i.__grid-2.va-m> 
                           %label.form_label.tx.__xs Фамилия:
-                        .grid-i.__grid-3.va-m>
+                        .grid-i.__grid-4.va-m>
                           %input.form_el.__block.form_text{type: "text"}
                     .m-b_1
                       .grid
                         .grid-i.__grid-2.va-m> 
                           %label.form_label.tx.__xs Имя:
-                        .grid-i.__grid-3.va-m>
+                        .grid-i.__grid-4.va-m>
                           %input.form_el.__block.form_text{type: "text"}
                     .m-b_4
                       .grid
                         .grid-i.__grid-2.va-m> 
                           %label.form_label.tx.__xs Дата рождения:
-                        .grid-i.__grid-3.va-m>
-                          .grid
-                            .grid-i.__grid-1>
-                              %input.form_el.__block.form_text{type: "text", placeholder: "День"}
-                            .grid-i.__grid-1>
-                              %input.form_el.__block.form_text{type: "text", placeholder: "Месяц"}
-                            .grid-i.__grid-1>
-                              %input.form_el.__block.form_text{type: "text", placeholder: "Год"}   
-                
+                        .grid-i.__grid-4.va-m>
+                          .form_select.form_el.__fake
+                            %p &nbsp;
+                            %select.form_select.form_el.__real
+                              %option{selected: "selected"} 1
+                              - 2.upto(31) do |i|
+                                %option= i
+                          .form_select.form_el.__fake
+                            %p &nbsp;
+                            %select.form_select.form_el.__real
+                              %option{selected: "selected"} Январь
+                              %option Февраль
+                              %option Март
+                              %option Апрель
+                              %option Май
+                              %option Июнь
+                              %option Июль
+                              %option Август
+                              %option Сентябрь
+                              %option Октябрь
+                              %option Ноябрь
+                              %option Февраль
+                          .form_select.form_el.__fake
+                            %p &nbsp;
+                            %select.form_select.form_el.__real
+                              %option{selected: "selected"} 2000
+                              %option 2001
+                              %option 2002
+                              %option 2003
+                              %option 2004                
                 = haml 'views/common/jst'.to_sym
 
                 .m-b_4
