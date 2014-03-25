@@ -5,14 +5,14 @@
 %main#main.main{role: "main"}
 
   %section.blocks.p-t_5.p-b_6{role: "region", "aria-label" => "FAQ"}
-    .ctn.m-b_8
+    .ctn
       %header.section_header.m-b_2
         %h1.tx.__upper.__minor Вопрос-ответ
         %nav.breadcrumbs
           %a.breadcrumbs_i{href: "/"} Главная
           %i.fa.fa-chevron-right
           %span.breadcrumbs_i Вопрос-ответ
-      %section.section_main
+      %section.section_main.m-b_8
         .faq
           - 1.upto(8) do
             %article.faq_i.brick
@@ -25,4 +25,4 @@
                   %i.fa.fa-times
                 %p Мы&nbsp;&mdash; сеть розничных магазинов ЛЕГО. Мы&nbsp;не&nbsp;являемся представительством компании ЛЕГО в&nbsp;России и&nbsp;не&nbsp;обладаем полномочиями по&nbsp;продаже франшизы магазинов ЛЕГО, консультациям по&nbsp;открытию магазинов и&nbsp;организации продаж продукции ЛЕГО на&nbsp;территории России.
 
-    = haml 'views/common/_block_common'.to_sym
+      = haml 'views/common/_block_common'.to_sym

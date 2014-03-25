@@ -386,15 +386,11 @@ $(function() {
   //
   // .. SLIDERS
   //
-  $('.slider').each(function() {
-    var _this = this;
-    $(this).find('.slides').cycle({
-      swipe: true,
-      slides: '.slide'
-    });
-  });
 
-  $('.owl-carousel').owlCarousel({
+  //
+  // .. OWL Single Slider init
+  //
+  $('.single-slider').owlCarousel({
     navigation: true,
     navigationText: false,
     slideSpeed: 300,
@@ -407,6 +403,26 @@ $(function() {
         $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn(400)
       })
     }
+  });
+
+  //
+  // .. OWL Carousel init
+  //
+  $('.carousel').owlCarousel({
+    responsive: false,
+    items : $(this).data('items')
+  });
+
+  //
+  // .. OWL Text Slider init
+  //
+  $('.text-slider').owlCarousel({
+    navigation: true,
+    navigationText: false,
+    slideSpeed: 0,
+    paginationSpeed : 400,
+    singleItem: true,
+    transitionStyle: 'fade'
   });
 
   //

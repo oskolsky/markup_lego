@@ -1,0 +1,6 @@
+.carousel{data: {items: 3}}
+  - 1.upto(3) do
+    - 1.upto(3) do |i|
+      .carousel_i.brick
+        %a{href: "#", data: {rel: "chima", bg: "/assets/images/promo/bg-chima.png"}}
+          %img.va-t{src: "/assets/images/fake/img_390_215_0#{i}.png", width: "100%", alt: ""}

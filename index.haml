@@ -1,4 +1,4 @@
-%header#header.header.__promo{role: "banner"}
+%header#header.header{role: "banner"}
 
   .header_bg
     .header_bg_i{data: {rel: "chima"}, style: "background-image: url(/assets/images/promo/bg-chima.png); display: block;"}
@@ -6,36 +6,15 @@
 
   .ctn
     = haml 'views/layouts/_header'.to_sym
-    .promo.brick
-      .owl-carousel
-        .promo_i{data: {rel: "chima"}, style: "display: block;"}
-          %a{href: "#"}
-            %img.promo_i_img{src: "/assets/images/promo/chima.png", width: "100%", alt: "Подарок королевства Чима"}
-        .promo_i{data: {rel: "marvel"}}
-          %a{href: "#"}
-            %img.promo_i_img{src: "/assets/images/promo/marvel.png", width: "100%", alt: "Супергерои Lego"}
+    .p-t_5.p-b_5
+      = haml 'views/common/_single_slider'.to_sym
 
-%section.promo-slider.__index
-  .m-b_1
-    = haml 'views/common/_slider_promo'.to_sym
-  .tx.__center
-    .share-block
-      .share-block_a
-        %a{href: "#"}
-          Поделиться с друзьями
-          %img{src: "/assets/images/heart.png", alt: ""}
-      .share-block_pluso
-        .pluso{data: {background: "transparent", options: "small,round,line,horizontal,nocounter,theme=04", services: "vkontakte,facebook,twitter,odnoklassniki,moimir,google", user: "1938787731"}}
-        :javascript
-          (function() {
-          if (window.pluso)if (typeof window.pluso.start == "function") return;
-          if (window.ifpluso==undefined) { window.ifpluso = 1;
-            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-            var h=d[g]('body')[0];
-            h.appendChild(s);
-          }})();
+%section.section.__carousel
+  .ctn
+    .m-b_1
+      = haml 'views/common/_carousel'.to_sym
+    .tx.__center
+      = haml 'views/common/_share'.to_sym
 
 %main#main.main{role: "main"}
   %section.p-t_5.p-b_4{role: "region", "aria-label" => "Catalog"}
