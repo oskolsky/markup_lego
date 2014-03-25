@@ -7,12 +7,13 @@
   .ctn
     = haml 'views/layouts/_header'.to_sym
     .promo.brick
-      .promo_i{data: {rel: "chima"}, style: "display: block;"}
-        %a{href: "#"}
-          %img.promo_i_img{src: "/assets/images/promo/chima.png", width: "100%", alt: "Подарок королевства Чима"}
-      .promo_i{data: {rel: "marvel"}}
-        %a{href: "#"}
-          %img.promo_i_img{src: "/assets/images/promo/marvel.png", width: "100%", alt: "Супергерои Lego"}
+      .owl-carousel
+        .promo_i{data: {rel: "chima"}, style: "display: block;"}
+          %a{href: "#"}
+            %img.promo_i_img{src: "/assets/images/promo/chima.png", width: "100%", alt: "Подарок королевства Чима"}
+        .promo_i{data: {rel: "marvel"}}
+          %a{href: "#"}
+            %img.promo_i_img{src: "/assets/images/promo/marvel.png", width: "100%", alt: "Супергерои Lego"}
 
 %section.promo-slider.__index
   .m-b_1
