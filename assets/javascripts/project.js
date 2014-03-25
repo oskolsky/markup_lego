@@ -47,6 +47,18 @@ accounting.settings = {
 //
 // .. PROMO BLOCK ON HOME PAGE
 //
+$(document).on('click', '.promo-slider.__home .slide a', function() {
+  var rel = $(this).data('rel');
+  var bg  = $(this).data('bg');
+
+  $('.header_bg').find('.header_bg_i').hide();
+  $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn();
+
+  $('.promo').find('.promo_i').hide();
+  $('.promo').find('.promo_i[data-rel="' + rel + '"]').fadeIn();
+
+  return false;
+});
 
 //
 // .. ARTICLE CLOSE
@@ -389,24 +401,23 @@ $(function() {
   $('.slider').each(function() {
     var _this = this;
     $(this).find('.slides').cycle({
+      speed: 500,
       swipe: true,
       slides: '.slide'
     });
   });
 
-  $('.owl-carousel').owlCarousel({
-    navigation: true,
-    navigationText: false,
-    slideSpeed: 300,
-    paginationSpeed : 400,
-    singleItem: true,
-    transitionStyle: 'fadeUp',
-    afterMove: function(elem) {
-      var rel = $(this.owl.userItems[this.owl.currentItem]).data('rel');
-      $('.header_bg').find('.header_bg_i').fadeOut(400, function() {
-        $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn(400)
-      })
-    }
+  $('.slider.__promo').on('cycle-after', function(event, opts) {
+
+    var rel = $(opts.slides[opts.currSlide]).find('a').data('rel');
+    var bg  = $(opts.slides[opts.currSlide]).find('a').data('bg');
+
+    $('.header_bg').find('.header_bg_i').hide();
+    $('.header_bg').find('.header_bg_i[data-rel="' + rel + '"]').fadeIn();
+
+    $('.promo').find('.promo_i').hide();
+    $('.promo').find('.promo_i[data-rel="' + rel + '"]').fadeIn();
+
   });
 
   //

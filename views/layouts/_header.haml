@@ -2,44 +2,55 @@
   .grid-i.__grid-1.va-b>
     %a{href: "/"}
       %img{src: "/assets/images/logo.png", alt: "Lego", width: "100%", class: "logo"}
-  .grid-i.__grid-5.va-b>
-    %nav
-      %ul.header_pages.__left
-        %li.header_pages_i>
-          %a{href: "/about", class: "header_pages_i_a"} О нас
-        %li.header_pages_i>
-          %a{href: "/article", class: "header_pages_i_a"} Новости
-        %li.header_pages_i>
-          %a{href: "/bonuses", class: "header_pages_i_a"} Бонусная программа
-        %li.header_pages_i>
-          %a{href: "/article", class: "header_pages_i_a"} Мероприятия
-        %li.header_pages_i>
-          %a{href: "/contacts", class: "header_pages_i_a"} Контакты
-    %article.brand.tx.__white
-      %p Сеть магазинов Lego
-      %p 8 800 222-55-22
-  .grid-i.__grid-3.va-b>
-    .shops
-      .shops_count 65
-      .shops_label фирменных<br>магазина в России
-    .location
-      Ваш регион&nbsp;
-      %a{href: "#", class: "a __pseudo __inner", data: {dialog: "true", url: "/dialogs/location"}}
-        %span
-          Санкт-Петербург
-  .grid-i.__grid-3.va-b.tx.__right>
-    %nav
-      %ul.header_pages.__right
-        %li.header_pages_i
-          %a{href: "/profile", class: "header_pages_i_a"} Личный кабинет
-        %li.header_pages_i
-          %a{href: "#", class: "header_pages_i_a", data: {dialog: "true", url: "/dialogs/login"}} Вход
-    .header_basket
-      %p
-        %a{href: "/basket"}
-          Корзина (2)
-          %br
-          %a{href: "/basket"} 1250 руб
+  .grid-i.__grid-11>
+    .grid
+      .grid-i.__grid-9>
+        %nav
+          %ul.header_pages.__left
+            %li.header_pages_i>
+              %a{href: "/about", class: "header_pages_i_a"} О нас
+            %li.header_pages_i>
+              %a{href: "/article", class: "header_pages_i_a"} Новости
+            %li.header_pages_i>
+              %a{href: "/bonuses", class: "header_pages_i_a"} Бонусная программа
+            %li.header_pages_i>
+              %a{href: "/article", class: "header_pages_i_a"} Мероприятия
+            %li.header_pages_i>
+              %a{href: "/contacts", class: "header_pages_i_a"} Контакты
+            %li.header_pages_i>
+              %a{href: "/about", class: "header_pages_i_a"} О нас
+            %li.header_pages_i>
+              %a{href: "/article", class: "header_pages_i_a"} Новости
+            %li.header_pages_i>
+              %a{href: "/bonuses", class: "header_pages_i_a"} Бонусная программа
+      .grid-i.__grid-2>
+        %nav
+          %ul.header_pages.__right
+            %li.header_pages_i>
+              %a{href: "/profile", class: "header_pages_i_a"} Личный кабинет
+            %li.header_pages_i>
+              %a{href: "#", class: "header_pages_i_a", data: {dialog: "true", url: "/dialogs/login"}} Вход
+      .grid-i.__grid-5.va-b>
+        %article.brand.tx.__white
+          %p Сеть магазинов Lego
+          %p 8 800 222-55-22
+      .grid-i.__grid-3.va-b>
+        .shops
+          .shops_count 65
+          .shops_label фирменных<br>магазина в России
+        .location
+          Ваш регион&nbsp;
+          %a{href: "#", class: "a __pseudo __inner", data: {dialog: "true", url: "/dialogs/location"}}
+            %span
+              Санкт-Петербург
+      .grid-i.__grid-3.va-b>
+        .tx.__right
+          .header_basket
+            %p
+              %a{href: "/basket"}
+                Корзина (2)
+                %br
+                %a{href: "/basket"} 1250 руб
   .grid-i.__grid-9>
     %nav{role: "navigation"}
       %ul.nav

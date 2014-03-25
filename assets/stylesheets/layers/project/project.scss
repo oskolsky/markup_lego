@@ -64,6 +64,7 @@
 
   &.__right {
 
+    text-align: right;
     .header_pages_i {margin-left: 20px;}
 
   }
@@ -238,6 +239,9 @@
   margin: 50px 0;
 }
 .promo_i {
+  display: none;
+
+  &.__current {display: block;}
 
 }
 .promo_i_img {
@@ -1832,66 +1836,11 @@
   &.__next {right: -70px;}
 
 }
-@include media-query(phone) {
-  .slider_nav {
-    display: none;
-  }
-}
-@include media-query(tablet) {
-  .slider_nav {
-    display: none;
-  }
-}
 
 .slider_pager {
 
 }
 
-//
-// .. OWL
-//
-.owl-carousel {
-
-}
-.owl-controls {
-
-}
-.owl-buttons {
-
-}
-.owl-prev, .owl-next {
-  @include prefixes(transform, translateY(-50%));
-  position: absolute;
-  top: 50%;
-  color: #fff;
-  font-size: 40px;
-  &::after {
-    font-family: FontAwesome;
-  }  
-}
-
-.owl-prev {
-  left: -50px;
-  &::after {
-    content: "\f053";
-  }  
-}
-.owl-next {
-  right: -50px;
-  &::after {
-    content: "\f054";
-  }  
-}
-@include media-query(phone) {
-  .owl-controls {
-    display: none !important;
-  }
-}
-@include media-query(tablet) {
-  .owl-controls {
-    display: none !important;
-  }
-}
 
 
 //****************************************************************************************************
@@ -2327,6 +2276,7 @@ a.breadcrumbs_i {color: #0068a5;}
     bottom: 0;
     left: 0;
     border-radius: 3px;
+    background-color: $major-color;
     content: '';
   }
   &::after {
@@ -2337,15 +2287,15 @@ a.breadcrumbs_i {color: #0068a5;}
     font-size: 10px;
   }
   &.__s {
-    &::before {width: 25%; background-color: $red-color;}
+    &::before {width: 25%;}
     &::after {content: "мало";}
   }
   &.__m {
-    &::before {width: 50%; background-color: $orange-color;}
+    &::before {width: 50%;}
     &::after {content: "несколько";}
   }
   &.__l {
-    &::before {width: 100%; background-color: $green-color;}
+    &::before {width: 100%;}
     &::after {content: "много";}
   }
 }
@@ -2456,13 +2406,6 @@ a.breadcrumbs_i {color: #0068a5;}
   border: none !important;
 }
 
-//
-// .. Print link
-//
-.print {
-  vertical-align: middle;
-  margin-right: 20px;
-}
 
 
 //****************************************************************************************************
@@ -2705,7 +2648,7 @@ a.breadcrumbs_i {color: #0068a5;}
 
 .footer_pages_i {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 10px;
   padding: 30px 0;
 }
 
