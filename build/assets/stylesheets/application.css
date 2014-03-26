@@ -2933,6 +2933,22 @@ a.form_button {
 .single-slider {
   margin: 0 17px;
   width: 1182px; }
+  .single-slider .owl-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+  .single-slider .owl-prev, .single-slider .owl-next {
+    display: inline-block;
+    color: #fff;
+    font-size: 40px; }
+    .single-slider .owl-prev::after, .single-slider .owl-next::after {
+      font-family: FontAwesome; }
+  .single-slider .owl-prev::after {
+    content: "\f053"; }
+  .single-slider .owl-next {
+    margin-left: 20px; }
+    .single-slider .owl-next::after {
+      content: "\f054"; }
 
 .text-slider_i {
   padding-right: 25px; }

@@ -1831,6 +1831,30 @@
 .single-slider {
   margin: 0 17px;
   width: 1182px;
+  .owl-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+    .owl-prev, .owl-next {
+      display: inline-block;
+      color: #fff;
+      font-size: 40px;
+      &::after {
+        font-family: FontAwesome;
+      }
+    }
+    .owl-prev {
+      &::after {
+        content: "\f053";
+      }
+    }
+    .owl-next {
+      margin-left: 20px;
+      &::after {
+        content: "\f054";
+      }
+    }  
 }
   .single-slider_i {
 
@@ -1846,41 +1870,6 @@
     padding-right: 25px;
   }
 
-
-
-//.owl-prev, .owl-next {
-//  @include prefixes(transform, translateY(-50%));
-//  position: absolute;
-//  top: 50%;
-//  color: #fff;
-//  font-size: 40px;
-//  &::after {
-//    font-family: FontAwesome;
-//  }
-//}
-//
-//.owl-prev {
-//  left: -50px;
-//  &::after {
-//    content: "\f053";
-//  }
-//}
-//.owl-next {
-//  right: -50px;
-//  &::after {
-//    content: "\f054";
-//  }
-//}
-//@include media-query(phone) {
-//  .owl-controls {
-//    display: none !important;
-//  }
-//}
-//@include media-query(tablet) {
-//  .owl-controls {
-//    display: none !important;
-//  }
-//}
 
 
 //****************************************************************************************************
