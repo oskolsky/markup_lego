@@ -3095,18 +3095,18 @@ a.form_button {
 a.breadcrumbs_i {
   color: #0068a5; }
 
-.pagination.__page .pagination_i_a {
+.pagination.__page .pagination_i_a, .pagination.__page .register-social_i {
   color: #0b113c; }
 .pagination.__catalog .pagination_i {
   margin: 0 5px; }
-.pagination.__catalog .pagination_i_a {
+.pagination.__catalog .pagination_i_a, .pagination.__catalog .register-social_i {
   border: 1px solid #ccc;
   color: #eb1c24; }
 
 .pagination_i {
   display: inline-block; }
 
-.pagination_i_a {
+.pagination_i_a, .register-social_i {
   -webkit-transition: all 0.33s ease;
   -moz-transition: all 0.33s ease;
   -ms-transition: all 0.33s ease;
@@ -3120,7 +3120,7 @@ a.breadcrumbs_i {
   line-height: 38px;
   text-align: center;
   text-decoration: none; }
-  .pagination_i_a.__current, .pagination_i_a:hover {
+  .pagination_i_a.__current, .__current.register-social_i, .pagination_i_a:hover, .register-social_i:hover {
     border-color: transparent !important;
     background-color: #eb1c24;
     color: #fff !important; }
@@ -3354,6 +3354,13 @@ a.breadcrumbs_i {
   margin-right: 20px; }
   .print .ico {
     margin-right: 5px; }
+
+.register-social {
+  display: inline-block; }
+
+.register-social_i {
+  border: 1px solid #ccc;
+  display: inline-block; }
 
 .reviews_i {
   margin-bottom: 20px; }

@@ -1818,6 +1818,7 @@
 // .. Carousel
 //
 .carousel {
+
 }
   .carousel_i {
     margin: 0 17px 25px;
@@ -2448,6 +2449,19 @@ a.breadcrumbs_i {color: #0068a5;}
   margin-right: 20px;
   .ico {margin-right: 5px;}
 }
+
+//
+// .. Register Social
+// 
+.register-social {
+  display: inline-block;
+}
+  .register-social_i {
+    border: 1px solid #ccc;
+    display: inline-block;
+    @extend .pagination_i_a;
+  }
+
 
 
 //****************************************************************************************************

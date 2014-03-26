@@ -2,7 +2,7 @@
   .grid-i.__grid-4
     %i.dialog_close.js-dialog_close.fa.fa-times-circle
     %h2.tx.__upper.m-b_2 Регистраиця
-    %form.form
+    %form.form.m-b_2
       .m-b_2
         %label.form_label.__m Имя
         %input.form_text.form_el.__block{type: "text"}
@@ -17,4 +17,10 @@
           %input.form_button.__s.__red{type: "submit", value: "Зарегистрироваться"}
         .grid-i.__grid-2.va-m>
           .tx.__right
-            %a.a.__pseudo.tx.__xs{href: "#", data: {dialog: "true", url: "/dialogs/login"}} Войти
+            %nav.register-social
+              %a.register-social_i{href: "#"}
+                %i.fa.fa-vk
+              %a.register-social_i{href: "#"}
+                %i.fa.fa-facebook
+              %a.register-social_i{href: "#"}
+                %i.fa.fa-twitter
