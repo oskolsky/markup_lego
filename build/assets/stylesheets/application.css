@@ -2935,12 +2935,12 @@ a.form_button {
   width: 1182px; }
   .single-slider .owl-buttons {
     position: absolute;
-    top: 20px;
+    top: 22px;
     right: 20px; }
   .single-slider .owl-prev, .single-slider .owl-next {
     display: inline-block;
     color: #fff;
-    font-size: 40px; }
+    font-size: 30px; }
     .single-slider .owl-prev::after, .single-slider .owl-next::after {
       font-family: FontAwesome; }
   .single-slider .owl-prev::after {

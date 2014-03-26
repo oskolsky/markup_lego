@@ -409,6 +409,10 @@ $(function() {
   // .. OWL Carousel init
   //
   $('.carousel').owlCarousel({
+    navigation: true,
+    navigationText: false,
+    slideSpeed: 300,
+    paginationSpeed : 400,
     responsive: false,
     items : $(this).data('items')
   });

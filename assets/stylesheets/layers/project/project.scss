@@ -1818,7 +1818,6 @@
 // .. Carousel
 //
 .carousel {
-
 }
   .carousel_i {
     margin: 0 17px 25px;
@@ -1833,13 +1832,13 @@
   width: 1182px;
   .owl-buttons {
     position: absolute;
-    top: 20px;
+    top: 22px;
     right: 20px;
   }
     .owl-prev, .owl-next {
       display: inline-block;
       color: #fff;
-      font-size: 40px;
+      font-size: 30px;
       &::after {
         font-family: FontAwesome;
       }

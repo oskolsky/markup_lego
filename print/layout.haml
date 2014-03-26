@@ -1,0 +1,10 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Сеть магазинов Lego
+    = haml 'views/layouts/_head'.to_sym
+  
+  %body#page.page
+    = haml 'views/alerts/_ie'.to_sym
+    = haml 'views/alerts/_no-js'.to_sym
+    = yield
