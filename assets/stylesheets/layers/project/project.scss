@@ -2530,14 +2530,25 @@ a.breadcrumbs_i {color: #0068a5;}
 
 .about-block_i {
   @include prefixes(box-sizing, border-box);
+  position: relative;
   display: inline-block;
   margin: 0 0 20px 0;
   padding: 0 20px;
   width: 33.333%;
   vertical-align: top;
   text-align: center;
+
 }
 
+.about-block_i_span {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  color: #ccc;
+  font-size: 135px;
+  font-family: $h-font-family;
+  line-height: 1;
+}
 .about-block_i_ico {margin-bottom: 20px;}
 
 .about-block_i_caption {
