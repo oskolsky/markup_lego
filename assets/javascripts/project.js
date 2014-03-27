@@ -77,19 +77,36 @@ $(document).on('click', '.articles_i_show_gallery_add > a', function() {
 //
 $(document).on('click touchstart', '[data-dialog="true"]', function() {
   var url = $(this).data('url');
+  var overlayclick = $(this).data('overlayclick');
   $.arcticmodal('close');
+  if (overlayclick == false) {
+    $.arcticmodal({
+      type: 'ajax',
+      url: url,
+      closeOnOverlayClick: false,
+      closeOnEsc: false,
+      afterOpen: function() {
 
-  $.arcticmodal({
-    type: 'ajax',
-    url: url,
-    afterOpen: function() {
+      },
+      afterLoadingOnShow: function() {
+        $('.form').customForm();
+        $('.form_text.__phone').mask('+7 (999) 999-99-99');
+      }
+    });
+  } else {
+    $.arcticmodal({
+      type: 'ajax',
+      url: url,
+      afterOpen: function() {
 
-    },
-    afterLoadingOnShow: function() {
-      $('.form').customForm();
-      $('.form_text.__phone').mask('+7 (999) 999-99-99');
-    }
-  });
+      },
+      afterLoadingOnShow: function() {
+        $('.form').customForm();
+        $('.form_text.__phone').mask('+7 (999) 999-99-99');
+      }
+    });
+  }
+
 
   return false;
 });
