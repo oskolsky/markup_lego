@@ -3399,12 +3399,22 @@ a.breadcrumbs_i {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
   display: inline-block;
   margin: 0 0 20px 0;
   padding: 0 20px;
   width: 33.333%;
   vertical-align: top;
   text-align: center; }
+
+.about-block_i_span {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  color: #ccc;
+  font-size: 135px;
+  font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1; }
 
 .about-block_i_ico {
   margin-bottom: 20px; }
