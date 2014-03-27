@@ -3250,17 +3250,17 @@ a.breadcrumbs_i {
     width: 25%;
     background-color: #ea030a; }
   .count.__s::after {
-    content: "╨╝╨░╨╗╨╛"; }
+    content: "мало"; }
   .count.__m::before {
     width: 50%;
     background-color: #f48f01; }
   .count.__m::after {
-    content: "╨╜╨╡╤Б╨║╨╛╨╗╤М╨║╨╛"; }
+    content: "несколько"; }
   .count.__l::before {
     width: 100%;
     background-color: #52b200; }
   .count.__l::after {
-    content: "╨╝╨╜╨╛╨│╨╛"; }
+    content: "много"; }
 
 .metro {
   position: relative;
