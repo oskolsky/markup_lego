@@ -2926,6 +2926,26 @@ a.form_button {
   .faq_i_answer_close i {
     color: #fff; }
 
+.carousel {
+  padding-bottom: 25px; }
+  .carousel .owl-prev, .carousel .owl-next {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    color: #ccc;
+    font-size: 30px;
+    z-index: 1000; }
+    .carousel .owl-prev::after, .carousel .owl-next::after {
+      font-family: FontAwesome; }
+  .carousel .owl-prev {
+    left: 16px; }
+    .carousel .owl-prev::after {
+      content: "\f053"; }
+  .carousel .owl-next {
+    right: 19px; }
+    .carousel .owl-next::after {
+      content: "\f054"; }
+
 .carousel_i {
   margin: 0 17px 25px;
   width: 370px; }
@@ -2936,7 +2956,8 @@ a.form_button {
   .single-slider .owl-buttons {
     position: absolute;
     top: 22px;
-    right: 20px; }
+    right: 20px;
+    padding: 12px 10px 5px; }
   .single-slider .owl-prev, .single-slider .owl-next {
     display: inline-block;
     color: #fff;
@@ -2956,9 +2977,6 @@ a.form_button {
   right: 70px;
   width: 400px;
   color: #fff; }
-
-.text-slider_i {
-  padding-right: 25px; }
 
 .border-block {
   padding: 50px; }
@@ -3124,6 +3142,10 @@ a.breadcrumbs_i {
     border-color: transparent !important;
     background-color: #eb1c24;
     color: #fff !important; }
+
+.main-share {
+  position: relative;
+  top: -35px; }
 
 .share-block {
   position: relative; }

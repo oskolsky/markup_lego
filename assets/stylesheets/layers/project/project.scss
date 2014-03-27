@@ -1721,106 +1721,37 @@
 // .. SLIDER
 //
 //****************************************************************************************************
-//.slider {
-//  position: relative;
-//
-//  &.__text {
-//
-//    .slider_pager {
-//      padding: 10px 0;
-//      text-align: center;
-//
-//      span {
-//        display: inline-block;
-//        margin-right: 20px;
-//        width: 16px;
-//        height: 16px;
-//        border-radius: 50%;
-//        background-color: #d0cccc;
-//        font-size: 0;
-//        cursor: pointer;
-//        &.cycle-pager-active {
-//          background-color: #eb1c24;
-//        }
-//      }
-//
-//    }
-//
-//  }
-//
-//  &.__promo {
-//
-//    .slides {
-//      overflow: hidden;
-//      height: 227px;
-//      white-space: nowrap;
-//    }
-//
-//    .slide {
-//      @include prefixes(box-sizing, border-box);
-//      display: inline-block;
-//      width: 383px;
-//      margin: {
-//        right: 19px;
-//        left: 16px;
-//      }
-//    }
-//
-//  }
-//
-//}
-//
-//.slides {
-//
-//}
-//
-//.slide {
-//  width: 100%;
-//}
-
-//.slider_nav {
-//  @include size(50px, 50px);
-//  position: absolute;
-//  top: 50%;
-//  z-index: 999;
-//  margin-top: -25px;
-//  border-radius: 50%;
-//  background-color: #cdcdcd;
-//  color: #fff;
-//  text-align: center;
-//  line-height: 52px;
-//
-//  &:hover {color: #fff;}
-//
-//  &.__prev {left: -70px;}
-//
-//  &.__next {right: -70px;}
-//
-//}
-//@include media-query(phone) {
-//  .slider_nav {
-//    display: none;
-//  }
-//}
-//@include media-query(tablet) {
-//  .slider_nav {
-//    display: none;
-//  }
-//}
-
-//.slider_pager {
-//
-//}
-
-//
-// .. OWL
-//
-
 //
 // .. Carousel
 //
 .carousel {
+  padding-bottom: 25px;
+  .owl-buttons {
 
+  }
+    .owl-prev, .owl-next {
+      position: absolute;
+      bottom: 0;
+      display: inline-block;
+      color: #ccc;
+      font-size: 30px;
+      z-index: 1000;
+      &::after {
+        font-family: FontAwesome;
+      }
+    }
+    .owl-prev {
+      left: 16px;
+      &::after {
+        content: "\f053";
+      }
+    }
+    .owl-next {
+      right: 19px;
+      &::after {
+        content: "\f054";
+      }
+    }  
 }
   .carousel_i {
     margin: 0 17px 25px;
@@ -1837,6 +1768,7 @@
     position: absolute;
     top: 22px;
     right: 20px;
+    padding: 12px 10px 5px;
   }
     .owl-prev, .owl-next {
       display: inline-block;
@@ -1868,16 +1800,6 @@
       width: 400px;
       color: #fff;
     }
-
-//
-// .. TextSlider
-//
-.text-slider {
-
-}
-  .text-slider_i {
-    padding-right: 25px;
-  }
 
 
 
@@ -2150,6 +2072,10 @@ a.breadcrumbs_i {color: #0068a5;}
 //
 // .. Share block
 //
+.main-share {
+  position: relative;
+  top: -35px;
+}
 .share-block {
   position: relative;
 }
