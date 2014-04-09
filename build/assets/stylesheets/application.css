@@ -11,14 +11,12 @@
   src: url("/assets/fonts/rotonda/rtn55c-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/rotonda/rtn55c-webfont.woff") format("woff"), url("/assets/fonts/rotonda/rtn55c-webfont.ttf") format("truetype"), url("/assets/fonts/rotonda/rtn55c-webfont.svg#rotondacregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'rotondacbold';
   src: url("/assets/fonts/rotonda/rtn65c-webfont.eot");
   src: url("/assets/fonts/rotonda/rtn65c-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/rotonda/rtn65c-webfont.woff") format("woff"), url("/assets/fonts/rotonda/rtn65c-webfont.ttf") format("truetype"), url("/assets/fonts/rotonda/rtn65c-webfont.svg#rotondacbold") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, address, cite, code,
@@ -1555,7 +1553,6 @@ a.form_button {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-moz-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1570,7 +1567,6 @@ a.form_button {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-o-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1585,7 +1581,6 @@ a.form_button {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1600,7 +1595,6 @@ a.form_button {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 .c-bg.__red {
   background-color: #e48f86; }
 .c-bg.__orange {
@@ -3447,6 +3441,8 @@ a.breadcrumbs_i {
   font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 700; }
+  .about-block_i_caption a {
+    text-decoration: none; }
 
 .feedback-block .form_label {
   display: inline-block;
