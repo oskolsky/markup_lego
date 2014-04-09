@@ -1913,8 +1913,8 @@ a.form_button {
   color: #fff;
   text-decoration: none;
   font-size: 14px; }
-  .header_pages_i_a:hover {
-    color: #fff; }
+  .header_pages_i_a.__current, .header_pages_i_a:hover {
+    color: #e30613; }
 
 .logo {
   vertical-align: top; }

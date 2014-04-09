@@ -74,7 +74,8 @@
   text-decoration: none;
   font-size: 14px;
 
-  &:hover {color: #fff;}
+  &.__current,
+  &:hover {color: $major-color;}
 
 }
 
