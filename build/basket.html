@@ -21,6 +21,8 @@
     <script src='/assets/javascripts/vendor/accounting.min.js'></script>
     <script src='/assets/javascripts/vendor/jquery.maskedinput.js'></script>
     <script src='/assets/javascripts/vendor/lightbox-2.6.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.mousewheel.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.jscrollpane.min.js'></script>
     <script src='/assets/javascripts/jquery.extensions.js'></script>
     <script src='/assets/javascripts/forms.js'></script>
     <script src='/assets/javascripts/components.js'></script>
@@ -56,19 +58,9 @@
                   <ul class='header_pages __left'><li class='header_pages_i'>
                       <a class='header_pages_i_a' href='/about'>О нас</a>
                     </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Новости</a>
+                      <a class='header_pages_i_a __current' href='/article'>Новости</a>
                     </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/bonuses'>Бонусная программа</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Мероприятия</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/contacts'>Контакты</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/about'>О нас</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Новости</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/bonuses'>Бонусная программа</a>
+                      <a class='header_pages_i_a' href='/bonuses'>Бонусы</a>
                     </li><li class='header_pages_i'>
                       <a class='header_pages_i_a' href='/article'>Мероприятия</a>
                     </li><li class='header_pages_i'>
@@ -171,99 +163,6 @@
                   <tr>
                     <td>
                       <a href='/catalog_show'>
-                        <img src='/assets/images/fake/catalog_item_10.jpg'>
-                      </a>
-                    </td>
-                    <td>
-                      <p class='table_number'>Звездные войны 23523</p>
-                      <p class='table_name'>
-                        <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                      </p>
-                    </td>
-                    <td>
-                      <div class='form_number'>
-                        <input class='form_text form_el __block' type='text' value='1'>
-                        <div class='form_number_controls'>
-                          <a class='form_number_controls_i __up' href='#'>+</a>
-                          <a class='form_number_controls_i __down' href='#'>-</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p>-5%</p>
-                    </td>
-                    <td>
-                      <div class='basket_oldprice'>
-                        <span class='format-number'>
-                          6629
-                        </span>
-                        руб.
-                      </div>
-                      <div class='price __rub __m format-money'>
-                        1510
-                      </div>
-                    </td>
-                    <td>
-                      <div class='basket_action'>
-                        <a class='form_button __gray __xs basket_action_i' href='#'>
-                          <i class='fa fa-times'></i>
-                          Удалить
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href='/catalog_show'>
-                        <img src='/assets/images/fake/catalog_item_8.jpg'>
-                      </a>
-                    </td>
-                    <td>
-                      <p class='table_number'>Звездные войны 23523</p>
-                      <p class='table_name'>
-                        <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                      </p>
-                    </td>
-                    <td>
-                      <div class='form_number'>
-                        <input class='form_text form_el __block' type='text' value='1'>
-                        <div class='form_number_controls'>
-                          <a class='form_number_controls_i __up' href='#'>+</a>
-                          <a class='form_number_controls_i __down' href='#'>-</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p>-5%</p>
-                    </td>
-                    <td>
-                      <div class='basket_oldprice'>
-                        <span class='format-number'>
-                          8527
-                        </span>
-                        руб.
-                      </div>
-                      <div class='price __rub __m format-money'>
-                        1482
-                      </div>
-                    </td>
-                    <td>
-                      <div class='basket_action'>
-                        <a class='form_button __gray __xs basket_action_i' href='#'>
-                          <i class='fa fa-times'></i>
-                          Удалить
-                        </a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class='table_t' colspan='6'>
-                      <h2>Купить со скидкой</h2>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href='/catalog_show'>
                         <img src='/assets/images/fake/catalog_item_9.jpg'>
                       </a>
                     </td>
@@ -288,17 +187,20 @@
                     <td>
                       <div class='basket_oldprice'>
                         <span class='format-number'>
-                          6952
+                          8725
                         </span>
                         руб.
                       </div>
                       <div class='price __rub __m format-money'>
-                        516
+                        670
                       </div>
                     </td>
                     <td>
                       <div class='basket_action'>
-                        <a class='form_button __red __xs basket_action_i' href='#'>Добавить</a>
+                        <a class='form_button __gray __xs basket_action_i' href='#'>
+                          <i class='fa fa-times'></i>
+                          Удалить
+                        </a>
                       </div>
                     </td>
                   </tr>
@@ -329,12 +231,102 @@
                     <td>
                       <div class='basket_oldprice'>
                         <span class='format-number'>
-                          7561
+                          9653
                         </span>
                         руб.
                       </div>
                       <div class='price __rub __m format-money'>
-                        639
+                        684
+                      </div>
+                    </td>
+                    <td>
+                      <div class='basket_action'>
+                        <a class='form_button __gray __xs basket_action_i' href='#'>
+                          <i class='fa fa-times'></i>
+                          Удалить
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='table_t' colspan='6'>
+                      <h2>Купить со скидкой</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href='/catalog_show'>
+                        <img src='/assets/images/fake/catalog_item_8.jpg'>
+                      </a>
+                    </td>
+                    <td>
+                      <p class='table_number'>Звездные войны 23523</p>
+                      <p class='table_name'>
+                        <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                      </p>
+                    </td>
+                    <td>
+                      <div class='form_number'>
+                        <input class='form_text form_el __block' type='text' value='1'>
+                        <div class='form_number_controls'>
+                          <a class='form_number_controls_i __up' href='#'>+</a>
+                          <a class='form_number_controls_i __down' href='#'>-</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>-5%</p>
+                    </td>
+                    <td>
+                      <div class='basket_oldprice'>
+                        <span class='format-number'>
+                          5634
+                        </span>
+                        руб.
+                      </div>
+                      <div class='price __rub __m format-money'>
+                        1348
+                      </div>
+                    </td>
+                    <td>
+                      <div class='basket_action'>
+                        <a class='form_button __red __xs basket_action_i' href='#'>Добавить</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href='/catalog_show'>
+                        <img src='/assets/images/fake/catalog_item_6.jpg'>
+                      </a>
+                    </td>
+                    <td>
+                      <p class='table_number'>Звездные войны 23523</p>
+                      <p class='table_name'>
+                        <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                      </p>
+                    </td>
+                    <td>
+                      <div class='form_number'>
+                        <input class='form_text form_el __block' type='text' value='1'>
+                        <div class='form_number_controls'>
+                          <a class='form_number_controls_i __up' href='#'>+</a>
+                          <a class='form_number_controls_i __down' href='#'>-</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>-5%</p>
+                    </td>
+                    <td>
+                      <div class='basket_oldprice'>
+                        <span class='format-number'>
+                          9221
+                        </span>
+                        руб.
+                      </div>
+                      <div class='price __rub __m format-money'>
+                        940
                       </div>
                     </td>
                     <td>
@@ -364,7 +356,7 @@
                     <div class='basket_total'>
                       <span class='basket_total_t'>Стоимость со скидкой</span>
                       <div class='price __rub __l format-money'>
-                        1275
+                        1867
                       </div>
                     </div>
                     <p class='tx __xs __center'>Без учета доставки</p>
@@ -452,7 +444,7 @@
                           </div>
                         </div><div class='basket_delivery'>
                           <div class='basket_delivery_i __store' style='display: block;'><div class='form_row __s'>
-                              <div class='basket_delivery_i_list'>
+                              <div class='basket_delivery_i_list scroll-pane'>
                                 <div class='basket_delivery_i_list_i'>
                                   <span class='form_radio form_el __fake'>
                                     <input class='form_radio form_el __real' name='radio1' type='radio'>
@@ -700,7 +692,7 @@
                           </div>
                           <dl class='grid'><dt class='grid-i __grid-1'>Итого:</dt><dd class='grid-i __grid-1'>
                               <div class='price __rub __m format-money'>
-                                889
+                                1839
                               </div>
                             </dd></dl>
                         </article>

@@ -21,6 +21,8 @@
     <script src='/assets/javascripts/vendor/accounting.min.js'></script>
     <script src='/assets/javascripts/vendor/jquery.maskedinput.js'></script>
     <script src='/assets/javascripts/vendor/lightbox-2.6.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.mousewheel.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.jscrollpane.min.js'></script>
     <script src='/assets/javascripts/jquery.extensions.js'></script>
     <script src='/assets/javascripts/forms.js'></script>
     <script src='/assets/javascripts/components.js'></script>
@@ -62,17 +64,7 @@
                     </li><li class='header_pages_i'>
                       <a class='header_pages_i_a __current' href='/article'>Новости</a>
                     </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/bonuses'>Бонусная программа</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Мероприятия</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/contacts'>Контакты</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/about'>О нас</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Новости</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/bonuses'>Бонусная программа</a>
+                      <a class='header_pages_i_a' href='/bonuses'>Бонусы</a>
                     </li><li class='header_pages_i'>
                       <a class='header_pages_i_a' href='/article'>Мероприятия</a>
                     </li><li class='header_pages_i'>
@@ -297,7 +289,7 @@
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -311,69 +303,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              788
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              6898
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              9443
+                              9562
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -404,7 +334,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              1193
+                              4370
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -417,12 +347,11 @@
                           </div>
                         </footer>
                       </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                    </div><div class='grid-i __grid-3'>
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -436,7 +365,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              2645
+                              6045
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -467,69 +396,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              5549
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              8751
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              6963
+                              6221
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -561,300 +428,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              5908
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              3879
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_10.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              9426
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              9217
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              3561
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              652
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              3977
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              8293
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                </div>
-                <div class='catalog_all beta'>
-                  <a class='tx __minor' href='#'>
-                    Показать все новинки
-                    <i class='fa fa-chevron-right'></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id='tabs-2'>
-              <div class='catalog __product'>
-                <div class='m-b_4'>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              8604
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              7273
+                              8151
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -885,7 +459,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              6024
+                              8120
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -899,675 +473,6 @@
                         </footer>
                       </article>
                     </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              2929
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              9044
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              5901
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              5844
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              5580
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              8392
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              1409
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              7272
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              658
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_10.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              7404
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              6506
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              2669
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              6291
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                </div>
-                <div class='catalog_all beta'>
-                  <a class='tx __minor' href='#'>
-                    Показать все новинки
-                    <i class='fa fa-chevron-right'></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div id='tabs-3'>
-              <div class='catalog __product'>
-                <div class='m-b_4'>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              7843
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              1683
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              566
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              5997
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              5916
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              4457
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              3858
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              8129
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
@@ -1585,7 +490,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              9593
+                              9354
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1602,7 +507,7 @@
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -1616,7 +521,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              3419
+                              3392
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1629,11 +534,12 @@
                           </div>
                         </footer>
                       </article>
-                    </div><div class='grid-i __grid-3'>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -1647,7 +553,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              6422
+                              9989
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1664,7 +570,7 @@
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -1678,7 +584,69 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              2830
+                              2394
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              4247
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              5535
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1710,7 +678,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              568
+                              8678
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1727,7 +695,7 @@
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_10.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -1741,7 +709,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              1689
+                              8606
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1758,7 +726,7 @@
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -1772,7 +740,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              4677
+                              2524
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1803,7 +771,1031 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              9512
+                              5563
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                </div>
+                <div class='catalog_all beta'>
+                  <a class='tx __minor' href='#'>
+                    Показать все новинки
+                    <i class='fa fa-chevron-right'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id='tabs-2'>
+              <div class='catalog __product'>
+                <div class='m-b_4'>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              7387
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9426
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9891
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              1476
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              8591
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              1715
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9049
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              2831
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9067
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              3799
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              7445
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              8219
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              6564
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              3801
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              5871
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              1237
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                </div>
+                <div class='catalog_all beta'>
+                  <a class='tx __minor' href='#'>
+                    Показать все новинки
+                    <i class='fa fa-chevron-right'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id='tabs-3'>
+              <div class='catalog __product'>
+                <div class='m-b_4'>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9503
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              7899
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              548
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              8989
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              8850
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              3326
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_5.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9987
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9422
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9880
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              7177
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              2203
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              5391
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              3631
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              3019
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              1231
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='100' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий корабль</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              9623
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1847,7 +1839,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              4470
+                              2863
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1861,6 +1853,225 @@
                         </footer>
                       </article>
                     </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              4279
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              4093
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              7582
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_3.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              3322
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              7263
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              1013
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              4537
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
@@ -1878,7 +2089,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              8975
+                              2291
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1895,7 +2106,7 @@
                       <article class='catalog_i'>
                         <header>
                           <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_1.jpg' width='200'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
                           </a>
                         </header>
                         <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
@@ -1909,7 +2120,163 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              6347
+                              6185
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              2673
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              1329
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div></div>
+                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_11.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              4933
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_6.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              4020
+                            </div>
+                          </div>
+                          <div class='catalog_i_action cf'>
+                            <div class='f-l'>
+                              <a class='form_button __s __red' href='#'>В корзину</a>
+                            </div>
+                            <div class='f-r'>
+                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
+                            </div>
+                          </div>
+                        </footer>
+                      </article>
+                    </div><div class='grid-i __grid-3'>
+                      <article class='catalog_i'>
+                        <header>
+                          <a href='/catalog_show'>
+                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_8.jpg' width='200'>
+                          </a>
+                        </header>
+                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
+                        <div class='catalog_i_name'>
+                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
+                        </div>
+                        <footer>
+                          <div class='catalog_i_price __old'>
+                            <span class='format-number'>25400</span>
+                            руб.
+                          </div>
+                          <div class='catalog_i_price __current'>
+                            <div class='price __rub __m format-money'>
+                              4386
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>
@@ -1940,382 +2307,7 @@
                           </div>
                           <div class='catalog_i_price __current'>
                             <div class='price __rub __m format-money'>
-                              6543
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              3188
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              3514
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              2855
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              1321
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_2.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              9861
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_10.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              970
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_9.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              8709
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              5333
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div></div>
-                  <div class='grid catalog_row'><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_4.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              2077
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              9677
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_7.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              7437
-                            </div>
-                          </div>
-                          <div class='catalog_i_action cf'>
-                            <div class='f-l'>
-                              <a class='form_button __s __red' href='#'>В корзину</a>
-                            </div>
-                            <div class='f-r'>
-                              <a class='form_button __s __orange' data-dialog='true' data-url='/dialogs/availability' href='#'>Проверить<br>наличие</a>
-                            </div>
-                          </div>
-                        </footer>
-                      </article>
-                    </div><div class='grid-i __grid-3'>
-                      <article class='catalog_i'>
-                        <header>
-                          <a href='/catalog_show'>
-                            <img alt='Скоростной низколетящий десантный корабль и транспортный шагоход' class='catalog_i_img' height='150' src='/assets/images/fake/catalog_item_12.jpg' width='200'>
-                          </a>
-                        </header>
-                        <div class='catalog_i_number'>Звездные войны <span>23523</span></div>
-                        <div class='catalog_i_name'>
-                          <a href='/catalog_show'>Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход</a>
-                        </div>
-                        <footer>
-                          <div class='catalog_i_price __old'>
-                            <span class='format-number'>25400</span>
-                            руб.
-                          </div>
-                          <div class='catalog_i_price __current'>
-                            <div class='price __rub __m format-money'>
-                              4462
+                              7840
                             </div>
                           </div>
                           <div class='catalog_i_action cf'>

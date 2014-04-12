@@ -21,6 +21,8 @@
     <script src='/assets/javascripts/vendor/accounting.min.js'></script>
     <script src='/assets/javascripts/vendor/jquery.maskedinput.js'></script>
     <script src='/assets/javascripts/vendor/lightbox-2.6.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.mousewheel.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.jscrollpane.min.js'></script>
     <script src='/assets/javascripts/jquery.extensions.js'></script>
     <script src='/assets/javascripts/forms.js'></script>
     <script src='/assets/javascripts/components.js'></script>
@@ -56,19 +58,9 @@
                   <ul class='header_pages __left'><li class='header_pages_i'>
                       <a class='header_pages_i_a' href='/about'>О нас</a>
                     </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Новости</a>
+                      <a class='header_pages_i_a __current' href='/article'>Новости</a>
                     </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/bonuses'>Бонусная программа</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Мероприятия</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/contacts'>Контакты</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/about'>О нас</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/article'>Новости</a>
-                    </li><li class='header_pages_i'>
-                      <a class='header_pages_i_a' href='/bonuses'>Бонусная программа</a>
+                      <a class='header_pages_i_a' href='/bonuses'>Бонусы</a>
                     </li><li class='header_pages_i'>
                       <a class='header_pages_i_a' href='/article'>Мероприятия</a>
                     </li><li class='header_pages_i'>
@@ -199,10 +191,36 @@
                 <div class='m-b_3'>
                   <div class='single-slider brick'>
                     <div class='single-slider_i' data-rel='chima'>
-                      <img alt='Подарок королевства Чима' class='promo_i_img va-t' src='/assets/images/promo/chima.png' width='100%'>
+                      <a href='#'>
+                        <img alt='Подарок королевства Чима' class='va-t' src='/assets/images/promo/chima.png' width='100%'>
+                        <article class='single-slider_i_tx'>
+                          <div class='m-b_1'>
+                            <h1 class='tx __upper'>ПОДАРОК КОРОЛЕВСТВА ЧИМА</h1>
+                          </div>
+                          <div class='m-b_1'>
+                            <p class='tx __xs'>Купи Чимацикл и&nbsp;конструируемую фигуру&nbsp;&mdash; получи классные аксессуары!</p>
+                          </div>
+                          <div class='m-b_1'>
+                            <img class='va-t c-bg __gray' height='70' src='/assets/images/blank.gif' width='260'>
+                          </div>
+                        </article>
+                      </a>
                     </div>
                     <div class='single-slider_i' data-rel='marvel'>
-                      <img alt='Супергерои Lego' class='promo_i_img va-t' src='/assets/images/promo/marvel.png' width='100%'>
+                      <a href='#'>
+                        <img alt='Супергерои Lego' class='va-t' src='/assets/images/promo/marvel.png' width='100%'>
+                        <article class='single-slider_i_tx'>
+                          <div class='m-b_1'>
+                            <h1 class='tx __upper'>Супергерои LEGO</h1>
+                          </div>
+                          <div class='m-b_1'>
+                            <p class='tx __xs'>Новая эксклюзивная серия LEGO<sup class="reg">&reg;</sup> Marvel Super Heroes в&nbsp;продаже во&nbsp;всех магазинах сети LEGO. Новинки только у&nbsp;нас!</p>
+                          </div>
+                          <div class='m-b_1'>
+                            <img class='va-t c-bg __gray' height='70' src='/assets/images/blank.gif' width='260'>
+                          </div>
+                        </article>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -805,25 +823,6 @@
                               <tr>
                                 <td>
                                   <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_12.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1838
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
                                     <img class='va-m' src='/assets/images/fake/catalog_item_6.jpg'>
                                   </a>
                                 </td>
@@ -836,429 +835,7 @@
                                 <td>1</td>
                                 <td>
                                   <div class='price __rub __m format-money'>
-                                    959
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr class='history_head'>
-                        <td class='tx __xs'>15.03.12</td>
-                        <td class='tx __xs'>237148</td>
-                        <td class='tx __xs'>доставлен</td>
-                        <td class='tx __xs'>4768 руб.</td>
-                        <td class='tx __right'>
-                          <i class='fa fa-chevron-down'></i>
-                        </td>
-                      </tr>
-                      <tr class='history_body'>
-                        <td colspan='5'>
-                          <table class='table' width='100%'>
-                            <thead>
-                              <tr>
-                                <th>Фото</th>
-                                <th>Наименование</th>
-                                <th>Количество</th>
-                                <th>Итоговая стоимость</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_3.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1824
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_8.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1291
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr class='history_head'>
-                        <td class='tx __xs'>15.03.12</td>
-                        <td class='tx __xs'>237148</td>
-                        <td class='tx __xs'>доставлен</td>
-                        <td class='tx __xs'>4768 руб.</td>
-                        <td class='tx __right'>
-                          <i class='fa fa-chevron-down'></i>
-                        </td>
-                      </tr>
-                      <tr class='history_body'>
-                        <td colspan='5'>
-                          <table class='table' width='100%'>
-                            <thead>
-                              <tr>
-                                <th>Фото</th>
-                                <th>Наименование</th>
-                                <th>Количество</th>
-                                <th>Итоговая стоимость</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_5.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    801
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_7.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1233
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr class='history_head'>
-                        <td class='tx __xs'>15.03.12</td>
-                        <td class='tx __xs'>237148</td>
-                        <td class='tx __xs'>доставлен</td>
-                        <td class='tx __xs'>4768 руб.</td>
-                        <td class='tx __right'>
-                          <i class='fa fa-chevron-down'></i>
-                        </td>
-                      </tr>
-                      <tr class='history_body'>
-                        <td colspan='5'>
-                          <table class='table' width='100%'>
-                            <thead>
-                              <tr>
-                                <th>Фото</th>
-                                <th>Наименование</th>
-                                <th>Количество</th>
-                                <th>Итоговая стоимость</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_6.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1433
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_5.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    725
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr class='history_head'>
-                        <td class='tx __xs'>15.03.12</td>
-                        <td class='tx __xs'>237148</td>
-                        <td class='tx __xs'>доставлен</td>
-                        <td class='tx __xs'>4768 руб.</td>
-                        <td class='tx __right'>
-                          <i class='fa fa-chevron-down'></i>
-                        </td>
-                      </tr>
-                      <tr class='history_body'>
-                        <td colspan='5'>
-                          <table class='table' width='100%'>
-                            <thead>
-                              <tr>
-                                <th>Фото</th>
-                                <th>Наименование</th>
-                                <th>Количество</th>
-                                <th>Итоговая стоимость</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_8.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1240
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_3.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    777
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr class='history_head'>
-                        <td class='tx __xs'>15.03.12</td>
-                        <td class='tx __xs'>237148</td>
-                        <td class='tx __xs'>доставлен</td>
-                        <td class='tx __xs'>4768 руб.</td>
-                        <td class='tx __right'>
-                          <i class='fa fa-chevron-down'></i>
-                        </td>
-                      </tr>
-                      <tr class='history_body'>
-                        <td colspan='5'>
-                          <table class='table' width='100%'>
-                            <thead>
-                              <tr>
-                                <th>Фото</th>
-                                <th>Наименование</th>
-                                <th>Количество</th>
-                                <th>Итоговая стоимость</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_12.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1624
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_8.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    547
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr class='history_head'>
-                        <td class='tx __xs'>15.03.12</td>
-                        <td class='tx __xs'>237148</td>
-                        <td class='tx __xs'>доставлен</td>
-                        <td class='tx __xs'>4768 руб.</td>
-                        <td class='tx __right'>
-                          <i class='fa fa-chevron-down'></i>
-                        </td>
-                      </tr>
-                      <tr class='history_body'>
-                        <td colspan='5'>
-                          <table class='table' width='100%'>
-                            <thead>
-                              <tr>
-                                <th>Фото</th>
-                                <th>Наименование</th>
-                                <th>Количество</th>
-                                <th>Итоговая стоимость</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_12.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1758
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_8.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1305
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr class='history_head'>
-                        <td class='tx __xs'>15.03.12</td>
-                        <td class='tx __xs'>237148</td>
-                        <td class='tx __xs'>доставлен</td>
-                        <td class='tx __xs'>4768 руб.</td>
-                        <td class='tx __right'>
-                          <i class='fa fa-chevron-down'></i>
-                        </td>
-                      </tr>
-                      <tr class='history_body'>
-                        <td colspan='5'>
-                          <table class='table' width='100%'>
-                            <thead>
-                              <tr>
-                                <th>Фото</th>
-                                <th>Наименование</th>
-                                <th>Количество</th>
-                                <th>Итоговая стоимость</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_5.jpg'>
-                                  </a>
-                                </td>
-                                <td>
-                                  <p class='table_number'>Звездные войны 23523</p>
-                                  <p class='table_name'>
-                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
-                                  </p>
-                                </td>
-                                <td>1</td>
-                                <td>
-                                  <div class='price __rub __m format-money'>
-                                    1375
+                                    812
                                   </div>
                                 </td>
                               </tr>
@@ -1277,7 +854,448 @@
                                 <td>1</td>
                                 <td>
                                   <div class='price __rub __m format-money'>
-                                    1324
+                                    716
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class='history_head'>
+                        <td class='tx __xs'>15.03.12</td>
+                        <td class='tx __xs'>237148</td>
+                        <td class='tx __xs'>доставлен</td>
+                        <td class='tx __xs'>4768 руб.</td>
+                        <td class='tx __right'>
+                          <i class='fa fa-chevron-down'></i>
+                        </td>
+                      </tr>
+                      <tr class='history_body'>
+                        <td colspan='5'>
+                          <table class='table' width='100%'>
+                            <thead>
+                              <tr>
+                                <th>Фото</th>
+                                <th>Наименование</th>
+                                <th>Количество</th>
+                                <th>Итоговая стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_6.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    702
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_8.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1359
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class='history_head'>
+                        <td class='tx __xs'>15.03.12</td>
+                        <td class='tx __xs'>237148</td>
+                        <td class='tx __xs'>доставлен</td>
+                        <td class='tx __xs'>4768 руб.</td>
+                        <td class='tx __right'>
+                          <i class='fa fa-chevron-down'></i>
+                        </td>
+                      </tr>
+                      <tr class='history_body'>
+                        <td colspan='5'>
+                          <table class='table' width='100%'>
+                            <thead>
+                              <tr>
+                                <th>Фото</th>
+                                <th>Наименование</th>
+                                <th>Количество</th>
+                                <th>Итоговая стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_5.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1312
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_12.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1717
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class='history_head'>
+                        <td class='tx __xs'>15.03.12</td>
+                        <td class='tx __xs'>237148</td>
+                        <td class='tx __xs'>доставлен</td>
+                        <td class='tx __xs'>4768 руб.</td>
+                        <td class='tx __right'>
+                          <i class='fa fa-chevron-down'></i>
+                        </td>
+                      </tr>
+                      <tr class='history_body'>
+                        <td colspan='5'>
+                          <table class='table' width='100%'>
+                            <thead>
+                              <tr>
+                                <th>Фото</th>
+                                <th>Наименование</th>
+                                <th>Количество</th>
+                                <th>Итоговая стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_10.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1297
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_10.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1159
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class='history_head'>
+                        <td class='tx __xs'>15.03.12</td>
+                        <td class='tx __xs'>237148</td>
+                        <td class='tx __xs'>доставлен</td>
+                        <td class='tx __xs'>4768 руб.</td>
+                        <td class='tx __right'>
+                          <i class='fa fa-chevron-down'></i>
+                        </td>
+                      </tr>
+                      <tr class='history_body'>
+                        <td colspan='5'>
+                          <table class='table' width='100%'>
+                            <thead>
+                              <tr>
+                                <th>Фото</th>
+                                <th>Наименование</th>
+                                <th>Количество</th>
+                                <th>Итоговая стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_2.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1525
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_3.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1860
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class='history_head'>
+                        <td class='tx __xs'>15.03.12</td>
+                        <td class='tx __xs'>237148</td>
+                        <td class='tx __xs'>доставлен</td>
+                        <td class='tx __xs'>4768 руб.</td>
+                        <td class='tx __right'>
+                          <i class='fa fa-chevron-down'></i>
+                        </td>
+                      </tr>
+                      <tr class='history_body'>
+                        <td colspan='5'>
+                          <table class='table' width='100%'>
+                            <thead>
+                              <tr>
+                                <th>Фото</th>
+                                <th>Наименование</th>
+                                <th>Количество</th>
+                                <th>Итоговая стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_11.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    653
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_8.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1816
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class='history_head'>
+                        <td class='tx __xs'>15.03.12</td>
+                        <td class='tx __xs'>237148</td>
+                        <td class='tx __xs'>доставлен</td>
+                        <td class='tx __xs'>4768 руб.</td>
+                        <td class='tx __right'>
+                          <i class='fa fa-chevron-down'></i>
+                        </td>
+                      </tr>
+                      <tr class='history_body'>
+                        <td colspan='5'>
+                          <table class='table' width='100%'>
+                            <thead>
+                              <tr>
+                                <th>Фото</th>
+                                <th>Наименование</th>
+                                <th>Количество</th>
+                                <th>Итоговая стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_9.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1364
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_4.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1357
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class='history_head'>
+                        <td class='tx __xs'>15.03.12</td>
+                        <td class='tx __xs'>237148</td>
+                        <td class='tx __xs'>доставлен</td>
+                        <td class='tx __xs'>4768 руб.</td>
+                        <td class='tx __right'>
+                          <i class='fa fa-chevron-down'></i>
+                        </td>
+                      </tr>
+                      <tr class='history_body'>
+                        <td colspan='5'>
+                          <table class='table' width='100%'>
+                            <thead>
+                              <tr>
+                                <th>Фото</th>
+                                <th>Наименование</th>
+                                <th>Количество</th>
+                                <th>Итоговая стоимость</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_11.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1399
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href='/catalog_show'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_12.jpg'>
+                                  </a>
+                                </td>
+                                <td>
+                                  <p class='table_number'>Звездные войны 23523</p>
+                                  <p class='table_name'>
+                                    <a href='/catalog_show'>Скоростной низколетящий десантный корабль и транспортный шагоход</a>
+                                  </p>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                  <div class='price __rub __m format-money'>
+                                    1976
                                   </div>
                                 </td>
                               </tr>
@@ -1321,14 +1339,14 @@
                                 <td>1</td>
                                 <td>
                                   <div class='price __rub __m format-money'>
-                                    550
+                                    1056
                                   </div>
                                 </td>
                               </tr>
                               <tr>
                                 <td>
                                   <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_12.jpg'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_4.jpg'>
                                   </a>
                                 </td>
                                 <td>
@@ -1340,7 +1358,7 @@
                                 <td>1</td>
                                 <td>
                                   <div class='price __rub __m format-money'>
-                                    1251
+                                    1502
                                   </div>
                                 </td>
                               </tr>
@@ -1372,7 +1390,7 @@
                               <tr>
                                 <td>
                                   <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_6.jpg'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_11.jpg'>
                                   </a>
                                 </td>
                                 <td>
@@ -1384,14 +1402,14 @@
                                 <td>1</td>
                                 <td>
                                   <div class='price __rub __m format-money'>
-                                    1540
+                                    1188
                                   </div>
                                 </td>
                               </tr>
                               <tr>
                                 <td>
                                   <a href='/catalog_show'>
-                                    <img class='va-m' src='/assets/images/fake/catalog_item_7.jpg'>
+                                    <img class='va-m' src='/assets/images/fake/catalog_item_9.jpg'>
                                   </a>
                                 </td>
                                 <td>
@@ -1403,7 +1421,7 @@
                                 <td>1</td>
                                 <td>
                                   <div class='price __rub __m format-money'>
-                                    1075
+                                    1009
                                   </div>
                                 </td>
                               </tr>
@@ -1445,7 +1463,7 @@
                     <tr>
                       <td>
                         <a href='/catalog_show'>
-                          <img src='/assets/images/fake/catalog_item_9.jpg'>
+                          <img src='/assets/images/fake/catalog_item_7.jpg'>
                         </a>
                       </td>
                       <td>
@@ -1469,12 +1487,12 @@
                       <td>
                         <div class='basket_oldprice'>
                           <span class='format-number'>
-                            7589
+                            9685
                           </span>
                           руб.
                         </div>
                         <div class='price __rub __m format-money'>
-                          1543
+                          1739
                         </div>
                       </td>
                       <td>
@@ -1488,7 +1506,7 @@
                     <tr>
                       <td>
                         <a href='/catalog_show'>
-                          <img src='/assets/images/fake/catalog_item_5.jpg'>
+                          <img src='/assets/images/fake/catalog_item_7.jpg'>
                         </a>
                       </td>
                       <td>
@@ -1512,12 +1530,12 @@
                       <td>
                         <div class='basket_oldprice'>
                           <span class='format-number'>
-                            6199
+                            7583
                           </span>
                           руб.
                         </div>
                         <div class='price __rub __m format-money'>
-                          1890
+                          1624
                         </div>
                       </td>
                       <td>
@@ -1538,72 +1556,14 @@
       <section aria-label='Summary info' class='p-t_5 p-b_6' role='region'>
         <div class='ctn'>
           <div class='grid'><div class='grid-i __grid-6'>
-              <div class='m-b_4'>
-                <div class='text-slider'>
-                  <div class='text-slider_i'>
-                    <article>
-                      <h2 class='m-b_2'>Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей</h2>
-                      <p class='tx __l m-b_2'>
-                        <b>Конструкторы LEGO&nbsp;&mdash;&nbsp;</b>
-                        это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
-                      </p>
-                      <p class='tx __xs'>В&nbsp;наших магазинах ЛЕГО представлены самые разнообразные игры и&nbsp;конструкторы LEGO, а&nbsp;также аксессуары, одежда и&nbsp;приятные мелочи от&nbsp;производителя. Они подарят Вашему ребенку хорошее настроение и&nbsp;положительные эмоции, ведь из&nbsp;них можно создавать целые миры своими руками. Игры ЛЕГО способствуют развитию не&nbsp;только мелкой моторики малыша, но&nbsp;и&nbsp;логического мышления и&nbsp;памяти. Подарив ребенку один из&nbsp;наборов, Вы&nbsp;совместите приятное с&nbsp;полезным. Детские игрушки ЛЕГО изготовлены из&nbsp;безопасного и&nbsp;качественного материала, при производстве используется многоступенчатая система контроля качества. Они помогают детям узнать легенды прошлого, играть в&nbsp;отважных героев будущего и&nbsp;воссоздавать любимые фильмы. Любые фантазии и&nbsp;желания ребенка теперь можно воплотить в&nbsp;реальность. Магазины игрушек ЛЕГО уже открыты во&nbsp;многих крупных городах.</p>
-                    </article>
-                  </div>
-                  <div class='text-slider_i'>
-                    <article>
-                      <h2 class='m-b_2'>Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей</h2>
-                      <p class='tx __l m-b_2'>
-                        <b>Конструкторы LEGO&nbsp;&mdash;&nbsp;</b>
-                        это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
-                      </p>
-                      <p class='tx __xs'>В&nbsp;наших магазинах ЛЕГО представлены самые разнообразные игры и&nbsp;конструкторы LEGO, а&nbsp;также аксессуары, одежда и&nbsp;приятные мелочи от&nbsp;производителя. Они подарят Вашему ребенку хорошее настроение и&nbsp;положительные эмоции, ведь из&nbsp;них можно создавать целые миры своими руками. Игры ЛЕГО способствуют развитию не&nbsp;только мелкой моторики малыша, но&nbsp;и&nbsp;логического мышления и&nbsp;памяти. Подарив ребенку один из&nbsp;наборов, Вы&nbsp;совместите приятное с&nbsp;полезным. Детские игрушки ЛЕГО изготовлены из&nbsp;безопасного и&nbsp;качественного материала, при производстве используется многоступенчатая система контроля качества. Они помогают детям узнать легенды прошлого, играть в&nbsp;отважных героев будущего и&nbsp;воссоздавать любимые фильмы. Любые фантазии и&nbsp;желания ребенка теперь можно воплотить в&nbsp;реальность. Магазины игрушек ЛЕГО уже открыты во&nbsp;многих крупных городах.</p>
-                    </article>
-                  </div>
-                  <div class='text-slider_i'>
-                    <article>
-                      <h2 class='m-b_2'>Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей</h2>
-                      <p class='tx __l m-b_2'>
-                        <b>Конструкторы LEGO&nbsp;&mdash;&nbsp;</b>
-                        это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
-                      </p>
-                      <p class='tx __xs'>В&nbsp;наших магазинах ЛЕГО представлены самые разнообразные игры и&nbsp;конструкторы LEGO, а&nbsp;также аксессуары, одежда и&nbsp;приятные мелочи от&nbsp;производителя. Они подарят Вашему ребенку хорошее настроение и&nbsp;положительные эмоции, ведь из&nbsp;них можно создавать целые миры своими руками. Игры ЛЕГО способствуют развитию не&nbsp;только мелкой моторики малыша, но&nbsp;и&nbsp;логического мышления и&nbsp;памяти. Подарив ребенку один из&nbsp;наборов, Вы&nbsp;совместите приятное с&nbsp;полезным. Детские игрушки ЛЕГО изготовлены из&nbsp;безопасного и&nbsp;качественного материала, при производстве используется многоступенчатая система контроля качества. Они помогают детям узнать легенды прошлого, играть в&nbsp;отважных героев будущего и&nbsp;воссоздавать любимые фильмы. Любые фантазии и&nbsp;желания ребенка теперь можно воплотить в&nbsp;реальность. Магазины игрушек ЛЕГО уже открыты во&nbsp;многих крупных городах.</p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class='text-slider'>
-                <div class='text-slider_i'>
-                  <article>
-                    <h2 class='m-b_2'>Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей</h2>
-                    <p class='tx __l m-b_2'>
-                      <b>Конструкторы LEGO&nbsp;&mdash;&nbsp;</b>
-                      это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
-                    </p>
-                    <p class='tx __xs'>В&nbsp;наших магазинах ЛЕГО представлены самые разнообразные игры и&nbsp;конструкторы LEGO, а&nbsp;также аксессуары, одежда и&nbsp;приятные мелочи от&nbsp;производителя. Они подарят Вашему ребенку хорошее настроение и&nbsp;положительные эмоции, ведь из&nbsp;них можно создавать целые миры своими руками. Игры ЛЕГО способствуют развитию не&nbsp;только мелкой моторики малыша, но&nbsp;и&nbsp;логического мышления и&nbsp;памяти. Подарив ребенку один из&nbsp;наборов, Вы&nbsp;совместите приятное с&nbsp;полезным. Детские игрушки ЛЕГО изготовлены из&nbsp;безопасного и&nbsp;качественного материала, при производстве используется многоступенчатая система контроля качества. Они помогают детям узнать легенды прошлого, играть в&nbsp;отважных героев будущего и&nbsp;воссоздавать любимые фильмы. Любые фантазии и&nbsp;желания ребенка теперь можно воплотить в&nbsp;реальность. Магазины игрушек ЛЕГО уже открыты во&nbsp;многих крупных городах.</p>
-                  </article>
-                </div>
-                <div class='text-slider_i'>
-                  <article>
-                    <h2 class='m-b_2'>Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей</h2>
-                    <p class='tx __l m-b_2'>
-                      <b>Конструкторы LEGO&nbsp;&mdash;&nbsp;</b>
-                      это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
-                    </p>
-                    <p class='tx __xs'>В&nbsp;наших магазинах ЛЕГО представлены самые разнообразные игры и&nbsp;конструкторы LEGO, а&nbsp;также аксессуары, одежда и&nbsp;приятные мелочи от&nbsp;производителя. Они подарят Вашему ребенку хорошее настроение и&nbsp;положительные эмоции, ведь из&nbsp;них можно создавать целые миры своими руками. Игры ЛЕГО способствуют развитию не&nbsp;только мелкой моторики малыша, но&nbsp;и&nbsp;логического мышления и&nbsp;памяти. Подарив ребенку один из&nbsp;наборов, Вы&nbsp;совместите приятное с&nbsp;полезным. Детские игрушки ЛЕГО изготовлены из&nbsp;безопасного и&nbsp;качественного материала, при производстве используется многоступенчатая система контроля качества. Они помогают детям узнать легенды прошлого, играть в&nbsp;отважных героев будущего и&nbsp;воссоздавать любимые фильмы. Любые фантазии и&nbsp;желания ребенка теперь можно воплотить в&nbsp;реальность. Магазины игрушек ЛЕГО уже открыты во&nbsp;многих крупных городах.</p>
-                  </article>
-                </div>
-                <div class='text-slider_i'>
-                  <article>
-                    <h2 class='m-b_2'>Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей</h2>
-                    <p class='tx __l m-b_2'>
-                      <b>Конструкторы LEGO&nbsp;&mdash;&nbsp;</b>
-                      это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
-                    </p>
-                    <p class='tx __xs'>В&nbsp;наших магазинах ЛЕГО представлены самые разнообразные игры и&nbsp;конструкторы LEGO, а&nbsp;также аксессуары, одежда и&nbsp;приятные мелочи от&nbsp;производителя. Они подарят Вашему ребенку хорошее настроение и&nbsp;положительные эмоции, ведь из&nbsp;них можно создавать целые миры своими руками. Игры ЛЕГО способствуют развитию не&nbsp;только мелкой моторики малыша, но&nbsp;и&nbsp;логического мышления и&nbsp;памяти. Подарив ребенку один из&nbsp;наборов, Вы&nbsp;совместите приятное с&nbsp;полезным. Детские игрушки ЛЕГО изготовлены из&nbsp;безопасного и&nbsp;качественного материала, при производстве используется многоступенчатая система контроля качества. Они помогают детям узнать легенды прошлого, играть в&nbsp;отважных героев будущего и&nbsp;воссоздавать любимые фильмы. Любые фантазии и&nbsp;желания ребенка теперь можно воплотить в&nbsp;реальность. Магазины игрушек ЛЕГО уже открыты во&nbsp;многих крупных городах.</p>
-                  </article>
-                </div>
-              </div>
+              <article>
+                <h2 class='m-b_2'>Игрушки LEGO<sup class="tx __xxs va-t">®</sup> для детей и родителей</h2>
+                <p class='tx __l m-b_2'>
+                  <b>Конструкторы LEGO&nbsp;&mdash;&nbsp;</b>
+                  это уникальные игрушки, которые завоевали умы и&nbsp;сердца многих людей во&nbsp;всем мире, от&nbsp;мала до&nbsp;велика. Ведь это нечто большее, чем просто кубики. С&nbsp;помощью конструкторов можно окунуться в&nbsp;сказку, в&nbsp;которой все будет так, как&nbsp;Вы пожелаете.
+                </p>
+                <p class='tx __xs'>В&nbsp;наших магазинах ЛЕГО представлены самые разнообразные игры и&nbsp;конструкторы LEGO, а&nbsp;также аксессуары, одежда и&nbsp;приятные мелочи от&nbsp;производителя. Они подарят Вашему ребенку хорошее настроение и&nbsp;положительные эмоции, ведь из&nbsp;них можно создавать целые миры своими руками. Игры ЛЕГО способствуют развитию не&nbsp;только мелкой моторики малыша, но&nbsp;и&nbsp;логического мышления и&nbsp;памяти. Подарив ребенку один из&nbsp;наборов, Вы&nbsp;совместите приятное с&nbsp;полезным. Детские игрушки ЛЕГО изготовлены из&nbsp;безопасного и&nbsp;качественного материала, при производстве используется многоступенчатая система контроля качества. Они помогают детям узнать легенды прошлого, играть в&nbsp;отважных героев будущего и&nbsp;воссоздавать любимые фильмы. Любые фантазии и&nbsp;желания ребенка теперь можно воплотить в&nbsp;реальность. Магазины игрушек ЛЕГО уже открыты во&nbsp;многих крупных городах.</p>
+              </article>
             </div><div class='grid-i __grid-6'>
               <section class='subscription-block'>
                 <div class='subscription-block_form'>
