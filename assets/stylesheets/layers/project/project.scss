@@ -2623,6 +2623,32 @@ a.breadcrumbs_i {color: #0068a5;}
   background-color: #fff;
 }
 
+//
+// .. Autocomplete
+//
+.ui-helper-hidden-accessible {
+  display: none;
+}
+.ui-autocomplete {  
+  width: 253px;
+  border: 1px solid $form-el-border-color;
+  border-radius: 3px;
+  background-color: #fff;
+}
+  .ui-menu-item {
+    a {
+      padding: 5px 16px;
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      &.ui-state-focus {
+        background-color: #eee;
+      }
+    }
+  }
+
+
 
 
 //****************************************************************************************************

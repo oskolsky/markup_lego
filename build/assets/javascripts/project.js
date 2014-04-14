@@ -133,6 +133,37 @@ $(function() {
   $('.scroll-pane').jScrollPane();
 
   //
+  // .. Autocomplete
+  //
+  var availableTags = [
+      "Москва",
+      "Воронеж",
+      "Екатеринбург",
+      "Краснодар",
+      "Астрахань",
+      "Белгород",
+      "Волгоград",
+      "Калининград",
+      "Липецк",
+      "Нижний Новгород",
+      "Новосибирск",
+      "Омск",
+      "Оренбург",
+      "Ростов на Дону",
+      "Самара",
+      "Саратов",
+      "Сочи",
+      "Сургут",
+      "Тольяти",
+      "Тула",
+      "Пермь",
+      "Рязань"
+  ];
+  $('#autocomplete').autocomplete({
+    source: availableTags
+  });  
+
+  //
   // .. SUBSCRIPTION ACTION
   //
   $('.subscription-block_form_submit').on('click', function() {
