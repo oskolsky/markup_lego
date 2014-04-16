@@ -94,6 +94,20 @@
   font-family: $h-font-family;
   line-height: 30px;
 }
+  .brand_phone {
+    position: relative;
+    display: inline-block;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-left: 20px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 10px;
+      @include prefixes(transform, translateY(-50%));
+    }    
+  }
 
 //
 // .. Shops
