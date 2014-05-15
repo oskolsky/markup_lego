@@ -2778,6 +2778,8 @@ a.form_button {
 .articles.__news .articles_i {
   padding: 20px;
   color: #fff; }
+  .articles.__news .articles_i a {
+    color: #fff; }
   .articles.__news .articles_i:not(:last-child) {
     margin-bottom: 25px; }
   .articles.__news .articles_i.__green {

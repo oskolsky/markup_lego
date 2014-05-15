@@ -1473,6 +1473,8 @@
     .articles_i {
       padding: 20px;
       color: #fff;
+      
+      a {color: #fff;}
 
       &:not(:last-child) {margin-bottom: 25px;}
 

@@ -246,7 +246,7 @@ $(function() {
   //
   // .. ARTICLE SHOW & CLOSE
   //
-  $('.articles_i_caption_more').click(function() {
+  $('.js-articles_i_caption_more').click(function() {
     var _this = this;
     var
         url = $(this).data('url'),
