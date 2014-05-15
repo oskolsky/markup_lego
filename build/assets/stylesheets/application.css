@@ -3525,6 +3525,13 @@ a.breadcrumbs_i {
   padding: 60px 60px 35px;
   border-radius: 15px 15px 0 0;
   background-color: #fbbc00; }
+  .subscription-block_form .form_label {
+    color: #fff; }
+  .subscription-block_form .form_checkbox.form_el.__fake {
+    border-color: #fff;
+    background-color: transparent; }
+    .subscription-block_form .form_checkbox.form_el.__fake::after {
+      background-color: transparent; }
 
 .subscription-block_form_input {
   display: block;

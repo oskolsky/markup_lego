@@ -10,10 +10,18 @@
     %section.subscription-block
       .subscription-block_form
         %p.beta.tx.__white.m-b_2 Подпишись и узнай первым!
-        %form
-          %input.subscription-block_form_input.m-b_1{type: "text", placeholder: "Имя"}
-          %input.subscription-block_form_input.m-b_1{type: "text", placeholder: "E-mail"}
-          %a.subscription-block_form_submit{href: "#"} Подписаться
+        %form.form
+          %div.m-b_1
+            %input.subscription-block_form_input{type: "text", placeholder: "Имя"}
+          %div.m-b_1
+            %input.subscription-block_form_input.m-b_1{type: "text", placeholder: "E-mail"}
+          %div.m-b_1
+            %label.form_label.__m
+              %span.form_checkbox.form_el.__fake
+                %input.form_checkbox.form_el.__real{type: "checkbox"}
+              подтверждаю, что мне больше 12 лет          
+          %div
+            %a.subscription-block_form_submit{href: "#"} Подписаться
           %img.subscription-block_form_img{src: "/assets/images/subscription.png", alt: "", width: 275, height: 176}
       .subscription-block_vk
         %p.beta.tx.__white.m-b_2 Мы Вконтакте

@@ -167,19 +167,27 @@ $(function() {
   // .. SUBSCRIPTION ACTION
   //
   $('.subscription-block_form_submit').on('click', function() {
-    $.ajax({
-      url: '#',
-      data: {},
-      success: function(response) {
-        alert('AJAX submit form success!');
-        $('.subscription-block_form').find('form').fadeOut(250, function() {
-          $('.subscription-block_form').find('p').text('Спасибо, вы подписаны, или какой-нибудь другой текст!');
-        });
-      },
-      error: function() {
-        alert('Error send form');
-      }
-    });
+    
+    var $check = $(this).closest('.subscription-block_form').find('.form_checkbox.form_el.__real');
+    
+    if ($check.is(':checked')) {
+      $.ajax({
+        url: '#',
+        data: {},
+        success: function(response) {
+          alert('AJAX submit form success!');
+          $('.subscription-block_form').find('form').fadeOut(250, function() {
+            $('.subscription-block_form').find('p').text('Спасибо, вы подписаны, или какой-нибудь другой текст!');
+          });
+        },
+        error: function() {
+          alert('Error send form');
+        }
+      });
+    } else {
+      alert('Необходимо подтвердить, что Вам больше 12 лет');
+    }
+    
     return false;
   });
 
