@@ -1816,6 +1816,23 @@
         content: "\f054";
       }
     }  
+  .owl-pagination {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    .owl-page {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $major-color;
+      box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, .3);
+      &:not(:last-child) {margin-right: 10px;}
+      &.active {
+        background-color: $minor-color;
+      }
+    }
+  }
 }
   .single-slider_i {
 

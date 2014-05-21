@@ -2999,6 +2999,29 @@ a.form_button {
     .single-slider .owl-next::after {
       content: "\f054"; }
 
+.single-slider .owl-pagination {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.single-slider .owl-pagination .owl-page {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e30613;
+  box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, .3);
+}
+.single-slider .owl-pagination .owl-page:not(:last-child) {
+  margin-right: 10px;
+}
+.single-slider .owl-pagination .owl-page.active {
+  background-color: #141f4e;
+}
+
+
+
+
 .single-slider_i_tx {
   position: absolute;
   top: 100px;
