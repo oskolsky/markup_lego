@@ -10,7 +10,7 @@ $.arcticmodal('setDefault', {
   overlay: {
     css: {
       backgroundColor: '#000',
-      opacity: .66
+      opacity: 0.66
     }
   },
   openEffect: {
