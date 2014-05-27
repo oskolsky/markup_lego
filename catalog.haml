@@ -24,9 +24,12 @@
             .catalog.__product.m-b_3
               - 1.upto(4) do
                 .grid.catalog_row
-                  - 1.upto(3) do
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item'.to_sym
+                  .grid-i.__grid-3>
+                    = haml 'views/common/_catalog_item'.to_sym
+                  .grid-i.__grid-3>
+                    = haml 'views/common/_catalog_item'.to_sym
+                  .grid-i.__grid-3>
+                    = haml 'views/common/_catalog_item_coming_soon'.to_sym
             %nav.tx.__center
               = haml 'views/common/_catalog_pagination'.to_sym
 

@@ -501,6 +501,13 @@
         .catalog_i_action {
           .form_button {width: 107px;}
         }
+          .catalog_i_action_coming {
+            color: $major-color;
+            text-align: center;
+            font-weight: 700;
+            font-family: $h-font-family;
+            line-height: 40px;
+          }
 
     }
 
@@ -604,6 +611,17 @@
   .catalog-show_action_i {
     &:not(:last-child) {margin-right: 15px;}
   }
+
+//
+// .. Coming show
+//
+.catalog-show_coming {
+  color: $major-color;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  font-family: $h-font-family;
+}
 
 
 //
