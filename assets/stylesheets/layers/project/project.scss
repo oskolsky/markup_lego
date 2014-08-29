@@ -2733,6 +2733,28 @@ a.breadcrumbs_i {color: #0068a5;}
 }
 
 
+//
+// .. Register Complete
+//
+.register-complete {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+  .register-complete_date, .register-complete_year {
+    position: absolute;
+    @extend .strong-major;
+  }
+  .register-complete_date {
+    top: 170px;
+    left: 200px;
+  }
+  .register-complete_year {
+    top: 220px;
+    left: 273px;
+  }
+
+
 
 //****************************************************************************************************
 //

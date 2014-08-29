@@ -1,0 +1,34 @@
+!!!
+%html.no-js{lang: 'ru-RU'}
+  %head
+    %title Регистрация на мероприятие / Сеть магазинов Lego
+    = Haml::Engine.new(File.read('views/layouts/_head.haml')).render
+
+  %body#page.page
+    = Haml::Engine.new(File.read('views/alerts/_ie.haml')).render
+    = Haml::Engine.new(File.read('views/alerts/_no-js.haml')).render
+
+    %header#header.header.__yellow{role: 'banner'}
+      .ctn
+        = Haml::Engine.new(File.read('views/layouts/_header.haml')).render
+
+    %main#main.main{role: 'main'}
+      %section.section.p-t_6.p-b_4{role: 'region', 'aria-label' => 'About'}
+        .ctn
+
+          %div.register-complete
+            %p.register-complete_date 26 августа
+            %p.register-complete_year 2014
+            %img.va-t{src: '/assets/images/register_complete.jpg', alt: 'Спасибо за регистрацию!'}
+          %h1.tx.__center.m-b_8
+            Спасибо за&nbsp;регистрацию! Подтверждение о&nbsp;регистрации
+            %br
+            отправлено на&nbsp;указанный Вами адрес электронной почты.
+            %br
+            Ждём Вас на&nbsp;мастер-классе &laquo;Собери и&nbsp;забери&raquo;!
+
+      %section.blocks.p-t_5.p-b_6{role: 'region', 'aria-label' => 'Summary info'}
+        .ctn
+          = Haml::Engine.new(File.read('views/common/_block_common.haml')).render
+
+    = Haml::Engine.new(File.read('views/layouts/_footer.haml')).render
