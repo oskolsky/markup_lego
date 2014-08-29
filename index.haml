@@ -1,99 +1,111 @@
-%header#header.header{role: "banner"}
+!!!
+%html.no-js{lang: 'ru-RU'}
+  %head
+    %title Сеть магазинов Lego
+    = Haml::Engine.new(File.read('views/layouts/_head.haml')).render
 
-  .header_bg
-    .header_bg_i{data: {rel: "chima"}, style: "background-image: url(/assets/images/promo/bg-chima.png); display: block;"}
-    .header_bg_i{data: {rel: "marvel"}, style: "background-image: url(/assets/images/promo/bg-marvel.png);"}
+  %body#page.page
+    = Haml::Engine.new(File.read('views/alerts/_ie.haml')).render
+    = Haml::Engine.new(File.read('views/alerts/_no-js.haml')).render
 
-  .ctn
-    = haml 'views/layouts/_header'.to_sym
-    .p-t_5.p-b_5
-      = haml 'views/common/_single_slider'.to_sym
+    %header#header.header{role: 'banner'}
 
-%section.section.__carousel
-  .ctn
-    .m-b_1
-      = haml 'views/common/_carousel'.to_sym
-    .main-share.tx.__center
-      = haml 'views/common/_share'.to_sym
+      .header_bg
+        .header_bg_i{data: {rel: 'chima'}, style: 'background-image: url(/assets/images/promo/bg-chima.png); display: block;'}
+        .header_bg_i{data: {rel: 'marvel'}, style: 'background-image: url(/assets/images/promo/bg-marvel.png);'}
 
-%main#main.main{role: "main"}
-  %section.p-t_5.p-b_4{role: "region", "aria-label" => "Catalog"}
-    .tabs
       .ctn
-        %ul.tabs_list.grid.__no-gutter
-          %li.tabs_i.grid-i.__grid-3>
-            %a.tabs_i_a.__white{href: "#tabs-1"}
-              %i.ico.__35.__new
-              Наши новинки
-          %li.tabs_i.grid-i.__grid-3>
-            %a.tabs_i_a.__red{href: "#tabs-2"}
-              %i.ico.__35.__percent
-              Распродажа
-          %li.tabs_i.grid-i.__grid-3>
-            %a.tabs_i_a.__green{href: "#tabs-3"}
-              %i.ico.__35.__star
-              Эксклюзивы
-          %li.tabs_i.grid-i.__grid-3>
-            %a.tabs_i_a.__orange{href: "#tabs-4"}
-              %i.ico.__35.__hellip
-              Все серии
-        #tabs-1
-          .catalog.__product
-            .m-b_4
-              - 1.upto(4) do
-                .grid.catalog_row
-                  - 1.upto(2) do
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item'.to_sym
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item_half'.to_sym
-            .catalog_all.beta
-              %a.tx.__minor{href: "#"}
-                Показать все новинки
-                %i.fa.fa-chevron-right
-        #tabs-2
-          .catalog.__product
-            .m-b_4
-              - 1.upto(4) do
-                .grid.catalog_row
-                  - 1.upto(2) do
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item_half'.to_sym
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item'.to_sym
-            .catalog_all.beta
-              %a.tx.__minor{href: "#"}
-                Показать все новинки
-                %i.fa.fa-chevron-right
-        #tabs-3
-          .catalog.__product
-            .m-b_4
-              - 1.upto(4) do
-                .grid.catalog_row
-                  - 1.upto(2) do
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item'.to_sym
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item_half'.to_sym
-            .catalog_all.beta
-              %a.tx.__minor{href: "#"}
-                Показать все новинки
-                %i.fa.fa-chevron-right
-        #tabs-4
-          .catalog.__product
-            .m-b_4
-              - 1.upto(4) do
-                .grid.catalog_row
-                  - 1.upto(4) do
-                    .grid-i.__grid-3>
-                      = haml 'views/common/_catalog_item'.to_sym
-            .catalog_all.beta
-              %a.tx.__minor{href: "#"}
-                Показать все новинки
-                %i.fa.fa-chevron-right
+        = Haml::Engine.new(File.read('views/layouts/_header.haml')).render
+        .p-t_5.p-b_5
+          = Haml::Engine.new(File.read('views/common/_single_slider.haml')).render
 
-  %section.blocks.p-t_5.p-b_6{role: "region", "aria-label" => "Summary info"}
-    .ctn
-      .m-b_6
-        = haml 'views/common/_block_about'.to_sym
-      = haml 'views/common/_block_summary'.to_sym
+    %section.section.__carousel
+      .ctn
+        .m-b_1
+          = Haml::Engine.new(File.read('views/common/_carousel.haml')).render
+        .main-share.tx.__center
+          = Haml::Engine.new(File.read('views/common/_share.haml')).render
+
+    %main#main.main{role: 'main'}
+      %section.p-t_5.p-b_4{role: 'region', 'aria-label' => 'Catalog'}
+        .tabs
+          .ctn
+            %ul.tabs_list.grid.__no-gutter
+              %li.tabs_i.grid-i.__grid-3>
+                %a.tabs_i_a.__white{href: '#tabs-1'}
+                  %i.ico.__35.__new
+                  Наши новинки
+              %li.tabs_i.grid-i.__grid-3>
+                %a.tabs_i_a.__red{href: '#tabs-2'}
+                  %i.ico.__35.__percent
+                  Распродажа
+              %li.tabs_i.grid-i.__grid-3>
+                %a.tabs_i_a.__green{href: '#tabs-3'}
+                  %i.ico.__35.__star
+                  Эксклюзивы
+              %li.tabs_i.grid-i.__grid-3>
+                %a.tabs_i_a.__orange{href: '#tabs-4'}
+                  %i.ico.__35.__hellip
+                  Все серии
+            #tabs-1
+              .catalog.__product
+                .m-b_4
+                  - 1.upto(4) do
+                    .grid.catalog_row
+                      - 1.upto(2) do
+                        .grid-i.__grid-3>
+                          = Haml::Engine.new(File.read('views/common/_catalog_item.haml')).render
+                        .grid-i.__grid-3>
+                          = Haml::Engine.new(File.read('views/common/_catalog_item_half.haml')).render
+                .catalog_all.beta
+                  %a.tx.__minor{href: '#'}
+                    Показать все новинки
+                    %i.fa.fa-chevron-right
+            #tabs-2
+              .catalog.__product
+                .m-b_4
+                  - 1.upto(4) do
+                    .grid.catalog_row
+                      - 1.upto(2) do
+                        .grid-i.__grid-3>
+                          = Haml::Engine.new(File.read('views/common/_catalog_item_half.haml')).render
+                        .grid-i.__grid-3>
+                          = Haml::Engine.new(File.read('views/common/_catalog_item.haml')).render
+                .catalog_all.beta
+                  %a.tx.__minor{href: '#'}
+                    Показать все новинки
+                    %i.fa.fa-chevron-right
+            #tabs-3
+              .catalog.__product
+                .m-b_4
+                  - 1.upto(4) do
+                    .grid.catalog_row
+                      - 1.upto(2) do
+                        .grid-i.__grid-3>
+                          = Haml::Engine.new(File.read('views/common/_catalog_item.haml')).render
+                        .grid-i.__grid-3>
+                          = Haml::Engine.new(File.read('views/common/_catalog_item_half.haml')).render
+                .catalog_all.beta
+                  %a.tx.__minor{href: '#'}
+                    Показать все новинки
+                    %i.fa.fa-chevron-right
+            #tabs-4
+              .catalog.__product
+                .m-b_4
+                  - 1.upto(4) do
+                    .grid.catalog_row
+                      - 1.upto(4) do
+                        .grid-i.__grid-3>
+                          = Haml::Engine.new(File.read('views/common/_catalog_item.haml')).render
+                .catalog_all.beta
+                  %a.tx.__minor{href: '#'}
+                    Показать все новинки
+                    %i.fa.fa-chevron-right
+
+      %section.blocks.p-t_5.p-b_6{role: 'region', 'aria-label' => 'Summary info'}
+        .ctn
+          .m-b_6
+            = Haml::Engine.new(File.read('views/common/_block_about.haml')).render
+          = Haml::Engine.new(File.read('views/common/_block_summary.haml')).render
+
+    = Haml::Engine.new(File.read('views/layouts/_footer.haml')).render

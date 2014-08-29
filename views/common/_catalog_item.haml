@@ -1,10 +1,10 @@
 %article.catalog_i
   %header
-    %a{href: "/catalog_show"}
-      %img.catalog_i_img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg", alt: "Скоростной низколетящий десантный корабль и транспортный шагоход", width: 200, height: 150}
+    %a{href: '/catalog_show'}
+      %img.catalog_i_img{src: "/assets/images/fake/catalog_item_#{rand(1..12)}.jpg", alt: 'Скоростной низколетящий десантный корабль и транспортный шагоход', width: 200, height: 150}
   .catalog_i_number Звездные войны <span>23523</span>
   .catalog_i_name
-    %a{href: "/catalog_show"} Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход
+    %a{href: '/catalog_show'} Скоростной низколетящий десантный корабль и&nbsp;транспортный шагоход
   %footer
     .catalog_i_price.__old
       %span.format-number 25400
@@ -14,6 +14,6 @@
         = rand(500..10000)
     .catalog_i_action.cf
       .f-l
-        %a.form_button.__s.__red{href: "#"} В корзину
+        %a.form_button.__s.__red{href: '#'} В корзину
       .f-r
-        %a.form_button.__s.__orange{href: "#", data: {dialog: "true", url: "/dialogs/availability"}} Проверить<br>наличие
+        %a.form_button.__s.__orange{href: '#', data: {dialog: 'true', url: '/dialogs/availability'}} Проверить<br>наличие

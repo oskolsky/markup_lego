@@ -1,11 +1,13 @@
 !!!
-%html.no-js{lang: "ru-RU"}
+%html.no-js{lang: 'ru-RU'}
   %head
     %title Сеть магазинов Lego
-    = haml 'views/layouts/_head'.to_sym
-  
+    = Haml::Engine.new(File.read('views/layouts/_head.haml')).render
+
   %body#page.page
-    = haml 'views/alerts/_ie'.to_sym
-    = haml 'views/alerts/_no-js'.to_sym
-    = yield
-    = haml 'views/layouts/_footer'.to_sym
+    = Haml::Engine.new(File.read('views/alerts/_ie.haml')).render
+    = Haml::Engine.new(File.read('views/alerts/_no-js.haml')).render
+
+    -# Content
+
+    = Haml::Engine.new(File.read('views/layouts/_footer.haml')).render

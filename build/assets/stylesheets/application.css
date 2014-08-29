@@ -12,14 +12,12 @@
   src: url("/assets/fonts/rotonda/rtn55c-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/rotonda/rtn55c-webfont.woff") format("woff"), url("/assets/fonts/rotonda/rtn55c-webfont.ttf") format("truetype"), url("/assets/fonts/rotonda/rtn55c-webfont.svg#rotondacregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'rotondacbold';
   src: url("/assets/fonts/rotonda/rtn65c-webfont.eot");
   src: url("/assets/fonts/rotonda/rtn65c-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/rotonda/rtn65c-webfont.woff") format("woff"), url("/assets/fonts/rotonda/rtn65c-webfont.ttf") format("truetype"), url("/assets/fonts/rotonda/rtn65c-webfont.svg#rotondacbold") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, address, cite, code,
@@ -774,7 +772,7 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  background: white;
+  background: #fff;
   color: #0b113c;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
@@ -1180,7 +1178,7 @@ a.form_button {
   height: 40px;
   border: 1px solid #cdcdcd;
   border-radius: 0.3em;
-  background: white;
+  background: #fff;
   color: #141f4e;
   font-size: 14px;
   line-height: 20px; }
@@ -1201,7 +1199,7 @@ a.form_button {
   height: 20px;
   border: 1px solid #cdcdcd;
   border-radius: 0.3em;
-  background: white;
+  background: #fff;
   line-height: 20px; }
   .form_checkbox.__fake[data-checked="true"]::after {
     margin: -1px;
@@ -1225,7 +1223,7 @@ a.form_button {
   height: 22px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
-  background: white;
+  background: #fff;
   line-height: 1.6rem; }
   .form_radio.__fake[data-checked="true"]::after {
     top: 50%;
@@ -1248,7 +1246,7 @@ a.form_button {
   padding: 10px 16px;
   border: 1px solid #cdcdcd;
   border-radius: 0.3em;
-  background: white;
+  background: #fff;
   color: #141f4e;
   font-size: 14px;
   line-height: 20px;
@@ -1291,7 +1289,7 @@ a.form_button {
   padding: 10px 16px;
   border: 1px solid #cdcdcd;
   border-radius: 0.3em;
-  background: white;
+  background: #fff;
   color: #141f4e;
   vertical-align: top;
   font-size: 14px;
@@ -1357,7 +1355,7 @@ a.form_button {
 .form [data-valid="true"] {
   border-color: rgba(0, 128, 0, 0.7) !important;
   background: rgba(0, 128, 0, 0.1) !important;
-  color: green !important; }
+  color: #008000 !important; }
   .form [data-valid="true"]::after {
     border-color: rgba(0, 128, 0, 0.4) !important;
     color: rgba(0, 128, 0, 0.7) !important; }
@@ -1366,7 +1364,7 @@ a.form_button {
 .form [data-valid="false"] {
   border-color: rgba(255, 0, 0, 0.7) !important;
   background: rgba(255, 0, 0, 0.1) !important;
-  color: red !important; }
+  color: #f00 !important; }
   .form [data-valid="false"]::after {
     border-color: rgba(255, 0, 0, 0.4) !important;
     color: rgba(255, 0, 0, 0.7) !important; }
@@ -1549,14 +1547,12 @@ a.form_button {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-moz-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1564,14 +1560,12 @@ a.form_button {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @-o-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1579,14 +1573,12 @@ a.form_button {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1594,14 +1586,12 @@ a.form_button {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 .c-bg.__red {
   background-color: #e48f86; }
 .c-bg.__orange {
@@ -2086,7 +2076,7 @@ a.form_button {
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: white;
+      background-color: #fff;
       content: ''; }
   .tabs_i sub {
     position: relative;
@@ -2103,7 +2093,7 @@ a.form_button {
   display: block;
   margin-top: -70px;
   height: 66px;
-  border-top: 2px solid white;
+  border-top: 2px solid #fff;
   box-shadow: inset 0 0 0 1px #fff !important;
   text-decoration: none;
   line-height: 68px;
@@ -3213,7 +3203,7 @@ a.breadcrumbs_i {
   bottom: 0;
   left: 0;
   z-index: 999;
-  background-color: white; }
+  background-color: #fff; }
   .share-block_a a {
     font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 12px;
@@ -3353,7 +3343,7 @@ a.breadcrumbs_i {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: white;
+    background: #fff;
     content: ''; }
   .metro.__green {
     background: #00a81c; }
@@ -3464,7 +3454,7 @@ a.breadcrumbs_i {
   font-size: 13px; }
 
 .blocks {
-  background: whitesmoke url(/assets/images/pattern.png) center repeat;
+  background: #f5f5f5 url(/assets/images/pattern.png) center repeat;
   color: #141f4e; }
 
 .about-block {
@@ -3681,5 +3671,7 @@ a.breadcrumbs_i {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: white;
+    background: #fff;
     box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.25); } }
+
+/*# sourceMappingURL=application.css.map */

@@ -9,4 +9,4 @@
         - 1.upto(3) do
           .grid-i.__grid-3>
             .tx.__left
-              = haml 'views/common/_catalog_item'.to_sym
+              = Haml::Engine.new(File.read('views/common/_catalog_item.haml')).render

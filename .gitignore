@@ -1,29 +1,9 @@
-# Log file
-*.log
+# Cache
+/.sass-cache
 
-# Eclipse
-.project
-
-# Mac
-.DS_Store
-
-# RubyMine
+# IDEA
 .idea
 
-# Sword
-sword.exe
-
-# Sublime Text
-*.sublime-*
-
-# System
-*.log
-
-# Windows
-Thumbs.db
-
-#exe
-*.exe
-
-#Sass
-.sass-cache
+# Node
+/node_modules
+npm-debug.log

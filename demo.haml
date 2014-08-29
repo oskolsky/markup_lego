@@ -1,0 +1,106 @@
+!!!
+%html.no-js{lang: 'ru-RU'}
+  %head
+    %title Сеть магазинов Lego
+    = Haml::Engine.new(File.read('views/layouts/_head.haml')).render
+
+    :css
+      .demo {margin-left: 1.5rem;}
+      .demo ol {counter-reset: list;}
+      .demo ol > li {position: relative;}
+      .demo ol > li:not(:last-child) {margin-bottom: 1rem;}
+      .demo ol > li::before {
+        counter-increment: list;
+        content: counter(list) ".";
+        position: absolute;
+        right: 100%;
+        margin: 0 .5rem 0 0;
+        color: #bfbfbf;
+        font-size: inherit;
+      }
+
+  %body#page.page
+    %main#main.main{role: 'main'}
+      .ctn.p-t_4.p-b_4
+
+        %section{role: 'region', 'aria-label' => 'Demo'}
+          %article
+            %header.m-b_4
+              .grid
+                .grid-i.__grid-1.va-m>
+                  %a{href: '/demo.html'}
+                    %img.logo{src: '/assets/images/logo.png', alt: 'Lego'}
+                .grid-i.__grid-11.va-m>
+                  %h1.tx.__upper
+                    %a{href: '/'}
+                      %span.tx.__minor Сеть магазинов
+                      %span.tx.__major Lego
+
+            .grid
+              .grid-i.__grid-3
+                %nav.demo.tx.__xs
+                  %ol
+                    %li
+                      %a{href: '/'} Главная
+                    %li
+                      %a.tx.__muted{href: '/catalog.html'} Каталог
+                    %li
+                      %a.tx.__muted{href: '/catalog_series.html'} Каталог серии
+                    %li
+                      %a.tx.__muted{href: '/catalog_empty.html'} Каталог пустой
+                    %li
+                      %a.tx.__muted{href: '/catalog_show.html'} Карточка товара
+                    %li
+                      %a.tx.__muted{href: '/catalog_show_coming.html'} Карточка товара - скоро в продаже
+                    %li
+                      %a.tx.__muted{href: '/print/catalog_show.html'} Карточка товара (печать)
+                    %li
+                      %a.tx.__muted{href: '/basket.html'} Корзина
+                    %li
+                      %a.tx.__muted{href: '/basket_close.html'} Корзина (закрытые шаги)
+                    %li
+                      %a.tx.__muted{href: '/gratitude.html'} Спасибо за заказ
+                    %li
+                      %a.tx.__muted{href: '/profile.html'} Личный кабинет
+                    %li
+                      %a.tx.__muted{href: '/search.html'} Поиск
+                    %li
+                      %a.tx.__muted{href: '/about.html'} О нас
+                    %li
+                      %a.tx.__muted{href: '/contacts.html'} Контакты
+                    %li
+                      %a.tx.__muted{href: '/feedback.html'} Обратная связь
+                    %li
+                      %a.tx.__muted{href: '/stores.html'} Где купить
+                    %li
+                      %a.tx.__muted{href: '/bonuses.html'} Бонусная программа
+                    %li
+                      %a.tx.__muted{href: '/jobs.html'} Вакансии
+                    %li
+                      %a.tx.__muted{href: '/faq.html'} Вопрос-ответ
+                    %li
+                      %a.tx.__muted{href: '/article.html'} Новости / Статьи / Мероприяти
+
+              .grid-i.__grid-3
+                %nav.demo.tx.__xs
+                  %ol
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/location.html'}} Выбор города
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/register.html'}} Регистрация
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', overlayclick: 'false', url: '/dialogs/update.html'}} Обновление информации
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/login.html'}} Авторизация
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/forgot.html'}} Восстановление пароля
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/oneclick.html'}} Купить в 1 клик
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/availability.html'}} Проверить наличие
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/then.html'}} Отложить товар
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/map.html'}} Посмотреть на карте
+                    %li
+                      %a.a.__pseudo.tx.__muted{href: '#', data: {dialog: 'true', url: '/dialogs/message.html'}} Сообщение
