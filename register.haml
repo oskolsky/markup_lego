@@ -1,0 +1,136 @@
+!!!
+%html.no-js{lang: 'ru-RU'}
+  %head
+    %title Регистрация на мероприятие / Сеть магазинов Lego
+    = Haml::Engine.new(File.read('views/layouts/_head.haml')).render
+
+  %body#page.page
+    = Haml::Engine.new(File.read('views/alerts/_ie.haml')).render
+    = Haml::Engine.new(File.read('views/alerts/_no-js.haml')).render
+
+    %header#header.header.__yellow{role: 'banner'}
+      .ctn
+        = Haml::Engine.new(File.read('views/layouts/_header.haml')).render
+
+    %main#main.main{role: 'main'}
+      %section.section.p-t_6.p-b_4{role: 'region', 'aria-label' => 'About'}
+        .ctn
+
+          %h2.tx.__major.m-b_4 Анкета регистрации на&nbsp;мастер-класс &laquo;Собери и&nbsp;забери&raquo;
+          %p.m-b_4
+            Дата проведения мастер-класса:
+            %span.strong-major 26 августа 2014 г.
+          %p.m-b_4 Для регистрации на&nbsp;мастер-класс &laquo;Собери и&nbsp;забери&raquo; заполните анкету, укажите контактные данные, выберите магазин и&nbsp;удобное время посещения мастер-класса. Подтверждение о&nbsp;регистрации будет отправлено на&nbsp;указанный Вами адрес электронной почты.
+
+          %form.form
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Имя ребёнка:
+                .grid-i.__grid-4.va-m>
+                  %input.form_el.__block.form_text{type: 'text', autofocus: 'autofocus'}
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Фамилия ребёнка:
+                .grid-i.__grid-4.va-m>
+                  %input.form_el.__block.form_text{type: 'text'}
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Дата рождения ребёнка:
+                .grid-i.__grid-4.va-m>
+                  %input.form_el.__block.form_text.__date{type: 'text'}
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b ФИО родителя:
+                .grid-i.__grid-4.va-m>
+                  %input.form_el.__block.form_text{type: 'text'}
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Телефон:
+                .grid-i.__grid-4.va-m>
+                  %input.form_el.__block.form_text.__phone{type: 'text'}
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b E-mail:
+                .grid-i.__grid-4.va-m>
+                  %input.form_el.__block.form_text{type: 'text'}
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Номер бонусной карты сети магазинов LEGO:
+                .grid-i.__grid-4.va-m>
+                  %input.form_el.__block.form_text.__card{type: 'text'}
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Город:
+                .grid-i.__grid-4.va-m>
+                  .form_select.form_el.__fake.__block
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: 'selected'} Москва
+                      %option Смоленск
+                      %option Урюпинск
+            .m-b_1
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Магазин:
+                .grid-i.__grid-4.va-m>
+                  .form_select.form_el.__fake.__block
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: 'selected'} Магазин 1
+                      %option Магазин 2
+                      %option Магазин 3
+            .m-b_4
+              .grid
+                .grid-i.__grid-2.__prefix-3.va-m>
+                  .tx.__right
+                    %label.form_label.tx.__xs{data: {required: 'after'}}
+                      %b Доступное время посещения мастер-класса:
+                .grid-i.__grid-4.va-m>
+                  .form_select.form_el.__fake.__block
+                    %p &nbsp;
+                    %select.form_select.form_el.__real
+                      %option{selected: 'selected'} 10:30
+                      %option 10:00
+            .m-b_4
+              .grid
+                .grid-i.__grid-4.__prefix-5.va-m>
+                  %label.form_label.__m
+                    %span.form_checkbox.form_el.__fake
+                      %input.form_checkbox.form_el.__real{type: 'checkbox', checked: 'checked'}
+                    %b Я&nbsp;согласен получать информацию об&nbsp;акциях, мероприятиях и&nbsp;специальных предложениях сети магазинов LEGO
+            %div.m-b_4
+              %p.tx.__xxs.__center Поля со&nbsp;звёздочкой обязательны для заполнения
+            %div
+              %input.form_button.__red.__l.b-center{type: 'submit', value: 'Зарегистрироваться'}
+
+      %section.blocks.p-t_5.p-b_6{role: 'region', 'aria-label' => 'Summary info'}
+        .ctn
+          = Haml::Engine.new(File.read('views/common/_block_common.haml')).render
+
+    = Haml::Engine.new(File.read('views/layouts/_footer.haml')).render

@@ -2716,6 +2716,21 @@ a.breadcrumbs_i {color: #0068a5;}
     }
   }
 
+//
+// .. Strong Major
+//
+.strong-major {
+  display: inline-block;
+  background-color: $major-color;
+  color: #fff;
+  font-family: $h-font-family;
+  font-size: 2.8rem;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  border-radius: 2.2rem;
+  padding: 0 2rem;
+  margin-left: 2rem;
+}
 
 
 

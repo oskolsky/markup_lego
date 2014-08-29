@@ -3618,6 +3618,18 @@ a.breadcrumbs_i {
   .ui-menu-item a.ui-state-focus {
     background-color: #eee; }
 
+.strong-major {
+  display: inline-block;
+  background-color: #e30613;
+  color: #fff;
+  font-family: "rotondacbold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2.8rem;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  border-radius: 2.2rem;
+  padding: 0 2rem;
+  margin-left: 2rem; }
+
 .footer {
   padding: 60px 0;
   font-size: 13px;
