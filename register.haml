@@ -46,7 +46,7 @@
                     %label.form_label.tx.__xs{data: {required: 'after'}}
                       %b Дата рождения ребёнка:
                 .grid-i.__grid-4.va-m>
-                  %input.form_el.__block.form_text.__date{type: 'text'}
+                  %input.form_el.__block.form_text.__date{type: 'text', placeholder: '__ д. __ м. ____ г.'}
             .m-b_1
               .grid
                 .grid-i.__grid-2.__prefix-3.va-m>
@@ -54,7 +54,9 @@
                     %label.form_label.tx.__xs{data: {required: 'after'}}
                       %b ФИО родителя:
                 .grid-i.__grid-4.va-m>
-                  %input.form_el.__block.form_text{type: 'text'}
+                  .p-r
+                    %input.form_el.__block.form_text{type: 'text', data: {valid: 'false'}}
+                    %p.form_el.form_error Некорректно заполнено поле
             .m-b_1
               .grid
                 .grid-i.__grid-2.__prefix-3.va-m>
@@ -62,7 +64,9 @@
                     %label.form_label.tx.__xs{data: {required: 'after'}}
                       %b Телефон:
                 .grid-i.__grid-4.va-m>
-                  %input.form_el.__block.form_text.__phone{type: 'text'}
+                  .p-r
+                    %input.form_el.__block.form_text.__phone{type: 'text', placeholder: '+7 (___) ___-__-__', data: {valid: 'false'}}
+                    %p.form_el.form_error Некорректно заполнено поле
             .m-b_1
               .grid
                 .grid-i.__grid-2.__prefix-3.va-m>
@@ -70,7 +74,7 @@
                     %label.form_label.tx.__xs{data: {required: 'after'}}
                       %b E-mail:
                 .grid-i.__grid-4.va-m>
-                  %input.form_el.__block.form_text{type: 'text'}
+                  %input.form_el.__block.form_text{type: 'text', placeholder: '_____ @ ____ . __'}
             .m-b_1
               .grid
                 .grid-i.__grid-2.__prefix-3.va-m>
@@ -78,7 +82,7 @@
                     %label.form_label.tx.__xs{data: {required: 'after'}}
                       %b Номер бонусной карты сети магазинов LEGO:
                 .grid-i.__grid-4.va-m>
-                  %input.form_el.__block.form_text.__card{type: 'text'}
+                  %input.form_el.__block.form_text.__card{type: 'text', placeholder: '____ ____ ____ ____'}
             .m-b_1
               .grid
                 .grid-i.__grid-2.__prefix-3.va-m>

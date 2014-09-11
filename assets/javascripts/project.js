@@ -128,8 +128,8 @@ $(document).on('click touchend', '.js-dialog_close', function() {
 $(function() {
 
   $('.form_text.__phone').mask('+7 (999) 999-99-99');
-  $('.form_text.__card').mask('9 999999 999999');
-  $('.form_text.__date').mask('99 д. 99 м. 99 гггг.');
+  $('.form_text.__card').mask('9999 9999 9999 9999');
+  $('.form_text.__date').mask('99 д. 99 м. 9999 г.');
 
   $('.scroll-pane').jScrollPane();
 

@@ -262,7 +262,39 @@ a.form_button {
   @extend .delta;
   color: $form-el-color;
 }
-  
+
+//
+// .. Error
+//
+.form_error {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: 2rem;
+  padding: 0 2rem;
+  color: #fff;
+  border-radius: .3rem;
+  background-color: #ea030a;
+  width: 230px;
+  height: 4rem;
+  line-height: 4rem;
+  @include prefixes(transform, translateY(-50%));
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: -.8rem;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: .8rem solid transparent;
+    border-right: .8rem solid #ea030a;
+    border-bottom: .8rem solid transparent;
+    @include prefixes(transform, translateY(-50%));
+  }
+}
+
 .form {
   //
   // .. Disabled
@@ -294,9 +326,9 @@ a.form_button {
   // .. Validation
   //
   [data-valid="true"] {
-    border-color: fade-out($form-el-color-valid-true, .3) !important;
+    // border-color: fade-out($form-el-color-valid-true, .3) !important;
     background: fade-out($form-el-color-valid-true, .9) !important;
-    color: $form-el-color-valid-true !important;
+    // color: $form-el-color-valid-true !important;
     &::after {
       border-color: fade-out($form-el-color-valid-true, .6) !important;
       color: fade-out($form-el-color-valid-true, .3) !important;
@@ -305,9 +337,9 @@ a.form_button {
   }
 
   [data-valid="false"] {
-    border-color: fade-out($form-el-color-valid-false, .3) !important;
-    background: fade-out($form-el-color-valid-false, .9) !important;
-    color: $form-el-color-valid-false !important;
+    border-color: #ffcfcf !important;
+    background: #ffcfcf !important;
+    // color: $form-el-color-valid-false !important;
     &::after {
       border-color: fade-out($form-el-color-valid-false, .6) !important;
       color: fade-out($form-el-color-valid-false, .3) !important;
